@@ -1,2 +1,2 @@
 ```
-./jwst --bytecode-only <file.js> > bytecode.txt
+./jwst --bytecode-only <file.js> > <file.js.bc>
