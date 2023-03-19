@@ -18,11 +18,12 @@ function getTypeInfo(
   let localType: TypeInfo[] = [];
   let byteType: TypeInfo[] = [];
 
-  let i = 0;
-
   for (const sourceFile of program.getSourceFiles()) {
-    if (!sourceFile.isDeclarationFile) ts.forEachChild(sourceFile, visit);
+    if (!sourceFile.isDeclarationFile) {
+      ts.forEachChild(sourceFile, visit);
+    }
   }
+
   fs.writeFileSync(fileNames[0] + ".ty",
     "fn: " + fnName + "\n" +
     "args: " + JSON.stringify(argType) + "\n" +
@@ -30,7 +31,13 @@ function getTypeInfo(
     "byte: " + JSON.stringify(byteType, undefined, 2)
   );
 
+  return;
+
   function visit(node: ts.Node) {
+    if (!isNodeExported(node)) {
+      return;
+    }
+
     if (ts.isFunctionDeclaration(node) && node.name) {
       let symbol = checker.getSymbolAtLocation(node.name);
       if (symbol) {
@@ -70,6 +77,13 @@ function getTypeInfo(
       })
     }
     ts.forEachChild(node, visit);
+  }
+
+  function isNodeExported(node: ts.Node): boolean {
+    return (
+      (ts.getCombinedModifierFlags(node as ts.Declaration) & ts.ModifierFlags.Export) !== 0 ||
+      (!!node.parent && node.parent.kind === ts.SyntaxKind.SourceFile)
+    );
   }
 }
 

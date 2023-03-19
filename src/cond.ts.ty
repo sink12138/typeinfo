@@ -1,0 +1,4 @@
+fn: cond
+args: []
+return: (n: any) => any
+byte: []
