@@ -1,0 +1,36 @@
+-- JSFunction <eval> @ 0x56282c4fd2e0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 1
+Funtion bytecode:
+    0: check_define_var  "cond", 01000000
+    6: fclosure8  0
+    8: define_func  "cond", 00000000
+   14: get_loc0
+   15: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 1
+    0: ptr 0x56282c4fd200
+-- JSFunction cond @ 0x56282c4fd200
+source ptr: 0x56282c4ebd20, ln: 1
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: gt
+    3: if_false8  5
+    5: get_arg0
+    6: push_1
+    7: add
+    8: return
+    9: get_arg0
+   10: push_1
+   11: sub
+   12: return
+var count: 0
+Constant pool
+length: 0
+
