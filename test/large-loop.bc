@@ -1,0 +1,62 @@
+-- JSFunction <eval> @ 0x56071a906760
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 1
+Funtion bytecode:
+    0: check_define_var  "loop", 01000000
+    6: fclosure8  0
+    8: define_func  "loop", 00000000
+   14: get_loc0
+   15: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 1
+    0: ptr 0x56071a904ab0
+-- JSFunction loop @ 0x56071a904ab0
+source ptr: 0x56071a906330, ln: 1
+arg count: 2
+stack size: 2
+Funtion bytecode:
+    0: set_loc_uninitialized  0
+    3: get_arg1
+    4: put_loc0
+    5: set_loc_uninitialized  1
+    8: push_0
+    9: put_loc1
+   10: get_loc_check  1
+   13: get_arg0
+   14: lt
+   15: if_false8  51
+   17: get_loc_check  0
+   20: push_i8  10
+   22: mul
+   23: dup
+   24: put_loc_check  0
+   27: drop
+   28: get_loc_check  0
+   31: push_i32  10000007
+   36: gt
+   37: if_false8  17
+   39: get_loc_check  0
+   42: push_i32  10000007
+   47: sub
+   48: dup
+   49: put_loc_check  0
+   52: drop
+   53: goto8  -26
+   55: get_loc_check  1
+   58: push_1
+   59: add
+   60: dup
+   61: put_loc_check  1
+   64: drop
+   65: goto8  -56
+   67: get_loc_check  0
+   70: return
+var count: 2
+  l: lexical normal
+  i: lexical normal
+Constant pool
+length: 0
+
