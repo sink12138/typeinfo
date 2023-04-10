@@ -1,0 +1,182 @@
+-- JSFunction <eval> @ 0x5572475f8240
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "pad", 01000000
+    6: check_define_var  "nsieve", 01000000
+   12: check_define_var  "sieve", 01000000
+   18: check_define_var  "result", 00000000
+   24: check_define_var  "expected", 00000000
+   30: fclosure8  0
+   32: define_func  "pad", 00000000
+   38: fclosure8  1
+   40: define_func  "nsieve", 00000000
+   46: fclosure8  2
+   48: define_func  "sieve", 00000000
+   54: define_var  "result", 00000000
+   60: define_var  "expected", 00000000
+   66: get_var  "sieve"
+   71: call0
+   72: put_var  "result"
+   77: push_i16  14302
+   80: put_var  "expected"
+   85: undefined
+   86: put_loc0
+   87: get_var  "result"
+   92: get_var  "expected"
+   97: neq
+   98: if_false8  25
+  100: push_atom_value  "ERROR: bad result: expected "
+  105: get_var  "expected"
+  110: add
+  111: push_atom_value  " but got "
+  116: add
+  117: get_var  "result"
+  122: add
+  123: throw
+  124: get_loc0
+  125: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 3
+    0: ptr 0x557247612560    1: ptr 0x557247616dc0    2: ptr 0x55724761a6d0
+-- JSFunction pad @ 0x557247612560
+source ptr: 0x557247609240, ln: 6
+arg count: 2
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "toString"
+    6: call_method  0
+    9: put_loc0
+   10: get_arg1
+   11: get_loc0
+   12: get_length
+   13: sub
+   14: set_loc1
+   15: push_0
+   16: gt
+   17: if_false8  20
+   19: push_1
+   20: put_loc2
+   21: get_loc2
+   22: get_loc1
+   23: lte
+   24: if_false8  13
+   26: push_atom_value  " "
+   31: get_loc0
+   32: add
+   33: put_loc0
+   34: inc_loc  2
+   36: goto8  -16
+   38: get_loc0
+   39: return
+var count: 3
+  s: normal
+  prefixWidth: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction nsieve @ 0x557247616dc0
+source ptr: 0x5572476138b0, ln: 15
+arg count: 2
+stack size: 3
+Funtion bytecode:
+    0: push_2
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: lte
+    5: if_false8  9
+    7: get_arg1
+    8: get_loc0
+    9: push_true
+   10: put_array_el
+   11: inc_loc  0
+   13: goto8  -12
+   15: push_0
+   16: put_loc2
+   17: push_2
+   18: put_loc0
+   19: get_loc0
+   20: get_arg0
+   21: lte
+   22: if_false8  30
+   24: get_arg1
+   25: get_loc0
+   26: get_array_el
+   27: if_false8  21
+   29: get_loc0
+   30: get_loc0
+   31: add
+   32: put_loc1
+   33: get_loc1
+   34: get_arg0
+   35: lte
+   36: if_false8  10
+   38: get_arg1
+   39: get_loc1
+   40: push_false
+   41: put_array_el
+   42: get_loc0
+   43: add_loc  1
+   45: goto8  -13
+   47: inc_loc  2
+   49: inc_loc  0
+   51: goto8  -33
+   53: get_loc2
+   54: return
+var count: 3
+  i: normal
+  k: normal
+  count: normal
+Constant pool
+length: 0
+
+-- JSFunction sieve @ 0x55724761a6d0
+source ptr: 0x557247619d20, ln: 30
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: push_1
+    3: put_loc1
+    4: get_loc1
+    5: push_3
+    6: lte
+    7: if_false8  34
+    9: push_1
+   10: get_loc1
+   11: shl
+   12: push_i16  10000
+   15: mul
+   16: put_loc2
+   17: get_var  "Array"
+   22: get_loc2
+   23: push_1
+   24: add
+   25: call1
+   26: put_loc3
+   27: get_loc0
+   28: get_var  "nsieve"
+   33: get_loc2
+   34: get_loc3
+   35: call2
+   36: add
+   37: put_loc0
+   38: inc_loc  1
+   40: goto8  -37
+   42: get_loc0
+   43: return
+var count: 4
+  sum: normal
+  i: normal
+  m: normal
+  flags: normal
+Constant pool
+length: 0
+

@@ -1,0 +1,2492 @@
+-- JSFunction <eval> @ 0x55da8af22090
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 32
+Funtion bytecode:
+    0: check_define_var  "Cipher", 01000000
+    6: check_define_var  "SubBytes", 01000000
+   12: check_define_var  "ShiftRows", 01000000
+   18: check_define_var  "MixColumns", 01000000
+   24: check_define_var  "AddRoundKey", 01000000
+   30: check_define_var  "KeyExpansion", 01000000
+   36: check_define_var  "SubWord", 01000000
+   42: check_define_var  "RotWord", 01000000
+   48: check_define_var  "Sbox", 00000000
+   54: check_define_var  "Rcon", 00000000
+   60: check_define_var  "AESEncryptCtr", 01000000
+   66: check_define_var  "AESDecryptCtr", 01000000
+   72: check_define_var  "escCtrlChars", 01000000
+   78: check_define_var  "unescCtrlChars", 01000000
+   84: check_define_var  "b64", 00000000
+   90: check_define_var  "encodeBase64", 01000000
+   96: check_define_var  "decodeBase64", 01000000
+  102: check_define_var  "encodeUTF8", 01000000
+  108: check_define_var  "decodeUTF8", 01000000
+  114: check_define_var  "byteArrayToHexStr", 01000000
+  120: check_define_var  "plainText", 00000000
+  126: check_define_var  "password", 00000000
+  132: check_define_var  "cipherText", 00000000
+  138: check_define_var  "decryptedText", 00000000
+  144: fclosure8  0
+  146: define_func  "Cipher", 00000000
+  152: fclosure8  1
+  154: define_func  "SubBytes", 00000000
+  160: fclosure8  2
+  162: define_func  "ShiftRows", 00000000
+  168: fclosure8  3
+  170: define_func  "MixColumns", 00000000
+  176: fclosure8  4
+  178: define_func  "AddRoundKey", 00000000
+  184: fclosure8  5
+  186: define_func  "KeyExpansion", 00000000
+  192: fclosure8  6
+  194: define_func  "SubWord", 00000000
+  200: fclosure8  7
+  202: define_func  "RotWord", 00000000
+  208: define_var  "Sbox", 00000000
+  214: define_var  "Rcon", 00000000
+  220: fclosure8  8
+  222: define_func  "AESEncryptCtr", 00000000
+  228: fclosure8  9
+  230: define_func  "AESDecryptCtr", 00000000
+  236: fclosure8  10
+  238: define_func  "escCtrlChars", 00000000
+  244: fclosure8  11
+  246: define_func  "unescCtrlChars", 00000000
+  252: define_var  "b64", 00000000
+  258: fclosure8  12
+  260: define_func  "encodeBase64", 00000000
+  266: fclosure8  13
+  268: define_func  "decodeBase64", 00000000
+  274: fclosure8  14
+  276: define_func  "encodeUTF8", 00000000
+  282: fclosure8  15
+  284: define_func  "decodeUTF8", 00000000
+  290: fclosure8  16
+  292: define_func  "byteArrayToHexStr", 00000000
+  298: define_var  "plainText", 00000000
+  304: define_var  "password", 00000000
+  310: define_var  "cipherText", 00000000
+  316: define_var  "decryptedText", 00000000
+  322: push_i8  99
+  324: push_i8  124
+  326: push_i8  119
+  328: push_i8  123
+  330: push_i16  242
+  333: push_i8  107
+  335: push_i8  111
+  337: push_i16  197
+  340: push_i8  48
+  342: push_1
+  343: push_i8  103
+  345: push_i8  43
+  347: push_i16  254
+  350: push_i16  215
+  353: push_i16  171
+  356: push_i8  118
+  358: push_i16  202
+  361: push_i16  130
+  364: push_i16  201
+  367: push_i8  125
+  369: push_i16  250
+  372: push_i8  89
+  374: push_i8  71
+  376: push_i16  240
+  379: push_i16  173
+  382: push_i16  212
+  385: push_i16  162
+  388: push_i16  175
+  391: push_i16  156
+  394: push_i16  164
+  397: push_i8  114
+  399: push_i16  192
+  402: array_from  32
+  405: push_i16  183
+  408: define_field  "32"
+  413: push_i16  253
+  416: define_field  "33"
+  421: push_i16  147
+  424: define_field  "34"
+  429: push_i8  38
+  431: define_field  "35"
+  436: push_i8  54
+  438: define_field  "36"
+  443: push_i8  63
+  445: define_field  "37"
+  450: push_i16  247
+  453: define_field  "38"
+  458: push_i16  204
+  461: define_field  "39"
+  466: push_i8  52
+  468: define_field  "40"
+  473: push_i16  165
+  476: define_field  "41"
+  481: push_i16  229
+  484: define_field  "42"
+  489: push_i16  241
+  492: define_field  "43"
+  497: push_i8  113
+  499: define_field  "44"
+  504: push_i16  216
+  507: define_field  "45"
+  512: push_i8  49
+  514: define_field  "46"
+  519: push_i8  21
+  521: define_field  "47"
+  526: push_4
+  527: define_field  "48"
+  532: push_i16  199
+  535: define_field  "49"
+  540: push_i8  35
+  542: define_field  "50"
+  547: push_i16  195
+  550: define_field  "51"
+  555: push_i8  24
+  557: define_field  "52"
+  562: push_i16  150
+  565: define_field  "53"
+  570: push_5
+  571: define_field  "54"
+  576: push_i16  154
+  579: define_field  "55"
+  584: push_7
+  585: define_field  "56"
+  590: push_i8  18
+  592: define_field  "57"
+  597: push_i16  128
+  600: define_field  "58"
+  605: push_i16  226
+  608: define_field  "59"
+  613: push_i16  235
+  616: define_field  "60"
+  621: push_i8  39
+  623: define_field  "61"
+  628: push_i16  178
+  631: define_field  "62"
+  636: push_i8  117
+  638: define_field  "63"
+  643: push_i8  9
+  645: define_field  "64"
+  650: push_i16  131
+  653: define_field  "65"
+  658: push_i8  44
+  660: define_field  "66"
+  665: push_i8  26
+  667: define_field  "67"
+  672: push_i8  27
+  674: define_field  "68"
+  679: push_i8  110
+  681: define_field  "69"
+  686: push_i8  90
+  688: define_field  "70"
+  693: push_i16  160
+  696: define_field  "71"
+  701: push_i8  82
+  703: define_field  "72"
+  708: push_i8  59
+  710: define_field  "73"
+  715: push_i16  214
+  718: define_field  "74"
+  723: push_i16  179
+  726: define_field  "75"
+  731: push_i8  41
+  733: define_field  "76"
+  738: push_i16  227
+  741: define_field  "77"
+  746: push_i8  47
+  748: define_field  "78"
+  753: push_i16  132
+  756: define_field  "79"
+  761: push_i8  83
+  763: define_field  "80"
+  768: push_i16  209
+  771: define_field  "81"
+  776: push_0
+  777: define_field  "82"
+  782: push_i16  237
+  785: define_field  "83"
+  790: push_i8  32
+  792: define_field  "84"
+  797: push_i16  252
+  800: define_field  "85"
+  805: push_i16  177
+  808: define_field  "86"
+  813: push_i8  91
+  815: define_field  "87"
+  820: push_i8  106
+  822: define_field  "88"
+  827: push_i16  203
+  830: define_field  "89"
+  835: push_i16  190
+  838: define_field  "90"
+  843: push_i8  57
+  845: define_field  "91"
+  850: push_i8  74
+  852: define_field  "92"
+  857: push_i8  76
+  859: define_field  "93"
+  864: push_i8  88
+  866: define_field  "94"
+  871: push_i16  207
+  874: define_field  "95"
+  879: push_i16  208
+  882: define_field  "96"
+  887: push_i16  239
+  890: define_field  "97"
+  895: push_i16  170
+  898: define_field  "98"
+  903: push_i16  251
+  906: define_field  "99"
+  911: push_i8  67
+  913: define_field  "100"
+  918: push_i8  77
+  920: define_field  "101"
+  925: push_i8  51
+  927: define_field  "102"
+  932: push_i16  133
+  935: define_field  "103"
+  940: push_i8  69
+  942: define_field  "104"
+  947: push_i16  249
+  950: define_field  "105"
+  955: push_2
+  956: define_field  "106"
+  961: push_i8  127
+  963: define_field  "107"
+  968: push_i8  80
+  970: define_field  "108"
+  975: push_i8  60
+  977: define_field  "109"
+  982: push_i16  159
+  985: define_field  "110"
+  990: push_i16  168
+  993: define_field  "111"
+  998: push_i8  81
+  1000: define_field  "112"
+  1005: push_i16  163
+  1008: define_field  "113"
+  1013: push_i8  64
+  1015: define_field  "114"
+  1020: push_i16  143
+  1023: define_field  "115"
+  1028: push_i16  146
+  1031: define_field  "116"
+  1036: push_i16  157
+  1039: define_field  "117"
+  1044: push_i8  56
+  1046: define_field  "118"
+  1051: push_i16  245
+  1054: define_field  "119"
+  1059: push_i16  188
+  1062: define_field  "120"
+  1067: push_i16  182
+  1070: define_field  "121"
+  1075: push_i16  218
+  1078: define_field  "122"
+  1083: push_i8  33
+  1085: define_field  "123"
+  1090: push_i8  16
+  1092: define_field  "124"
+  1097: push_i16  255
+  1100: define_field  "125"
+  1105: push_i16  243
+  1108: define_field  "126"
+  1113: push_i16  210
+  1116: define_field  "127"
+  1121: push_i16  205
+  1124: define_field  "128"
+  1129: push_i8  12
+  1131: define_field  "129"
+  1136: push_i8  19
+  1138: define_field  "130"
+  1143: push_i16  236
+  1146: define_field  "131"
+  1151: push_i8  95
+  1153: define_field  "132"
+  1158: push_i16  151
+  1161: define_field  "133"
+  1166: push_i8  68
+  1168: define_field  "134"
+  1173: push_i8  23
+  1175: define_field  "135"
+  1180: push_i16  196
+  1183: define_field  "136"
+  1188: push_i16  167
+  1191: define_field  "137"
+  1196: push_i8  126
+  1198: define_field  "138"
+  1203: push_i8  61
+  1205: define_field  "139"
+  1210: push_i8  100
+  1212: define_field  "140"
+  1217: push_i8  93
+  1219: define_field  "141"
+  1224: push_i8  25
+  1226: define_field  "142"
+  1231: push_i8  115
+  1233: define_field  "143"
+  1238: push_i8  96
+  1240: define_field  "144"
+  1245: push_i16  129
+  1248: define_field  "145"
+  1253: push_i8  79
+  1255: define_field  "146"
+  1260: push_i16  220
+  1263: define_field  "147"
+  1268: push_i8  34
+  1270: define_field  "148"
+  1275: push_i8  42
+  1277: define_field  "149"
+  1282: push_i16  144
+  1285: define_field  "150"
+  1290: push_i16  136
+  1293: define_field  "151"
+  1298: push_i8  70
+  1300: define_field  "152"
+  1305: push_i16  238
+  1308: define_field  "153"
+  1313: push_i16  184
+  1316: define_field  "154"
+  1321: push_i8  20
+  1323: define_field  "155"
+  1328: push_i16  222
+  1331: define_field  "156"
+  1336: push_i8  94
+  1338: define_field  "157"
+  1343: push_i8  11
+  1345: define_field  "158"
+  1350: push_i16  219
+  1353: define_field  "159"
+  1358: push_i16  224
+  1361: define_field  "160"
+  1366: push_i8  50
+  1368: define_field  "161"
+  1373: push_i8  58
+  1375: define_field  "162"
+  1380: push_i8  10
+  1382: define_field  "163"
+  1387: push_i8  73
+  1389: define_field  "164"
+  1394: push_6
+  1395: define_field  "165"
+  1400: push_i8  36
+  1402: define_field  "166"
+  1407: push_i8  92
+  1409: define_field  "167"
+  1414: push_i16  194
+  1417: define_field  "168"
+  1422: push_i16  211
+  1425: define_field  "169"
+  1430: push_i16  172
+  1433: define_field  "170"
+  1438: push_i8  98
+  1440: define_field  "171"
+  1445: push_i16  145
+  1448: define_field  "172"
+  1453: push_i16  149
+  1456: define_field  "173"
+  1461: push_i16  228
+  1464: define_field  "174"
+  1469: push_i8  121
+  1471: define_field  "175"
+  1476: push_i16  231
+  1479: define_field  "176"
+  1484: push_i16  200
+  1487: define_field  "177"
+  1492: push_i8  55
+  1494: define_field  "178"
+  1499: push_i8  109
+  1501: define_field  "179"
+  1506: push_i16  141
+  1509: define_field  "180"
+  1514: push_i16  213
+  1517: define_field  "181"
+  1522: push_i8  78
+  1524: define_field  "182"
+  1529: push_i16  169
+  1532: define_field  "183"
+  1537: push_i8  108
+  1539: define_field  "184"
+  1544: push_i8  86
+  1546: define_field  "185"
+  1551: push_i16  244
+  1554: define_field  "186"
+  1559: push_i16  234
+  1562: define_field  "187"
+  1567: push_i8  101
+  1569: define_field  "188"
+  1574: push_i8  122
+  1576: define_field  "189"
+  1581: push_i16  174
+  1584: define_field  "190"
+  1589: push_i8  8
+  1591: define_field  "191"
+  1596: push_i16  186
+  1599: define_field  "192"
+  1604: push_i8  120
+  1606: define_field  "193"
+  1611: push_i8  37
+  1613: define_field  "194"
+  1618: push_i8  46
+  1620: define_field  "195"
+  1625: push_i8  28
+  1627: define_field  "196"
+  1632: push_i16  166
+  1635: define_field  "197"
+  1640: push_i16  180
+  1643: define_field  "198"
+  1648: push_i16  198
+  1651: define_field  "199"
+  1656: push_i16  232
+  1659: define_field  "200"
+  1664: push_i16  221
+  1667: define_field  "201"
+  1672: push_i8  116
+  1674: define_field  "202"
+  1679: push_i8  31
+  1681: define_field  "203"
+  1686: push_i8  75
+  1688: define_field  "204"
+  1693: push_i16  189
+  1696: define_field  "205"
+  1701: push_i16  139
+  1704: define_field  "206"
+  1709: push_i16  138
+  1712: define_field  "207"
+  1717: push_i8  112
+  1719: define_field  "208"
+  1724: push_i8  62
+  1726: define_field  "209"
+  1731: push_i16  181
+  1734: define_field  "210"
+  1739: push_i8  102
+  1741: define_field  "211"
+  1746: push_i8  72
+  1748: define_field  "212"
+  1753: push_3
+  1754: define_field  "213"
+  1759: push_i16  246
+  1762: define_field  "214"
+  1767: push_i8  14
+  1769: define_field  "215"
+  1774: push_i8  97
+  1776: define_field  "216"
+  1781: push_i8  53
+  1783: define_field  "217"
+  1788: push_i8  87
+  1790: define_field  "218"
+  1795: push_i16  185
+  1798: define_field  "219"
+  1803: push_i16  134
+  1806: define_field  "220"
+  1811: push_i16  193
+  1814: define_field  "221"
+  1819: push_i8  29
+  1821: define_field  "222"
+  1826: push_i16  158
+  1829: define_field  "223"
+  1834: push_i16  225
+  1837: define_field  "224"
+  1842: push_i16  248
+  1845: define_field  "225"
+  1850: push_i16  152
+  1853: define_field  "226"
+  1858: push_i8  17
+  1860: define_field  "227"
+  1865: push_i8  105
+  1867: define_field  "228"
+  1872: push_i16  217
+  1875: define_field  "229"
+  1880: push_i16  142
+  1883: define_field  "230"
+  1888: push_i16  148
+  1891: define_field  "231"
+  1896: push_i16  155
+  1899: define_field  "232"
+  1904: push_i8  30
+  1906: define_field  "233"
+  1911: push_i16  135
+  1914: define_field  "234"
+  1919: push_i16  233
+  1922: define_field  "235"
+  1927: push_i16  206
+  1930: define_field  "236"
+  1935: push_i8  85
+  1937: define_field  "237"
+  1942: push_i8  40
+  1944: define_field  "238"
+  1949: push_i16  223
+  1952: define_field  "239"
+  1957: push_i16  140
+  1960: define_field  "240"
+  1965: push_i16  161
+  1968: define_field  "241"
+  1973: push_i16  137
+  1976: define_field  "242"
+  1981: push_i8  13
+  1983: define_field  "243"
+  1988: push_i16  191
+  1991: define_field  "244"
+  1996: push_i16  230
+  1999: define_field  "245"
+  2004: push_i8  66
+  2006: define_field  "246"
+  2011: push_i8  104
+  2013: define_field  "247"
+  2018: push_i8  65
+  2020: define_field  "248"
+  2025: push_i16  153
+  2028: define_field  "249"
+  2033: push_i8  45
+  2035: define_field  "250"
+  2040: push_i8  15
+  2042: define_field  "251"
+  2047: push_i16  176
+  2050: define_field  "252"
+  2055: push_i8  84
+  2057: define_field  "253"
+  2062: push_i16  187
+  2065: define_field  "254"
+  2070: push_i8  22
+  2072: define_field  "255"
+  2077: put_var  "Sbox"
+  2082: push_0
+  2083: push_0
+  2084: push_0
+  2085: push_0
+  2086: array_from  4
+  2089: push_1
+  2090: push_0
+  2091: push_0
+  2092: push_0
+  2093: array_from  4
+  2096: push_2
+  2097: push_0
+  2098: push_0
+  2099: push_0
+  2100: array_from  4
+  2103: push_4
+  2104: push_0
+  2105: push_0
+  2106: push_0
+  2107: array_from  4
+  2110: push_i8  8
+  2112: push_0
+  2113: push_0
+  2114: push_0
+  2115: array_from  4
+  2118: push_i8  16
+  2120: push_0
+  2121: push_0
+  2122: push_0
+  2123: array_from  4
+  2126: push_i8  32
+  2128: push_0
+  2129: push_0
+  2130: push_0
+  2131: array_from  4
+  2134: push_i8  64
+  2136: push_0
+  2137: push_0
+  2138: push_0
+  2139: array_from  4
+  2142: push_i16  128
+  2145: push_0
+  2146: push_0
+  2147: push_0
+  2148: array_from  4
+  2151: push_i8  27
+  2153: push_0
+  2154: push_0
+  2155: push_0
+  2156: array_from  4
+  2159: push_i8  54
+  2161: push_0
+  2162: push_0
+  2163: push_0
+  2164: array_from  4
+  2167: array_from  11
+  2170: put_var  "Rcon"
+  2175: push_atom_value  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+  2180: put_var  "b64"
+  2185: push_atom_value  "ROMEO: But, soft! what light through yonder window breaks?\nIt is the east, and Juliet is the sun.\nArise, fair sun, and kill the envious moon,\nWho is already sick and pale with grief,\nThat thou her maid art far more fair than she:\nBe not her maid, since she is envious;\nHer vestal livery is but sick and green\nAnd none but fools do wear it; cast it off.\nIt is my lady, O, it is my love!\nO, that she knew she were!\nShe speaks yet she says nothing: what of that?\nHer eye discourses; I will answer it.\nI am too bold, 'tis not to me she speaks:\nTwo of the fairest stars in all the heaven,\nHaving some business, do entreat her eyes\nTo twinkle in their spheres till they return.\nWhat if her eyes were there, they in her head?\nThe brightness of her cheek would shame those stars,\nAs daylight doth a lamp; her eyes in heaven\nWould through the airy region stream so bright\nThat birds would sing and think it were not night.\nSee, how she leans her cheek upon her hand!\nO, that I were a glove upon that hand,\nThat I might touch that cheek!\nJULIET: Ay me!\nROMEO: She speaks:\nO, speak again, bright angel! for thou art\nAs glorious to this night, being o'er my head\nAs is a winged messenger of heaven\nUnto the white-upturned wondering eyes\nOf mortals that fall back to gaze on him\nWhen he bestrides the lazy-pacing clouds\nAnd sails upon the bosom of the air."
+  2190: put_var  "plainText"
+  2195: push_atom_value  "O Romeo, Romeo! wherefore art thou Romeo?"
+  2200: put_var  "password"
+  2205: get_var  "AESEncryptCtr"
+  2210: get_var  "plainText"
+  2215: get_var  "password"
+  2220: push_i16  256
+  2223: call3
+  2224: put_var  "cipherText"
+  2229: get_var  "AESDecryptCtr"
+  2234: get_var  "cipherText"
+  2239: get_var  "password"
+  2244: push_i16  256
+  2247: call3
+  2248: put_var  "decryptedText"
+  2253: undefined
+  2254: put_loc0
+  2255: get_var  "decryptedText"
+  2260: get_var  "plainText"
+  2265: neq
+  2266: if_false8  25
+  2268: push_atom_value  "ERROR: bad result: expected "
+  2273: get_var  "plainText"
+  2278: add
+  2279: push_atom_value  " but got "
+  2284: add
+  2285: get_var  "decryptedText"
+  2290: add
+  2291: throw
+  2292: get_loc0
+  2293: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 17
+    0: ptr 0x55da8af2de40    1: ptr 0x55da8af2e450    2: ptr 0x55da8af1d3d0    3: ptr 0x55da8af1f060    4: ptr 0x55da8af115a0    5: ptr 0x55da8af1e530    6: ptr 0x55da8af1f610    7: ptr 0x55da8af21290    8: ptr 0x55da8af1fbf0    9: ptr 0x55da8af20580   10: ptr 0x55da8af21f70   11: ptr 0x55da8aefe170   12: ptr 0x55da8aefdb60   13: ptr 0x55da8af29660   14: ptr 0x55da8af28740   15: ptr 0x55da8af284a0   16: ptr 0x55da8af2cc00
+-- JSFunction Cipher @ 0x55da8af2de40
+source ptr: 0x55da8af1c030, ln: 13
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: push_4
+    1: put_loc0
+    2: get_arg1
+    3: get_length
+    4: get_loc0
+    5: div
+    6: push_1
+    7: sub
+    8: put_loc1
+    9: array_from  0
+   12: array_from  0
+   15: array_from  0
+   18: array_from  0
+   21: array_from  4
+   24: put_loc2
+   25: push_0
+   26: put_loc3
+   27: get_loc3
+   28: push_4
+   29: get_loc0
+   30: mul
+   31: lt
+   32: if_false8  31
+   34: get_loc2
+   35: get_loc3
+   36: push_4
+   37: mod
+   38: get_array_el
+   39: get_var  "Math"
+   44: get_field2  "floor"
+   49: get_loc3
+   50: push_4
+   51: div
+   52: call_method  1
+   55: to_propkey2
+   56: get_arg0
+   57: get_loc3
+   58: get_array_el
+   59: put_array_el
+   60: inc_loc  3
+   62: goto8  -36
+   64: get_var  "AddRoundKey"
+   69: get_loc2
+   70: get_arg1
+   71: push_0
+   72: get_loc0
+   73: call  4
+   76: put_loc2
+   77: push_1
+   78: put_loc8  4
+   80: get_loc8  4
+   82: get_loc1
+   83: lt
+   84: if_false8  46
+   86: get_var  "SubBytes"
+   91: get_loc2
+   92: get_loc0
+   93: call2
+   94: put_loc2
+   95: get_var  "ShiftRows"
+  100: get_loc2
+  101: get_loc0
+  102: call2
+  103: put_loc2
+  104: get_var  "MixColumns"
+  109: get_loc2
+  110: get_loc0
+  111: call2
+  112: put_loc2
+  113: get_var  "AddRoundKey"
+  118: get_loc2
+  119: get_arg1
+  120: get_loc8  4
+  122: get_loc0
+  123: call  4
+  126: put_loc2
+  127: inc_loc  4
+  129: goto8  -50
+  131: get_var  "SubBytes"
+  136: get_loc2
+  137: get_loc0
+  138: call2
+  139: put_loc2
+  140: get_var  "ShiftRows"
+  145: get_loc2
+  146: get_loc0
+  147: call2
+  148: put_loc2
+  149: get_var  "AddRoundKey"
+  154: get_loc2
+  155: get_arg1
+  156: get_loc1
+  157: get_loc0
+  158: call  4
+  161: put_loc2
+  162: get_var  "Array"
+  167: dup
+  168: push_4
+  169: get_loc0
+  170: mul
+  171: call_constructor  1
+  174: put_loc8  5
+  176: push_0
+  177: put_loc3
+  178: get_loc3
+  179: push_4
+  180: get_loc0
+  181: mul
+  182: lt
+  183: if_false8  32
+  185: get_loc8  5
+  187: get_loc3
+  188: to_propkey2
+  189: get_loc2
+  190: get_loc3
+  191: push_4
+  192: mod
+  193: get_array_el
+  194: get_var  "Math"
+  199: get_field2  "floor"
+  204: get_loc3
+  205: push_4
+  206: div
+  207: call_method  1
+  210: get_array_el
+  211: put_array_el
+  212: inc_loc  3
+  214: goto8  -37
+  216: get_loc8  5
+  218: return
+var count: 6
+  Nb: normal
+  Nr: normal
+  state: normal
+  i: normal
+  round: normal
+  output: normal
+Constant pool
+length: 0
+
+-- JSFunction SubBytes @ 0x55da8af2e450
+source ptr: 0x55da8af1c780, ln: 39
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: push_4
+    4: lt
+    5: if_false8  33
+    7: push_0
+    8: put_loc1
+    9: get_loc1
+   10: get_arg1
+   11: lt
+   12: if_false8  22
+   14: get_arg0
+   15: get_loc0
+   16: get_array_el
+   17: get_loc1
+   18: to_propkey2
+   19: get_var  "Sbox"
+   24: get_arg0
+   25: get_loc0
+   26: get_array_el
+   27: get_loc1
+   28: get_array_el
+   29: get_array_el
+   30: put_array_el
+   31: inc_loc  1
+   33: goto8  -25
+   35: inc_loc  0
+   37: goto8  -36
+   39: get_arg0
+   40: return
+var count: 2
+  r: normal
+  c: normal
+Constant pool
+length: 0
+
+-- JSFunction ShiftRows @ 0x55da8af1d3d0
+source ptr: 0x55da8aef49f0, ln: 47
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: push_4
+    7: call_constructor  1
+   10: put_loc0
+   11: push_1
+   12: put_loc1
+   13: get_loc1
+   14: push_4
+   15: lt
+   16: if_false8  49
+   18: push_0
+   19: put_loc2
+   20: get_loc2
+   21: push_4
+   22: lt
+   23: if_false8  18
+   25: get_loc0
+   26: get_loc2
+   27: to_propkey2
+   28: get_arg0
+   29: get_loc1
+   30: get_array_el
+   31: get_loc2
+   32: get_loc1
+   33: add
+   34: get_arg1
+   35: mod
+   36: get_array_el
+   37: put_array_el
+   38: inc_loc  2
+   40: goto8  -21
+   42: push_0
+   43: put_loc2
+   44: get_loc2
+   45: push_4
+   46: lt
+   47: if_false8  14
+   49: get_arg0
+   50: get_loc1
+   51: get_array_el
+   52: get_loc2
+   53: to_propkey2
+   54: get_loc0
+   55: get_loc2
+   56: get_array_el
+   57: put_array_el
+   58: inc_loc  2
+   60: goto8  -17
+   62: inc_loc  1
+   64: goto8  -52
+   66: get_arg0
+   67: return
+var count: 3
+  t: normal
+  r: normal
+  c: normal
+Constant pool
+length: 0
+
+-- JSFunction MixColumns @ 0x55da8af1f060
+source ptr: 0x55da8af1e250, ln: 57
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: push_4
+    4: lt
+    5: if_false  186
+   10: get_var  "Array"
+   15: dup
+   16: push_4
+   17: call_constructor  1
+   20: put_loc1
+   21: get_var  "Array"
+   26: dup
+   27: push_4
+   28: call_constructor  1
+   31: put_loc2
+   32: push_0
+   33: put_loc3
+   34: get_loc3
+   35: push_4
+   36: lt
+   37: if_false8  49
+   39: get_loc1
+   40: get_loc3
+   41: to_propkey2
+   42: get_arg0
+   43: get_loc3
+   44: get_array_el
+   45: get_loc0
+   46: get_array_el
+   47: put_array_el
+   48: get_loc2
+   49: get_loc3
+   50: to_propkey2
+   51: get_arg0
+   52: get_loc3
+   53: get_array_el
+   54: get_loc0
+   55: get_array_el
+   56: push_i16  128
+   59: and
+   60: if_false8  14
+   62: get_arg0
+   63: get_loc3
+   64: get_array_el
+   65: get_loc0
+   66: get_array_el
+   67: push_1
+   68: shl
+   69: push_i16  283
+   72: xor
+   73: goto8  8
+   75: get_arg0
+   76: get_loc3
+   77: get_array_el
+   78: get_loc0
+   79: get_array_el
+   80: push_1
+   81: shl
+   82: put_array_el
+   83: inc_loc  3
+   85: goto8  -52
+   87: get_arg0
+   88: push_0
+   89: get_array_el
+   90: get_loc0
+   91: to_propkey2
+   92: get_loc2
+   93: push_0
+   94: get_array_el
+   95: get_loc1
+   96: push_1
+   97: get_array_el
+   98: xor
+   99: get_loc2
+  100: push_1
+  101: get_array_el
+  102: xor
+  103: get_loc1
+  104: push_2
+  105: get_array_el
+  106: xor
+  107: get_loc1
+  108: push_3
+  109: get_array_el
+  110: xor
+  111: put_array_el
+  112: get_arg0
+  113: push_1
+  114: get_array_el
+  115: get_loc0
+  116: to_propkey2
+  117: get_loc1
+  118: push_0
+  119: get_array_el
+  120: get_loc2
+  121: push_1
+  122: get_array_el
+  123: xor
+  124: get_loc1
+  125: push_2
+  126: get_array_el
+  127: xor
+  128: get_loc2
+  129: push_2
+  130: get_array_el
+  131: xor
+  132: get_loc1
+  133: push_3
+  134: get_array_el
+  135: xor
+  136: put_array_el
+  137: get_arg0
+  138: push_2
+  139: get_array_el
+  140: get_loc0
+  141: to_propkey2
+  142: get_loc1
+  143: push_0
+  144: get_array_el
+  145: get_loc1
+  146: push_1
+  147: get_array_el
+  148: xor
+  149: get_loc2
+  150: push_2
+  151: get_array_el
+  152: xor
+  153: get_loc1
+  154: push_3
+  155: get_array_el
+  156: xor
+  157: get_loc2
+  158: push_3
+  159: get_array_el
+  160: xor
+  161: put_array_el
+  162: get_arg0
+  163: push_3
+  164: get_array_el
+  165: get_loc0
+  166: to_propkey2
+  167: get_loc1
+  168: push_0
+  169: get_array_el
+  170: get_loc2
+  171: push_0
+  172: get_array_el
+  173: xor
+  174: get_loc1
+  175: push_1
+  176: get_array_el
+  177: xor
+  178: get_loc1
+  179: push_2
+  180: get_array_el
+  181: xor
+  182: get_loc2
+  183: push_3
+  184: get_array_el
+  185: xor
+  186: put_array_el
+  187: inc_loc  0
+  189: goto16  -188
+  192: get_arg0
+  193: return
+var count: 4
+  c: normal
+  a: normal
+  b: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction AddRoundKey @ 0x55da8af115a0
+source ptr: 0x55da8af1ab40, ln: 75
+arg count: 4
+stack size: 6
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: push_4
+    4: lt
+    5: if_false8  34
+    7: push_0
+    8: put_loc1
+    9: get_loc1
+   10: get_arg3
+   11: lt
+   12: if_false8  23
+   14: get_arg0
+   15: get_loc0
+   16: get_array_el
+   17: get_loc1
+   18: to_propkey2
+   19: dup2
+   20: get_array_el
+   21: get_arg1
+   22: get_arg2
+   23: push_4
+   24: mul
+   25: get_loc1
+   26: add
+   27: get_array_el
+   28: get_loc0
+   29: get_array_el
+   30: xor
+   31: put_array_el
+   32: inc_loc  1
+   34: goto8  -26
+   36: inc_loc  0
+   38: goto8  -37
+   40: get_arg0
+   41: return
+var count: 2
+  r: normal
+  c: normal
+Constant pool
+length: 0
+
+-- JSFunction KeyExpansion @ 0x55da8af1e530
+source ptr: 0x55da8af208f0, ln: 83
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: push_4
+    1: put_loc0
+    2: get_arg0
+    3: get_length
+    4: push_4
+    5: div
+    6: set_loc1
+    7: push_6
+    8: add
+    9: put_loc2
+   10: get_var  "Array"
+   15: dup
+   16: get_loc0
+   17: get_loc2
+   18: push_1
+   19: add
+   20: mul
+   21: call_constructor  1
+   24: put_loc3
+   25: get_var  "Array"
+   30: dup
+   31: push_4
+   32: call_constructor  1
+   35: put_loc8  4
+   37: push_0
+   38: put_loc8  5
+   40: get_loc8  5
+   42: get_loc1
+   43: lt
+   44: if_false8  46
+   46: get_arg0
+   47: push_4
+   48: get_loc8  5
+   50: mul
+   51: get_array_el
+   52: get_arg0
+   53: push_4
+   54: get_loc8  5
+   56: mul
+   57: push_1
+   58: add
+   59: get_array_el
+   60: get_arg0
+   61: push_4
+   62: get_loc8  5
+   64: mul
+   65: push_2
+   66: add
+   67: get_array_el
+   68: get_arg0
+   69: push_4
+   70: get_loc8  5
+   72: mul
+   73: push_3
+   74: add
+   75: get_array_el
+   76: array_from  4
+   79: put_loc8  6
+   81: get_loc3
+   82: get_loc8  5
+   84: get_loc8  6
+   86: put_array_el
+   87: inc_loc  5
+   89: goto8  -50
+   91: get_loc1
+   92: put_loc8  5
+   94: get_loc8  5
+   96: get_loc0
+   97: get_loc2
+   98: push_1
+   99: add
+  100: mul
+  101: lt
+  102: if_false  170
+  107: get_loc3
+  108: get_loc8  5
+  110: to_propkey2
+  111: get_var  "Array"
+  116: dup
+  117: push_4
+  118: call_constructor  1
+  121: put_array_el
+  122: push_0
+  123: put_loc8  7
+  125: get_loc8  7
+  127: push_4
+  128: lt
+  129: if_false8  20
+  131: get_loc8  4
+  133: get_loc8  7
+  135: to_propkey2
+  136: get_loc3
+  137: get_loc8  5
+  139: push_1
+  140: sub
+  141: get_array_el
+  142: get_loc8  7
+  144: get_array_el
+  145: put_array_el
+  146: inc_loc  7
+  148: goto8  -24
+  150: get_loc8  5
+  152: get_loc1
+  153: mod
+  154: push_0
+  155: eq
+  156: if_false8  52
+  158: get_var  "SubWord"
+  163: get_var  "RotWord"
+  168: get_loc8  4
+  170: call1
+  171: call1
+  172: put_loc8  4
+  174: push_0
+  175: put_loc8  7
+  177: get_loc8  7
+  179: push_4
+  180: lt
+  181: if_false8  50
+  183: get_loc8  4
+  185: get_loc8  7
+  187: to_propkey2
+  188: dup2
+  189: get_array_el
+  190: get_var  "Rcon"
+  195: get_loc8  5
+  197: get_loc1
+  198: div
+  199: get_array_el
+  200: get_loc8  7
+  202: get_array_el
+  203: xor
+  204: put_array_el
+  205: inc_loc  7
+  207: goto8  -31
+  209: get_loc1
+  210: push_6
+  211: gt
+  212: if_false8  19
+  214: get_loc8  5
+  216: get_loc1
+  217: mod
+  218: push_4
+  219: eq
+  220: if_false8  11
+  222: get_var  "SubWord"
+  227: get_loc8  4
+  229: call1
+  230: put_loc8  4
+  232: push_0
+  233: put_loc8  7
+  235: get_loc8  7
+  237: push_4
+  238: lt
+  239: if_false8  28
+  241: get_loc3
+  242: get_loc8  5
+  244: get_array_el
+  245: get_loc8  7
+  247: to_propkey2
+  248: get_loc3
+  249: get_loc8  5
+  251: get_loc1
+  252: sub
+  253: get_array_el
+  254: get_loc8  7
+  256: get_array_el
+  257: get_loc8  4
+  259: get_loc8  7
+  261: get_array_el
+  262: xor
+  263: put_array_el
+  264: inc_loc  7
+  266: goto8  -32
+  268: inc_loc  5
+  270: goto16  -177
+  273: get_loc3
+  274: return
+var count: 8
+  Nb: normal
+  Nk: normal
+  Nr: normal
+  w: normal
+  temp: normal
+  i: normal
+  r: normal
+  t: normal
+Constant pool
+length: 0
+
+-- JSFunction SubWord @ 0x55da8af1f610
+source ptr: 0x55da8aefce90, ln: 111
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: push_4
+    4: lt
+    5: if_false8  18
+    7: get_arg0
+    8: get_loc0
+    9: to_propkey2
+   10: get_var  "Sbox"
+   15: get_arg0
+   16: get_loc0
+   17: get_array_el
+   18: get_array_el
+   19: put_array_el
+   20: inc_loc  0
+   22: goto8  -21
+   24: get_arg0
+   25: return
+var count: 1
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction RotWord @ 0x55da8af21290
+source ptr: 0x55da8af113f0, ln: 116
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_arg0
+    1: push_4
+    2: to_propkey2
+    3: get_arg0
+    4: push_0
+    5: get_array_el
+    6: put_array_el
+    7: push_0
+    8: put_loc0
+    9: get_loc0
+   10: push_4
+   11: lt
+   12: if_false8  14
+   14: get_arg0
+   15: get_loc0
+   16: to_propkey2
+   17: get_arg0
+   18: get_loc0
+   19: push_1
+   20: add
+   21: get_array_el
+   22: put_array_el
+   23: inc_loc  0
+   25: goto8  -17
+   27: get_arg0
+   28: return
+var count: 1
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction AESEncryptCtr @ 0x55da8af1fbf0
+source ptr: 0x55da8af23390, ln: 164
+arg count: 3
+stack size: 7
+Funtion bytecode:
+    0: get_arg2
+    1: push_i16  128
+    4: eq
+    5: dup
+    6: if_true8  16
+    8: drop
+    9: get_arg2
+   10: push_i16  192
+   13: eq
+   14: dup
+   15: if_true8  7
+   17: drop
+   18: get_arg2
+   19: push_i16  256
+   22: eq
+   23: lnot
+   24: if_false8  3
+   26: push_empty_string
+   27: return
+   28: get_arg2
+   29: push_i8  8
+   31: div
+   32: put_loc0
+   33: get_var  "Array"
+   38: dup
+   39: get_loc0
+   40: call_constructor  1
+   43: put_loc1
+   44: push_0
+   45: put_loc2
+   46: get_loc2
+   47: get_loc0
+   48: lt
+   49: if_false8  23
+   51: get_loc1
+   52: get_loc2
+   53: to_propkey2
+   54: get_arg1
+   55: get_field2  "charCodeAt"
+   60: get_loc2
+   61: call_method  1
+   64: push_i16  255
+   67: and
+   68: put_array_el
+   69: inc_loc  2
+   71: goto8  -26
+   73: get_var  "Cipher"
+   78: get_loc1
+   79: get_var  "KeyExpansion"
+   84: get_loc1
+   85: call1
+   86: call2
+   87: set_loc3
+   88: get_field2  "concat"
+   93: get_loc3
+   94: get_field2  "slice"
+   99: push_0
+  100: get_loc0
+  101: push_i8  16
+  103: sub
+  104: call_method  2
+  107: call_method  1
+  110: put_loc3
+  111: push_i8  16
+  113: put_loc8  4
+  115: get_var  "Array"
+  120: dup
+  121: get_loc8  4
+  123: call_constructor  1
+  126: put_loc8  5
+  128: get_var  "Date"
+  133: dup
+  134: call_constructor  0
+  137: get_field2  "getTime"
+  142: call_method  0
+  145: put_loc8  6
+  147: push_0
+  148: put_loc2
+  149: get_loc2
+  150: push_4
+  151: lt
+  152: if_false8  21
+  154: get_loc8  5
+  156: get_loc2
+  157: to_propkey2
+  158: get_loc8  6
+  160: get_loc2
+  161: push_i8  8
+  163: mul
+  164: shr
+  165: push_i16  255
+  168: and
+  169: put_array_el
+  170: inc_loc  2
+  172: goto8  -24
+  174: push_0
+  175: put_loc2
+  176: get_loc2
+  177: push_4
+  178: lt
+  179: if_false8  26
+  181: get_loc8  5
+  183: get_loc2
+  184: push_4
+  185: add
+  186: to_propkey2
+  187: get_loc8  6
+  189: push_const8  0
+  191: div
+  192: get_loc2
+  193: push_i8  8
+  195: mul
+  196: shr
+  197: push_i16  255
+  200: and
+  201: put_array_el
+  202: inc_loc  2
+  204: goto8  -29
+  206: get_var  "KeyExpansion"
+  211: get_loc3
+  212: call1
+  213: put_loc8  7
+  215: get_var  "Math"
+  220: get_field2  "ceil"
+  225: get_arg0
+  226: get_length
+  227: get_loc8  4
+  229: div
+  230: call_method  1
+  233: put_loc8  8
+  235: get_var  "Array"
+  240: dup
+  241: get_loc8  8
+  243: call_constructor  1
+  246: put_loc8  9
+  248: push_0
+  249: put_loc8  10
+  251: get_loc8  10
+  253: get_loc8  8
+  255: lt
+  256: if_false  188
+  261: push_0
+  262: put_loc8  11
+  264: get_loc8  11
+  266: push_4
+  267: lt
+  268: if_false8  26
+  270: get_loc8  5
+  272: push_i8  15
+  274: get_loc8  11
+  276: sub
+  277: to_propkey2
+  278: get_loc8  10
+  280: get_loc8  11
+  282: push_i8  8
+  284: mul
+  285: shr
+  286: push_i16  255
+  289: and
+  290: put_array_el
+  291: inc_loc  11
+  293: goto8  -30
+  295: push_0
+  296: put_loc8  11
+  298: get_loc8  11
+  300: push_4
+  301: lt
+  302: if_false8  27
+  304: get_loc8  5
+  306: push_i8  15
+  308: get_loc8  11
+  310: sub
+  311: push_4
+  312: sub
+  313: to_propkey2
+  314: get_loc8  10
+  316: push_const8  1
+  318: div
+  319: get_loc8  11
+  321: push_i8  8
+  323: mul
+  324: shr
+  325: put_array_el
+  326: inc_loc  11
+  328: goto8  -31
+  330: get_var  "Cipher"
+  335: get_loc8  5
+  337: get_loc8  7
+  339: call2
+  340: put_loc8  12
+  342: get_loc8  10
+  344: get_loc8  8
+  346: push_1
+  347: sub
+  348: lt
+  349: if_false8  5
+  351: get_loc8  4
+  353: goto8  10
+  355: get_arg0
+  356: get_length
+  357: push_1
+  358: sub
+  359: get_loc8  4
+  361: mod
+  362: push_1
+  363: add
+  364: put_loc8  13
+  366: push_empty_string
+  367: put_loc8  14
+  369: push_0
+  370: put_loc2
+  371: get_loc2
+  372: get_loc8  13
+  374: lt
+  375: if_false8  50
+  377: get_arg0
+  378: get_field2  "charCodeAt"
+  383: get_loc8  10
+  385: get_loc8  4
+  387: mul
+  388: get_loc2
+  389: add
+  390: call_method  1
+  393: set_loc8  15
+  395: get_loc8  12
+  397: get_loc2
+  398: get_array_el
+  399: xor
+  400: put_loc8  16
+  402: get_loc8  14
+  404: get_var  "String"
+  409: get_field2  "fromCharCode"
+  414: get_loc8  16
+  416: call_method  1
+  419: add
+  420: put_loc8  14
+  422: inc_loc  2
+  424: goto8  -54
+  426: get_loc8  9
+  428: get_loc8  10
+  430: to_propkey2
+  431: get_var  "escCtrlChars"
+  436: get_loc8  14
+  438: call1
+  439: put_array_el
+  440: inc_loc  10
+  442: goto16  -192
+  445: push_empty_string
+  446: put_loc8  17
+  448: push_0
+  449: put_loc2
+  450: get_loc2
+  451: push_i8  8
+  453: lt
+  454: if_false8  27
+  456: get_loc8  17
+  458: get_var  "String"
+  463: get_field2  "fromCharCode"
+  468: get_loc8  5
+  470: get_loc2
+  471: get_array_el
+  472: call_method  1
+  475: add
+  476: put_loc8  17
+  478: inc_loc  2
+  480: goto8  -31
+  482: get_var  "escCtrlChars"
+  487: get_loc8  17
+  489: call1
+  490: set_loc8  17
+  492: push_atom_value  "-"
+  497: add
+  498: get_loc8  9
+  500: get_field2  "join"
+  505: push_atom_value  "-"
+  510: call_method  1
+  513: add
+  514: return
+var count: 18
+  nBytes: normal
+  pwBytes: normal
+  i: normal
+  key: normal
+  blockSize: normal
+  counterBlock: normal
+  nonce: normal
+  keySchedule: normal
+  blockCount: normal
+  ciphertext: normal
+  b: normal
+  c: normal
+  cipherCntr: normal
+  blockLength: normal
+  ct: normal
+  plaintextByte: normal
+  cipherByte: normal
+  ctrTxt: normal
+Constant pool
+length: 2
+    0:     1: 
+-- JSFunction AESDecryptCtr @ 0x55da8af20580
+source ptr: 0x55da8af27ca0, ln: 230
+arg count: 3
+stack size: 7
+Funtion bytecode:
+    0: get_arg2
+    1: push_i16  128
+    4: eq
+    5: dup
+    6: if_true8  16
+    8: drop
+    9: get_arg2
+   10: push_i16  192
+   13: eq
+   14: dup
+   15: if_true8  7
+   17: drop
+   18: get_arg2
+   19: push_i16  256
+   22: eq
+   23: lnot
+   24: if_false8  3
+   26: push_empty_string
+   27: return
+   28: get_arg2
+   29: push_i8  8
+   31: div
+   32: put_loc0
+   33: get_var  "Array"
+   38: dup
+   39: get_loc0
+   40: call_constructor  1
+   43: put_loc1
+   44: push_0
+   45: put_loc2
+   46: get_loc2
+   47: get_loc0
+   48: lt
+   49: if_false8  23
+   51: get_loc1
+   52: get_loc2
+   53: to_propkey2
+   54: get_arg1
+   55: get_field2  "charCodeAt"
+   60: get_loc2
+   61: call_method  1
+   64: push_i16  255
+   67: and
+   68: put_array_el
+   69: inc_loc  2
+   71: goto8  -26
+   73: get_var  "KeyExpansion"
+   78: get_loc1
+   79: call1
+   80: put_loc3
+   81: get_var  "Cipher"
+   86: get_loc1
+   87: get_loc3
+   88: call2
+   89: set_loc8  4
+   91: get_field2  "concat"
+   96: get_loc8  4
+   98: get_field2  "slice"
+  103: push_0
+  104: get_loc0
+  105: push_i8  16
+  107: sub
+  108: call_method  2
+  111: call_method  1
+  114: put_loc8  4
+  116: get_var  "KeyExpansion"
+  121: get_loc8  4
+  123: call1
+  124: put_loc8  5
+  126: get_arg0
+  127: get_field2  "split"
+  132: push_atom_value  "-"
+  137: call_method  1
+  140: put_arg0
+  141: push_i8  16
+  143: put_loc8  6
+  145: get_var  "Array"
+  150: dup
+  151: get_loc8  6
+  153: call_constructor  1
+  156: put_loc8  7
+  158: get_var  "unescCtrlChars"
+  163: get_arg0
+  164: push_0
+  165: get_array_el
+  166: call1
+  167: put_loc8  8
+  169: push_0
+  170: put_loc2
+  171: get_loc2
+  172: push_i8  8
+  174: lt
+  175: if_false8  21
+  177: get_loc8  7
+  179: get_loc2
+  180: to_propkey2
+  181: get_loc8  8
+  183: get_field2  "charCodeAt"
+  188: get_loc2
+  189: call_method  1
+  192: put_array_el
+  193: inc_loc  2
+  195: goto8  -25
+  197: get_var  "Array"
+  202: dup
+  203: get_arg0
+  204: get_length
+  205: push_1
+  206: sub
+  207: call_constructor  1
+  210: put_loc8  9
+  212: push_1
+  213: put_loc8  10
+  215: get_loc8  10
+  217: get_arg0
+  218: get_length
+  219: lt
+  220: if_false  182
+  225: push_0
+  226: put_loc8  11
+  228: get_loc8  11
+  230: push_4
+  231: lt
+  232: if_false8  28
+  234: get_loc8  7
+  236: push_i8  15
+  238: get_loc8  11
+  240: sub
+  241: to_propkey2
+  242: get_loc8  10
+  244: push_1
+  245: sub
+  246: get_loc8  11
+  248: push_i8  8
+  250: mul
+  251: shr
+  252: push_i16  255
+  255: and
+  256: put_array_el
+  257: inc_loc  11
+  259: goto8  -32
+  261: push_0
+  262: put_loc8  11
+  264: get_loc8  11
+  266: push_4
+  267: lt
+  268: if_false8  33
+  270: get_loc8  7
+  272: push_i8  15
+  274: get_loc8  11
+  276: sub
+  277: push_4
+  278: sub
+  279: to_propkey2
+  280: get_loc8  10
+  282: push_const8  0
+  284: div
+  285: push_1
+  286: sub
+  287: get_loc8  11
+  289: push_i8  8
+  291: mul
+  292: shr
+  293: push_i16  255
+  296: and
+  297: put_array_el
+  298: inc_loc  11
+  300: goto8  -37
+  302: get_var  "Cipher"
+  307: get_loc8  7
+  309: get_loc8  5
+  311: call2
+  312: put_loc8  12
+  314: get_arg0
+  315: get_loc8  10
+  317: to_propkey2
+  318: get_var  "unescCtrlChars"
+  323: get_arg0
+  324: get_loc8  10
+  326: get_array_el
+  327: call1
+  328: put_array_el
+  329: push_empty_string
+  330: put_loc8  13
+  332: push_0
+  333: put_loc2
+  334: get_loc2
+  335: get_arg0
+  336: get_loc8  10
+  338: get_array_el
+  339: get_length
+  340: lt
+  341: if_false8  47
+  343: get_arg0
+  344: get_loc8  10
+  346: get_array_el
+  347: get_field2  "charCodeAt"
+  352: get_loc2
+  353: call_method  1
+  356: set_loc8  14
+  358: get_loc8  12
+  360: get_loc2
+  361: get_array_el
+  362: xor
+  363: put_loc8  15
+  365: get_loc8  13
+  367: get_var  "String"
+  372: get_field2  "fromCharCode"
+  377: get_loc8  15
+  379: call_method  1
+  382: add
+  383: put_loc8  13
+  385: inc_loc  2
+  387: goto8  -54
+  389: get_loc8  9
+  391: get_loc8  10
+  393: push_1
+  394: sub
+  395: get_loc8  13
+  397: put_array_el
+  398: inc_loc  10
+  400: goto16  -186
+  403: get_loc8  9
+  405: get_field2  "join"
+  410: push_empty_string
+  411: tail_call_method  1
+var count: 16
+  nBytes: normal
+  pwBytes: normal
+  i: normal
+  pwKeySchedule: normal
+  key: normal
+  keySchedule: normal
+  blockSize: normal
+  counterBlock: normal
+  ctrTxt: normal
+  plaintext: normal
+  b: normal
+  c: normal
+  cipherCntr: normal
+  pt: normal
+  ciphertextByte: normal
+  plaintextByte: normal
+Constant pool
+length: 1
+    0: 
+-- JSFunction escCtrlChars @ 0x55da8af21f70
+source ptr: 0x55da8af06f70, ln: 278
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "replace"
+    6: push_const8  0
+    8: push_const8  1
+   10: regexp
+   11: fclosure8  2
+   13: tail_call_method  2
+var count: 0
+Constant pool
+length: 3
+    0: ptr 0x55da8af1d320    1: ptr 0x55da8af1d940    2: ptr 0x55da8af1f6e0
+-- JSFunction unescCtrlChars @ 0x55da8aefe170
+source ptr: 0x55da8af1f280, ln: 282
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "replace"
+    6: push_const8  0
+    8: push_const8  1
+   10: regexp
+   11: fclosure8  2
+   13: tail_call_method  2
+var count: 0
+Constant pool
+length: 3
+    0: ptr 0x55da8af1d2e0    1: ptr 0x55da8af14840    2: ptr 0x55da8af1bb70
+-- JSFunction encodeBase64 @ 0x55da8aefdb60
+source ptr: 0x55da8af29ff0, ln: 292
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_0
+    1: put_loc8  8
+    3: push_empty_string
+    4: put_loc8  9
+    6: get_var  "encodeUTF8"
+   11: get_arg0
+   12: call1
+   13: put_arg0
+   14: get_arg0
+   15: get_field2  "charCodeAt"
+   20: get_loc8  8
+   22: post_inc
+   23: put_loc8  8
+   25: call_method  1
+   28: put_loc0
+   29: get_arg0
+   30: get_field2  "charCodeAt"
+   35: get_loc8  8
+   37: post_inc
+   38: put_loc8  8
+   40: call_method  1
+   43: put_loc1
+   44: get_arg0
+   45: get_field2  "charCodeAt"
+   50: get_loc8  8
+   52: post_inc
+   53: put_loc8  8
+   55: call_method  1
+   58: put_loc2
+   59: get_loc0
+   60: push_i8  16
+   62: shl
+   63: get_loc1
+   64: push_i8  8
+   66: shl
+   67: or
+   68: get_loc2
+   69: or
+   70: set_loc8  7
+   72: push_i8  18
+   74: sar
+   75: push_i8  63
+   77: and
+   78: put_loc3
+   79: get_loc8  7
+   81: push_i8  12
+   83: sar
+   84: push_i8  63
+   86: and
+   87: put_loc8  4
+   89: get_loc8  7
+   91: push_6
+   92: sar
+   93: push_i8  63
+   95: and
+   96: put_loc8  5
+   98: get_loc8  7
+  100: push_i8  63
+  102: and
+  103: put_loc8  6
+  105: get_var  "isNaN"
+  110: get_loc2
+  111: call1
+  112: if_false8  5
+  114: push_i8  64
+  116: put_loc8  6
+  118: get_var  "isNaN"
+  123: get_loc1
+  124: call1
+  125: if_false8  5
+  127: push_i8  64
+  129: put_loc8  5
+  131: get_loc8  9
+  133: get_var  "b64"
+  138: get_field2  "charAt"
+  143: get_loc3
+  144: call_method  1
+  147: get_var  "b64"
+  152: get_field2  "charAt"
+  157: get_loc8  4
+  159: call_method  1
+  162: add
+  163: get_var  "b64"
+  168: get_field2  "charAt"
+  173: get_loc8  5
+  175: call_method  1
+  178: add
+  179: get_var  "b64"
+  184: get_field2  "charAt"
+  189: get_loc8  6
+  191: call_method  1
+  194: add
+  195: add
+  196: put_loc8  9
+  198: get_loc8  8
+  200: get_arg0
+  201: get_length
+  202: lt
+  203: if_true  -190
+  208: get_loc8  9
+  210: return
+var count: 10
+  o1: normal
+  o2: normal
+  o3: normal
+  h1: normal
+  h2: normal
+  h3: normal
+  h4: normal
+  bits: normal
+  i: normal
+  enc: normal
+Constant pool
+length: 0
+
+-- JSFunction decodeBase64 @ 0x55da8af29660
+source ptr: 0x55da8af2b140, ln: 320
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: push_0
+    1: put_loc8  8
+    3: push_empty_string
+    4: put_loc8  9
+    6: get_var  "b64"
+   11: get_field2  "indexOf"
+   16: get_arg0
+   17: get_field2  "charAt"
+   22: get_loc8  8
+   24: post_inc
+   25: put_loc8  8
+   27: call_method  1
+   30: call_method  1
+   33: put_loc3
+   34: get_var  "b64"
+   39: get_field2  "indexOf"
+   44: get_arg0
+   45: get_field2  "charAt"
+   50: get_loc8  8
+   52: post_inc
+   53: put_loc8  8
+   55: call_method  1
+   58: call_method  1
+   61: put_loc8  4
+   63: get_var  "b64"
+   68: get_field2  "indexOf"
+   73: get_arg0
+   74: get_field2  "charAt"
+   79: get_loc8  8
+   81: post_inc
+   82: put_loc8  8
+   84: call_method  1
+   87: call_method  1
+   90: put_loc8  5
+   92: get_var  "b64"
+   97: get_field2  "indexOf"
+  102: get_arg0
+  103: get_field2  "charAt"
+  108: get_loc8  8
+  110: post_inc
+  111: put_loc8  8
+  113: call_method  1
+  116: call_method  1
+  119: put_loc8  6
+  121: get_loc3
+  122: push_i8  18
+  124: shl
+  125: get_loc8  4
+  127: push_i8  12
+  129: shl
+  130: or
+  131: get_loc8  5
+  133: push_6
+  134: shl
+  135: or
+  136: get_loc8  6
+  138: or
+  139: set_loc8  7
+  141: push_i8  16
+  143: sar
+  144: push_i16  255
+  147: and
+  148: put_loc0
+  149: get_loc8  7
+  151: push_i8  8
+  153: sar
+  154: push_i16  255
+  157: and
+  158: put_loc1
+  159: get_loc8  7
+  161: push_i16  255
+  164: and
+  165: put_loc2
+  166: get_loc8  5
+  168: push_i8  64
+  170: eq
+  171: if_false8  22
+  173: get_loc8  9
+  175: get_var  "String"
+  180: get_field2  "fromCharCode"
+  185: get_loc0
+  186: call_method  1
+  189: add
+  190: put_loc8  9
+  192: goto8  51
+  194: get_loc8  6
+  196: push_i8  64
+  198: eq
+  199: if_false8  23
+  201: get_loc8  9
+  203: get_var  "String"
+  208: get_field2  "fromCharCode"
+  213: get_loc0
+  214: get_loc1
+  215: call_method  2
+  218: add
+  219: put_loc8  9
+  221: goto8  22
+  223: get_loc8  9
+  225: get_var  "String"
+  230: get_field2  "fromCharCode"
+  235: get_loc0
+  236: get_loc1
+  237: get_loc2
+  238: call_method  3
+  241: add
+  242: put_loc8  9
+  244: get_loc8  8
+  246: get_arg0
+  247: get_length
+  248: lt
+  249: if_true  -244
+  254: get_var  "decodeUTF8"
+  259: get_loc8  9
+  261: tail_call  1
+var count: 10
+  o1: normal
+  o2: normal
+  o3: normal
+  h1: normal
+  h2: normal
+  h3: normal
+  h4: normal
+  bits: normal
+  i: normal
+  enc: normal
+Constant pool
+length: 0
+
+-- JSFunction encodeUTF8 @ 0x55da8af28740
+source ptr: 0x55da8af2bfd0, ln: 343
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "replace"
+    6: push_const8  0
+    8: push_const8  1
+   10: regexp
+   11: fclosure8  2
+   13: call_method  2
+   16: set_arg0
+   17: get_field2  "replace"
+   22: push_const8  3
+   24: push_const8  4
+   26: regexp
+   27: fclosure8  5
+   29: call_method  2
+   32: set_arg0
+   33: return
+var count: 0
+Constant pool
+length: 6
+    0: ptr 0x55da8af22050    1: ptr 0x55da8aefbb90    2: ptr 0x55da8af298a0    3: ptr 0x55da8aefaff0    4: ptr 0x55da8af2ba80    5: ptr 0x55da8af2a650
+-- JSFunction decodeUTF8 @ 0x55da8af284a0
+source ptr: 0x55da8af2cdc0, ln: 359
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "replace"
+    6: push_const8  0
+    8: push_const8  1
+   10: regexp
+   11: fclosure8  2
+   13: call_method  2
+   16: set_arg0
+   17: get_field2  "replace"
+   22: push_const8  3
+   24: push_const8  4
+   26: regexp
+   27: fclosure8  5
+   29: call_method  2
+   32: set_arg0
+   33: return
+var count: 0
+Constant pool
+length: 6
+    0: ptr 0x55da8af2bbb0    1: ptr 0x55da8aef9080    2: ptr 0x55da8af2bef0    3: ptr 0x55da8af2a580    4: ptr 0x55da8af29610    5: ptr 0x55da8af07050
+-- JSFunction byteArrayToHexStr @ 0x55da8af2cc00
+source ptr: 0x55da8af1e980, ln: 376
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_0
+    3: put_loc1
+    4: get_loc1
+    5: get_arg0
+    6: get_length
+    7: lt
+    8: if_false8  27
+   10: get_loc0
+   11: get_arg0
+   12: get_loc1
+   13: get_array_el
+   14: get_field2  "toString"
+   19: push_i8  16
+   21: call_method  1
+   24: push_atom_value  " "
+   29: add
+   30: add
+   31: put_loc0
+   32: inc_loc  1
+   34: goto8  -31
+   36: get_loc0
+   37: return
+var count: 2
+  s: normal
+  i: normal
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af1f6e0
+source ptr: 0x55da8af25f20, ln: 279
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: push_atom_value  "!"
+    5: get_arg0
+    6: get_field2  "charCodeAt"
+   11: push_0
+   12: call_method  1
+   15: add
+   16: push_atom_value  "!"
+   21: add
+   22: return
+var count: 0
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af1bb70
+source ptr: 0x55da8af1db10, ln: 283
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: get_var  "String"
+    5: get_field2  "fromCharCode"
+   10: get_arg0
+   11: get_field2  "slice"
+   16: push_1
+   17: push_minus1
+   18: call_method  2
+   21: tail_call_method  1
+var count: 0
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af298a0
+source ptr: 0x55da8af219c0, ln: 346
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "charCodeAt"
+    6: push_0
+    7: call_method  1
+   10: put_loc0
+   11: get_var  "String"
+   16: get_field2  "fromCharCode"
+   21: push_i16  192
+   24: get_loc0
+   25: push_6
+   26: sar
+   27: or
+   28: push_i16  128
+   31: get_loc0
+   32: push_i8  63
+   34: and
+   35: or
+   36: tail_call_method  2
+var count: 1
+  cc: normal
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af2a650
+source ptr: 0x55da8af20f70, ln: 352
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "charCodeAt"
+    6: push_0
+    7: call_method  1
+   10: put_loc0
+   11: get_var  "String"
+   16: get_field2  "fromCharCode"
+   21: push_i16  224
+   24: get_loc0
+   25: push_i8  12
+   27: sar
+   28: or
+   29: push_i16  128
+   32: get_loc0
+   33: push_6
+   34: sar
+   35: push_i8  63
+   37: and
+   38: or
+   39: push_i16  128
+   42: get_loc0
+   43: push_i8  63
+   45: and
+   46: or
+   47: tail_call_method  3
+var count: 1
+  cc: normal
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af2bef0
+source ptr: 0x55da8af1cf90, ln: 362
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "charCodeAt"
+    6: push_0
+    7: call_method  1
+   10: push_i8  31
+   12: and
+   13: push_6
+   14: shl
+   15: get_arg0
+   16: get_field2  "charCodeAt"
+   21: push_1
+   22: call_method  1
+   25: push_i8  63
+   27: and
+   28: or
+   29: put_loc0
+   30: get_var  "String"
+   35: get_field2  "fromCharCode"
+   40: get_loc0
+   41: tail_call_method  1
+var count: 1
+  cc: normal
+Constant pool
+length: 0
+
+
+
+-- JSFunction  UïŠÚU @ 0x55da8af07050
+source ptr: 0x55da8af093f0, ln: 368
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "charCodeAt"
+    6: push_0
+    7: call_method  1
+   10: push_i8  15
+   12: and
+   13: push_i8  12
+   15: shl
+   16: get_arg0
+   17: get_field2  "charCodeAt"
+   22: push_1
+   23: call_method  1
+   26: push_i8  63
+   28: push_6
+   29: shl
+   30: and
+   31: or
+   32: get_arg0
+   33: get_field2  "charCodeAt"
+   38: push_2
+   39: call_method  1
+   42: push_i8  63
+   44: and
+   45: or
+   46: put_loc0
+   47: get_var  "String"
+   52: get_field2  "fromCharCode"
+   57: get_loc0
+   58: tail_call_method  1
+var count: 1
+  cc: normal
+Constant pool
+length: 0
+

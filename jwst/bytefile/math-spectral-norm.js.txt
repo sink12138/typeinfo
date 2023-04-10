@@ -1,0 +1,317 @@
+-- JSFunction <eval> @ 0x55f9b31069f0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "A", 01000000
+    6: check_define_var  "Au", 01000000
+   12: check_define_var  "Atu", 01000000
+   18: check_define_var  "AtAu", 01000000
+   24: check_define_var  "spectralnorm", 01000000
+   30: check_define_var  "total", 00000000
+   36: check_define_var  "i", 00000000
+   42: check_define_var  "expected", 00000000
+   48: fclosure8  0
+   50: define_func  "A", 00000000
+   56: fclosure8  1
+   58: define_func  "Au", 00000000
+   64: fclosure8  2
+   66: define_func  "Atu", 00000000
+   72: fclosure8  3
+   74: define_func  "AtAu", 00000000
+   80: fclosure8  4
+   82: define_func  "spectralnorm", 00000000
+   88: define_var  "total", 00000000
+   94: define_var  "i", 00000000
+  100: define_var  "expected", 00000000
+  106: push_0
+  107: put_var  "total"
+  112: undefined
+  113: put_loc0
+  114: push_6
+  115: put_var  "i"
+  120: get_var  "i"
+  125: push_i8  48
+  127: lte
+  128: if_false8  41
+  130: get_var  "total"
+  135: get_var  "spectralnorm"
+  140: get_var  "i"
+  145: call1
+  146: add
+  147: dup
+  148: put_var  "total"
+  153: put_loc0
+  154: get_var  "i"
+  159: push_2
+  160: mul
+  161: dup
+  162: put_var  "i"
+  167: drop
+  168: goto8  -49
+  170: push_const8  5
+  172: put_var  "expected"
+  177: undefined
+  178: put_loc0
+  179: get_var  "total"
+  184: get_var  "expected"
+  189: neq
+  190: if_false8  25
+  192: push_atom_value  "ERROR: bad result: expected "
+  197: get_var  "expected"
+  202: add
+  203: push_atom_value  " but got "
+  208: add
+  209: get_var  "total"
+  214: add
+  215: throw
+  216: get_loc0
+  217: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 6
+    0: ptr 0x55f9b31210b0    1: ptr 0x55f9b311ee40    2: ptr 0x55f9b30b9ee0    3: ptr 0x55f9b31219a0    4: ptr 0x55f9b3121680    5: 
+-- JSFunction A @ 0x55f9b31210b0
+source ptr: 0x55f9b3117040, ln: 6
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: push_1
+    1: get_arg0
+    2: get_arg1
+    3: add
+    4: get_arg0
+    5: get_arg1
+    6: add
+    7: push_1
+    8: add
+    9: mul
+   10: push_2
+   11: div
+   12: get_arg0
+   13: add
+   14: push_1
+   15: add
+   16: div
+   17: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction Au @ 0x55f9b311ee40
+source ptr: 0x55f9b3120f00, ln: 10
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: get_length
+    5: lt
+    6: if_false8  38
+    8: push_0
+    9: put_loc1
+   10: push_0
+   11: put_loc2
+   12: get_loc2
+   13: get_arg0
+   14: get_length
+   15: lt
+   16: if_false8  20
+   18: get_loc1
+   19: get_var  "A"
+   24: get_loc0
+   25: get_loc2
+   26: call2
+   27: get_arg0
+   28: get_loc2
+   29: get_array_el
+   30: mul
+   31: add
+   32: put_loc1
+   33: inc_loc  2
+   35: goto8  -24
+   37: get_arg1
+   38: get_loc0
+   39: get_loc1
+   40: put_array_el
+   41: inc_loc  0
+   43: goto8  -42
+   45: return_undef
+var count: 3
+  i: normal
+  t: normal
+  j: normal
+Constant pool
+length: 0
+
+-- JSFunction Atu @ 0x55f9b30b9ee0
+source ptr: 0x55f9b3121800, ln: 19
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: get_length
+    5: lt
+    6: if_false8  38
+    8: push_0
+    9: put_loc1
+   10: push_0
+   11: put_loc2
+   12: get_loc2
+   13: get_arg0
+   14: get_length
+   15: lt
+   16: if_false8  20
+   18: get_loc1
+   19: get_var  "A"
+   24: get_loc2
+   25: get_loc0
+   26: call2
+   27: get_arg0
+   28: get_loc2
+   29: get_array_el
+   30: mul
+   31: add
+   32: put_loc1
+   33: inc_loc  2
+   35: goto8  -24
+   37: get_arg1
+   38: get_loc0
+   39: get_loc1
+   40: put_array_el
+   41: inc_loc  0
+   43: goto8  -42
+   45: return_undef
+var count: 3
+  i: normal
+  t: normal
+  j: normal
+Constant pool
+length: 0
+
+-- JSFunction AtAu @ 0x55f9b31219a0
+source ptr: 0x55f9b3111190, ln: 28
+arg count: 3
+stack size: 3
+Funtion bytecode:
+    0: get_var  "Au"
+    5: get_arg0
+    6: get_arg2
+    7: call2
+    8: drop
+    9: get_var  "Atu"
+   14: get_arg2
+   15: get_arg1
+   16: call2
+   17: return_undef
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction spectralnorm @ 0x55f9b3121680
+source ptr: 0x55f9b3118a50, ln: 33
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: array_from  0
+    3: put_loc1
+    4: array_from  0
+    7: put_loc2
+    8: array_from  0
+   11: put_loc3
+   12: push_0
+   13: put_loc8  4
+   15: push_0
+   16: put_loc8  5
+   18: push_0
+   19: put_loc0
+   20: get_loc0
+   21: get_arg0
+   22: lt
+   23: if_false8  19
+   25: get_loc1
+   26: get_loc0
+   27: push_1
+   28: put_array_el
+   29: get_loc2
+   30: get_loc0
+   31: to_propkey2
+   32: get_loc3
+   33: get_loc0
+   34: to_propkey2
+   35: push_0
+   36: insert3
+   37: put_array_el
+   38: put_array_el
+   39: inc_loc  0
+   41: goto8  -22
+   43: push_0
+   44: put_loc0
+   45: get_loc0
+   46: push_i8  10
+   48: lt
+   49: if_false8  25
+   51: get_var  "AtAu"
+   56: get_loc1
+   57: get_loc2
+   58: get_loc3
+   59: call3
+   60: drop
+   61: get_var  "AtAu"
+   66: get_loc2
+   67: get_loc1
+   68: get_loc3
+   69: call3
+   70: drop
+   71: inc_loc  0
+   73: goto8  -29
+   75: push_0
+   76: put_loc0
+   77: get_loc0
+   78: get_arg0
+   79: lt
+   80: if_false8  29
+   82: get_loc8  5
+   84: get_loc1
+   85: get_loc0
+   86: get_array_el
+   87: get_loc2
+   88: get_loc0
+   89: get_array_el
+   90: mul
+   91: add
+   92: put_loc8  5
+   94: get_loc8  4
+   96: get_loc2
+   97: get_loc0
+   98: get_array_el
+   99: get_loc2
+  100: get_loc0
+  101: get_array_el
+  102: mul
+  103: add
+  104: put_loc8  4
+  106: inc_loc  0
+  108: goto8  -32
+  110: get_var  "Math"
+  115: get_field2  "sqrt"
+  120: get_loc8  5
+  122: get_loc8  4
+  124: div
+  125: tail_call_method  1
+var count: 6
+  i: normal
+  u: normal
+  v: normal
+  w: normal
+  vv: normal
+  vBv: normal
+Constant pool
+length: 0
+

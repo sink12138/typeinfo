@@ -1,0 +1,378 @@
+-- JSFunction <eval> @ 0x55d5f0be9750
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "last", 00000000
+    6: check_define_var  "A", 00000000
+   12: check_define_var  "C", 00000000
+   18: check_define_var  "M", 00000000
+   24: check_define_var  "rand", 01000000
+   30: check_define_var  "ALU", 00000000
+   36: check_define_var  "IUB", 00000000
+   42: check_define_var  "HomoSap", 00000000
+   48: check_define_var  "makeCumulative", 01000000
+   54: check_define_var  "fastaRepeat", 01000000
+   60: check_define_var  "fastaRandom", 01000000
+   66: check_define_var  "ret", 00000000
+   72: check_define_var  "count", 00000000
+   78: check_define_var  "expected", 00000000
+   84: define_var  "last", 00000000
+   90: define_var  "A", 00000000
+   96: define_var  "C", 00000000
+  102: define_var  "M", 00000000
+  108: fclosure8  0
+  110: define_func  "rand", 00000000
+  116: define_var  "ALU", 00000000
+  122: define_var  "IUB", 00000000
+  128: define_var  "HomoSap", 00000000
+  134: fclosure8  20
+  136: define_func  "makeCumulative", 00000000
+  142: fclosure8  21
+  144: define_func  "fastaRepeat", 00000000
+  150: fclosure8  22
+  152: define_func  "fastaRandom", 00000000
+  158: define_var  "ret", 00000000
+  164: define_var  "count", 00000000
+  170: define_var  "expected", 00000000
+  176: push_i8  42
+  178: put_var  "last"
+  183: push_i16  3877
+  186: put_var  "A"
+  191: push_i16  29573
+  194: put_var  "C"
+  199: push_i32  139968
+  204: put_var  "M"
+  209: push_atom_value  "GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGG"
+  214: push_atom_value  "GAGGCCGAGGCGGGCGGATCACCTGAGGTCAGGAGTTCGAGA"
+  219: add
+  220: push_atom_value  "CCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACTAAAAAT"
+  225: add
+  226: push_atom_value  "ACAAAAATTAGCCGGGCGTGGTGGCGCGCGCCTGTAATCCCA"
+  231: add
+  232: push_atom_value  "GCTACTCGGGAGGCTGAGGCAGGAGAATCGCTTGAACCCGGG"
+  237: add
+  238: push_atom_value  "AGGCGGAGGTTGCAGTGAGCCGAGATCGCGCCACTGCACTCC"
+  243: add
+  244: push_atom_value  "AGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA"
+  249: add
+  250: put_var  "ALU"
+  255: object
+  256: push_const8  1
+  258: define_field  "a"
+  263: push_const8  2
+  265: define_field  "c"
+  270: push_const8  3
+  272: define_field  "g"
+  277: push_const8  4
+  279: define_field  "t"
+  284: push_const8  5
+  286: define_field  "B"
+  291: push_const8  6
+  293: define_field  "D"
+  298: push_const8  7
+  300: define_field  "H"
+  305: push_const8  8
+  307: define_field  "K"
+  312: push_const8  9
+  314: define_field  "M"
+  319: push_const8  10
+  321: define_field  "N"
+  326: push_const8  11
+  328: define_field  "R"
+  333: push_const8  12
+  335: define_field  "S"
+  340: push_const8  13
+  342: define_field  "V"
+  347: push_const8  14
+  349: define_field  "W"
+  354: push_const8  15
+  356: define_field  "Y"
+  361: put_var  "IUB"
+  366: object
+  367: push_const8  16
+  369: define_field  "a"
+  374: push_const8  17
+  376: define_field  "c"
+  381: push_const8  18
+  383: define_field  "g"
+  388: push_const8  19
+  390: define_field  "t"
+  395: put_var  "HomoSap"
+  400: push_0
+  401: put_var  "ret"
+  406: push_7
+  407: put_var  "count"
+  412: get_var  "fastaRepeat"
+  417: push_2
+  418: get_var  "count"
+  423: mul
+  424: push_i32  100000
+  429: mul
+  430: get_var  "ALU"
+  435: call2
+  436: put_loc0
+  437: get_var  "fastaRandom"
+  442: push_3
+  443: get_var  "count"
+  448: mul
+  449: push_i16  1000
+  452: mul
+  453: get_var  "IUB"
+  458: call2
+  459: put_loc0
+  460: get_var  "fastaRandom"
+  465: push_5
+  466: get_var  "count"
+  471: mul
+  472: push_i16  1000
+  475: mul
+  476: get_var  "HomoSap"
+  481: call2
+  482: put_loc0
+  483: push_i32  1456000
+  488: put_var  "expected"
+  493: undefined
+  494: put_loc0
+  495: get_var  "ret"
+  500: get_var  "expected"
+  505: neq
+  506: if_false8  25
+  508: push_atom_value  "ERROR: bad result: expected "
+  513: get_var  "expected"
+  518: add
+  519: push_atom_value  " but got "
+  524: add
+  525: get_var  "ret"
+  530: add
+  531: throw
+  532: get_loc0
+  533: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 23
+    0: ptr 0x55d5f0be72d0    1:     2:     3:     4:     5:     6:     7:     8:     9:    10:    11:    12:    13:    14:    15:    16:    17:    18:    19:    20: ptr 0x55d5f0bd5690   21: ptr 0x55d5f0bc4240   22: ptr 0x55d5f0be8f90
+-- JSFunction rand @ 0x55d5f0be72d0
+source ptr: 0x55d5f0be5220, ln: 8
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: get_var  "last"
+    5: get_var  "A"
+   10: mul
+   11: get_var  "C"
+   16: add
+   17: get_var  "M"
+   22: mod
+   23: dup
+   24: put_var  "last"
+   29: drop
+   30: get_arg0
+   31: get_var  "last"
+   36: mul
+   37: get_var  "M"
+   42: div
+   43: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction makeCumulative @ 0x55d5f0bd5690
+source ptr: 0x55d5f0bdfb60, ln: 36
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: null
+    1: put_loc0
+    2: get_arg0
+    3: for_in_start
+    4: goto8  17
+    6: put_loc1
+    7: get_loc0
+    8: if_false8  11
+   10: get_arg0
+   11: get_loc1
+   12: to_propkey2
+   13: dup2
+   14: get_array_el
+   15: get_arg0
+   16: get_loc0
+   17: get_array_el
+   18: add
+   19: put_array_el
+   20: get_loc1
+   21: put_loc0
+   22: for_in_next
+   23: if_false8  -18
+   25: drop
+   26: return_undef
+var count: 2
+  last: normal
+  c: normal
+Constant pool
+length: 0
+
+-- JSFunction fastaRepeat @ 0x55d5f0bc4240
+source ptr: 0x55d5f0be6e10, ln: 44
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: push_i8  60
+    4: put_loc1
+    5: get_arg0
+    6: push_0
+    7: gt
+    8: if_false8  97
+   10: get_arg0
+   11: get_loc1
+   12: lt
+   13: if_false8  3
+   15: get_arg0
+   16: put_loc1
+   17: get_loc0
+   18: get_loc1
+   19: add
+   20: get_arg1
+   21: get_length
+   22: lt
+   23: if_false8  33
+   25: get_var  "ret"
+   30: get_arg1
+   31: get_field2  "substring"
+   36: get_loc0
+   37: get_loc0
+   38: get_loc1
+   39: add
+   40: call_method  2
+   43: get_length
+   44: add
+   45: dup
+   46: put_var  "ret"
+   51: drop
+   52: get_loc1
+   53: add_loc  0
+   55: goto8  44
+   57: get_arg1
+   58: get_field2  "substring"
+   63: get_loc0
+   64: call_method  1
+   67: put_loc2
+   68: get_loc1
+   69: get_loc2
+   70: get_length
+   71: sub
+   72: put_loc0
+   73: get_var  "ret"
+   78: get_loc2
+   79: get_arg1
+   80: get_field2  "substring"
+   85: push_0
+   86: get_loc0
+   87: call_method  2
+   90: add
+   91: get_length
+   92: add
+   93: dup
+   94: put_var  "ret"
+   99: drop
+  100: get_arg0
+  101: get_loc1
+  102: sub
+  103: put_arg0
+  104: goto8  -100
+  106: return_undef
+var count: 3
+  seqi: normal
+  lenOut: normal
+  s: normal
+Constant pool
+length: 0
+
+-- JSFunction fastaRandom @ 0x55d5f0be8f90
+source ptr: 0x55d5f0be7a20, ln: 60
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: push_i8  60
+    8: call_constructor  1
+   11: put_loc0
+   12: get_var  "makeCumulative"
+   17: get_arg1
+   18: call1
+   19: drop
+   20: get_arg0
+   21: push_0
+   22: gt
+   23: if_false8  92
+   25: get_arg0
+   26: get_loc0
+   27: get_length
+   28: lt
+   29: if_false8  12
+   31: get_var  "Array"
+   36: dup
+   37: get_arg0
+   38: call_constructor  1
+   41: put_loc0
+   42: push_0
+   43: put_loc1
+   44: get_loc1
+   45: get_loc0
+   46: get_length
+   47: lt
+   48: if_false8  36
+   50: get_var  "rand"
+   55: push_1
+   56: call1
+   57: put_loc2
+   58: get_arg1
+   59: for_in_start
+   60: goto8  15
+   62: put_loc3
+   63: get_loc2
+   64: get_arg1
+   65: get_loc3
+   66: get_array_el
+   67: lt
+   68: if_false8  7
+   70: get_loc0
+   71: get_loc1
+   72: get_loc3
+   73: put_array_el
+   74: goto8  5
+   76: for_in_next
+   77: if_false8  -16
+   79: drop
+   80: drop
+   81: inc_loc  1
+   83: goto8  -40
+   85: get_var  "ret"
+   90: get_loc0
+   91: get_field2  "join"
+   96: push_empty_string
+   97: call_method  1
+  100: get_length
+  101: add
+  102: dup
+  103: put_var  "ret"
+  108: drop
+  109: get_arg0
+  110: get_loc0
+  111: get_length
+  112: sub
+  113: put_arg0
+  114: goto8  -95
+  116: return_undef
+var count: 4
+  line: normal
+  i: normal
+  r: normal
+  c: normal
+Constant pool
+length: 0
+

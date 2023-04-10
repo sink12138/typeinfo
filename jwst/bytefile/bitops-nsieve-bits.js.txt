@@ -1,0 +1,222 @@
+-- JSFunction <eval> @ 0x55a3cb3d4190
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "pad", 01000000
+    6: check_define_var  "primes", 01000000
+   12: check_define_var  "sieve", 01000000
+   18: check_define_var  "result", 00000000
+   24: check_define_var  "sum", 00000000
+   30: check_define_var  "i", 00000000
+   36: check_define_var  "expected", 00000000
+   42: fclosure8  0
+   44: define_func  "pad", 00000000
+   50: fclosure8  1
+   52: define_func  "primes", 00000000
+   58: fclosure8  2
+   60: define_func  "sieve", 00000000
+   66: define_var  "result", 00000000
+   72: define_var  "sum", 00000000
+   78: define_var  "i", 00000000
+   84: define_var  "expected", 00000000
+   90: get_var  "sieve"
+   95: call0
+   96: put_var  "result"
+  101: push_0
+  102: put_var  "sum"
+  107: undefined
+  108: put_loc0
+  109: push_0
+  110: put_var  "i"
+  115: get_var  "i"
+  120: get_var  "result"
+  125: get_length
+  126: lt
+  127: if_false8  40
+  129: get_var  "sum"
+  134: get_var  "result"
+  139: get_var  "i"
+  144: get_array_el
+  145: add
+  146: dup
+  147: put_var  "sum"
+  152: put_loc0
+  153: get_var  "i"
+  158: inc
+  159: dup
+  160: put_var  "i"
+  165: drop
+  166: goto8  -52
+  168: push_const8  3
+  170: neg
+  171: put_var  "expected"
+  176: undefined
+  177: put_loc0
+  178: get_var  "sum"
+  183: get_var  "expected"
+  188: neq
+  189: if_false8  25
+  191: push_atom_value  "ERROR: bad result: expected "
+  196: get_var  "expected"
+  201: add
+  202: push_atom_value  " but got "
+  207: add
+  208: get_var  "sum"
+  213: add
+  214: throw
+  215: get_loc0
+  216: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 4
+    0: ptr 0x55a3cb42f210    1: ptr 0x55a3cb3bc5b0    2: ptr 0x55a3cb43fe50    3: 
+-- JSFunction pad @ 0x55a3cb42f210
+source ptr: 0x55a3cb42d230, ln: 6
+arg count: 2
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: get_field2  "toString"
+    6: call_method  0
+    9: put_loc0
+   10: get_loc0
+   11: get_length
+   12: get_arg1
+   13: lt
+   14: if_false8  11
+   16: push_atom_value  " "
+   21: get_loc0
+   22: add
+   23: put_loc0
+   24: goto8  -15
+   26: get_loc0
+   27: return
+var count: 1
+  s: normal
+Constant pool
+length: 0
+
+-- JSFunction primes @ 0x55a3cb3bc5b0
+source ptr: 0x55a3cb4369a0, ln: 12
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: push_0
+    1: put_loc1
+    2: push_i16  10000
+    5: get_arg1
+    6: shl
+    7: set_loc2
+    8: push_i8  31
+   10: add
+   11: push_5
+   12: sar
+   13: put_loc3
+   14: push_0
+   15: put_loc0
+   16: get_loc0
+   17: get_loc3
+   18: lt
+   19: if_false8  10
+   21: get_arg0
+   22: get_loc0
+   23: push_const8  0
+   25: put_array_el
+   26: inc_loc  0
+   28: goto8  -13
+   30: push_2
+   31: put_loc0
+   32: get_loc0
+   33: get_loc2
+   34: lt
+   35: if_false8  55
+   37: get_arg0
+   38: get_loc0
+   39: push_5
+   40: sar
+   41: get_array_el
+   42: push_1
+   43: get_loc0
+   44: push_i8  31
+   46: and
+   47: shl
+   48: and
+   49: if_false8  37
+   51: get_loc0
+   52: get_loc0
+   53: add
+   54: put_loc8  4
+   56: get_loc8  4
+   58: get_loc2
+   59: lt
+   60: if_false8  24
+   62: get_arg0
+   63: get_loc8  4
+   65: push_5
+   66: sar
+   67: to_propkey2
+   68: dup2
+   69: get_array_el
+   70: push_1
+   71: get_loc8  4
+   73: push_i8  31
+   75: and
+   76: shl
+   77: not
+   78: and
+   79: put_array_el
+   80: get_loc0
+   81: add_loc  4
+   83: goto8  -28
+   85: inc_loc  1
+   87: inc_loc  0
+   89: goto8  -58
+   91: return_undef
+var count: 5
+  i: normal
+  count: normal
+  m: normal
+  size: normal
+  j: normal
+Constant pool
+length: 1
+    0: 
+-- JSFunction sieve @ 0x55a3cb43fe50
+source ptr: 0x55a3cb440070, ln: 25
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: push_4
+    1: put_loc0
+    2: get_loc0
+    3: push_4
+    4: lte
+    5: if_false8  34
+    7: get_var  "Array"
+   12: dup
+   13: push_i16  10000
+   16: get_loc0
+   17: shl
+   18: push_i8  31
+   20: add
+   21: push_5
+   22: sar
+   23: call_constructor  1
+   26: put_loc1
+   27: get_var  "primes"
+   32: get_loc1
+   33: get_loc0
+   34: call2
+   35: drop
+   36: inc_loc  0
+   38: goto8  -37
+   40: get_loc1
+   41: return
+var count: 2
+  i: normal
+  isPrime: normal
+Constant pool
+length: 0
+

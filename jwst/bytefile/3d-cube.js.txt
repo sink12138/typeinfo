@@ -1,0 +1,2179 @@
+-- JSFunction <eval> @ 0x55c1c45639e0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "Q", 00000000
+    6: check_define_var  "MTrans", 00000000
+   12: check_define_var  "MQube", 00000000
+   18: check_define_var  "I", 00000000
+   24: check_define_var  "Origin", 00000000
+   30: check_define_var  "Testing", 00000000
+   36: check_define_var  "LoopTimer", 00000000
+   42: check_define_var  "validation", 00000000
+   48: check_define_var  "DisplArea", 00000000
+   54: check_define_var  "DrawLine", 01000000
+   60: check_define_var  "CalcCross", 01000000
+   66: check_define_var  "CalcNormal", 01000000
+   72: check_define_var  "CreateP", 01000000
+   78: check_define_var  "MMulti", 01000000
+   84: check_define_var  "VMulti", 01000000
+   90: check_define_var  "VMulti2", 01000000
+   96: check_define_var  "MAdd", 01000000
+  102: check_define_var  "Translate", 01000000
+  108: check_define_var  "RotateX", 01000000
+  114: check_define_var  "RotateY", 01000000
+  120: check_define_var  "RotateZ", 01000000
+  126: check_define_var  "DrawQube", 01000000
+  132: check_define_var  "Loop", 01000000
+  138: check_define_var  "Init", 01000000
+  144: check_define_var  "i", 00000000
+  150: define_var  "Q", 00000000
+  156: define_var  "MTrans", 00000000
+  162: define_var  "MQube", 00000000
+  168: define_var  "I", 00000000
+  174: define_var  "Origin", 00000000
+  180: define_var  "Testing", 00000000
+  186: define_var  "LoopTimer", 00000000
+  192: define_var  "validation", 00000000
+  198: define_var  "DisplArea", 00000000
+  204: fclosure8  4
+  206: define_func  "DrawLine", 00000000
+  212: fclosure8  5
+  214: define_func  "CalcCross", 00000000
+  220: fclosure8  6
+  222: define_func  "CalcNormal", 00000000
+  228: fclosure8  7
+  230: define_func  "CreateP", 00000000
+  236: fclosure8  8
+  238: define_func  "MMulti", 00000000
+  244: fclosure8  9
+  246: define_func  "VMulti", 00000000
+  252: fclosure8  10
+  254: define_func  "VMulti2", 00000000
+  260: fclosure8  11
+  262: define_func  "MAdd", 00000000
+  268: fclosure8  12
+  270: define_func  "Translate", 00000000
+  276: fclosure8  13
+  278: define_func  "RotateX", 00000000
+  284: fclosure8  14
+  286: define_func  "RotateY", 00000000
+  292: fclosure8  15
+  294: define_func  "RotateZ", 00000000
+  300: fclosure8  16
+  302: define_func  "DrawQube", 00000000
+  308: fclosure8  17
+  310: define_func  "Loop", 00000000
+  316: fclosure8  18
+  318: define_func  "Init", 00000000
+  324: define_var  "i", 00000000
+  330: get_var  "Array"
+  335: dup
+  336: call_constructor  0
+  339: put_var  "Q"
+  344: get_var  "Array"
+  349: dup
+  350: call_constructor  0
+  353: put_var  "MTrans"
+  358: get_var  "Array"
+  363: dup
+  364: call_constructor  0
+  367: put_var  "MQube"
+  372: get_var  "Array"
+  377: dup
+  378: call_constructor  0
+  381: put_var  "I"
+  386: get_var  "Object"
+  391: dup
+  392: call_constructor  0
+  395: put_var  "Origin"
+  400: get_var  "Object"
+  405: dup
+  406: call_constructor  0
+  409: put_var  "Testing"
+  414: object
+  415: push_const8  0
+  417: define_field  "20"
+  422: push_const8  1
+  424: define_field  "40"
+  429: push_const8  2
+  431: define_field  "80"
+  436: push_const8  3
+  438: define_field  "160"
+  443: put_var  "validation"
+  448: get_var  "Object"
+  453: dup
+  454: call_constructor  0
+  457: put_var  "DisplArea"
+  462: get_var  "DisplArea"
+  467: push_i16  300
+  470: insert2
+  471: put_field  "Width"
+  476: put_loc0
+  477: get_var  "DisplArea"
+  482: push_i16  300
+  485: insert2
+  486: put_field  "Height"
+  491: put_loc0
+  492: undefined
+  493: put_loc0
+  494: push_i8  20
+  496: put_var  "i"
+  501: get_var  "i"
+  506: push_i16  160
+  509: lte
+  510: if_false8  29
+  512: get_var  "Init"
+  517: get_var  "i"
+  522: call1
+  523: put_loc0
+  524: get_var  "i"
+  529: push_2
+  530: mul
+  531: dup
+  532: put_var  "i"
+  537: drop
+  538: goto8  -38
+  540: null
+  541: dup
+  542: put_var  "Q"
+  547: put_loc0
+  548: null
+  549: dup
+  550: put_var  "MTrans"
+  555: put_loc0
+  556: null
+  557: dup
+  558: put_var  "MQube"
+  563: put_loc0
+  564: null
+  565: dup
+  566: put_var  "I"
+  571: put_loc0
+  572: null
+  573: dup
+  574: put_var  "Origin"
+  579: put_loc0
+  580: null
+  581: dup
+  582: put_var  "Testing"
+  587: put_loc0
+  588: null
+  589: dup
+  590: put_var  "LoopTime"
+  595: put_loc0
+  596: null
+  597: dup
+  598: put_var  "DisplArea"
+  603: set_loc0
+  604: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 19
+    0:     1:     2:     3:     4: ptr 0x55c1c455a460    5: ptr 0x55c1c45584e0    6: ptr 0x55c1c45575e0    7: ptr 0x55c1c4545e70    8: ptr 0x55c1c454d600    9: ptr 0x55c1c44eaee0   10: ptr 0x55c1c455c520   11: ptr 0x55c1c45504e0   12: ptr 0x55c1c455cce0   13: ptr 0x55c1c455d0d0   14: ptr 0x55c1c455a2d0   15: ptr 0x55c1c4531200   16: ptr 0x55c1c4560ca0   17: ptr 0x55c1c4544b60   18: ptr 0x55c1c4560550
+-- JSFunction DrawLine @ 0x55c1c455a460
+source ptr: 0x55c1c45594e0, ln: 24
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_field  "V"
+    6: push_0
+    7: get_array_el
+    8: put_loc0
+    9: get_arg1
+   10: get_field  "V"
+   15: push_0
+   16: get_array_el
+   17: put_loc1
+   18: get_arg0
+   19: get_field  "V"
+   24: push_1
+   25: get_array_el
+   26: put_loc2
+   27: get_arg1
+   28: get_field  "V"
+   33: push_1
+   34: get_array_el
+   35: put_loc3
+   36: get_var  "Math"
+   41: get_field2  "abs"
+   46: get_loc1
+   47: get_loc0
+   48: sub
+   49: call_method  1
+   52: put_loc8  4
+   54: get_var  "Math"
+   59: get_field2  "abs"
+   64: get_loc3
+   65: get_loc2
+   66: sub
+   67: call_method  1
+   70: put_loc8  5
+   72: get_loc0
+   73: put_loc8  6
+   75: get_loc2
+   76: put_loc8  7
+   78: get_loc1
+   79: get_loc0
+   80: gte
+   81: if_false8  9
+   83: push_1
+   84: put_loc8  8
+   86: push_1
+   87: put_loc8  10
+   89: goto8  7
+   91: push_minus1
+   92: put_loc8  8
+   94: push_minus1
+   95: put_loc8  10
+   97: get_loc3
+   98: get_loc2
+   99: gte
+  100: if_false8  9
+  102: push_1
+  103: put_loc8  9
+  105: push_1
+  106: put_loc8  11
+  108: goto8  7
+  110: push_minus1
+  111: put_loc8  9
+  113: push_minus1
+  114: put_loc8  11
+  116: get_loc8  4
+  118: get_loc8  5
+  120: gte
+  121: if_false8  27
+  123: push_0
+  124: put_loc8  8
+  126: push_0
+  127: put_loc8  11
+  129: get_loc8  4
+  131: put_loc8  12
+  133: get_loc8  4
+  135: push_2
+  136: div
+  137: put_loc8  13
+  139: get_loc8  5
+  141: put_loc8  14
+  143: get_loc8  4
+  145: put_loc8  15
+  147: goto8  25
+  149: push_0
+  150: put_loc8  10
+  152: push_0
+  153: put_loc8  9
+  155: get_loc8  5
+  157: put_loc8  12
+  159: get_loc8  5
+  161: push_2
+  162: div
+  163: put_loc8  13
+  165: get_loc8  4
+  167: put_loc8  14
+  169: get_loc8  5
+  171: put_loc8  15
+  173: get_var  "Math"
+  178: get_field2  "round"
+  183: get_var  "Q"
+  188: get_field  "LastPx"
+  193: get_loc8  15
+  195: add
+  196: call_method  1
+  199: put_loc8  15
+  201: get_var  "Q"
+  206: get_field  "LastPx"
+  211: put_loc8  16
+  213: get_loc8  16
+  215: get_loc8  15
+  217: lt
+  218: if_false8  39
+  220: get_loc8  14
+  222: add_loc  13
+  224: get_loc8  13
+  226: get_loc8  12
+  228: gte
+  229: if_false8  16
+  231: get_loc8  13
+  233: get_loc8  12
+  235: sub
+  236: put_loc8  13
+  238: get_loc8  8
+  240: add_loc  6
+  242: get_loc8  9
+  244: add_loc  7
+  246: get_loc8  10
+  248: add_loc  6
+  250: get_loc8  11
+  252: add_loc  7
+  254: inc_loc  16
+  256: goto8  -44
+  258: get_var  "Q"
+  263: get_loc8  15
+  265: put_field  "LastPx"
+  270: return_undef
+var count: 17
+  x1: normal
+  x2: normal
+  y1: normal
+  y2: normal
+  dx: normal
+  dy: normal
+  x: normal
+  y: normal
+  IncX1: normal
+  IncY1: normal
+  IncX2: normal
+  IncY2: normal
+  Den: normal
+  Num: normal
+  NumAdd: normal
+  NumPix: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction CalcCross @ 0x55c1c45584e0
+source ptr: 0x55c1c455a9e0, ln: 77
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: call_constructor  0
+    9: set_loc0
+   10: push_0
+   11: to_propkey2
+   12: get_arg0
+   13: push_1
+   14: get_array_el
+   15: get_arg1
+   16: push_2
+   17: get_array_el
+   18: mul
+   19: get_arg0
+   20: push_2
+   21: get_array_el
+   22: get_arg1
+   23: push_1
+   24: get_array_el
+   25: mul
+   26: sub
+   27: put_array_el
+   28: get_loc0
+   29: push_1
+   30: to_propkey2
+   31: get_arg0
+   32: push_2
+   33: get_array_el
+   34: get_arg1
+   35: push_0
+   36: get_array_el
+   37: mul
+   38: get_arg0
+   39: push_0
+   40: get_array_el
+   41: get_arg1
+   42: push_2
+   43: get_array_el
+   44: mul
+   45: sub
+   46: put_array_el
+   47: get_loc0
+   48: push_2
+   49: to_propkey2
+   50: get_arg0
+   51: push_0
+   52: get_array_el
+   53: get_arg1
+   54: push_1
+   55: get_array_el
+   56: mul
+   57: get_arg0
+   58: push_1
+   59: get_array_el
+   60: get_arg1
+   61: push_0
+   62: get_array_el
+   63: mul
+   64: sub
+   65: put_array_el
+   66: get_loc0
+   67: return
+var count: 1
+  Cross: normal
+Constant pool
+length: 0
+
+-- JSFunction CalcNormal @ 0x55c1c45575e0
+source ptr: 0x55c1c455b0e0, ln: 85
+arg count: 3
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: call_constructor  0
+    9: put_loc0
+   10: get_var  "Array"
+   15: dup
+   16: call_constructor  0
+   19: put_loc1
+   20: push_0
+   21: put_loc2
+   22: get_loc2
+   23: push_3
+   24: lt
+   25: if_false8  27
+   27: get_loc0
+   28: get_loc2
+   29: to_propkey2
+   30: get_arg0
+   31: get_loc2
+   32: get_array_el
+   33: get_arg1
+   34: get_loc2
+   35: get_array_el
+   36: sub
+   37: put_array_el
+   38: get_loc1
+   39: get_loc2
+   40: to_propkey2
+   41: get_arg2
+   42: get_loc2
+   43: get_array_el
+   44: get_arg1
+   45: get_loc2
+   46: get_array_el
+   47: sub
+   48: put_array_el
+   49: inc_loc  2
+   51: goto8  -30
+   53: get_var  "CalcCross"
+   58: get_loc0
+   59: get_loc1
+   60: call2
+   61: put_loc0
+   62: get_var  "Math"
+   67: get_field2  "sqrt"
+   72: get_loc0
+   73: push_0
+   74: get_array_el
+   75: get_loc0
+   76: push_0
+   77: get_array_el
+   78: mul
+   79: get_loc0
+   80: push_1
+   81: get_array_el
+   82: get_loc0
+   83: push_1
+   84: get_array_el
+   85: mul
+   86: add
+   87: get_loc0
+   88: push_2
+   89: get_array_el
+   90: get_loc0
+   91: push_2
+   92: get_array_el
+   93: mul
+   94: add
+   95: call_method  1
+   98: put_loc3
+   99: push_0
+  100: put_loc2
+  101: get_loc2
+  102: push_3
+  103: lt
+  104: if_false8  14
+  106: get_loc0
+  107: get_loc2
+  108: to_propkey2
+  109: get_loc0
+  110: get_loc2
+  111: get_array_el
+  112: get_loc3
+  113: div
+  114: put_array_el
+  115: inc_loc  2
+  117: goto8  -17
+  119: get_loc0
+  120: push_3
+  121: push_1
+  122: put_array_el
+  123: get_loc0
+  124: return
+var count: 4
+  A: normal
+  B: normal
+  i: normal
+  Length: normal
+Constant pool
+length: 0
+
+-- JSFunction CreateP @ 0x55c1c4545e70
+source ptr: 0x55c1c4545d40, ln: 98
+arg count: 3
+stack size: 5
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: get_arg1
+    5: get_arg2
+    6: push_1
+    7: array_from  4
+   10: put_field  "V"
+   15: return_undef
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction MMulti @ 0x55c1c454d600
+source ptr: 0x55c1c45539f0, ln: 103
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: array_from  0
+    3: array_from  0
+    6: array_from  0
+    9: array_from  0
+   12: array_from  4
+   15: put_loc0
+   16: push_0
+   17: put_loc1
+   18: push_0
+   19: put_loc2
+   20: get_loc1
+   21: push_4
+   22: lt
+   23: if_false8  69
+   25: push_0
+   26: put_loc2
+   27: get_loc2
+   28: push_4
+   29: lt
+   30: if_false8  58
+   32: get_loc0
+   33: get_loc1
+   34: get_array_el
+   35: get_loc2
+   36: to_propkey2
+   37: get_arg0
+   38: get_loc1
+   39: get_array_el
+   40: push_0
+   41: get_array_el
+   42: get_arg1
+   43: push_0
+   44: get_array_el
+   45: get_loc2
+   46: get_array_el
+   47: mul
+   48: get_arg0
+   49: get_loc1
+   50: get_array_el
+   51: push_1
+   52: get_array_el
+   53: get_arg1
+   54: push_1
+   55: get_array_el
+   56: get_loc2
+   57: get_array_el
+   58: mul
+   59: add
+   60: get_arg0
+   61: get_loc1
+   62: get_array_el
+   63: push_2
+   64: get_array_el
+   65: get_arg1
+   66: push_2
+   67: get_array_el
+   68: get_loc2
+   69: get_array_el
+   70: mul
+   71: add
+   72: get_arg0
+   73: get_loc1
+   74: get_array_el
+   75: push_3
+   76: get_array_el
+   77: get_arg1
+   78: push_3
+   79: get_array_el
+   80: get_loc2
+   81: get_array_el
+   82: mul
+   83: add
+   84: put_array_el
+   85: inc_loc  2
+   87: goto8  -61
+   89: inc_loc  1
+   91: goto8  -72
+   93: get_loc0
+   94: return
+var count: 3
+  M: normal
+  i: normal
+  j: normal
+Constant pool
+length: 0
+
+-- JSFunction VMulti @ 0x55c1c44eaee0
+source ptr: 0x55c1c455c750, ln: 115
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: call_constructor  0
+    9: put_loc0
+   10: push_0
+   11: put_loc1
+   12: get_loc1
+   13: push_4
+   14: lt
+   15: if_false8  48
+   17: get_loc0
+   18: get_loc1
+   19: to_propkey2
+   20: get_arg0
+   21: get_loc1
+   22: get_array_el
+   23: push_0
+   24: get_array_el
+   25: get_arg1
+   26: push_0
+   27: get_array_el
+   28: mul
+   29: get_arg0
+   30: get_loc1
+   31: get_array_el
+   32: push_1
+   33: get_array_el
+   34: get_arg1
+   35: push_1
+   36: get_array_el
+   37: mul
+   38: add
+   39: get_arg0
+   40: get_loc1
+   41: get_array_el
+   42: push_2
+   43: get_array_el
+   44: get_arg1
+   45: push_2
+   46: get_array_el
+   47: mul
+   48: add
+   49: get_arg0
+   50: get_loc1
+   51: get_array_el
+   52: push_3
+   53: get_array_el
+   54: get_arg1
+   55: push_3
+   56: get_array_el
+   57: mul
+   58: add
+   59: put_array_el
+   60: inc_loc  1
+   62: goto8  -51
+   64: get_loc0
+   65: return
+var count: 2
+  Vect: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction VMulti2 @ 0x55c1c455c520
+source ptr: 0x55c1c45570a0, ln: 122
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: call_constructor  0
+    9: put_loc0
+   10: push_0
+   11: put_loc1
+   12: get_loc1
+   13: push_3
+   14: lt
+   15: if_false8  38
+   17: get_loc0
+   18: get_loc1
+   19: to_propkey2
+   20: get_arg0
+   21: get_loc1
+   22: get_array_el
+   23: push_0
+   24: get_array_el
+   25: get_arg1
+   26: push_0
+   27: get_array_el
+   28: mul
+   29: get_arg0
+   30: get_loc1
+   31: get_array_el
+   32: push_1
+   33: get_array_el
+   34: get_arg1
+   35: push_1
+   36: get_array_el
+   37: mul
+   38: add
+   39: get_arg0
+   40: get_loc1
+   41: get_array_el
+   42: push_2
+   43: get_array_el
+   44: get_arg1
+   45: push_2
+   46: get_array_el
+   47: mul
+   48: add
+   49: put_array_el
+   50: inc_loc  1
+   52: goto8  -41
+   54: get_loc0
+   55: return
+var count: 2
+  Vect: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction MAdd @ 0x55c1c45504e0
+source ptr: 0x55c1c455d490, ln: 130
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: array_from  0
+    3: array_from  0
+    6: array_from  0
+    9: array_from  0
+   12: array_from  4
+   15: put_loc0
+   16: push_0
+   17: put_loc1
+   18: push_0
+   19: put_loc2
+   20: get_loc1
+   21: push_4
+   22: lt
+   23: if_false8  33
+   25: push_0
+   26: put_loc2
+   27: get_loc2
+   28: push_4
+   29: lt
+   30: if_false8  22
+   32: get_loc0
+   33: get_loc1
+   34: get_array_el
+   35: get_loc2
+   36: to_propkey2
+   37: get_arg0
+   38: get_loc1
+   39: get_array_el
+   40: get_loc2
+   41: get_array_el
+   42: get_arg1
+   43: get_loc1
+   44: get_array_el
+   45: get_loc2
+   46: get_array_el
+   47: add
+   48: put_array_el
+   49: inc_loc  2
+   51: goto8  -25
+   53: inc_loc  1
+   55: goto8  -36
+   57: get_loc0
+   58: return
+var count: 3
+  M: normal
+  i: normal
+  j: normal
+Constant pool
+length: 0
+
+-- JSFunction Translate @ 0x55c1c455cce0
+source ptr: 0x55c1c4550330, ln: 141
+arg count: 4
+stack size: 7
+Funtion bytecode:
+    0: push_1
+    1: push_0
+    2: push_0
+    3: get_arg1
+    4: array_from  4
+    7: push_0
+    8: push_1
+    9: push_0
+   10: get_arg2
+   11: array_from  4
+   14: push_0
+   15: push_0
+   16: push_1
+   17: get_arg3
+   18: array_from  4
+   21: push_0
+   22: push_0
+   23: push_0
+   24: push_1
+   25: array_from  4
+   28: array_from  4
+   31: put_loc0
+   32: get_var  "MMulti"
+   37: get_loc0
+   38: get_arg0
+   39: tail_call  2
+var count: 1
+  T: normal
+Constant pool
+length: 0
+
+-- JSFunction RotateX @ 0x55c1c455d0d0
+source ptr: 0x55c1c45482b0, ln: 151
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_arg1
+    1: set_loc0
+    2: get_var  "Math"
+    7: get_field  "PI"
+   12: push_i16  180
+   15: div
+   16: mul
+   17: put_loc0
+   18: get_var  "Math"
+   23: get_field2  "cos"
+   28: get_loc0
+   29: call_method  1
+   32: put_loc1
+   33: get_var  "Math"
+   38: get_field2  "sin"
+   43: get_loc0
+   44: call_method  1
+   47: put_loc2
+   48: push_1
+   49: push_0
+   50: push_0
+   51: push_0
+   52: array_from  4
+   55: push_0
+   56: get_loc1
+   57: get_loc2
+   58: neg
+   59: push_0
+   60: array_from  4
+   63: push_0
+   64: get_loc2
+   65: get_loc1
+   66: push_0
+   67: array_from  4
+   70: push_0
+   71: push_0
+   72: push_0
+   73: push_1
+   74: array_from  4
+   77: array_from  4
+   80: put_loc3
+   81: get_var  "MMulti"
+   86: get_loc3
+   87: get_arg0
+   88: tail_call  2
+var count: 4
+  a: normal
+  Cos: normal
+  Sin: normal
+  R: normal
+Constant pool
+length: 0
+
+-- JSFunction RotateY @ 0x55c1c455a2d0
+source ptr: 0x55c1c4545f50, ln: 165
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_arg1
+    1: set_loc0
+    2: get_var  "Math"
+    7: get_field  "PI"
+   12: push_i16  180
+   15: div
+   16: mul
+   17: put_loc0
+   18: get_var  "Math"
+   23: get_field2  "cos"
+   28: get_loc0
+   29: call_method  1
+   32: put_loc1
+   33: get_var  "Math"
+   38: get_field2  "sin"
+   43: get_loc0
+   44: call_method  1
+   47: put_loc2
+   48: get_loc1
+   49: push_0
+   50: get_loc2
+   51: push_0
+   52: array_from  4
+   55: push_0
+   56: push_1
+   57: push_0
+   58: push_0
+   59: array_from  4
+   62: get_loc2
+   63: neg
+   64: push_0
+   65: get_loc1
+   66: push_0
+   67: array_from  4
+   70: push_0
+   71: push_0
+   72: push_0
+   73: push_1
+   74: array_from  4
+   77: array_from  4
+   80: put_loc3
+   81: get_var  "MMulti"
+   86: get_loc3
+   87: get_arg0
+   88: tail_call  2
+var count: 4
+  a: normal
+  Cos: normal
+  Sin: normal
+  R: normal
+Constant pool
+length: 0
+
+-- JSFunction RotateZ @ 0x55c1c4531200
+source ptr: 0x55c1c4545250, ln: 179
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_arg1
+    1: set_loc0
+    2: get_var  "Math"
+    7: get_field  "PI"
+   12: push_i16  180
+   15: div
+   16: mul
+   17: put_loc0
+   18: get_var  "Math"
+   23: get_field2  "cos"
+   28: get_loc0
+   29: call_method  1
+   32: put_loc1
+   33: get_var  "Math"
+   38: get_field2  "sin"
+   43: get_loc0
+   44: call_method  1
+   47: put_loc2
+   48: get_loc1
+   49: get_loc2
+   50: neg
+   51: push_0
+   52: push_0
+   53: array_from  4
+   56: get_loc2
+   57: get_loc1
+   58: push_0
+   59: push_0
+   60: array_from  4
+   63: push_0
+   64: push_0
+   65: push_1
+   66: push_0
+   67: array_from  4
+   70: push_0
+   71: push_0
+   72: push_0
+   73: push_1
+   74: array_from  4
+   77: array_from  4
+   80: put_loc3
+   81: get_var  "MMulti"
+   86: get_loc3
+   87: get_arg0
+   88: tail_call  2
+var count: 4
+  a: normal
+  Cos: normal
+  Sin: normal
+  R: normal
+Constant pool
+length: 0
+
+-- JSFunction DrawQube @ 0x55c1c4560ca0
+source ptr: 0x55c1c45612d0, ln: 193
+arg count: 0
+stack size: 13
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: call_constructor  0
+    9: put_loc0
+   10: push_5
+   11: put_loc1
+   12: get_var  "Q"
+   17: push_0
+   18: put_field  "LastPx"
+   23: get_loc1
+   24: push_minus1
+   25: gt
+   26: if_false8  32
+   28: get_loc0
+   29: get_loc1
+   30: to_propkey2
+   31: get_var  "VMulti2"
+   36: get_var  "MQube"
+   41: get_var  "Q"
+   46: get_field  "Normal"
+   51: get_loc1
+   52: get_array_el
+   53: call2
+   54: put_array_el
+   55: dec_loc  1
+   57: goto8  -35
+   59: get_loc0
+   60: push_0
+   61: get_array_el
+   62: push_2
+   63: get_array_el
+   64: push_0
+   65: lt
+   66: if_false  200
+   71: get_var  "Q"
+   76: get_field  "Line"
+   81: push_0
+   82: get_array_el
+   83: lnot
+   84: if_false8  35
+   86: get_var  "DrawLine"
+   91: get_var  "Q"
+   96: push_0
+   97: get_array_el
+   98: get_var  "Q"
+  103: push_1
+  104: get_array_el
+  105: call2
+  106: drop
+  107: get_var  "Q"
+  112: get_field  "Line"
+  117: push_0
+  118: push_true
+  119: put_array_el
+  120: get_var  "Q"
+  125: get_field  "Line"
+  130: push_1
+  131: get_array_el
+  132: lnot
+  133: if_false8  35
+  135: get_var  "DrawLine"
+  140: get_var  "Q"
+  145: push_1
+  146: get_array_el
+  147: get_var  "Q"
+  152: push_2
+  153: get_array_el
+  154: call2
+  155: drop
+  156: get_var  "Q"
+  161: get_field  "Line"
+  166: push_1
+  167: push_true
+  168: put_array_el
+  169: get_var  "Q"
+  174: get_field  "Line"
+  179: push_2
+  180: get_array_el
+  181: lnot
+  182: if_false8  35
+  184: get_var  "DrawLine"
+  189: get_var  "Q"
+  194: push_2
+  195: get_array_el
+  196: get_var  "Q"
+  201: push_3
+  202: get_array_el
+  203: call2
+  204: drop
+  205: get_var  "Q"
+  210: get_field  "Line"
+  215: push_2
+  216: push_true
+  217: put_array_el
+  218: get_var  "Q"
+  223: get_field  "Line"
+  228: push_3
+  229: get_array_el
+  230: lnot
+  231: if_false8  35
+  233: get_var  "DrawLine"
+  238: get_var  "Q"
+  243: push_3
+  244: get_array_el
+  245: get_var  "Q"
+  250: push_0
+  251: get_array_el
+  252: call2
+  253: drop
+  254: get_var  "Q"
+  259: get_field  "Line"
+  264: push_3
+  265: push_true
+  266: put_array_el
+  267: get_loc0
+  268: push_1
+  269: get_array_el
+  270: push_2
+  271: get_array_el
+  272: push_0
+  273: lt
+  274: if_false  204
+  279: get_var  "Q"
+  284: get_field  "Line"
+  289: push_2
+  290: get_array_el
+  291: lnot
+  292: if_false8  35
+  294: get_var  "DrawLine"
+  299: get_var  "Q"
+  304: push_3
+  305: get_array_el
+  306: get_var  "Q"
+  311: push_2
+  312: get_array_el
+  313: call2
+  314: drop
+  315: get_var  "Q"
+  320: get_field  "Line"
+  325: push_2
+  326: push_true
+  327: put_array_el
+  328: get_var  "Q"
+  333: get_field  "Line"
+  338: push_i8  9
+  340: get_array_el
+  341: lnot
+  342: if_false8  36
+  344: get_var  "DrawLine"
+  349: get_var  "Q"
+  354: push_2
+  355: get_array_el
+  356: get_var  "Q"
+  361: push_6
+  362: get_array_el
+  363: call2
+  364: drop
+  365: get_var  "Q"
+  370: get_field  "Line"
+  375: push_i8  9
+  377: push_true
+  378: put_array_el
+  379: get_var  "Q"
+  384: get_field  "Line"
+  389: push_6
+  390: get_array_el
+  391: lnot
+  392: if_false8  35
+  394: get_var  "DrawLine"
+  399: get_var  "Q"
+  404: push_6
+  405: get_array_el
+  406: get_var  "Q"
+  411: push_7
+  412: get_array_el
+  413: call2
+  414: drop
+  415: get_var  "Q"
+  420: get_field  "Line"
+  425: push_6
+  426: push_true
+  427: put_array_el
+  428: get_var  "Q"
+  433: get_field  "Line"
+  438: push_i8  10
+  440: get_array_el
+  441: lnot
+  442: if_false8  36
+  444: get_var  "DrawLine"
+  449: get_var  "Q"
+  454: push_7
+  455: get_array_el
+  456: get_var  "Q"
+  461: push_3
+  462: get_array_el
+  463: call2
+  464: drop
+  465: get_var  "Q"
+  470: get_field  "Line"
+  475: push_i8  10
+  477: push_true
+  478: put_array_el
+  479: get_loc0
+  480: push_2
+  481: get_array_el
+  482: push_2
+  483: get_array_el
+  484: push_0
+  485: lt
+  486: if_false  200
+  491: get_var  "Q"
+  496: get_field  "Line"
+  501: push_4
+  502: get_array_el
+  503: lnot
+  504: if_false8  35
+  506: get_var  "DrawLine"
+  511: get_var  "Q"
+  516: push_4
+  517: get_array_el
+  518: get_var  "Q"
+  523: push_5
+  524: get_array_el
+  525: call2
+  526: drop
+  527: get_var  "Q"
+  532: get_field  "Line"
+  537: push_4
+  538: push_true
+  539: put_array_el
+  540: get_var  "Q"
+  545: get_field  "Line"
+  550: push_5
+  551: get_array_el
+  552: lnot
+  553: if_false8  35
+  555: get_var  "DrawLine"
+  560: get_var  "Q"
+  565: push_5
+  566: get_array_el
+  567: get_var  "Q"
+  572: push_6
+  573: get_array_el
+  574: call2
+  575: drop
+  576: get_var  "Q"
+  581: get_field  "Line"
+  586: push_5
+  587: push_true
+  588: put_array_el
+  589: get_var  "Q"
+  594: get_field  "Line"
+  599: push_6
+  600: get_array_el
+  601: lnot
+  602: if_false8  35
+  604: get_var  "DrawLine"
+  609: get_var  "Q"
+  614: push_6
+  615: get_array_el
+  616: get_var  "Q"
+  621: push_7
+  622: get_array_el
+  623: call2
+  624: drop
+  625: get_var  "Q"
+  630: get_field  "Line"
+  635: push_6
+  636: push_true
+  637: put_array_el
+  638: get_var  "Q"
+  643: get_field  "Line"
+  648: push_7
+  649: get_array_el
+  650: lnot
+  651: if_false8  35
+  653: get_var  "DrawLine"
+  658: get_var  "Q"
+  663: push_7
+  664: get_array_el
+  665: get_var  "Q"
+  670: push_4
+  671: get_array_el
+  672: call2
+  673: drop
+  674: get_var  "Q"
+  679: get_field  "Line"
+  684: push_7
+  685: push_true
+  686: put_array_el
+  687: get_loc0
+  688: push_3
+  689: get_array_el
+  690: push_2
+  691: get_array_el
+  692: push_0
+  693: lt
+  694: if_false  204
+  699: get_var  "Q"
+  704: get_field  "Line"
+  709: push_4
+  710: get_array_el
+  711: lnot
+  712: if_false8  35
+  714: get_var  "DrawLine"
+  719: get_var  "Q"
+  724: push_4
+  725: get_array_el
+  726: get_var  "Q"
+  731: push_5
+  732: get_array_el
+  733: call2
+  734: drop
+  735: get_var  "Q"
+  740: get_field  "Line"
+  745: push_4
+  746: push_true
+  747: put_array_el
+  748: get_var  "Q"
+  753: get_field  "Line"
+  758: push_i8  8
+  760: get_array_el
+  761: lnot
+  762: if_false8  36
+  764: get_var  "DrawLine"
+  769: get_var  "Q"
+  774: push_5
+  775: get_array_el
+  776: get_var  "Q"
+  781: push_1
+  782: get_array_el
+  783: call2
+  784: drop
+  785: get_var  "Q"
+  790: get_field  "Line"
+  795: push_i8  8
+  797: push_true
+  798: put_array_el
+  799: get_var  "Q"
+  804: get_field  "Line"
+  809: push_0
+  810: get_array_el
+  811: lnot
+  812: if_false8  35
+  814: get_var  "DrawLine"
+  819: get_var  "Q"
+  824: push_1
+  825: get_array_el
+  826: get_var  "Q"
+  831: push_0
+  832: get_array_el
+  833: call2
+  834: drop
+  835: get_var  "Q"
+  840: get_field  "Line"
+  845: push_0
+  846: push_true
+  847: put_array_el
+  848: get_var  "Q"
+  853: get_field  "Line"
+  858: push_i8  11
+  860: get_array_el
+  861: lnot
+  862: if_false8  36
+  864: get_var  "DrawLine"
+  869: get_var  "Q"
+  874: push_0
+  875: get_array_el
+  876: get_var  "Q"
+  881: push_4
+  882: get_array_el
+  883: call2
+  884: drop
+  885: get_var  "Q"
+  890: get_field  "Line"
+  895: push_i8  11
+  897: push_true
+  898: put_array_el
+  899: get_loc0
+  900: push_4
+  901: get_array_el
+  902: push_2
+  903: get_array_el
+  904: push_0
+  905: lt
+  906: if_false  204
+  911: get_var  "Q"
+  916: get_field  "Line"
+  921: push_i8  11
+  923: get_array_el
+  924: lnot
+  925: if_false8  36
+  927: get_var  "DrawLine"
+  932: get_var  "Q"
+  937: push_4
+  938: get_array_el
+  939: get_var  "Q"
+  944: push_0
+  945: get_array_el
+  946: call2
+  947: drop
+  948: get_var  "Q"
+  953: get_field  "Line"
+  958: push_i8  11
+  960: push_true
+  961: put_array_el
+  962: get_var  "Q"
+  967: get_field  "Line"
+  972: push_3
+  973: get_array_el
+  974: lnot
+  975: if_false8  35
+  977: get_var  "DrawLine"
+  982: get_var  "Q"
+  987: push_0
+  988: get_array_el
+  989: get_var  "Q"
+  994: push_3
+  995: get_array_el
+  996: call2
+  997: drop
+  998: get_var  "Q"
+  1003: get_field  "Line"
+  1008: push_3
+  1009: push_true
+  1010: put_array_el
+  1011: get_var  "Q"
+  1016: get_field  "Line"
+  1021: push_i8  10
+  1023: get_array_el
+  1024: lnot
+  1025: if_false8  36
+  1027: get_var  "DrawLine"
+  1032: get_var  "Q"
+  1037: push_3
+  1038: get_array_el
+  1039: get_var  "Q"
+  1044: push_7
+  1045: get_array_el
+  1046: call2
+  1047: drop
+  1048: get_var  "Q"
+  1053: get_field  "Line"
+  1058: push_i8  10
+  1060: push_true
+  1061: put_array_el
+  1062: get_var  "Q"
+  1067: get_field  "Line"
+  1072: push_7
+  1073: get_array_el
+  1074: lnot
+  1075: if_false8  35
+  1077: get_var  "DrawLine"
+  1082: get_var  "Q"
+  1087: push_7
+  1088: get_array_el
+  1089: get_var  "Q"
+  1094: push_4
+  1095: get_array_el
+  1096: call2
+  1097: drop
+  1098: get_var  "Q"
+  1103: get_field  "Line"
+  1108: push_7
+  1109: push_true
+  1110: put_array_el
+  1111: get_loc0
+  1112: push_5
+  1113: get_array_el
+  1114: push_2
+  1115: get_array_el
+  1116: push_0
+  1117: lt
+  1118: if_false  204
+  1123: get_var  "Q"
+  1128: get_field  "Line"
+  1133: push_i8  8
+  1135: get_array_el
+  1136: lnot
+  1137: if_false8  36
+  1139: get_var  "DrawLine"
+  1144: get_var  "Q"
+  1149: push_1
+  1150: get_array_el
+  1151: get_var  "Q"
+  1156: push_5
+  1157: get_array_el
+  1158: call2
+  1159: drop
+  1160: get_var  "Q"
+  1165: get_field  "Line"
+  1170: push_i8  8
+  1172: push_true
+  1173: put_array_el
+  1174: get_var  "Q"
+  1179: get_field  "Line"
+  1184: push_5
+  1185: get_array_el
+  1186: lnot
+  1187: if_false8  35
+  1189: get_var  "DrawLine"
+  1194: get_var  "Q"
+  1199: push_5
+  1200: get_array_el
+  1201: get_var  "Q"
+  1206: push_6
+  1207: get_array_el
+  1208: call2
+  1209: drop
+  1210: get_var  "Q"
+  1215: get_field  "Line"
+  1220: push_5
+  1221: push_true
+  1222: put_array_el
+  1223: get_var  "Q"
+  1228: get_field  "Line"
+  1233: push_i8  9
+  1235: get_array_el
+  1236: lnot
+  1237: if_false8  36
+  1239: get_var  "DrawLine"
+  1244: get_var  "Q"
+  1249: push_6
+  1250: get_array_el
+  1251: get_var  "Q"
+  1256: push_2
+  1257: get_array_el
+  1258: call2
+  1259: drop
+  1260: get_var  "Q"
+  1265: get_field  "Line"
+  1270: push_i8  9
+  1272: push_true
+  1273: put_array_el
+  1274: get_var  "Q"
+  1279: get_field  "Line"
+  1284: push_1
+  1285: get_array_el
+  1286: lnot
+  1287: if_false8  35
+  1289: get_var  "DrawLine"
+  1294: get_var  "Q"
+  1299: push_2
+  1300: get_array_el
+  1301: get_var  "Q"
+  1306: push_1
+  1307: get_array_el
+  1308: call2
+  1309: drop
+  1310: get_var  "Q"
+  1315: get_field  "Line"
+  1320: push_1
+  1321: push_true
+  1322: put_array_el
+  1323: get_var  "Q"
+  1328: push_false
+  1329: push_false
+  1330: push_false
+  1331: push_false
+  1332: push_false
+  1333: push_false
+  1334: push_false
+  1335: push_false
+  1336: push_false
+  1337: push_false
+  1338: push_false
+  1339: push_false
+  1340: array_from  12
+  1343: put_field  "Line"
+  1348: get_var  "Q"
+  1353: push_0
+  1354: put_field  "LastPx"
+  1359: return_undef
+var count: 2
+  CurN: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction Loop @ 0x55c1c4544b60
+source ptr: 0x55c1c45626f0, ln: 239
+arg count: 0
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Testing"
+    5: get_field  "LoopCount"
+   10: get_var  "Testing"
+   15: get_field  "LoopMax"
+   20: gt
+   21: if_false8  2
+   23: return_undef
+   24: get_var  "String"
+   29: get_var  "Testing"
+   34: get_field  "LoopCount"
+   39: call1
+   40: put_loc0
+   41: get_loc0
+   42: get_length
+   43: push_3
+   44: lt
+   45: if_false8  8
+   47: push_const8  0
+   49: get_loc0
+   50: add
+   51: put_loc0
+   52: goto8  -12
+   54: get_var  "Translate"
+   59: get_var  "I"
+   64: get_var  "Q"
+   69: push_i8  8
+   71: get_array_el
+   72: get_field  "V"
+   77: push_0
+   78: get_array_el
+   79: neg
+   80: get_var  "Q"
+   85: push_i8  8
+   87: get_array_el
+   88: get_field  "V"
+   93: push_1
+   94: get_array_el
+   95: neg
+   96: get_var  "Q"
+  101: push_i8  8
+  103: get_array_el
+  104: get_field  "V"
+  109: push_2
+  110: get_array_el
+  111: neg
+  112: call  4
+  115: dup
+  116: put_var  "MTrans"
+  121: drop
+  122: get_var  "RotateX"
+  127: get_var  "MTrans"
+  132: push_1
+  133: call2
+  134: dup
+  135: put_var  "MTrans"
+  140: drop
+  141: get_var  "RotateY"
+  146: get_var  "MTrans"
+  151: push_3
+  152: call2
+  153: dup
+  154: put_var  "MTrans"
+  159: drop
+  160: get_var  "RotateZ"
+  165: get_var  "MTrans"
+  170: push_5
+  171: call2
+  172: dup
+  173: put_var  "MTrans"
+  178: drop
+  179: get_var  "Translate"
+  184: get_var  "MTrans"
+  189: get_var  "Q"
+  194: push_i8  8
+  196: get_array_el
+  197: get_field  "V"
+  202: push_0
+  203: get_array_el
+  204: get_var  "Q"
+  209: push_i8  8
+  211: get_array_el
+  212: get_field  "V"
+  217: push_1
+  218: get_array_el
+  219: get_var  "Q"
+  224: push_i8  8
+  226: get_array_el
+  227: get_field  "V"
+  232: push_2
+  233: get_array_el
+  234: call  4
+  237: dup
+  238: put_var  "MTrans"
+  243: drop
+  244: get_var  "MMulti"
+  249: get_var  "MTrans"
+  254: get_var  "MQube"
+  259: call2
+  260: dup
+  261: put_var  "MQube"
+  266: drop
+  267: push_i8  8
+  269: put_loc1
+  270: get_loc1
+  271: push_minus1
+  272: gt
+  273: if_false8  40
+  275: get_var  "Q"
+  280: get_loc1
+  281: get_array_el
+  282: get_var  "VMulti"
+  287: get_var  "MTrans"
+  292: get_var  "Q"
+  297: get_loc1
+  298: get_array_el
+  299: get_field  "V"
+  304: call2
+  305: put_field  "V"
+  310: dec_loc  1
+  312: goto8  -43
+  314: get_var  "DrawQube"
+  319: call0
+  320: drop
+  321: get_var  "Testing"
+  326: get_field2  "LoopCount"
+  331: inc
+  332: put_field  "LoopCount"
+  337: get_var  "Loop"
+  342: call0
+  343: return_undef
+var count: 2
+  TestingStr: normal
+  i: normal
+Constant pool
+length: 1
+    0: ptr 0x55c1c455d560
+-- JSFunction Init @ 0x55c1c4560550
+source ptr: 0x55c1c45644a0, ln: 258
+arg count: 1
+stack size: 13
+Funtion bytecode:
+    0: get_var  "Origin"
+    5: push_i16  150
+    8: push_i16  150
+   11: push_i8  20
+   13: push_1
+   14: array_from  4
+   17: put_field  "V"
+   22: get_var  "Testing"
+   27: push_0
+   28: put_field  "LoopCount"
+   33: get_var  "Testing"
+   38: push_i8  50
+   40: put_field  "LoopMax"
+   45: get_var  "Testing"
+   50: push_0
+   51: put_field  "TimeMax"
+   56: get_var  "Testing"
+   61: push_0
+   62: put_field  "TimeAvg"
+   67: get_var  "Testing"
+   72: push_0
+   73: put_field  "TimeMin"
+   78: get_var  "Testing"
+   83: push_0
+   84: put_field  "TimeTemp"
+   89: get_var  "Testing"
+   94: push_0
+   95: put_field  "TimeTotal"
+  100: get_var  "Testing"
+  105: push_false
+  106: put_field  "Init"
+  111: push_1
+  112: push_0
+  113: push_0
+  114: push_0
+  115: array_from  4
+  118: push_0
+  119: push_1
+  120: push_0
+  121: push_0
+  122: array_from  4
+  125: push_0
+  126: push_0
+  127: push_1
+  128: push_0
+  129: array_from  4
+  132: push_0
+  133: push_0
+  134: push_0
+  135: push_1
+  136: array_from  4
+  139: array_from  4
+  142: dup
+  143: put_var  "MTrans"
+  148: drop
+  149: push_1
+  150: push_0
+  151: push_0
+  152: push_0
+  153: array_from  4
+  156: push_0
+  157: push_1
+  158: push_0
+  159: push_0
+  160: array_from  4
+  163: push_0
+  164: push_0
+  165: push_1
+  166: push_0
+  167: array_from  4
+  170: push_0
+  171: push_0
+  172: push_0
+  173: push_1
+  174: array_from  4
+  177: array_from  4
+  180: dup
+  181: put_var  "MQube"
+  186: drop
+  187: push_1
+  188: push_0
+  189: push_0
+  190: push_0
+  191: array_from  4
+  194: push_0
+  195: push_1
+  196: push_0
+  197: push_0
+  198: array_from  4
+  201: push_0
+  202: push_0
+  203: push_1
+  204: push_0
+  205: array_from  4
+  208: push_0
+  209: push_0
+  210: push_0
+  211: push_1
+  212: array_from  4
+  215: array_from  4
+  218: dup
+  219: put_var  "I"
+  224: drop
+  225: get_var  "Q"
+  230: push_0
+  231: to_propkey2
+  232: get_var  "CreateP"
+  237: dup
+  238: get_arg0
+  239: neg
+  240: get_arg0
+  241: neg
+  242: get_arg0
+  243: call_constructor  3
+  246: put_array_el
+  247: get_var  "Q"
+  252: push_1
+  253: to_propkey2
+  254: get_var  "CreateP"
+  259: dup
+  260: get_arg0
+  261: neg
+  262: get_arg0
+  263: get_arg0
+  264: call_constructor  3
+  267: put_array_el
+  268: get_var  "Q"
+  273: push_2
+  274: to_propkey2
+  275: get_var  "CreateP"
+  280: dup
+  281: get_arg0
+  282: get_arg0
+  283: get_arg0
+  284: call_constructor  3
+  287: put_array_el
+  288: get_var  "Q"
+  293: push_3
+  294: to_propkey2
+  295: get_var  "CreateP"
+  300: dup
+  301: get_arg0
+  302: get_arg0
+  303: neg
+  304: get_arg0
+  305: call_constructor  3
+  308: put_array_el
+  309: get_var  "Q"
+  314: push_4
+  315: to_propkey2
+  316: get_var  "CreateP"
+  321: dup
+  322: get_arg0
+  323: neg
+  324: get_arg0
+  325: neg
+  326: get_arg0
+  327: neg
+  328: call_constructor  3
+  331: put_array_el
+  332: get_var  "Q"
+  337: push_5
+  338: to_propkey2
+  339: get_var  "CreateP"
+  344: dup
+  345: get_arg0
+  346: neg
+  347: get_arg0
+  348: get_arg0
+  349: neg
+  350: call_constructor  3
+  353: put_array_el
+  354: get_var  "Q"
+  359: push_6
+  360: to_propkey2
+  361: get_var  "CreateP"
+  366: dup
+  367: get_arg0
+  368: get_arg0
+  369: get_arg0
+  370: neg
+  371: call_constructor  3
+  374: put_array_el
+  375: get_var  "Q"
+  380: push_7
+  381: to_propkey2
+  382: get_var  "CreateP"
+  387: dup
+  388: get_arg0
+  389: get_arg0
+  390: neg
+  391: get_arg0
+  392: neg
+  393: call_constructor  3
+  396: put_array_el
+  397: get_var  "Q"
+  402: push_i8  8
+  404: to_propkey2
+  405: get_var  "CreateP"
+  410: dup
+  411: push_0
+  412: push_0
+  413: push_0
+  414: call_constructor  3
+  417: put_array_el
+  418: get_var  "Q"
+  423: push_0
+  424: push_1
+  425: push_2
+  426: array_from  3
+  429: push_3
+  430: push_2
+  431: push_6
+  432: array_from  3
+  435: push_7
+  436: push_6
+  437: push_5
+  438: array_from  3
+  441: push_4
+  442: push_5
+  443: push_1
+  444: array_from  3
+  447: push_4
+  448: push_0
+  449: push_3
+  450: array_from  3
+  453: push_1
+  454: push_5
+  455: push_6
+  456: array_from  3
+  459: array_from  6
+  462: put_field  "Edge"
+  467: get_var  "Q"
+  472: get_var  "Array"
+  477: dup
+  478: call_constructor  0
+  481: put_field  "Normal"
+  486: push_0
+  487: put_loc0
+  488: get_loc0
+  489: get_var  "Q"
+  494: get_field  "Edge"
+  499: get_length
+  500: lt
+  501: if_false8  99
+  503: get_var  "Q"
+  508: get_field  "Normal"
+  513: get_loc0
+  514: to_propkey2
+  515: get_var  "CalcNormal"
+  520: get_var  "Q"
+  525: get_var  "Q"
+  530: get_field  "Edge"
+  535: get_loc0
+  536: get_array_el
+  537: push_0
+  538: get_array_el
+  539: get_array_el
+  540: get_field  "V"
+  545: get_var  "Q"
+  550: get_var  "Q"
+  555: get_field  "Edge"
+  560: get_loc0
+  561: get_array_el
+  562: push_1
+  563: get_array_el
+  564: get_array_el
+  565: get_field  "V"
+  570: get_var  "Q"
+  575: get_var  "Q"
+  580: get_field  "Edge"
+  585: get_loc0
+  586: get_array_el
+  587: push_2
+  588: get_array_el
+  589: get_array_el
+  590: get_field  "V"
+  595: call3
+  596: put_array_el
+  597: inc_loc  0
+  599: goto8  -112
+  601: get_var  "Q"
+  606: push_false
+  607: push_false
+  608: push_false
+  609: push_false
+  610: push_false
+  611: push_false
+  612: push_false
+  613: push_false
+  614: push_false
+  615: push_false
+  616: push_false
+  617: push_false
+  618: array_from  12
+  621: put_field  "Line"
+  626: get_var  "Q"
+  631: push_i8  9
+  633: push_2
+  634: mul
+  635: get_arg0
+  636: mul
+  637: put_field  "NumPx"
+  642: push_0
+  643: put_loc0
+  644: get_loc0
+  645: get_var  "Q"
+  650: get_field  "NumPx"
+  655: lt
+  656: if_false8  15
+  658: get_var  "CreateP"
+  663: push_0
+  664: push_0
+  665: push_0
+  666: call3
+  667: drop
+  668: inc_loc  0
+  670: goto8  -27
+  672: get_var  "Translate"
+  677: get_var  "MTrans"
+  682: get_var  "Origin"
+  687: get_field  "V"
+  692: push_0
+  693: get_array_el
+  694: get_var  "Origin"
+  699: get_field  "V"
+  704: push_1
+  705: get_array_el
+  706: get_var  "Origin"
+  711: get_field  "V"
+  716: push_2
+  717: get_array_el
+  718: call  4
+  721: dup
+  722: put_var  "MTrans"
+  727: drop
+  728: get_var  "MMulti"
+  733: get_var  "MTrans"
+  738: get_var  "MQube"
+  743: call2
+  744: dup
+  745: put_var  "MQube"
+  750: drop
+  751: push_0
+  752: put_loc0
+  753: get_loc0
+  754: push_i8  9
+  756: lt
+  757: if_false8  40
+  759: get_var  "Q"
+  764: get_loc0
+  765: get_array_el
+  766: get_var  "VMulti"
+  771: get_var  "MTrans"
+  776: get_var  "Q"
+  781: get_loc0
+  782: get_array_el
+  783: get_field  "V"
+  788: call2
+  789: put_field  "V"
+  794: inc_loc  0
+  796: goto8  -44
+  798: get_var  "DrawQube"
+  803: call0
+  804: drop
+  805: get_var  "Testing"
+  810: push_true
+  811: put_field  "Init"
+  816: get_var  "Loop"
+  821: call0
+  822: drop
+  823: push_0
+  824: put_loc1
+  825: push_0
+  826: put_loc0
+  827: get_loc0
+  828: get_var  "Q"
+  833: get_length
+  834: lt
+  835: if_false8  36
+  837: get_var  "Q"
+  842: get_loc0
+  843: get_array_el
+  844: get_field  "V"
+  849: put_loc2
+  850: push_0
+  851: put_loc3
+  852: get_loc3
+  853: get_loc2
+  854: get_length
+  855: lt
+  856: if_false8  11
+  858: get_loc1
+  859: get_loc2
+  860: get_loc3
+  861: get_array_el
+  862: add
+  863: put_loc1
+  864: inc_loc  3
+  866: goto8  -15
+  868: inc_loc  0
+  870: goto8  -44
+  872: get_loc1
+  873: get_var  "validation"
+  878: get_arg0
+  879: get_array_el
+  880: neq
+  881: if_false8  31
+  883: push_atom_value  "Error: bad vector sum for CubeSize = "
+  888: get_arg0
+  889: add
+  890: push_atom_value  "; expected "
+  895: add
+  896: get_var  "validation"
+  901: get_arg0
+  902: get_array_el
+  903: add
+  904: push_atom_value  " but got "
+  909: add
+  910: get_loc1
+  911: add
+  912: throw
+  913: return_undef
+var count: 4
+  i: normal
+  sum: normal
+  vector: normal
+  j: normal
+Constant pool
+length: 0
+
+

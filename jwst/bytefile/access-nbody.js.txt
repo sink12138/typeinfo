@@ -1,0 +1,776 @@
+-- JSFunction <eval> @ 0x55865da14600
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "PI", 00000000
+    6: check_define_var  "SOLAR_MASS", 00000000
+   12: check_define_var  "DAYS_PER_YEAR", 00000000
+   18: check_define_var  "Body", 01000000
+   24: check_define_var  "Jupiter", 01000000
+   30: check_define_var  "Saturn", 01000000
+   36: check_define_var  "Uranus", 01000000
+   42: check_define_var  "Neptune", 01000000
+   48: check_define_var  "Sun", 01000000
+   54: check_define_var  "NBodySystem", 01000000
+   60: check_define_var  "ret", 00000000
+   66: check_define_var  "n", 00000000
+   72: check_define_var  "expected", 00000000
+   78: define_var  "PI", 00000000
+   84: define_var  "SOLAR_MASS", 00000000
+   90: define_var  "DAYS_PER_YEAR", 00000000
+   96: fclosure8  2
+   98: define_func  "Body", 00000000
+  104: fclosure8  4
+  106: define_func  "Jupiter", 00000000
+  112: fclosure8  5
+  114: define_func  "Saturn", 00000000
+  120: fclosure8  6
+  122: define_func  "Uranus", 00000000
+  128: fclosure8  7
+  130: define_func  "Neptune", 00000000
+  136: fclosure8  8
+  138: define_func  "Sun", 00000000
+  144: fclosure8  9
+  146: define_func  "NBodySystem", 00000000
+  152: define_var  "ret", 00000000
+  158: define_var  "n", 00000000
+  164: define_var  "expected", 00000000
+  170: push_const8  0
+  172: put_var  "PI"
+  177: push_4
+  178: get_var  "PI"
+  183: mul
+  184: get_var  "PI"
+  189: mul
+  190: put_var  "SOLAR_MASS"
+  195: push_const8  1
+  197: put_var  "DAYS_PER_YEAR"
+  202: get_var  "Body"
+  207: get_field  "prototype"
+  212: fclosure8  3
+  214: insert2
+  215: put_field  "offsetMomentum"
+  220: put_loc0
+  221: get_var  "NBodySystem"
+  226: get_field  "prototype"
+  231: fclosure8  10
+  233: insert2
+  234: put_field  "advance"
+  239: put_loc0
+  240: get_var  "NBodySystem"
+  245: get_field  "prototype"
+  250: fclosure8  11
+  252: insert2
+  253: put_field  "energy"
+  258: put_loc0
+  259: push_0
+  260: put_var  "ret"
+  265: undefined
+  266: put_loc0
+  267: push_3
+  268: put_var  "n"
+  273: get_var  "n"
+  278: push_i8  24
+  280: lte
+  281: if_false8  21
+  283: fclosure8  12
+  285: call0
+  286: put_loc0
+  287: get_var  "n"
+  292: push_2
+  293: mul
+  294: dup
+  295: put_var  "n"
+  300: drop
+  301: goto8  -29
+  303: push_const8  13
+  305: neg
+  306: put_var  "expected"
+  311: undefined
+  312: put_loc0
+  313: get_var  "ret"
+  318: get_var  "expected"
+  323: neq
+  324: if_false8  25
+  326: push_atom_value  "ERROR: bad result: expected "
+  331: get_var  "expected"
+  336: add
+  337: push_atom_value  " but got "
+  342: add
+  343: get_var  "ret"
+  348: add
+  349: throw
+  350: get_loc0
+  351: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 14
+    0:     1:     2: ptr 0x55865da12570    3: ptr 0x55865da0f270    4: ptr 0x55865da127f0    5: ptr 0x55865da12a50    6: ptr 0x55865da12cb0    7: ptr 0x55865da12eb0    8: ptr 0x55865da0dd30    9: ptr 0x55865da0eb50   10: ptr 0x55865da13ae0   11: ptr 0x55865da13f20   12: ptr 0x55865da13dd0   13: 
+-- JSFunction Body @ 0x55865da12570
+source ptr: 0x55865da0c3e0, ln: 9
+arg count: 7
+stack size: 2
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: put_field  "x"
+    9: get_loc0
+   10: get_arg1
+   11: put_field  "y"
+   16: get_loc0
+   17: get_arg2
+   18: put_field  "z"
+   23: get_loc0
+   24: get_arg3
+   25: put_field  "vx"
+   30: get_loc0
+   31: get_arg  4
+   34: put_field  "vy"
+   39: get_loc0
+   40: get_arg  5
+   43: put_field  "vz"
+   48: get_loc0
+   49: get_arg  6
+   52: put_field  "mass"
+   57: return_undef
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction  Ÿ]†U @ 0x55865da0f270
+source ptr: 0x55865da06330, ln: 19
+arg count: 3
+stack size: 3
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: neg
+    5: get_var  "SOLAR_MASS"
+   10: div
+   11: put_field  "vx"
+   16: get_loc0
+   17: get_arg1
+   18: neg
+   19: get_var  "SOLAR_MASS"
+   24: div
+   25: put_field  "vy"
+   30: get_loc0
+   31: get_arg2
+   32: neg
+   33: get_var  "SOLAR_MASS"
+   38: div
+   39: put_field  "vz"
+   44: get_loc0
+   45: return
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction Jupiter @ 0x55865da127f0
+source ptr: 0x55865da0cef0, ln: 26
+arg count: 0
+stack size: 10
+Funtion bytecode:
+    0: get_var  "Body"
+    5: dup
+    6: push_const8  0
+    8: push_const8  1
+   10: neg
+   11: push_const8  2
+   13: neg
+   14: push_const8  3
+   16: get_var  "DAYS_PER_YEAR"
+   21: mul
+   22: push_const8  4
+   24: get_var  "DAYS_PER_YEAR"
+   29: mul
+   30: push_const8  5
+   32: neg
+   33: get_var  "DAYS_PER_YEAR"
+   38: mul
+   39: push_const8  6
+   41: get_var  "SOLAR_MASS"
+   46: mul
+   47: call_constructor  7
+   50: return
+var count: 0
+Constant pool
+length: 7
+    0:     1:     2:     3:     4:     5:     6: 
+-- JSFunction Saturn @ 0x55865da12a50
+source ptr: 0x55865da0d5c0, ln: 38
+arg count: 0
+stack size: 10
+Funtion bytecode:
+    0: get_var  "Body"
+    5: dup
+    6: push_const8  0
+    8: push_const8  1
+   10: push_const8  2
+   12: neg
+   13: push_const8  3
+   15: neg
+   16: get_var  "DAYS_PER_YEAR"
+   21: mul
+   22: push_const8  4
+   24: get_var  "DAYS_PER_YEAR"
+   29: mul
+   30: push_const8  5
+   32: get_var  "DAYS_PER_YEAR"
+   37: mul
+   38: push_const8  6
+   40: get_var  "SOLAR_MASS"
+   45: mul
+   46: call_constructor  7
+   49: return
+var count: 0
+Constant pool
+length: 7
+    0:     1:     2:     3:     4:     5:     6: 
+-- JSFunction Uranus @ 0x55865da12cb0
+source ptr: 0x55865da0dbd0, ln: 50
+arg count: 0
+stack size: 10
+Funtion bytecode:
+    0: get_var  "Body"
+    5: dup
+    6: push_const8  0
+    8: push_const8  1
+   10: neg
+   11: push_const8  2
+   13: neg
+   14: push_const8  3
+   16: get_var  "DAYS_PER_YEAR"
+   21: mul
+   22: push_const8  4
+   24: get_var  "DAYS_PER_YEAR"
+   29: mul
+   30: push_const8  5
+   32: neg
+   33: get_var  "DAYS_PER_YEAR"
+   38: mul
+   39: push_const8  6
+   41: get_var  "SOLAR_MASS"
+   46: mul
+   47: call_constructor  7
+   50: return
+var count: 0
+Constant pool
+length: 7
+    0:     1:     2:     3:     4:     5:     6: 
+-- JSFunction Neptune @ 0x55865da12eb0
+source ptr: 0x55865da0e270, ln: 62
+arg count: 0
+stack size: 10
+Funtion bytecode:
+    0: get_var  "Body"
+    5: dup
+    6: push_const8  0
+    8: push_const8  1
+   10: neg
+   11: push_const8  2
+   13: push_const8  3
+   15: get_var  "DAYS_PER_YEAR"
+   20: mul
+   21: push_const8  4
+   23: get_var  "DAYS_PER_YEAR"
+   28: mul
+   29: push_const8  5
+   31: neg
+   32: get_var  "DAYS_PER_YEAR"
+   37: mul
+   38: push_const8  6
+   40: get_var  "SOLAR_MASS"
+   45: mul
+   46: call_constructor  7
+   49: return
+var count: 0
+Constant pool
+length: 7
+    0:     1:     2:     3:     4:     5:     6: 
+-- JSFunction Sun @ 0x55865da0dd30
+source ptr: 0x55865da0e650, ln: 74
+arg count: 0
+stack size: 9
+Funtion bytecode:
+    0: get_var  "Body"
+    5: dup
+    6: push_0
+    7: push_0
+    8: push_0
+    9: push_0
+   10: push_0
+   11: push_0
+   12: get_var  "SOLAR_MASS"
+   17: call_constructor  7
+   20: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction NBodySystem @ 0x55865da0eb50
+source ptr: 0x55865d9875b0, ln: 79
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  7
+    3: get_loc8  7
+    5: get_arg0
+    6: put_field  "bodies"
+   11: push_0
+   12: put_loc0
+   13: push_0
+   14: put_loc1
+   15: push_0
+   16: put_loc2
+   17: get_loc8  7
+   19: get_field  "bodies"
+   24: get_length
+   25: put_loc3
+   26: push_0
+   27: put_loc8  4
+   29: get_loc8  4
+   31: get_loc3
+   32: lt
+   33: if_false8  63
+   35: get_loc8  7
+   37: get_field  "bodies"
+   42: get_loc8  4
+   44: get_array_el
+   45: set_loc8  5
+   47: get_field  "mass"
+   52: put_loc8  6
+   54: get_loc0
+   55: get_loc8  5
+   57: get_field  "vx"
+   62: get_loc8  6
+   64: mul
+   65: add
+   66: put_loc0
+   67: get_loc1
+   68: get_loc8  5
+   70: get_field  "vy"
+   75: get_loc8  6
+   77: mul
+   78: add
+   79: put_loc1
+   80: get_loc2
+   81: get_loc8  5
+   83: get_field  "vz"
+   88: get_loc8  6
+   90: mul
+   91: add
+   92: put_loc2
+   93: inc_loc  4
+   95: goto8  -67
+   97: get_loc8  7
+   99: get_field  "bodies"
+  104: push_0
+  105: get_array_el
+  106: get_field2  "offsetMomentum"
+  111: get_loc0
+  112: get_loc1
+  113: get_loc2
+  114: call_method  3
+  117: return_undef
+var count: 8
+  px: normal
+  py: normal
+  pz: normal
+  size: normal
+  i: normal
+  b: normal
+  m: normal
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction  Ÿ]†U @ 0x55865da13ae0
+source ptr: 0x55865da10770, ln: 95
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  11
+    3: get_loc8  11
+    5: get_field  "bodies"
+   10: get_length
+   11: put_loc8  5
+   13: push_0
+   14: put_loc8  6
+   16: get_loc8  6
+   18: get_loc8  5
+   20: lt
+   21: if_false  286
+   26: get_loc8  11
+   28: get_field  "bodies"
+   33: get_loc8  6
+   35: get_array_el
+   36: put_loc8  7
+   38: get_loc8  6
+   40: push_1
+   41: add
+   42: put_loc8  8
+   44: get_loc8  8
+   46: get_loc8  5
+   48: lt
+   49: if_false  253
+   54: get_loc8  11
+   56: get_field  "bodies"
+   61: get_loc8  8
+   63: get_array_el
+   64: put_loc8  9
+   66: get_loc8  7
+   68: get_field  "x"
+   73: get_loc8  9
+   75: get_field  "x"
+   80: sub
+   81: put_loc0
+   82: get_loc8  7
+   84: get_field  "y"
+   89: get_loc8  9
+   91: get_field  "y"
+   96: sub
+   97: put_loc1
+   98: get_loc8  7
+  100: get_field  "z"
+  105: get_loc8  9
+  107: get_field  "z"
+  112: sub
+  113: put_loc2
+  114: get_var  "Math"
+  119: get_field2  "sqrt"
+  124: get_loc0
+  125: get_loc0
+  126: mul
+  127: get_loc1
+  128: get_loc1
+  129: mul
+  130: add
+  131: get_loc2
+  132: get_loc2
+  133: mul
+  134: add
+  135: call_method  1
+  138: put_loc3
+  139: get_arg0
+  140: get_loc3
+  141: get_loc3
+  142: mul
+  143: get_loc3
+  144: mul
+  145: div
+  146: put_loc8  4
+  148: get_loc8  7
+  150: get_field2  "vx"
+  155: get_loc0
+  156: get_loc8  9
+  158: get_field  "mass"
+  163: mul
+  164: get_loc8  4
+  166: mul
+  167: sub
+  168: put_field  "vx"
+  173: get_loc8  7
+  175: get_field2  "vy"
+  180: get_loc1
+  181: get_loc8  9
+  183: get_field  "mass"
+  188: mul
+  189: get_loc8  4
+  191: mul
+  192: sub
+  193: put_field  "vy"
+  198: get_loc8  7
+  200: get_field2  "vz"
+  205: get_loc2
+  206: get_loc8  9
+  208: get_field  "mass"
+  213: mul
+  214: get_loc8  4
+  216: mul
+  217: sub
+  218: put_field  "vz"
+  223: get_loc8  9
+  225: get_field2  "vx"
+  230: get_loc0
+  231: get_loc8  7
+  233: get_field  "mass"
+  238: mul
+  239: get_loc8  4
+  241: mul
+  242: add
+  243: put_field  "vx"
+  248: get_loc8  9
+  250: get_field2  "vy"
+  255: get_loc1
+  256: get_loc8  7
+  258: get_field  "mass"
+  263: mul
+  264: get_loc8  4
+  266: mul
+  267: add
+  268: put_field  "vy"
+  273: get_loc8  9
+  275: get_field2  "vz"
+  280: get_loc2
+  281: get_loc8  7
+  283: get_field  "mass"
+  288: mul
+  289: get_loc8  4
+  291: mul
+  292: add
+  293: put_field  "vz"
+  298: inc_loc  8
+  300: goto16  -257
+  303: inc_loc  6
+  305: goto16  -290
+  308: push_0
+  309: put_loc8  6
+  311: get_loc8  6
+  313: get_loc8  5
+  315: lt
+  316: if_false8  81
+  318: get_loc8  11
+  320: get_field  "bodies"
+  325: get_loc8  6
+  327: get_array_el
+  328: set_loc8  10
+  330: get_field2  "x"
+  335: get_arg0
+  336: get_loc8  10
+  338: get_field  "vx"
+  343: mul
+  344: add
+  345: put_field  "x"
+  350: get_loc8  10
+  352: get_field2  "y"
+  357: get_arg0
+  358: get_loc8  10
+  360: get_field  "vy"
+  365: mul
+  366: add
+  367: put_field  "y"
+  372: get_loc8  10
+  374: get_field2  "z"
+  379: get_arg0
+  380: get_loc8  10
+  382: get_field  "vz"
+  387: mul
+  388: add
+  389: put_field  "z"
+  394: inc_loc  6
+  396: goto8  -86
+  398: return_undef
+var count: 12
+  dx: normal
+  dy: normal
+  dz: normal
+  distance: normal
+  mag: normal
+  size: normal
+  i: normal
+  bodyi: normal
+  j: normal
+  bodyj: normal
+  body: normal
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction  Ÿ]†U @ 0x55865da13f20
+source ptr: 0x55865da11620, ln: 128
+arg count: 0
+stack size: 5
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  10
+    3: push_0
+    4: put_loc8  4
+    6: get_loc8  10
+    8: get_field  "bodies"
+   13: get_length
+   14: put_loc8  5
+   16: push_0
+   17: put_loc8  6
+   19: get_loc8  6
+   21: get_loc8  5
+   23: lt
+   24: if_false  208
+   29: get_loc8  10
+   31: get_field  "bodies"
+   36: get_loc8  6
+   38: get_array_el
+   39: put_loc8  7
+   41: get_loc8  4
+   43: push_const8  0
+   45: get_loc8  7
+   47: get_field  "mass"
+   52: mul
+   53: get_loc8  7
+   55: get_field  "vx"
+   60: get_loc8  7
+   62: get_field  "vx"
+   67: mul
+   68: get_loc8  7
+   70: get_field  "vy"
+   75: get_loc8  7
+   77: get_field  "vy"
+   82: mul
+   83: add
+   84: get_loc8  7
+   86: get_field  "vz"
+   91: get_loc8  7
+   93: get_field  "vz"
+   98: mul
+   99: add
+  100: mul
+  101: add
+  102: put_loc8  4
+  104: get_loc8  6
+  106: push_1
+  107: add
+  108: put_loc8  8
+  110: get_loc8  8
+  112: get_loc8  5
+  114: lt
+  115: if_false8  112
+  117: get_loc8  10
+  119: get_field  "bodies"
+  124: get_loc8  8
+  126: get_array_el
+  127: put_loc8  9
+  129: get_loc8  7
+  131: get_field  "x"
+  136: get_loc8  9
+  138: get_field  "x"
+  143: sub
+  144: put_loc0
+  145: get_loc8  7
+  147: get_field  "y"
+  152: get_loc8  9
+  154: get_field  "y"
+  159: sub
+  160: put_loc1
+  161: get_loc8  7
+  163: get_field  "z"
+  168: get_loc8  9
+  170: get_field  "z"
+  175: sub
+  176: put_loc2
+  177: get_var  "Math"
+  182: get_field2  "sqrt"
+  187: get_loc0
+  188: get_loc0
+  189: mul
+  190: get_loc1
+  191: get_loc1
+  192: mul
+  193: add
+  194: get_loc2
+  195: get_loc2
+  196: mul
+  197: add
+  198: call_method  1
+  201: put_loc3
+  202: get_loc8  4
+  204: get_loc8  7
+  206: get_field  "mass"
+  211: get_loc8  9
+  213: get_field  "mass"
+  218: mul
+  219: get_loc3
+  220: div
+  221: sub
+  222: put_loc8  4
+  224: inc_loc  8
+  226: goto8  -117
+  228: inc_loc  6
+  230: goto16  -212
+  233: get_loc8  4
+  235: return
+var count: 11
+  dx: normal
+  dy: normal
+  dz: normal
+  distance: normal
+  e: normal
+  size: normal
+  i: normal
+  bodyi: normal
+  j: normal
+  bodyj: normal
+  this: normal
+Constant pool
+length: 1
+    0: 
+-- JSFunction  Ÿ]†U @ 0x55865da13dd0
+source ptr: 0x55865d9e9240, ln: 157
+arg count: 0
+stack size: 8
+Funtion bytecode:
+    0: get_var  "NBodySystem"
+    5: dup
+    6: get_var  "Array"
+   11: get_var  "Sun"
+   16: call0
+   17: get_var  "Jupiter"
+   22: call0
+   23: get_var  "Saturn"
+   28: call0
+   29: get_var  "Uranus"
+   34: call0
+   35: get_var  "Neptune"
+   40: call0
+   41: call  5
+   44: call_constructor  1
+   47: put_loc0
+   48: get_var  "n"
+   53: push_i8  100
+   55: mul
+   56: put_loc1
+   57: get_var  "ret"
+   62: get_loc0
+   63: get_field2  "energy"
+   68: call_method  0
+   71: add
+   72: dup
+   73: put_var  "ret"
+   78: drop
+   79: push_0
+   80: put_loc2
+   81: get_loc2
+   82: get_loc1
+   83: lt
+   84: if_false8  17
+   86: get_loc0
+   87: get_field2  "advance"
+   92: push_const8  0
+   94: call_method  1
+   97: drop
+   98: inc_loc  2
+  100: goto8  -20
+  102: get_var  "ret"
+  107: get_loc0
+  108: get_field2  "energy"
+  113: call_method  0
+  116: add
+  117: dup
+  118: put_var  "ret"
+  123: return_undef
+var count: 3
+  bodies: normal
+  max: normal
+  i: normal
+Constant pool
+length: 1
+    0: 

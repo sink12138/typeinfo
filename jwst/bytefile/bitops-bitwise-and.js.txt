@@ -1,0 +1,59 @@
+-- JSFunction <eval> @ 0x559cb8e35240
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "i", 00000000
+    6: check_define_var  "result", 00000000
+   12: check_define_var  "expected", 00000000
+   18: define_var  "i", 00000000
+   24: define_var  "result", 00000000
+   30: define_var  "expected", 00000000
+   36: push_const8  0
+   38: dup
+   39: put_var  "bitwiseAndValue"
+   44: put_loc0
+   45: undefined
+   46: put_loc0
+   47: push_0
+   48: put_var  "i"
+   53: get_var  "i"
+   58: push_i32  600000
+   63: lt
+   64: if_false8  33
+   66: get_var  "bitwiseAndValue"
+   71: get_var  "i"
+   76: and
+   77: dup
+   78: put_var  "bitwiseAndValue"
+   83: put_loc0
+   84: get_var  "i"
+   89: post_inc
+   90: put_var  "i"
+   95: drop
+   96: goto8  -44
+   98: get_var  "bitwiseAndValue"
+  103: put_var  "result"
+  108: push_0
+  109: put_var  "expected"
+  114: undefined
+  115: put_loc0
+  116: get_var  "result"
+  121: get_var  "expected"
+  126: neq
+  127: if_false8  25
+  129: push_atom_value  "ERROR: bad result: expected "
+  134: get_var  "expected"
+  139: add
+  140: push_atom_value  " but got "
+  145: add
+  146: get_var  "result"
+  151: add
+  152: throw
+  153: get_loc0
+  154: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 1
+    0: 

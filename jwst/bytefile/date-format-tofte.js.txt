@@ -1,0 +1,1394 @@
+-- JSFunction <eval> @ 0x564c329f5100
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: check_define_var  "arrayExists", 01000000
+    6: check_define_var  "date", 00000000
+   12: check_define_var  "shortFormat", 00000000
+   18: check_define_var  "longFormat", 00000000
+   24: fclosure8  0
+   26: define_func  "arrayExists", 00000000
+   32: define_var  "date", 00000000
+   38: define_var  "shortFormat", 00000000
+   44: define_var  "longFormat", 00000000
+   50: get_var  "Date"
+   55: get_field  "prototype"
+   60: fclosure8  1
+   62: insert2
+   63: put_field  "formatDate"
+   68: put_loc0
+   69: get_var  "Date"
+   74: dup
+   75: push_atom_value  "1/1/2007 1:11:11"
+   80: call_constructor  1
+   83: put_var  "date"
+   88: undefined
+   89: put_loc0
+   90: push_0
+   91: dup
+   92: put_var  "i"
+   97: drop
+   98: get_var  "i"
+  103: push_i16  500
+  106: lt
+  107: if_false8  95
+  109: get_var  "date"
+  114: get_field2  "formatDate"
+  119: push_atom_value  "Y-m-d"
+  124: call_method  1
+  127: put_var  "shortFormat"
+  132: get_var  "date"
+  137: get_field2  "formatDate"
+  142: push_atom_value  "l, F d, Y g:i:s A"
+  147: call_method  1
+  150: put_var  "longFormat"
+  155: get_var  "date"
+  160: get_field2  "setTime"
+  165: get_var  "date"
+  170: get_field2  "getTime"
+  175: call_method  0
+  178: push_i32  84266956
+  183: add
+  184: call_method  1
+  187: put_loc0
+  188: get_var  "i"
+  193: inc
+  194: dup
+  195: put_var  "i"
+  200: drop
+  201: goto8  -104
+  203: get_loc0
+  204: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 2
+    0: ptr 0x564c329eabe0    1: ptr 0x564c329fb560
+-- JSFunction arrayExists @ 0x564c329eabe0
+source ptr: 0x564c329e3350, ln: 1
+arg count: 2
+stack size: 2
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: get_length
+    5: lt
+    6: if_false8  14
+    8: get_arg0
+    9: get_loc0
+   10: get_array_el
+   11: get_arg1
+   12: eq
+   13: if_false8  3
+   15: push_true
+   16: return
+   17: inc_loc  0
+   19: goto8  -18
+   21: push_false
+   22: return
+var count: 1
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction  µœ2LV @ 0x564c329fb560
+source ptr: 0x564c329f8210, ln: 8
+arg count: 2
+stack size: 31
+Funtion bytecode:
+    0: special_object  3
+    2: put_loc8  40
+    4: push_this
+    5: put_loc8  39
+    7: special_object  1
+    9: put_loc8  41
+   11: special_object  5
+   13: put_loc8  38
+   15: fclosure8  0
+   17: put_loc8  6
+   19: fclosure8  1
+   21: put_loc8  7
+   23: fclosure8  2
+   25: put_loc8  8
+   27: fclosure8  3
+   29: put_loc8  9
+   31: fclosure8  4
+   33: put_loc8  10
+   35: fclosure8  5
+   37: put_loc8  11
+   39: fclosure8  6
+   41: put_loc8  12
+   43: fclosure8  7
+   45: put_loc8  13
+   47: fclosure8  8
+   49: put_loc8  14
+   51: fclosure8  9
+   53: put_loc8  15
+   55: fclosure8  10
+   57: put_loc8  16
+   59: fclosure8  11
+   61: put_loc8  17
+   63: fclosure8  12
+   65: put_loc8  18
+   67: fclosure8  13
+   69: put_loc8  19
+   71: fclosure8  14
+   73: put_loc8  20
+   75: fclosure8  15
+   77: put_loc8  21
+   79: fclosure8  16
+   81: put_loc8  22
+   83: fclosure8  17
+   85: put_loc8  23
+   87: fclosure8  18
+   89: put_loc8  24
+   91: fclosure8  19
+   93: put_loc8  25
+   95: fclosure8  20
+   97: put_loc8  26
+   99: fclosure8  21
+  101: put_loc8  27
+  103: fclosure8  22
+  105: put_loc8  28
+  107: fclosure8  23
+  109: put_loc8  29
+  111: fclosure8  24
+  113: put_loc8  30
+  115: fclosure8  25
+  117: put_loc8  31
+  119: fclosure8  26
+  121: put_loc8  32
+  123: fclosure8  27
+  125: put_loc8  33
+  127: push_atom_value  "a"
+  132: push_atom_value  "A"
+  137: push_atom_value  "B"
+  142: push_atom_value  "d"
+  147: push_atom_value  "D"
+  152: push_atom_value  "F"
+  157: push_atom_value  "g"
+  162: push_atom_value  "G"
+  167: push_atom_value  "h"
+  172: push_atom_value  "H"
+  177: push_atom_value  "i"
+  182: push_atom_value  "j"
+  187: push_atom_value  "l"
+  192: push_atom_value  "L"
+  197: push_atom_value  "m"
+  202: push_atom_value  "M"
+  207: push_atom_value  "n"
+  212: push_atom_value  "O"
+  217: push_atom_value  "r"
+  222: push_atom_value  "s"
+  227: push_atom_value  "S"
+  232: push_atom_value  "t"
+  237: push_atom_value  "U"
+  242: push_atom_value  "w"
+  247: push_atom_value  "W"
+  252: push_atom_value  "y"
+  257: push_atom_value  "Y"
+  262: push_atom_value  "z"
+  267: array_from  28
+  270: put_loc0
+  271: push_atom_value  "Sunday"
+  276: push_atom_value  "Monday"
+  281: push_atom_value  "Tuesday"
+  286: push_atom_value  "Wednesday"
+  291: push_atom_value  "Thursday"
+  296: push_atom_value  "Friday"
+  301: push_atom_value  "Saturday"
+  306: array_from  7
+  309: put_loc1
+  310: push_atom_value  "Sun"
+  315: push_atom_value  "Mon"
+  320: push_atom_value  "Tue"
+  325: push_atom_value  "Wed"
+  330: push_atom_value  "Thu"
+  335: push_atom_value  "Fri"
+  340: push_atom_value  "Sat"
+  345: array_from  7
+  348: put_loc2
+  349: push_atom_value  "Jan"
+  354: push_atom_value  "Feb"
+  359: push_atom_value  "Mar"
+  364: push_atom_value  "Apr"
+  369: push_atom_value  "May"
+  374: push_atom_value  "Jun"
+  379: push_atom_value  "Jul"
+  384: push_atom_value  "Aug"
+  389: push_atom_value  "Sep"
+  394: push_atom_value  "Oct"
+  399: push_atom_value  "Nov"
+  404: push_atom_value  "Dec"
+  409: array_from  12
+  412: put_loc3
+  413: push_atom_value  "January"
+  418: push_atom_value  "February"
+  423: push_atom_value  "March"
+  428: push_atom_value  "April"
+  433: push_atom_value  "May"
+  438: push_atom_value  "June"
+  443: push_atom_value  "July"
+  448: push_atom_value  "August"
+  453: push_atom_value  "September"
+  458: push_atom_value  "October"
+  463: push_atom_value  "November"
+  468: push_atom_value  "December"
+  473: array_from  12
+  476: put_loc8  4
+  478: push_atom_value  "st"
+  483: push_atom_value  "nd"
+  488: push_atom_value  "rd"
+  493: push_atom_value  "th"
+  498: push_atom_value  "th"
+  503: push_atom_value  "th"
+  508: push_atom_value  "th"
+  513: push_atom_value  "th"
+  518: push_atom_value  "th"
+  523: push_atom_value  "th"
+  528: push_atom_value  "th"
+  533: push_atom_value  "th"
+  538: push_atom_value  "th"
+  543: push_atom_value  "th"
+  548: push_atom_value  "th"
+  553: push_atom_value  "th"
+  558: push_atom_value  "th"
+  563: push_atom_value  "th"
+  568: push_atom_value  "th"
+  573: push_atom_value  "th"
+  578: push_atom_value  "st"
+  583: push_atom_value  "nd"
+  588: push_atom_value  "rd"
+  593: push_atom_value  "th"
+  598: push_atom_value  "th"
+  603: push_atom_value  "th"
+  608: push_atom_value  "th"
+  613: push_atom_value  "th"
+  618: push_atom_value  "th"
+  623: push_atom_value  "th"
+  628: push_atom_value  "st"
+  633: array_from  31
+  636: put_loc8  5
+  638: get_loc8  39
+  640: put_loc8  34
+  642: get_arg1
+  643: if_false8  25
+  645: get_loc8  34
+  647: get_field2  "getTime"
+  652: call_method  0
+  655: put_loc8  35
+  657: get_loc8  34
+  659: get_field2  "setTime"
+  664: get_arg1
+  665: call_method  1
+  668: drop
+  669: get_arg0
+  670: get_field2  "split"
+  675: push_empty_string
+  676: call_method  1
+  679: put_loc8  36
+  681: push_0
+  682: put_loc8  37
+  684: get_loc8  36
+  686: get_loc8  37
+  688: get_array_el
+  689: if_false8  99
+  691: get_loc8  36
+  693: get_loc8  37
+  695: get_array_el
+  696: push_atom_value  "\"
+  701: eq
+  702: if_false8  17
+  704: get_loc8  36
+  706: get_field2  "splice"
+  711: get_loc8  37
+  713: push_1
+  714: call_method  2
+  717: drop
+  718: goto8  66
+  720: get_loc8  38
+  722: with_get_var  "arrayExists", 10, 00000000
+  732: get_var  "arrayExists"
+  737: get_loc0
+  738: get_loc8  36
+  740: get_loc8  37
+  742: get_array_el
+  743: call2
+  744: if_false8  40
+  746: get_loc8  36
+  748: get_loc8  37
+  750: to_propkey2
+  751: get_loc8  38
+  753: with_get_var  "eval", 10, 00000000
+  763: get_var  "eval"
+  768: get_loc8  36
+  770: get_loc8  37
+  772: get_array_el
+  773: push_atom_value  "()"
+  778: add
+  779: eval  1, 0
+  784: put_array_el
+  785: inc_loc  37
+  787: goto8  -104
+  789: get_loc8  35
+  791: if_false8  14
+  793: get_loc8  34
+  795: get_field2  "setTime"
+  800: get_loc8  35
+  802: call_method  1
+  805: drop
+  806: get_loc8  36
+  808: get_field2  "join"
+  813: push_empty_string
+  814: tail_call_method  1
+var count: 42
+  switches: normal
+  daysLong: captured normal
+  daysShort: captured normal
+  monthsShort: captured normal
+  monthsLong: captured normal
+  daysSuffix: captured normal
+  a: normal
+  A: normal
+  B: normal
+  d: normal
+  D: captured normal
+  F: normal
+  g: normal
+  G: normal
+  h: normal
+  H: captured normal
+  i: captured normal
+  j: captured normal
+  l: normal
+  L: captured normal
+  m: normal
+  M: captured normal
+  n: captured normal
+  O: captured normal
+  r: normal
+  S: normal
+  s: captured normal
+  t: normal
+  U: normal
+  W: normal
+  w: captured normal
+  Y: captured normal
+  y: normal
+  z: captured normal
+  self: captured normal
+  prevTime: normal
+  ia: normal
+  ij: normal
+  <var>: captured normal
+  this: normal
+  new.target: normal
+  arguments: normal
+Constant pool
+length: 28
+    0: ptr 0x564c329ead50    1: ptr 0x564c329faab0    2: ptr 0x564c329fb0f0    3: ptr 0x564c329db2d0    4: ptr 0x564c329f5c50    5: ptr 0x564c329fb2d0    6: ptr 0x564c329efa10    7: ptr 0x564c329ecf20    8: ptr 0x564c329f0cc0    9: ptr 0x564c329f0980   10: ptr 0x564c329d8f70   11: ptr 0x564c329f5950   12: ptr 0x564c329f08a0   13: ptr 0x564c329d8e90   14: ptr 0x564c329f1b20   15: ptr 0x564c329f1bf0   16: ptr 0x564c329f27a0   17: ptr 0x564c329625b0   18: ptr 0x564c329f2020   19: ptr 0x564c329f3bc0   20: ptr 0x564c329d8270   21: ptr 0x564c329f4280   22: ptr 0x564c329f3c70   23: ptr 0x564c329d7b80   24: ptr 0x564c329d9800   25: ptr 0x564c329f5690   26: ptr 0x564c329f28c0   27: ptr 0x564c329e3500
+-- JSFunction a @ 0x564c329ead50
+source ptr: 0x564c329eba80, ln: 45
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getHours"
+    6: call_method  0
+    9: push_i8  11
+   11: gt
+   12: if_false8  7
+   14: push_atom_value  "pm"
+   19: return
+   20: push_atom_value  "am"
+   25: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction A @ 0x564c329faab0
+source ptr: 0x564c329adcf0, ln: 49
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getHours"
+    6: call_method  0
+    9: push_i8  11
+   11: gt
+   12: if_false8  7
+   14: push_atom_value  "PM"
+   19: return
+   20: push_atom_value  "AM"
+   25: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction B @ 0x564c329fb0f0
+source ptr: 0x564c329efd90, ln: 54
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getTimezoneOffset"
+    6: call_method  0
+    9: push_i8  60
+   11: add
+   12: push_i8  60
+   14: mul
+   15: put_loc0
+   16: get_var_ref0
+   17: get_field2  "getHours"
+   22: call_method  0
+   25: push_i16  3600
+   28: mul
+   29: get_var_ref0
+   30: get_field2  "getMinutes"
+   35: call_method  0
+   38: push_i8  60
+   40: mul
+   41: add
+   42: get_var_ref0
+   43: get_field2  "getSeconds"
+   48: call_method  0
+   51: add
+   52: get_loc0
+   53: add
+   54: put_loc1
+   55: get_var_ref1
+   56: with_get_var  "Math", 10, 00000000
+   66: get_var  "Math"
+   71: get_field2  "floor"
+   76: get_loc1
+   77: push_const8  0
+   79: div
+   80: call_method  1
+   83: set_loc2
+   84: push_i16  1000
+   87: gt
+   88: if_false8  7
+   90: get_loc2
+   91: push_i16  1000
+   94: sub
+   95: put_loc2
+   96: get_loc2
+   97: push_0
+   98: lt
+   99: if_false8  6
+  101: push_i16  1000
+  104: add_loc  2
+  106: push_empty_string
+  107: get_loc2
+  108: add
+  109: get_length
+  110: push_1
+  111: eq
+  112: if_false8  9
+  114: push_atom_value  "00"
+  119: get_loc2
+  120: add
+  121: put_loc2
+  122: push_empty_string
+  123: get_loc2
+  124: add
+  125: get_length
+  126: push_2
+  127: eq
+  128: if_false8  6
+  130: push_const8  1
+  132: get_loc2
+  133: add
+  134: put_loc2
+  135: get_loc2
+  136: return
+var count: 3
+  off: normal
+  theSeconds: normal
+  beat: normal
+Constant pool
+length: 2
+    0:     1: ptr 0x564c329ef950
+-- JSFunction d @ 0x564c329db2d0
+source ptr: 0x564c329ef850, ln: 70
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "String", 10, 00000000
+   11: get_var  "String"
+   16: dup
+   17: get_var_ref1
+   18: get_field2  "getDate"
+   23: call_method  0
+   26: call_constructor  1
+   29: get_length
+   30: push_1
+   31: eq
+   32: if_false8  14
+   34: push_const8  0
+   36: get_var_ref1
+   37: get_field2  "getDate"
+   42: call_method  0
+   45: add
+   46: return
+   47: get_var_ref1
+   48: get_field2  "getDate"
+   53: call_method  0
+   56: return
+var count: 0
+Constant pool
+length: 1
+    0: ptr 0x564c329ef740
+-- JSFunction D @ 0x564c329f5c50
+source ptr: 0x564c329ade10, ln: 75
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_var_ref1
+    2: get_field2  "getDay"
+    7: call_method  0
+   10: get_array_el
+   11: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction F @ 0x564c329fb2d0
+source ptr: 0x564c329d6eb0, ln: 79
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_var_ref1
+    2: get_field2  "getMonth"
+    7: call_method  0
+   10: get_array_el
+   11: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction g @ 0x564c329efa10
+source ptr: 0x564c329f0b70, ln: 83
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getHours"
+    6: call_method  0
+    9: push_i8  12
+   11: gt
+   12: if_false8  14
+   14: get_var_ref0
+   15: get_field2  "getHours"
+   20: call_method  0
+   23: push_i8  12
+   25: sub
+   26: return
+   27: get_var_ref0
+   28: get_field2  "getHours"
+   33: call_method  0
+   36: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction G @ 0x564c329ecf20
+source ptr: 0x564c329d6cf0, ln: 87
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getHours"
+    6: tail_call_method  0
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction h @ 0x564c329f0cc0
+source ptr: 0x564c329d9cc0, ln: 91
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getHours"
+    6: call_method  0
+    9: push_i8  12
+   11: gt
+   12: if_false8  68
+   14: get_var_ref1
+   15: with_get_var  "String", 10, 00000000
+   25: get_var  "String"
+   30: dup
+   31: get_var_ref0
+   32: get_field2  "getHours"
+   37: call_method  0
+   40: push_i8  12
+   42: sub
+   43: call_constructor  1
+   46: set_loc0
+   47: get_length
+   48: push_1
+   49: eq
+   50: if_false8  17
+   52: push_const8  0
+   54: get_var_ref0
+   55: get_field2  "getHours"
+   60: call_method  0
+   63: push_i8  12
+   65: sub
+   66: add
+   67: return
+   68: get_var_ref0
+   69: get_field2  "getHours"
+   74: call_method  0
+   77: push_i8  12
+   79: sub
+   80: return
+   81: get_var_ref1
+   82: with_get_var  "String", 10, 00000000
+   92: get_var  "String"
+   97: dup
+   98: get_var_ref0
+   99: get_field2  "getHours"
+  104: call_method  0
+  107: call_constructor  1
+  110: set_loc0
+  111: get_length
+  112: push_1
+  113: eq
+  114: if_false8  14
+  116: push_const8  1
+  118: get_var_ref0
+  119: get_field2  "getHours"
+  124: call_method  0
+  127: add
+  128: return
+  129: get_var_ref0
+  130: get_field2  "getHours"
+  135: call_method  0
+  138: return
+var count: 1
+  s: normal
+Constant pool
+length: 2
+    0: ptr 0x564c329ef600    1: ptr 0x564c329f12d0
+-- JSFunction H @ 0x564c329f0980
+source ptr: 0x564c329f19a0, ln: 103
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "String", 10, 00000000
+   11: get_var  "String"
+   16: dup
+   17: get_var_ref1
+   18: get_field2  "getHours"
+   23: call_method  0
+   26: call_constructor  1
+   29: get_length
+   30: push_1
+   31: eq
+   32: if_false8  14
+   34: push_const8  0
+   36: get_var_ref1
+   37: get_field2  "getHours"
+   42: call_method  0
+   45: add
+   46: return
+   47: get_var_ref1
+   48: get_field2  "getHours"
+   53: call_method  0
+   56: return
+var count: 0
+Constant pool
+length: 1
+    0: ptr 0x564c329f1890
+-- JSFunction i @ 0x564c329d8f70
+source ptr: 0x564c329f1e60, ln: 108
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "String", 10, 00000000
+   11: get_var  "String"
+   16: dup
+   17: get_var_ref1
+   18: get_field2  "getMinutes"
+   23: call_method  0
+   26: call_constructor  1
+   29: get_length
+   30: push_1
+   31: eq
+   32: if_false8  14
+   34: push_const8  0
+   36: get_var_ref1
+   37: get_field2  "getMinutes"
+   42: call_method  0
+   45: add
+   46: return
+   47: get_var_ref1
+   48: get_field2  "getMinutes"
+   53: call_method  0
+   56: return
+var count: 0
+Constant pool
+length: 1
+    0: ptr 0x564c329f1d70
+-- JSFunction j @ 0x564c329f5950
+source ptr: 0x564c329d5c60, ln: 113
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getDate"
+    6: tail_call_method  0
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction l @ 0x564c329f08a0
+source ptr: 0x564c329f02f0, ln: 117
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_var_ref1
+    2: get_field2  "getDay"
+    7: call_method  0
+   10: get_array_el
+   11: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction L @ 0x564c329d8e90
+source ptr: 0x564c329f2980, ln: 121
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: call0
+    2: set_loc0
+    3: push_4
+    4: mod
+    5: push_0
+    6: eq
+    7: dup
+    8: if_false8  8
+   10: drop
+   11: get_loc0
+   12: push_i8  100
+   14: mod
+   15: push_0
+   16: neq
+   17: dup
+   18: if_true8  24
+   20: drop
+   21: get_loc0
+   22: push_4
+   23: mod
+   24: push_0
+   25: eq
+   26: if_false8  20
+   28: get_loc0
+   29: push_i8  100
+   31: mod
+   32: push_0
+   33: eq
+   34: if_false8  12
+   36: get_loc0
+   37: push_i16  400
+   40: mod
+   41: push_0
+   42: eq
+   43: if_false8  3
+   45: push_1
+   46: return
+   47: push_0
+   48: return
+var count: 1
+  y_: normal
+Constant pool
+length: 0
+
+-- JSFunction m @ 0x564c329f1b20
+source ptr: 0x564c329f0f20, ln: 134
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getMonth"
+    6: call_method  0
+    9: push_i8  9
+   11: lt
+   12: if_false8  16
+   14: push_const8  0
+   16: get_var_ref0
+   17: get_field2  "getMonth"
+   22: call_method  0
+   25: push_1
+   26: add
+   27: add
+   28: return
+   29: get_var_ref0
+   30: get_field2  "getMonth"
+   35: call_method  0
+   38: push_1
+   39: add
+   40: return
+var count: 0
+Constant pool
+length: 1
+    0: ptr 0x564c329f26f0
+-- JSFunction M @ 0x564c329f1bf0
+source ptr: 0x564c329eeea0, ln: 140
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_var_ref1
+    2: get_field2  "getMonth"
+    7: call_method  0
+   10: get_array_el
+   11: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction n @ 0x564c329f27a0
+source ptr: 0x564c329adf30, ln: 144
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getMonth"
+    6: call_method  0
+    9: push_1
+   10: add
+   11: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction O @ 0x564c329625b0
+source ptr: 0x564c329f3e20, ln: 148
+arg count: 0
+stack size: 5
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "Math", 10, 00000000
+   11: get_var  "Math"
+   16: get_field2  "abs"
+   21: get_var_ref1
+   22: get_field2  "getTimezoneOffset"
+   27: call_method  0
+   30: call_method  1
+   33: put_loc0
+   34: push_empty_string
+   35: get_var_ref0
+   36: with_get_var  "Math", 10, 00000000
+   46: get_var  "Math"
+   51: get_field2  "floor"
+   56: get_loc0
+   57: push_i8  60
+   59: div
+   60: call_method  1
+   63: add
+   64: put_loc1
+   65: push_empty_string
+   66: get_loc0
+   67: push_i8  60
+   69: mod
+   70: add
+   71: put_loc2
+   72: get_loc1
+   73: get_length
+   74: push_1
+   75: eq
+   76: if_false8  8
+   78: push_const8  0
+   80: get_loc1
+   81: add
+   82: set_loc1
+   83: goto8  2
+   85: push_1
+   86: drop
+   87: get_loc2
+   88: get_length
+   89: push_1
+   90: eq
+   91: if_false8  8
+   93: push_const8  1
+   95: get_loc2
+   96: add
+   97: set_loc2
+   98: goto8  2
+  100: push_1
+  101: drop
+  102: get_var_ref1
+  103: get_field2  "getTimezoneOffset"
+  108: call_method  0
+  111: push_0
+  112: lt
+  113: if_false8  11
+  115: push_atom_value  "+"
+  120: get_loc1
+  121: add
+  122: get_loc2
+  123: add
+  124: return
+  125: push_atom_value  "-"
+  130: get_loc1
+  131: add
+  132: get_loc2
+  133: add
+  134: return
+var count: 3
+  os: normal
+  h: normal
+  m: normal
+Constant pool
+length: 2
+    0: ptr 0x564c329f3710    1: ptr 0x564c329f1020
+-- JSFunction r @ 0x564c329f2020
+source ptr: 0x564c329f43a0, ln: 157
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: call0
+    2: push_atom_value  ", "
+    7: add
+    8: get_var_ref1
+    9: call0
+   10: add
+   11: push_atom_value  " "
+   16: add
+   17: get_var_ref2
+   18: call0
+   19: add
+   20: push_atom_value  " "
+   25: add
+   26: get_var_ref3
+   27: call0
+   28: add
+   29: push_atom_value  " "
+   34: add
+   35: get_var_ref  4
+   38: call0
+   39: add
+   40: push_atom_value  ":"
+   45: add
+   46: get_var_ref  5
+   49: call0
+   50: add
+   51: push_atom_value  ":"
+   56: add
+   57: get_var_ref  6
+   60: call0
+   61: add
+   62: push_atom_value  " "
+   67: add
+   68: get_var_ref  7
+   71: call0
+   72: add
+   73: set_loc0
+   74: return
+var count: 1
+  r: normal
+Constant pool
+length: 0
+
+-- JSFunction S @ 0x564c329f3bc0
+source ptr: 0x564c329f3900, ln: 166
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_var_ref1
+    2: get_field2  "getDate"
+    7: call_method  0
+   10: push_1
+   11: sub
+   12: get_array_el
+   13: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction s @ 0x564c329d8270
+source ptr: 0x564c329f4bc0, ln: 170
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "String", 10, 00000000
+   11: get_var  "String"
+   16: dup
+   17: get_var_ref1
+   18: get_field2  "getSeconds"
+   23: call_method  0
+   26: call_constructor  1
+   29: get_length
+   30: push_1
+   31: eq
+   32: if_false8  14
+   34: push_const8  0
+   36: get_var_ref1
+   37: get_field2  "getSeconds"
+   42: call_method  0
+   45: add
+   46: return
+   47: get_var_ref1
+   48: get_field2  "getSeconds"
+   53: call_method  0
+   56: return
+var count: 0
+Constant pool
+length: 1
+    0: ptr 0x564c329f2b60
+-- JSFunction t @ 0x564c329f4280
+source ptr: 0x564c329e6a10, ln: 175
+arg count: 0
+stack size: 13
+Funtion bytecode:
+    0: null
+    1: push_i8  31
+    3: push_i8  28
+    5: push_i8  31
+    7: push_i8  30
+    9: push_i8  31
+   11: push_i8  30
+   13: push_i8  31
+   15: push_i8  31
+   17: push_i8  30
+   19: push_i8  31
+   21: push_i8  30
+   23: push_i8  31
+   25: array_from  13
+   28: put_loc0
+   29: get_var_ref0
+   30: call0
+   31: push_1
+   32: eq
+   33: if_false8  10
+   35: get_var_ref1
+   36: call0
+   37: push_2
+   38: eq
+   39: if_false8  4
+   41: push_i8  29
+   43: return
+   44: get_loc0
+   45: get_var_ref1
+   46: call0
+   47: get_array_el
+   48: return
+var count: 1
+  daysinmonths: normal
+Constant pool
+length: 0
+
+-- JSFunction U @ 0x564c329f3c70
+source ptr: 0x564c329e6010, ln: 182
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "Math", 10, 00000000
+   11: get_var  "Math"
+   16: get_field2  "round"
+   21: get_var_ref1
+   22: get_field2  "getTime"
+   27: call_method  0
+   30: push_i16  1000
+   33: div
+   34: tail_call_method  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction W @ 0x564c329d7b80
+source ptr: 0x564c329f6110, ln: 186
+arg count: 0
+stack size: 6
+Funtion bytecode:
+    0: push_i16  364
+    3: get_var_ref0
+    4: call0
+    5: add
+    6: get_var_ref1
+    7: call0
+    8: sub
+    9: put_loc0
+   10: get_var_ref1
+   11: call0
+   12: put_loc1
+   13: get_var_ref2
+   14: call0
+   15: push_0
+   16: neq
+   17: if_false8  7
+   19: get_var_ref2
+   20: call0
+   21: push_1
+   22: sub
+   23: goto8  2
+   25: push_6
+   26: put_loc2
+   27: get_loc0
+   28: push_2
+   29: lte
+   30: if_false8  10
+   32: get_loc2
+   33: push_2
+   34: get_loc0
+   35: sub
+   36: lte
+   37: if_false8  3
+   39: push_1
+   40: return
+   41: get_var_ref3
+   42: with_get_var  "Date", 10, 00000000
+   52: get_var  "Date"
+   57: dup
+   58: push_atom_value  "January 1 "
+   63: get_var_ref  4
+   66: call0
+   67: add
+   68: push_atom_value  " 00:00:00"
+   73: add
+   74: call_constructor  1
+   77: set_loc3
+   78: get_field2  "getDay"
+   83: call_method  0
+   86: push_0
+   87: neq
+   88: if_false8  14
+   90: get_loc3
+   91: get_field2  "getDay"
+   96: call_method  0
+   99: push_1
+  100: sub
+  101: goto8  2
+  103: push_6
+  104: put_loc8  4
+  106: get_loc1
+  107: push_2
+  108: lte
+  109: if_false8  68
+  111: get_loc8  4
+  113: push_4
+  114: gte
+  115: if_false8  62
+  117: get_loc1
+  118: push_6
+  119: get_loc8  4
+  121: sub
+  122: gte
+  123: if_false8  54
+  125: get_var_ref3
+  126: with_get_var  "Date", 10, 00000000
+  136: get_var  "Date"
+  141: dup
+  142: push_atom_value  "December 31 "
+  147: get_var_ref  4
+  150: call0
+  151: push_1
+  152: sub
+  153: add
+  154: push_atom_value  " 00:00:00"
+  159: add
+  160: call_constructor  1
+  163: set_loc8  5
+  165: get_field2  "formatDate"
+  170: push_atom_value  "W"
+  175: tail_call_method  1
+  178: get_loc8  4
+  180: push_3
+  181: lte
+  182: if_false8  35
+  184: push_1
+  185: get_var_ref3
+  186: with_get_var  "Math", 10, 00000000
+  196: get_var  "Math"
+  201: get_field2  "floor"
+  206: get_var_ref1
+  207: call0
+  208: get_loc8  4
+  210: add
+  211: push_7
+  212: div
+  213: call_method  1
+  216: add
+  217: return
+  218: push_1
+  219: get_var_ref3
+  220: with_get_var  "Math", 10, 00000000
+  230: get_var  "Math"
+  235: get_field2  "floor"
+  240: get_var_ref1
+  241: call0
+  242: push_7
+  243: get_loc8  4
+  245: sub
+  246: sub
+  247: push_7
+  248: div
+  249: call_method  1
+  252: add
+  253: return
+var count: 6
+  beforeNY: normal
+  afterNY: normal
+  weekday: normal
+  ny: normal
+  nyDay: normal
+  prevNY: normal
+Constant pool
+length: 0
+
+-- JSFunction w @ 0x564c329d9800
+source ptr: 0x564c329d5200, ln: 226
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field2  "getDay"
+    6: tail_call_method  0
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction Y @ 0x564c329f5690
+source ptr: 0x564c329f6ed0, ln: 231
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: get_var_ref0
+    1: get_field  "getFullYear"
+    6: if_false8  51
+    8: get_var_ref1
+    9: with_get_var  "Date", 10, 00000000
+   19: get_var  "Date"
+   24: dup
+   25: push_atom_value  "January 1 2001 00:00:00 +0000"
+   30: call_constructor  1
+   33: set_loc0
+   34: get_field2  "getFullYear"
+   39: call_method  0
+   42: set_loc1
+   43: push_i16  2001
+   46: eq
+   47: if_false8  10
+   49: get_var_ref0
+   50: get_field2  "getFullYear"
+   55: tail_call_method  0
+   58: get_var_ref0
+   59: get_field2  "getYear"
+   64: call_method  0
+   67: set_loc1
+   68: push_i8  100
+   70: mod
+   71: set_loc2
+   72: get_loc2
+   73: push_i8  38
+   75: lt
+   76: if_false8  6
+   78: push_i16  2000
+   81: goto8  4
+   83: push_i16  1900
+   86: add
+   87: set_loc2
+   88: return
+var count: 3
+  newDate: normal
+  x: normal
+  y: normal
+Constant pool
+length: 0
+
+-- JSFunction y @ 0x564c329f28c0
+source ptr: 0x564c329f0c20, ln: 253
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: call0
+    2: push_empty_string
+    3: add
+    4: set_loc0
+    5: get_field2  "substring"
+   10: get_loc0
+   11: get_length
+   12: push_2
+   13: sub
+   14: get_loc0
+   15: get_length
+   16: tail_call_method  2
+var count: 1
+  y: normal
+Constant pool
+length: 0
+
+-- JSFunction z @ 0x564c329e3500
+source ptr: 0x564c329eaae0, ln: 258
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: get_var_ref0
+    1: with_get_var  "Date", 10, 00000000
+   11: get_var  "Date"
+   16: dup
+   17: push_atom_value  "January 1 "
+   22: get_var_ref1
+   23: call0
+   24: add
+   25: push_atom_value  " 00:00:00"
+   30: add
+   31: call_constructor  1
+   34: put_loc0
+   35: get_var_ref2
+   36: get_field2  "getTime"
+   41: call_method  0
+   44: get_loc0
+   45: get_field2  "getTime"
+   50: call_method  0
+   53: sub
+   54: put_loc1
+   55: get_var_ref0
+   56: with_get_var  "Math", 10, 00000000
+   66: get_var  "Math"
+   71: get_field2  "floor"
+   76: get_loc1
+   77: push_i16  1000
+   80: div
+   81: push_i8  60
+   83: div
+   84: push_i8  60
+   86: div
+   87: push_i8  24
+   89: div
+   90: tail_call_method  1
+var count: 2
+  t: normal
+  diff: normal
+Constant pool
+length: 0
+
+
+
+
+
+
+
+
+
+
+

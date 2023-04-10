@@ -1,0 +1,217 @@
+-- JSFunction <eval> @ 0x55906222f790
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 5
+Funtion bytecode:
+    0: check_define_var  "loops", 00000000
+    6: check_define_var  "nx", 00000000
+   12: check_define_var  "nz", 00000000
+   18: check_define_var  "morph", 01000000
+   24: check_define_var  "a", 00000000
+   30: check_define_var  "i", 00000000
+   36: check_define_var  "i", 00000000
+   42: check_define_var  "i", 00000000
+   48: check_define_var  "epsilon", 00000000
+   54: define_var  "loops", 00000000
+   60: define_var  "nx", 00000000
+   66: define_var  "nz", 00000000
+   72: fclosure8  0
+   74: define_func  "morph", 00000000
+   80: define_var  "a", 00000000
+   86: define_var  "i", 00000000
+   92: define_var  "i", 00000000
+   98: define_var  "i", 00000000
+  104: define_var  "epsilon", 00000000
+  110: push_i8  15
+  112: put_var  "loops"
+  117: push_i8  120
+  119: put_var  "nx"
+  124: push_i8  120
+  126: put_var  "nz"
+  131: get_var  "Array"
+  136: call0
+  137: put_var  "a"
+  142: undefined
+  143: put_loc0
+  144: push_0
+  145: put_var  "i"
+  150: get_var  "i"
+  155: get_var  "nx"
+  160: get_var  "nz"
+  165: mul
+  166: push_3
+  167: mul
+  168: lt
+  169: if_false8  31
+  171: get_var  "a"
+  176: get_var  "i"
+  181: to_propkey2
+  182: push_0
+  183: insert3
+  184: put_array_el
+  185: put_loc0
+  186: get_var  "i"
+  191: inc
+  192: dup
+  193: put_var  "i"
+  198: drop
+  199: goto8  -50
+  201: undefined
+  202: put_loc0
+  203: push_0
+  204: put_var  "i"
+  209: get_var  "i"
+  214: get_var  "loops"
+  219: lt
+  220: if_false8  39
+  222: get_var  "morph"
+  227: get_var  "a"
+  232: get_var  "i"
+  237: get_var  "loops"
+  242: div
+  243: call2
+  244: put_loc0
+  245: get_var  "i"
+  250: inc
+  251: dup
+  252: put_var  "i"
+  257: drop
+  258: goto8  -50
+  260: push_0
+  261: dup
+  262: put_var  "testOutput"
+  267: put_loc0
+  268: undefined
+  269: put_loc0
+  270: push_0
+  271: put_var  "i"
+  276: get_var  "i"
+  281: get_var  "nx"
+  286: lt
+  287: if_false8  55
+  289: get_var  "testOutput"
+  294: get_var  "a"
+  299: push_3
+  300: get_var  "i"
+  305: get_var  "nx"
+  310: mul
+  311: get_var  "i"
+  316: add
+  317: mul
+  318: push_1
+  319: add
+  320: get_array_el
+  321: add
+  322: dup
+  323: put_var  "testOutput"
+  328: put_loc0
+  329: get_var  "i"
+  334: post_inc
+  335: put_var  "i"
+  340: drop
+  341: goto8  -66
+  343: null
+  344: dup
+  345: put_var  "a"
+  350: put_loc0
+  351: push_const8  1
+  353: put_var  "epsilon"
+  358: undefined
+  359: put_loc0
+  360: get_var  "Math"
+  365: get_field2  "abs"
+  370: get_var  "testOutput"
+  375: call_method  1
+  378: get_var  "epsilon"
+  383: gte
+  384: if_false8  25
+  386: push_atom_value  "Error: bad test output: expected magnitude below "
+  391: get_var  "epsilon"
+  396: add
+  397: push_atom_value  " but got "
+  402: add
+  403: get_var  "testOutput"
+  408: add
+  409: throw
+  410: get_loc0
+  411: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 2
+    0: ptr 0x5590621aa5b0    1: 
+-- JSFunction morph @ 0x5590621aa5b0
+source ptr: 0x55906222d750, ln: 30
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_var  "Math"
+    5: get_field  "PI"
+   10: push_i8  8
+   12: mul
+   13: get_var  "nx"
+   18: div
+   19: put_loc0
+   20: get_var  "Math"
+   25: get_field  "sin"
+   30: put_loc1
+   31: push_i8  50
+   33: get_loc1
+   34: get_arg1
+   35: get_var  "Math"
+   40: get_field  "PI"
+   45: mul
+   46: push_2
+   47: mul
+   48: call1
+   49: mul
+   50: neg
+   51: put_loc2
+   52: push_0
+   53: put_loc3
+   54: get_loc3
+   55: get_var  "nz"
+   60: lt
+   61: if_false8  50
+   63: push_0
+   64: put_loc8  4
+   66: get_loc8  4
+   68: get_var  "nx"
+   73: lt
+   74: if_false8  33
+   76: get_arg0
+   77: push_3
+   78: get_loc3
+   79: get_var  "nx"
+   84: mul
+   85: get_loc8  4
+   87: add
+   88: mul
+   89: push_1
+   90: add
+   91: to_propkey2
+   92: get_loc1
+   93: get_loc8  4
+   95: push_1
+   96: sub
+   97: get_loc0
+   98: mul
+   99: call1
+  100: get_loc2
+  101: neg
+  102: mul
+  103: put_array_el
+  104: inc_loc  4
+  106: goto8  -41
+  108: inc_loc  3
+  110: goto8  -57
+  112: return_undef
+var count: 5
+  PI2nx: normal
+  sin: normal
+  f30: normal
+  i: normal
+  j: normal
+Constant pool
+length: 0
+
