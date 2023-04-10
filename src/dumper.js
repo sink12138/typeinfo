@@ -61,6 +61,6 @@ function printTypeFile(fileName) {
         output = output.concat(")\n");
         output = output.concat("\n");
     }
-    fs.writeFileSync(fileName + ".ts.ty", output);
+    fs.writeFileSync(fileName + ".js.ty", output);
 }
 printTypeFile(process.argv[2]);

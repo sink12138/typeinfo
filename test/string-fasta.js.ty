@@ -1,0 +1,437 @@
+(fn _JS_F6<eval>__0x55d5f0be9750 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "last", 00000000
+    (  6 any)  ; check_define_var  "A", 00000000
+    ( 12 any)  ; check_define_var  "C", 00000000
+    ( 18 any)  ; check_define_var  "M", 00000000
+    ( 24 any)  ; check_define_var  "rand", 01000000
+    ( 30 any)  ; check_define_var  "ALU", 00000000
+    ( 36 any)  ; check_define_var  "IUB", 00000000
+    ( 42 any)  ; check_define_var  "HomoSap", 00000000
+    ( 48 any)  ; check_define_var  "makeCumulative", 01000000
+    ( 54 any)  ; check_define_var  "fastaRepeat", 01000000
+    ( 60 any)  ; check_define_var  "fastaRandom", 01000000
+    ( 66 any)  ; check_define_var  "ret", 00000000
+    ( 72 any)  ; check_define_var  "count", 00000000
+    ( 78 any)  ; check_define_var  "expected", 00000000
+    ( 84 any)  ; define_var  "last", 00000000
+    ( 90 any)  ; define_var  "A", 00000000
+    ( 96 any)  ; define_var  "C", 00000000
+    (102 any)  ; define_var  "M", 00000000
+    (108 any)  ; fclosure8  0
+    (110 any)  ; define_func  "rand", 00000000
+    (116 any)  ; define_var  "ALU", 00000000
+    (122 any)  ; define_var  "IUB", 00000000
+    (128 any)  ; define_var  "HomoSap", 00000000
+    (134 any)  ; fclosure8  20
+    (136 any)  ; define_func  "makeCumulative", 00000000
+    (142 any)  ; fclosure8  21
+    (144 any)  ; define_func  "fastaRepeat", 00000000
+    (150 any)  ; fclosure8  22
+    (152 any)  ; define_func  "fastaRandom", 00000000
+    (158 any)  ; define_var  "ret", 00000000
+    (164 any)  ; define_var  "count", 00000000
+    (170 any)  ; define_var  "expected", 00000000
+    (176 any)  ; push_i8  42
+    (178 any)  ; put_var  "last"
+    (183 any)  ; push_i16  3877
+    (186 any)  ; put_var  "A"
+    (191 any)  ; push_i16  29573
+    (194 any)  ; put_var  "C"
+    (199 any)  ; push_i32  139968
+    (204 any)  ; put_var  "M"
+    (209 any)  ; push_atom_value  "GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGG"
+    (214 any)  ; push_atom_value  "GAGGCCGAGGCGGGCGGATCACCTGAGGTCAGGAGTTCGAGA"
+    (219 any)  ; add 
+    (220 any)  ; push_atom_value  "CCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACTAAAAAT"
+    (225 any)  ; add 
+    (226 any)  ; push_atom_value  "ACAAAAATTAGCCGGGCGTGGTGGCGCGCGCCTGTAATCCCA"
+    (231 any)  ; add 
+    (232 any)  ; push_atom_value  "GCTACTCGGGAGGCTGAGGCAGGAGAATCGCTTGAACCCGGG"
+    (237 any)  ; add 
+    (238 any)  ; push_atom_value  "AGGCGGAGGTTGCAGTGAGCCGAGATCGCGCCACTGCACTCC"
+    (243 any)  ; add 
+    (244 any)  ; push_atom_value  "AGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA"
+    (249 any)  ; add 
+    (250 any)  ; put_var  "ALU"
+    (255 any)  ; object 
+    (256 any)  ; push_const8  1
+    (258 any)  ; define_field  "a"
+    (263 any)  ; push_const8  2
+    (265 any)  ; define_field  "c"
+    (270 any)  ; push_const8  3
+    (272 any)  ; define_field  "g"
+    (277 any)  ; push_const8  4
+    (279 any)  ; define_field  "t"
+    (284 any)  ; push_const8  5
+    (286 any)  ; define_field  "B"
+    (291 any)  ; push_const8  6
+    (293 any)  ; define_field  "D"
+    (298 any)  ; push_const8  7
+    (300 any)  ; define_field  "H"
+    (305 any)  ; push_const8  8
+    (307 any)  ; define_field  "K"
+    (312 any)  ; push_const8  9
+    (314 any)  ; define_field  "M"
+    (319 any)  ; push_const8  10
+    (321 any)  ; define_field  "N"
+    (326 any)  ; push_const8  11
+    (328 any)  ; define_field  "R"
+    (333 any)  ; push_const8  12
+    (335 any)  ; define_field  "S"
+    (340 any)  ; push_const8  13
+    (342 any)  ; define_field  "V"
+    (347 any)  ; push_const8  14
+    (349 any)  ; define_field  "W"
+    (354 any)  ; push_const8  15
+    (356 any)  ; define_field  "Y"
+    (361 any)  ; put_var  "IUB"
+    (366 any)  ; object 
+    (367 any)  ; push_const8  16
+    (369 any)  ; define_field  "a"
+    (374 any)  ; push_const8  17
+    (376 any)  ; define_field  "c"
+    (381 any)  ; push_const8  18
+    (383 any)  ; define_field  "g"
+    (388 any)  ; push_const8  19
+    (390 any)  ; define_field  "t"
+    (395 any)  ; put_var  "HomoSap"
+    (400 any)  ; push_0 
+    (401 any)  ; put_var  "ret"
+    (406 any)  ; push_7 
+    (407 any)  ; put_var  "count"
+    (412 any)  ; get_var  "fastaRepeat"
+    (417 any)  ; push_2 
+    (418 any)  ; get_var  "count"
+    (423 any)  ; mul 
+    (424 any)  ; push_i32  100000
+    (429 any)  ; mul 
+    (430 any)  ; get_var  "ALU"
+    (435 any)  ; call2 
+    (436 any)  ; put_loc0 
+    (437 any)  ; get_var  "fastaRandom"
+    (442 any)  ; push_3 
+    (443 any)  ; get_var  "count"
+    (448 any)  ; mul 
+    (449 any)  ; push_i16  1000
+    (452 any)  ; mul 
+    (453 any)  ; get_var  "IUB"
+    (458 any)  ; call2 
+    (459 any)  ; put_loc0 
+    (460 any)  ; get_var  "fastaRandom"
+    (465 any)  ; push_5 
+    (466 any)  ; get_var  "count"
+    (471 any)  ; mul 
+    (472 any)  ; push_i16  1000
+    (475 any)  ; mul 
+    (476 any)  ; get_var  "HomoSap"
+    (481 any)  ; call2 
+    (482 any)  ; put_loc0 
+    (483 any)  ; push_i32  1456000
+    (488 any)  ; put_var  "expected"
+    (493 any)  ; undefined 
+    (494 any)  ; put_loc0 
+    (495 any)  ; get_var  "ret"
+    (500 any)  ; get_var  "expected"
+    (505 any)  ; neq 
+    (506 any)  ; if_false8  25
+    (508 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (513 any)  ; get_var  "expected"
+    (518 any)  ; add 
+    (519 any)  ; push_atom_value  ", but, got, "
+    (524 any)  ; add 
+    (525 any)  ; get_var  "ret"
+    (530 any)  ; add 
+    (531 any)  ; throw 
+    (532 any)  ; get_loc0 
+    (533 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 23
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+    ;   7: 
+    ;   8: 
+    ;   9: 
+    ;  10: 
+    ;  11: 
+    ;  12: 
+    ;  13: 
+    ;  14: 
+    ;  15: 
+    ;  16: 
+    ;  17: 
+    ;  18: 
+    ;  19: 
+    ;  20: 
+    ;  21: 
+    ;  22: 
+)
+
+(fn _JS_F4rand__0x55d5f0be72d0 
+  ; source ptr: 0x55d5f0be5220, ln: 8
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; max
+      any  ; table
+      any  ; n
+      any  ; seq
+      any  ; n
+      any  ; table
+    )
+  void)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "last"
+    (  5 any)  ; get_var  "A"
+    ( 10 any)  ; mul 
+    ( 11 any)  ; get_var  "C"
+    ( 16 any)  ; add 
+    ( 17 any)  ; get_var  "M"
+    ( 22 any)  ; mod 
+    ( 23 any)  ; dup 
+    ( 24 any)  ; put_var  "last"
+    ( 29 any)  ; drop 
+    ( 30 any)  ; get_arg0 
+    ( 31 any)  ; get_var  "last"
+    ( 36 any)  ; mul 
+    ( 37 any)  ; get_var  "M"
+    ( 42 any)  ; div 
+    ( 43 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F14makeCumulative__0x55d5f0bd5690 
+  ; source ptr: 0x55d5f0bdfb60, ln: 36
+  ; arg count: 1
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 6
+  (locs  ; var count: 2
+    any  ; last: normal
+    any  ; c: normal
+  )
+  (bytecodes 
+    (  0 any)  ; null 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_arg0 
+    (  3 any)  ; for_in_start 
+    (  4 any)  ; goto8  17
+    (  6 any)  ; put_loc1 
+    (  7 any)  ; get_loc0 
+    (  8 any)  ; if_false8  11
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; get_loc1 
+    ( 12 any)  ; to_propkey2 
+    ( 13 any)  ; dup2 
+    ( 14 any)  ; get_array_el 
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; get_array_el 
+    ( 18 any)  ; add 
+    ( 19 any)  ; put_array_el 
+    ( 20 any)  ; get_loc1 
+    ( 21 any)  ; put_loc0 
+    ( 22 any)  ; for_in_next 
+    ( 23 any)  ; if_false8  -18
+    ( 25 any)  ; drop 
+    ( 26 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F11fastaRepeat__0x55d5f0bc4240 
+  ; source ptr: 0x55d5f0be6e10, ln: 44
+  ; arg count: 2
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 6
+  (locs  ; var count: 3
+    any  ; seqi: normal
+    any  ; lenOut: normal
+    any  ; s: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; push_i8  60
+    (  4 any)  ; put_loc1 
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; push_0 
+    (  7 any)  ; gt 
+    (  8 any)  ; if_false8  97
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; get_loc1 
+    ( 12 any)  ; lt 
+    ( 13 any)  ; if_false8  3
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; put_loc1 
+    ( 17 any)  ; get_loc0 
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; add 
+    ( 20 any)  ; get_arg1 
+    ( 21 any)  ; get_length 
+    ( 22 any)  ; lt 
+    ( 23 any)  ; if_false8  33
+    ( 25 any)  ; get_var  "ret"
+    ( 30 any)  ; get_arg1 
+    ( 31 any)  ; get_field2  "substring"
+    ( 36 any)  ; get_loc0 
+    ( 37 any)  ; get_loc0 
+    ( 38 any)  ; get_loc1 
+    ( 39 any)  ; add 
+    ( 40 any)  ; call_method  2
+    ( 43 any)  ; get_length 
+    ( 44 any)  ; add 
+    ( 45 any)  ; dup 
+    ( 46 any)  ; put_var  "ret"
+    ( 51 any)  ; drop 
+    ( 52 any)  ; get_loc1 
+    ( 53 any)  ; add_loc  0
+    ( 55 any)  ; goto8  44
+    ( 57 any)  ; get_arg1 
+    ( 58 any)  ; get_field2  "substring"
+    ( 63 any)  ; get_loc0 
+    ( 64 any)  ; call_method  1
+    ( 67 any)  ; put_loc2 
+    ( 68 any)  ; get_loc1 
+    ( 69 any)  ; get_loc2 
+    ( 70 any)  ; get_length 
+    ( 71 any)  ; sub 
+    ( 72 any)  ; put_loc0 
+    ( 73 any)  ; get_var  "ret"
+    ( 78 any)  ; get_loc2 
+    ( 79 any)  ; get_arg1 
+    ( 80 any)  ; get_field2  "substring"
+    ( 85 any)  ; push_0 
+    ( 86 any)  ; get_loc0 
+    ( 87 any)  ; call_method  2
+    ( 90 any)  ; add 
+    ( 91 any)  ; get_length 
+    ( 92 any)  ; add 
+    ( 93 any)  ; dup 
+    ( 94 any)  ; put_var  "ret"
+    ( 99 any)  ; drop 
+    (100 any)  ; get_arg0 
+    (101 any)  ; get_loc1 
+    (102 any)  ; sub 
+    (103 any)  ; put_arg0 
+    (104 any)  ; goto8  -100
+    (106 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F11fastaRandom__0x55d5f0be8f90 
+  ; source ptr: 0x55d5f0be7a20, ln: 60
+  ; arg count: 2
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 4
+  (locs  ; var count: 4
+    any  ; line: normal
+    any  ; i: normal
+    any  ; r: normal
+    any  ; c: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_i8  60
+    (  8 any)  ; call_constructor  1
+    ( 11 any)  ; put_loc0 
+    ( 12 any)  ; get_var  "makeCumulative"
+    ( 17 any)  ; get_arg1 
+    ( 18 any)  ; call1 
+    ( 19 any)  ; drop 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; push_0 
+    ( 22 any)  ; gt 
+    ( 23 any)  ; if_false8  92
+    ( 25 any)  ; get_arg0 
+    ( 26 any)  ; get_loc0 
+    ( 27 any)  ; get_length 
+    ( 28 any)  ; lt 
+    ( 29 any)  ; if_false8  12
+    ( 31 any)  ; get_var  "Array"
+    ( 36 any)  ; dup 
+    ( 37 any)  ; get_arg0 
+    ( 38 any)  ; call_constructor  1
+    ( 41 any)  ; put_loc0 
+    ( 42 any)  ; push_0 
+    ( 43 any)  ; put_loc1 
+    ( 44 any)  ; get_loc1 
+    ( 45 any)  ; get_loc0 
+    ( 46 any)  ; get_length 
+    ( 47 any)  ; lt 
+    ( 48 any)  ; if_false8  36
+    ( 50 any)  ; get_var  "rand"
+    ( 55 any)  ; push_1 
+    ( 56 any)  ; call1 
+    ( 57 any)  ; put_loc2 
+    ( 58 any)  ; get_arg1 
+    ( 59 any)  ; for_in_start 
+    ( 60 any)  ; goto8  15
+    ( 62 any)  ; put_loc3 
+    ( 63 any)  ; get_loc2 
+    ( 64 any)  ; get_arg1 
+    ( 65 any)  ; get_loc3 
+    ( 66 any)  ; get_array_el 
+    ( 67 any)  ; lt 
+    ( 68 any)  ; if_false8  7
+    ( 70 any)  ; get_loc0 
+    ( 71 any)  ; get_loc1 
+    ( 72 any)  ; get_loc3 
+    ( 73 any)  ; put_array_el 
+    ( 74 any)  ; goto8  5
+    ( 76 any)  ; for_in_next 
+    ( 77 any)  ; if_false8  -16
+    ( 79 any)  ; drop 
+    ( 80 any)  ; drop 
+    ( 81 any)  ; inc_loc  1
+    ( 83 any)  ; goto8  -40
+    ( 85 any)  ; get_var  "ret"
+    ( 90 any)  ; get_loc0 
+    ( 91 any)  ; get_field2  "join"
+    ( 96 any)  ; push_empty_string 
+    ( 97 any)  ; call_method  1
+    (100 any)  ; get_length 
+    (101 any)  ; add 
+    (102 any)  ; dup 
+    (103 any)  ; put_var  "ret"
+    (108 any)  ; drop 
+    (109 any)  ; get_arg0 
+    (110 any)  ; get_loc0 
+    (111 any)  ; get_length 
+    (112 any)  ; sub 
+    (113 any)  ; put_arg0 
+    (114 any)  ; goto8  -95
+    (116 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
