@@ -1,0 +1,624 @@
+-- JSFunction <eval> @ 0x56289cf22b40
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 32
+Funtion bytecode:
+    0: check_define_var  "toBase64Table", 00000000
+    6: check_define_var  "base64Pad", 00000000
+   12: check_define_var  "toBase64", 01000000
+   18: check_define_var  "toBinaryTable", 00000000
+   24: check_define_var  "base64ToString", 01000000
+   30: check_define_var  "str", 00000000
+   36: check_define_var  "i", 00000000
+   42: check_define_var  "i", 00000000
+   48: check_define_var  "base64", 00000000
+   54: check_define_var  "encoded", 00000000
+   60: define_var  "toBase64Table", 00000000
+   66: define_var  "base64Pad", 00000000
+   72: fclosure8  0
+   74: define_func  "toBase64", 00000000
+   80: define_var  "toBinaryTable", 00000000
+   86: fclosure8  1
+   88: define_func  "base64ToString", 00000000
+   94: define_var  "str", 00000000
+  100: define_var  "i", 00000000
+  106: define_var  "i", 00000000
+  112: define_var  "base64", 00000000
+  118: define_var  "encoded", 00000000
+  124: push_atom_value  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+  129: put_var  "toBase64Table"
+  134: push_atom_value  "="
+  139: put_var  "base64Pad"
+  144: push_minus1
+  145: push_minus1
+  146: push_minus1
+  147: push_minus1
+  148: push_minus1
+  149: push_minus1
+  150: push_minus1
+  151: push_minus1
+  152: push_minus1
+  153: push_minus1
+  154: push_minus1
+  155: push_minus1
+  156: push_minus1
+  157: push_minus1
+  158: push_minus1
+  159: push_minus1
+  160: push_minus1
+  161: push_minus1
+  162: push_minus1
+  163: push_minus1
+  164: push_minus1
+  165: push_minus1
+  166: push_minus1
+  167: push_minus1
+  168: push_minus1
+  169: push_minus1
+  170: push_minus1
+  171: push_minus1
+  172: push_minus1
+  173: push_minus1
+  174: push_minus1
+  175: push_minus1
+  176: array_from  32
+  179: push_minus1
+  180: define_field  "32"
+  185: push_minus1
+  186: define_field  "33"
+  191: push_minus1
+  192: define_field  "34"
+  197: push_minus1
+  198: define_field  "35"
+  203: push_minus1
+  204: define_field  "36"
+  209: push_minus1
+  210: define_field  "37"
+  215: push_minus1
+  216: define_field  "38"
+  221: push_minus1
+  222: define_field  "39"
+  227: push_minus1
+  228: define_field  "40"
+  233: push_minus1
+  234: define_field  "41"
+  239: push_minus1
+  240: define_field  "42"
+  245: push_i8  62
+  247: define_field  "43"
+  252: push_minus1
+  253: define_field  "44"
+  258: push_minus1
+  259: define_field  "45"
+  264: push_minus1
+  265: define_field  "46"
+  270: push_i8  63
+  272: define_field  "47"
+  277: push_i8  52
+  279: define_field  "48"
+  284: push_i8  53
+  286: define_field  "49"
+  291: push_i8  54
+  293: define_field  "50"
+  298: push_i8  55
+  300: define_field  "51"
+  305: push_i8  56
+  307: define_field  "52"
+  312: push_i8  57
+  314: define_field  "53"
+  319: push_i8  58
+  321: define_field  "54"
+  326: push_i8  59
+  328: define_field  "55"
+  333: push_i8  60
+  335: define_field  "56"
+  340: push_i8  61
+  342: define_field  "57"
+  347: push_minus1
+  348: define_field  "58"
+  353: push_minus1
+  354: define_field  "59"
+  359: push_minus1
+  360: define_field  "60"
+  365: push_0
+  366: define_field  "61"
+  371: push_minus1
+  372: define_field  "62"
+  377: push_minus1
+  378: define_field  "63"
+  383: push_minus1
+  384: define_field  "64"
+  389: push_0
+  390: define_field  "65"
+  395: push_1
+  396: define_field  "66"
+  401: push_2
+  402: define_field  "67"
+  407: push_3
+  408: define_field  "68"
+  413: push_4
+  414: define_field  "69"
+  419: push_5
+  420: define_field  "70"
+  425: push_6
+  426: define_field  "71"
+  431: push_7
+  432: define_field  "72"
+  437: push_i8  8
+  439: define_field  "73"
+  444: push_i8  9
+  446: define_field  "74"
+  451: push_i8  10
+  453: define_field  "75"
+  458: push_i8  11
+  460: define_field  "76"
+  465: push_i8  12
+  467: define_field  "77"
+  472: push_i8  13
+  474: define_field  "78"
+  479: push_i8  14
+  481: define_field  "79"
+  486: push_i8  15
+  488: define_field  "80"
+  493: push_i8  16
+  495: define_field  "81"
+  500: push_i8  17
+  502: define_field  "82"
+  507: push_i8  18
+  509: define_field  "83"
+  514: push_i8  19
+  516: define_field  "84"
+  521: push_i8  20
+  523: define_field  "85"
+  528: push_i8  21
+  530: define_field  "86"
+  535: push_i8  22
+  537: define_field  "87"
+  542: push_i8  23
+  544: define_field  "88"
+  549: push_i8  24
+  551: define_field  "89"
+  556: push_i8  25
+  558: define_field  "90"
+  563: push_minus1
+  564: define_field  "91"
+  569: push_minus1
+  570: define_field  "92"
+  575: push_minus1
+  576: define_field  "93"
+  581: push_minus1
+  582: define_field  "94"
+  587: push_minus1
+  588: define_field  "95"
+  593: push_minus1
+  594: define_field  "96"
+  599: push_i8  26
+  601: define_field  "97"
+  606: push_i8  27
+  608: define_field  "98"
+  613: push_i8  28
+  615: define_field  "99"
+  620: push_i8  29
+  622: define_field  "100"
+  627: push_i8  30
+  629: define_field  "101"
+  634: push_i8  31
+  636: define_field  "102"
+  641: push_i8  32
+  643: define_field  "103"
+  648: push_i8  33
+  650: define_field  "104"
+  655: push_i8  34
+  657: define_field  "105"
+  662: push_i8  35
+  664: define_field  "106"
+  669: push_i8  36
+  671: define_field  "107"
+  676: push_i8  37
+  678: define_field  "108"
+  683: push_i8  38
+  685: define_field  "109"
+  690: push_i8  39
+  692: define_field  "110"
+  697: push_i8  40
+  699: define_field  "111"
+  704: push_i8  41
+  706: define_field  "112"
+  711: push_i8  42
+  713: define_field  "113"
+  718: push_i8  43
+  720: define_field  "114"
+  725: push_i8  44
+  727: define_field  "115"
+  732: push_i8  45
+  734: define_field  "116"
+  739: push_i8  46
+  741: define_field  "117"
+  746: push_i8  47
+  748: define_field  "118"
+  753: push_i8  48
+  755: define_field  "119"
+  760: push_i8  49
+  762: define_field  "120"
+  767: push_i8  50
+  769: define_field  "121"
+  774: push_i8  51
+  776: define_field  "122"
+  781: push_minus1
+  782: define_field  "123"
+  787: push_minus1
+  788: define_field  "124"
+  793: push_minus1
+  794: define_field  "125"
+  799: push_minus1
+  800: define_field  "126"
+  805: push_minus1
+  806: define_field  "127"
+  811: put_var  "toBinaryTable"
+  816: push_empty_string
+  817: put_var  "str"
+  822: undefined
+  823: put_loc0
+  824: push_0
+  825: put_var  "i"
+  830: get_var  "i"
+  835: push_i16  8192
+  838: lt
+  839: if_false8  60
+  841: get_var  "str"
+  846: get_var  "String"
+  851: get_field2  "fromCharCode"
+  856: push_i8  25
+  858: get_var  "Math"
+  863: get_field2  "random"
+  868: call_method  0
+  871: mul
+  872: push_i8  97
+  874: add
+  875: call_method  1
+  878: add
+  879: dup
+  880: put_var  "str"
+  885: put_loc0
+  886: get_var  "i"
+  891: post_inc
+  892: put_var  "i"
+  897: drop
+  898: goto8  -69
+  900: undefined
+  901: put_loc0
+  902: push_i16  8192
+  905: put_var  "i"
+  910: get_var  "i"
+  915: push_i16  16384
+  918: lte
+  919: if_false8  108
+  921: get_var  "toBase64"
+  926: get_var  "str"
+  931: call1
+  932: dup
+  933: put_var  "base64"
+  938: put_loc0
+  939: get_var  "base64ToString"
+  944: get_var  "base64"
+  949: call1
+  950: put_var  "encoded"
+  955: undefined
+  956: put_loc0
+  957: get_var  "encoded"
+  962: get_var  "str"
+  967: neq
+  968: if_false8  25
+  970: push_atom_value  "ERROR: bad result: expected "
+  975: get_var  "str"
+  980: add
+  981: push_atom_value  " but got "
+  986: add
+  987: get_var  "encoded"
+  992: add
+  993: throw
+  994: get_var  "str"
+  999: get_var  "str"
+  1004: add
+  1005: dup
+  1006: put_var  "str"
+  1011: put_loc0
+  1012: get_var  "i"
+  1017: push_2
+  1018: mul
+  1019: dup
+  1020: put_var  "i"
+  1025: drop
+  1026: goto8  -117
+  1028: null
+  1029: dup
+  1030: put_var  "toBinaryTable"
+  1035: set_loc0
+  1036: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 2
+    0: ptr 0x56289cf224a0    1: ptr 0x56289cf229a0
+-- JSFunction toBase64 @ 0x56289cf224a0
+source ptr: 0x56289cf1f820, ln: 45
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: get_arg0
+    3: get_length
+    4: put_loc1
+    5: push_0
+    6: put_loc2
+    7: get_loc2
+    8: get_loc1
+    9: push_2
+   10: sub
+   11: lt
+   12: if_false  131
+   17: get_loc0
+   18: get_var  "toBase64Table"
+   23: get_arg0
+   24: get_field2  "charCodeAt"
+   29: get_loc2
+   30: call_method  1
+   33: push_2
+   34: sar
+   35: get_array_el
+   36: add
+   37: set_loc0
+   38: get_var  "toBase64Table"
+   43: get_arg0
+   44: get_field2  "charCodeAt"
+   49: get_loc2
+   50: call_method  1
+   53: push_3
+   54: and
+   55: push_4
+   56: shl
+   57: get_arg0
+   58: get_field2  "charCodeAt"
+   63: get_loc2
+   64: push_1
+   65: add
+   66: call_method  1
+   69: push_4
+   70: sar
+   71: add
+   72: get_array_el
+   73: add
+   74: set_loc0
+   75: get_var  "toBase64Table"
+   80: get_arg0
+   81: get_field2  "charCodeAt"
+   86: get_loc2
+   87: push_1
+   88: add
+   89: call_method  1
+   92: push_i8  15
+   94: and
+   95: push_2
+   96: shl
+   97: get_arg0
+   98: get_field2  "charCodeAt"
+  103: get_loc2
+  104: push_2
+  105: add
+  106: call_method  1
+  109: push_6
+  110: sar
+  111: add
+  112: get_array_el
+  113: add
+  114: set_loc0
+  115: get_var  "toBase64Table"
+  120: get_arg0
+  121: get_field2  "charCodeAt"
+  126: get_loc2
+  127: push_2
+  128: add
+  129: call_method  1
+  132: push_i8  63
+  134: and
+  135: get_array_el
+  136: add
+  137: put_loc0
+  138: push_3
+  139: add_loc  2
+  141: goto16  -135
+  144: get_loc1
+  145: push_3
+  146: mod
+  147: if_false  146
+  152: get_loc1
+  153: get_loc1
+  154: push_3
+  155: mod
+  156: sub
+  157: put_loc2
+  158: get_loc0
+  159: get_var  "toBase64Table"
+  164: get_arg0
+  165: get_field2  "charCodeAt"
+  170: get_loc2
+  171: call_method  1
+  174: push_2
+  175: sar
+  176: get_array_el
+  177: add
+  178: put_loc0
+  179: get_loc1
+  180: push_3
+  181: mod
+  182: push_2
+  183: eq
+  184: if_false8  73
+  186: get_loc0
+  187: get_var  "toBase64Table"
+  192: get_arg0
+  193: get_field2  "charCodeAt"
+  198: get_loc2
+  199: call_method  1
+  202: push_3
+  203: and
+  204: push_4
+  205: shl
+  206: get_arg0
+  207: get_field2  "charCodeAt"
+  212: get_loc2
+  213: push_1
+  214: add
+  215: call_method  1
+  218: push_4
+  219: sar
+  220: add
+  221: get_array_el
+  222: add
+  223: set_loc0
+  224: get_var  "toBase64Table"
+  229: get_arg0
+  230: get_field2  "charCodeAt"
+  235: get_loc2
+  236: push_1
+  237: add
+  238: call_method  1
+  241: push_i8  15
+  243: and
+  244: push_2
+  245: shl
+  246: get_array_el
+  247: add
+  248: set_loc0
+  249: get_var  "base64Pad"
+  254: add
+  255: put_loc0
+  256: goto8  37
+  258: get_loc0
+  259: get_var  "toBase64Table"
+  264: get_arg0
+  265: get_field2  "charCodeAt"
+  270: get_loc2
+  271: call_method  1
+  274: push_3
+  275: and
+  276: push_4
+  277: shl
+  278: get_array_el
+  279: add
+  280: set_loc0
+  281: get_var  "base64Pad"
+  286: get_var  "base64Pad"
+  291: add
+  292: add
+  293: put_loc0
+  294: get_loc0
+  295: return
+var count: 3
+  result: normal
+  length: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction base64ToString @ 0x56289cf229a0
+source ptr: 0x56289cf212a0, ln: 86
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_0
+    3: put_loc1
+    4: push_0
+    5: put_loc2
+    6: push_0
+    7: put_loc3
+    8: get_loc3
+    9: get_arg0
+   10: get_length
+   11: lt
+   12: if_false8  116
+   14: get_var  "toBinaryTable"
+   19: get_arg0
+   20: get_field2  "charCodeAt"
+   25: get_loc3
+   26: call_method  1
+   29: push_i8  127
+   31: and
+   32: get_array_el
+   33: put_loc8  4
+   35: get_arg0
+   36: get_field2  "charCodeAt"
+   41: get_loc3
+   42: call_method  1
+   45: get_var  "base64Pad"
+   50: get_field2  "charCodeAt"
+   55: push_0
+   56: call_method  1
+   59: eq
+   60: put_loc8  5
+   62: get_loc8  4
+   64: push_minus1
+   65: eq
+   66: if_true8  58
+   68: get_loc2
+   69: push_6
+   70: shl
+   71: get_loc8  4
+   73: or
+   74: put_loc2
+   75: push_6
+   76: add_loc  1
+   78: get_loc1
+   79: push_i8  8
+   81: gte
+   82: if_false8  42
+   84: get_loc1
+   85: push_i8  8
+   87: sub
+   88: put_loc1
+   89: get_loc8  5
+   91: lnot
+   92: if_false8  24
+   94: get_loc0
+   95: get_var  "String"
+  100: get_field2  "fromCharCode"
+  105: get_loc2
+  106: get_loc1
+  107: sar
+  108: push_i16  255
+  111: and
+  112: call_method  1
+  115: add
+  116: put_loc0
+  117: get_loc2
+  118: push_1
+  119: get_loc1
+  120: shl
+  121: push_1
+  122: sub
+  123: and
+  124: put_loc2
+  125: inc_loc  3
+  127: goto8  -120
+  129: get_loc1
+  130: if_false8  20
+  132: get_var  "Components"
+  137: get_field2  "Exception"
+  142: push_atom_value  "Corrupted base64 string"
+  147: call_method  1
+  150: throw
+  151: get_loc0
+  152: return
+var count: 6
+  result: normal
+  leftbits: normal
+  leftdata: normal
+  i: normal
+  c: normal
+  padding: normal
+Constant pool
+length: 0
+

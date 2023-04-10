@@ -1,0 +1,243 @@
+-- JSFunction <eval> @ 0x55cff5021da0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: check_define_var  "partial", 01000000
+    6: check_define_var  "total", 00000000
+   12: check_define_var  "i", 00000000
+   18: check_define_var  "expected", 00000000
+   24: fclosure8  0
+   26: define_func  "partial", 00000000
+   32: define_var  "total", 00000000
+   38: define_var  "i", 00000000
+   44: define_var  "expected", 00000000
+   50: push_0
+   51: put_var  "total"
+   56: undefined
+   57: put_loc0
+   58: push_i16  1024
+   61: put_var  "i"
+   66: get_var  "i"
+   71: push_i16  16384
+   74: lte
+   75: if_false8  41
+   77: get_var  "total"
+   82: get_var  "partial"
+   87: get_var  "i"
+   92: call1
+   93: add
+   94: dup
+   95: put_var  "total"
+  100: put_loc0
+  101: get_var  "i"
+  106: push_2
+  107: mul
+  108: dup
+  109: put_var  "i"
+  114: drop
+  115: goto8  -50
+  117: push_const8  1
+  119: put_var  "expected"
+  124: undefined
+  125: put_loc0
+  126: get_var  "total"
+  131: get_var  "expected"
+  136: neq
+  137: if_false8  25
+  139: push_atom_value  "ERROR: bad result: expected "
+  144: get_var  "expected"
+  149: add
+  150: push_atom_value  " but got "
+  155: add
+  156: get_var  "total"
+  161: add
+  162: throw
+  163: get_loc0
+  164: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 2
+    0: ptr 0x55cff50218a0    1: 
+-- JSFunction partial @ 0x55cff50218a0
+source ptr: 0x55cff4ff6ad0, ln: 5
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: push_0
+    1: dup
+    2: put_var  "a9"
+    7: dup
+    8: put_var  "a8"
+   13: dup
+   14: put_var  "a7"
+   19: dup
+   20: put_var  "a6"
+   25: dup
+   26: put_var  "a5"
+   31: dup
+   32: put_var  "a4"
+   37: dup
+   38: put_var  "a3"
+   43: dup
+   44: put_var  "a2"
+   49: put_loc0
+   50: push_2
+   51: push_3
+   52: div
+   53: put_loc1
+   54: push_minus1
+   55: put_loc2
+   56: push_0
+   57: dup
+   58: put_var  "ck"
+   63: dup
+   64: put_var  "sk"
+   69: dup
+   70: put_var  "k3"
+   75: put_loc3
+   76: push_1
+   77: put_loc8  4
+   79: get_loc8  4
+   81: get_arg0
+   82: lte
+   83: if_false  281
+   88: get_loc8  4
+   90: get_loc8  4
+   92: mul
+   93: set_loc3
+   94: get_loc8  4
+   96: mul
+   97: dup
+   98: put_var  "k3"
+  103: drop
+  104: get_var  "Math"
+  109: get_field2  "sin"
+  114: get_loc8  4
+  116: call_method  1
+  119: dup
+  120: put_var  "sk"
+  125: drop
+  126: get_var  "Math"
+  131: get_field2  "cos"
+  136: get_loc8  4
+  138: call_method  1
+  141: dup
+  142: put_var  "ck"
+  147: drop
+  148: get_loc2
+  149: neg
+  150: put_loc2
+  151: get_loc0
+  152: get_var  "Math"
+  157: get_field2  "pow"
+  162: get_loc1
+  163: get_loc8  4
+  165: push_1
+  166: sub
+  167: call_method  2
+  170: add
+  171: put_loc0
+  172: get_var  "a2"
+  177: get_var  "Math"
+  182: get_field2  "pow"
+  187: get_loc8  4
+  189: push_const8  0
+  191: neg
+  192: call_method  2
+  195: add
+  196: dup
+  197: put_var  "a2"
+  202: drop
+  203: get_var  "a3"
+  208: push_1
+  209: get_loc8  4
+  211: get_loc8  4
+  213: push_1
+  214: add
+  215: mul
+  216: div
+  217: add
+  218: dup
+  219: put_var  "a3"
+  224: drop
+  225: get_var  "a4"
+  230: push_1
+  231: get_var  "k3"
+  236: get_var  "sk"
+  241: mul
+  242: get_var  "sk"
+  247: mul
+  248: div
+  249: add
+  250: dup
+  251: put_var  "a4"
+  256: drop
+  257: get_var  "a5"
+  262: push_1
+  263: get_var  "k3"
+  268: get_var  "ck"
+  273: mul
+  274: get_var  "ck"
+  279: mul
+  280: div
+  281: add
+  282: dup
+  283: put_var  "a5"
+  288: drop
+  289: get_var  "a6"
+  294: push_1
+  295: get_loc8  4
+  297: div
+  298: add
+  299: dup
+  300: put_var  "a6"
+  305: drop
+  306: get_var  "a7"
+  311: push_1
+  312: get_loc3
+  313: div
+  314: add
+  315: dup
+  316: put_var  "a7"
+  321: drop
+  322: get_var  "a8"
+  327: get_loc2
+  328: get_loc8  4
+  330: div
+  331: add
+  332: dup
+  333: put_var  "a8"
+  338: drop
+  339: get_var  "a9"
+  344: get_loc2
+  345: push_2
+  346: get_loc8  4
+  348: mul
+  349: push_1
+  350: sub
+  351: div
+  352: add
+  353: dup
+  354: put_var  "a9"
+  359: drop
+  360: inc_loc  4
+  362: goto16  -284
+  365: get_var  "a6"
+  370: get_var  "a7"
+  375: add
+  376: get_var  "a8"
+  381: add
+  382: get_var  "a9"
+  387: add
+  388: return
+var count: 5
+  a1: normal
+  twothirds: normal
+  alt: normal
+  k2: normal
+  k: normal
+Constant pool
+length: 1
+    0: 

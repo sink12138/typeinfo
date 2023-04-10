@@ -1,0 +1,291 @@
+-- JSFunction <eval> @ 0x55ecbfff3740
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "fannkuch", 01000000
+    6: check_define_var  "n", 00000000
+   12: check_define_var  "ret", 00000000
+   18: check_define_var  "expected", 00000000
+   24: fclosure8  0
+   26: define_func  "fannkuch", 00000000
+   32: define_var  "n", 00000000
+   38: define_var  "ret", 00000000
+   44: define_var  "expected", 00000000
+   50: push_i8  8
+   52: put_var  "n"
+   57: get_var  "fannkuch"
+   62: get_var  "n"
+   67: call1
+   68: put_var  "ret"
+   73: push_i8  22
+   75: put_var  "expected"
+   80: undefined
+   81: put_loc0
+   82: get_var  "ret"
+   87: get_var  "expected"
+   92: neq
+   93: if_false8  25
+   95: push_atom_value  "ERROR: bad result: expected "
+  100: get_var  "expected"
+  105: add
+  106: push_atom_value  " but got "
+  111: add
+  112: get_var  "ret"
+  117: add
+  118: throw
+  119: get_loc0
+  120: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 1
+    0: ptr 0x55ecbfff33c0
+-- JSFunction fannkuch @ 0x55ecbfff33c0
+source ptr: 0x55ecbfff2350, ln: 5
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_0
+    1: put_loc0
+    2: get_var  "Array"
+    7: get_arg0
+    8: call1
+    9: put_loc1
+   10: get_var  "Array"
+   15: get_arg0
+   16: call1
+   17: put_loc2
+   18: get_var  "Array"
+   23: get_arg0
+   24: call1
+   25: put_loc3
+   26: get_var  "Array"
+   31: get_arg0
+   32: call1
+   33: put_loc8  4
+   35: push_0
+   36: put_loc8  5
+   38: get_arg0
+   39: push_1
+   40: sub
+   41: put_loc8  6
+   43: push_0
+   44: put_loc8  7
+   46: get_loc8  7
+   48: get_arg0
+   49: lt
+   50: if_false8  11
+   52: get_loc2
+   53: get_loc8  7
+   55: get_loc8  7
+   57: put_array_el
+   58: inc_loc  7
+   60: goto8  -15
+   62: get_arg0
+   63: put_loc8  8
+   65: get_loc0
+   66: push_i8  30
+   68: lt
+   69: if_false8  38
+   71: push_empty_string
+   72: put_loc8  9
+   74: push_0
+   75: put_loc8  7
+   77: get_loc8  7
+   79: get_arg0
+   80: lt
+   81: if_false8  24
+   83: get_loc8  9
+   85: get_loc2
+   86: get_loc8  7
+   88: get_array_el
+   89: push_1
+   90: add
+   91: get_field2  "toString"
+   96: call_method  0
+   99: add
+  100: put_loc8  9
+  102: inc_loc  7
+  104: goto8  -28
+  106: inc_loc  0
+  108: get_loc8  8
+  110: push_1
+  111: neq
+  112: if_false8  13
+  114: get_loc3
+  115: get_loc8  8
+  117: push_1
+  118: sub
+  119: get_loc8  8
+  121: put_array_el
+  122: dec_loc  8
+  124: goto8  -17
+  126: get_loc2
+  127: push_0
+  128: get_array_el
+  129: push_0
+  130: eq
+  131: dup
+  132: if_true8  9
+  134: drop
+  135: get_loc2
+  136: get_loc8  6
+  138: get_array_el
+  139: get_loc8  6
+  141: eq
+  142: lnot
+  143: if_false8  123
+  145: push_0
+  146: put_loc8  7
+  148: get_loc8  7
+  150: get_arg0
+  151: lt
+  152: if_false8  14
+  154: get_loc1
+  155: get_loc8  7
+  157: to_propkey2
+  158: get_loc2
+  159: get_loc8  7
+  161: get_array_el
+  162: put_array_el
+  163: inc_loc  7
+  165: goto8  -18
+  167: push_0
+  168: put_loc8  10
+  170: get_loc1
+  171: push_0
+  172: get_array_el
+  173: set_loc8  11
+  175: push_0
+  176: eq
+  177: lnot
+  178: if_false8  54
+  180: get_loc8  11
+  182: push_1
+  183: add
+  184: push_1
+  185: sar
+  186: put_loc8  12
+  188: push_0
+  189: put_loc8  7
+  191: get_loc8  7
+  193: get_loc8  12
+  195: lt
+  196: if_false8  32
+  198: get_loc1
+  199: get_loc8  7
+  201: get_array_el
+  202: put_loc8  13
+  204: get_loc1
+  205: get_loc8  7
+  207: to_propkey2
+  208: get_loc1
+  209: get_loc8  11
+  211: get_loc8  7
+  213: sub
+  214: get_array_el
+  215: put_array_el
+  216: get_loc1
+  217: get_loc8  11
+  219: get_loc8  7
+  221: sub
+  222: get_loc8  13
+  224: put_array_el
+  225: inc_loc  7
+  227: goto8  -37
+  229: inc_loc  10
+  231: goto8  -62
+  233: get_loc8  10
+  235: get_loc8  5
+  237: gt
+  238: if_false8  28
+  240: get_loc8  10
+  242: put_loc8  5
+  244: push_0
+  245: put_loc8  7
+  247: get_loc8  7
+  249: get_arg0
+  250: lt
+  251: if_false8  15
+  253: get_loc8  4
+  255: get_loc8  7
+  257: to_propkey2
+  258: get_loc2
+  259: get_loc8  7
+  261: get_array_el
+  262: put_array_el
+  263: inc_loc  7
+  265: goto8  -19
+  267: get_loc8  8
+  269: get_arg0
+  270: eq
+  271: if_false8  4
+  273: get_loc8  5
+  275: return
+  276: get_loc2
+  277: push_0
+  278: get_array_el
+  279: put_loc8  14
+  281: push_0
+  282: put_loc8  7
+  284: get_loc8  7
+  286: get_loc8  8
+  288: lt
+  289: if_false8  22
+  291: get_loc8  7
+  293: push_1
+  294: add
+  295: put_loc8  15
+  297: get_loc2
+  298: get_loc8  7
+  300: to_propkey2
+  301: get_loc2
+  302: get_loc8  15
+  304: get_array_el
+  305: put_array_el
+  306: get_loc8  15
+  308: put_loc8  7
+  310: goto8  -27
+  312: get_loc2
+  313: get_loc8  8
+  315: get_loc8  14
+  317: put_array_el
+  318: get_loc3
+  319: get_loc8  8
+  321: to_propkey2
+  322: get_loc3
+  323: get_loc8  8
+  325: get_array_el
+  326: push_1
+  327: sub
+  328: put_array_el
+  329: get_loc3
+  330: get_loc8  8
+  332: get_array_el
+  333: push_0
+  334: gt
+  335: if_true8  5
+  337: inc_loc  8
+  339: goto8  -73
+  341: goto16  -277
+var count: 16
+  check: normal
+  perm: normal
+  perm1: normal
+  count: normal
+  maxPerm: normal
+  maxFlipsCount: normal
+  m: normal
+  i: normal
+  r: normal
+  s: normal
+  flipsCount: normal
+  k: normal
+  k2: normal
+  temp: normal
+  perm0: normal
+  j: normal
+Constant pool
+length: 0
+

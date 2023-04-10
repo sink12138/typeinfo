@@ -1,0 +1,274 @@
+-- JSFunction <eval> @ 0x55a8ee85a7c0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 4
+Funtion bytecode:
+    0: check_define_var  "TreeNode", 01000000
+    6: check_define_var  "bottomUpTree", 01000000
+   12: check_define_var  "ret", 00000000
+   18: check_define_var  "n", 00000000
+   24: check_define_var  "minDepth", 00000000
+   30: check_define_var  "maxDepth", 00000000
+   36: check_define_var  "stretchDepth", 00000000
+   42: check_define_var  "check", 00000000
+   48: check_define_var  "longLivedTree", 00000000
+   54: check_define_var  "depth", 00000000
+   60: check_define_var  "iterations", 00000000
+   66: check_define_var  "i", 00000000
+   72: check_define_var  "expected", 00000000
+   78: fclosure8  0
+   80: define_func  "TreeNode", 00000000
+   86: fclosure8  2
+   88: define_func  "bottomUpTree", 00000000
+   94: define_var  "ret", 00000000
+  100: define_var  "n", 00000000
+  106: define_var  "minDepth", 00000000
+  112: define_var  "maxDepth", 00000000
+  118: define_var  "stretchDepth", 00000000
+  124: define_var  "check", 00000000
+  130: define_var  "longLivedTree", 00000000
+  136: define_var  "depth", 00000000
+  142: define_var  "iterations", 00000000
+  148: define_var  "i", 00000000
+  154: define_var  "expected", 00000000
+  160: get_var  "TreeNode"
+  165: get_field  "prototype"
+  170: fclosure8  1
+  172: insert2
+  173: put_field  "itemCheck"
+  178: put_loc0
+  179: push_0
+  180: put_var  "ret"
+  185: undefined
+  186: put_loc0
+  187: push_4
+  188: put_var  "n"
+  193: get_var  "n"
+  198: push_7
+  199: lte
+  200: if_false  324
+  205: push_4
+  206: put_var  "minDepth"
+  211: get_var  "Math"
+  216: get_field2  "max"
+  221: get_var  "minDepth"
+  226: push_2
+  227: add
+  228: get_var  "n"
+  233: call_method  2
+  236: put_var  "maxDepth"
+  241: get_var  "maxDepth"
+  246: push_1
+  247: add
+  248: put_var  "stretchDepth"
+  253: get_var  "bottomUpTree"
+  258: push_0
+  259: get_var  "stretchDepth"
+  264: call2
+  265: get_field2  "itemCheck"
+  270: call_method  0
+  273: put_var  "check"
+  278: get_var  "bottomUpTree"
+  283: push_0
+  284: get_var  "maxDepth"
+  289: call2
+  290: put_var  "longLivedTree"
+  295: undefined
+  296: put_loc0
+  297: get_var  "minDepth"
+  302: put_var  "depth"
+  307: get_var  "depth"
+  312: get_var  "maxDepth"
+  317: lte
+  318: if_false  163
+  323: push_1
+  324: get_var  "maxDepth"
+  329: get_var  "depth"
+  334: sub
+  335: get_var  "minDepth"
+  340: add
+  341: shl
+  342: put_var  "iterations"
+  347: push_0
+  348: dup
+  349: put_var  "check"
+  354: put_loc0
+  355: undefined
+  356: put_loc0
+  357: push_1
+  358: put_var  "i"
+  363: get_var  "i"
+  368: get_var  "iterations"
+  373: lte
+  374: if_false8  90
+  376: get_var  "check"
+  381: get_var  "bottomUpTree"
+  386: get_var  "i"
+  391: get_var  "depth"
+  396: call2
+  397: get_field2  "itemCheck"
+  402: call_method  0
+  405: add
+  406: dup
+  407: put_var  "check"
+  412: put_loc0
+  413: get_var  "check"
+  418: get_var  "bottomUpTree"
+  423: get_var  "i"
+  428: neg
+  429: get_var  "depth"
+  434: call2
+  435: get_field2  "itemCheck"
+  440: call_method  0
+  443: add
+  444: dup
+  445: put_var  "check"
+  450: put_loc0
+  451: get_var  "i"
+  456: post_inc
+  457: put_var  "i"
+  462: drop
+  463: goto8  -101
+  465: get_var  "depth"
+  470: push_2
+  471: add
+  472: dup
+  473: put_var  "depth"
+  478: drop
+  479: goto16  -173
+  482: get_var  "ret"
+  487: get_var  "longLivedTree"
+  492: get_field2  "itemCheck"
+  497: call_method  0
+  500: add
+  501: dup
+  502: put_var  "ret"
+  507: put_loc0
+  508: get_var  "n"
+  513: push_1
+  514: add
+  515: dup
+  516: put_var  "n"
+  521: drop
+  522: goto16  -330
+  525: push_i8  -4
+  527: put_var  "expected"
+  532: undefined
+  533: put_loc0
+  534: get_var  "ret"
+  539: get_var  "expected"
+  544: neq
+  545: if_false8  25
+  547: push_atom_value  "ERROR: bad result: expected "
+  552: get_var  "expected"
+  557: add
+  558: push_atom_value  " but got "
+  563: add
+  564: get_var  "ret"
+  569: add
+  570: throw
+  571: get_loc0
+  572: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 3
+    0: ptr 0x55a8ee848410    1: ptr 0x55a8ee859f40    2: ptr 0x55a8ee847710
+-- JSFunction TreeNode @ 0x55a8ee848410
+source ptr: 0x55a8ee846430, ln: 5
+arg count: 3
+stack size: 2
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: put_field  "left"
+    9: get_loc0
+   10: get_arg1
+   11: put_field  "right"
+   16: get_loc0
+   17: get_arg2
+   18: put_field  "item"
+   23: return_undef
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction  @ 0x55a8ee859f40
+source ptr: 0x55a8ee820cf0, ln: 11
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_field  "left"
+    8: null
+    9: eq
+   10: if_false8  8
+   12: get_loc0
+   13: get_field  "item"
+   18: return
+   19: get_loc0
+   20: get_field  "item"
+   25: get_loc0
+   26: get_field  "left"
+   31: get_field2  "itemCheck"
+   36: call_method  0
+   39: add
+   40: get_loc0
+   41: get_field  "right"
+   46: get_field2  "itemCheck"
+   51: call_method  0
+   54: sub
+   55: return
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction bottomUpTree @ 0x55a8ee847710
+source ptr: 0x55a8ee855f90, ln: 16
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_arg1
+    1: push_0
+    2: gt
+    3: if_false8  38
+    5: get_var  "TreeNode"
+   10: dup
+   11: get_var  "bottomUpTree"
+   16: push_2
+   17: get_arg0
+   18: mul
+   19: push_1
+   20: sub
+   21: get_arg1
+   22: push_1
+   23: sub
+   24: call2
+   25: get_var  "bottomUpTree"
+   30: push_2
+   31: get_arg0
+   32: mul
+   33: get_arg1
+   34: push_1
+   35: sub
+   36: call2
+   37: get_arg0
+   38: call_constructor  3
+   41: return
+   42: get_var  "TreeNode"
+   47: dup
+   48: null
+   49: null
+   50: get_arg0
+   51: call_constructor  3
+   54: return
+var count: 0
+Constant pool
+length: 0
+

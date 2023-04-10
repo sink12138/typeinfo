@@ -1,0 +1,372 @@
+-- JSFunction <eval> @ 0x5573626c7380
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 28
+Funtion bytecode:
+    0: check_define_var  "endResult", 00000000
+    6: check_define_var  "doTest", 01000000
+   12: check_define_var  "makeName", 01000000
+   18: check_define_var  "makeNumber", 01000000
+   24: check_define_var  "addResult", 01000000
+   30: define_var  "endResult", 00000000
+   36: fclosure8  3
+   38: define_func  "doTest", 00000000
+   44: fclosure8  4
+   46: define_func  "makeName", 00000000
+   52: fclosure8  5
+   54: define_func  "makeNumber", 00000000
+   60: fclosure8  6
+   62: define_func  "addResult", 00000000
+   68: get_var  "Array"
+   73: dup
+   74: push_atom_value  "a"
+   79: push_atom_value  "b"
+   84: push_atom_value  "c"
+   89: push_atom_value  "d"
+   94: push_atom_value  "e"
+   99: push_atom_value  "f"
+  104: push_atom_value  "g"
+  109: push_atom_value  "h"
+  114: push_atom_value  "i"
+  119: push_atom_value  "j"
+  124: push_atom_value  "k"
+  129: push_atom_value  "l"
+  134: push_atom_value  "m"
+  139: push_atom_value  "n"
+  144: push_atom_value  "o"
+  149: push_atom_value  "p"
+  154: push_atom_value  "q"
+  159: push_atom_value  "r"
+  164: push_atom_value  "s"
+  169: push_atom_value  "t"
+  174: push_atom_value  "u"
+  179: push_atom_value  "v"
+  184: push_atom_value  "w"
+  189: push_atom_value  "x"
+  194: push_atom_value  "y"
+  199: push_atom_value  "z"
+  204: call_constructor  26
+  207: dup
+  208: put_var  "letters"
+  213: put_loc0
+  214: get_var  "Array"
+  219: dup
+  220: push_1
+  221: push_2
+  222: push_3
+  223: push_4
+  224: push_5
+  225: push_6
+  226: push_7
+  227: push_i8  8
+  229: push_i8  9
+  231: push_i8  10
+  233: push_i8  11
+  235: push_i8  12
+  237: push_i8  13
+  239: push_i8  14
+  241: push_i8  15
+  243: push_i8  16
+  245: push_i8  17
+  247: push_i8  18
+  249: push_i8  19
+  251: push_i8  20
+  253: push_i8  21
+  255: push_i8  22
+  257: push_i8  23
+  259: push_i8  24
+  261: push_i8  25
+  263: push_i8  26
+  265: call_constructor  26
+  268: dup
+  269: put_var  "numbers"
+  274: put_loc0
+  275: get_var  "Array"
+  280: dup
+  281: push_atom_value  "FF"
+  286: push_atom_value  "CC"
+  291: push_const8  0
+  293: push_const8  1
+  295: push_const8  2
+  297: push_atom_value  "00"
+  302: call_constructor  6
+  305: dup
+  306: put_var  "colors"
+  311: put_loc0
+  312: get_var  "doTest"
+  317: call0
+  318: set_loc0
+  319: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 7
+    0: ptr 0x5573626c2810    1: ptr 0x5573626c2850    2: ptr 0x5573626c28c0    3: ptr 0x5573626c4c00    4: ptr 0x5573626c3360    5: ptr 0x5573626bba30    6: ptr 0x5573626c6c20
+
+
+
+-- JSFunction doTest @ 0x5573626c4c00
+source ptr: 0x5573626c51b0, ln: 7
+arg count: 0
+stack size: 3
+Funtion bytecode:
+    0: push_empty_string
+    1: dup
+    2: put_var  "endResult"
+    7: drop
+    8: push_0
+    9: put_loc0
+   10: get_loc0
+   11: push_i16  4000
+   14: lt
+   15: if_false8  125
+   17: get_var  "makeName"
+   22: push_6
+   23: call1
+   24: dup
+   25: put_var  "username"
+   30: drop
+   31: get_loc0
+   32: push_2
+   33: mod
+   34: if_false8  20
+   36: get_var  "username"
+   41: push_atom_value  "@mac.com"
+   46: add
+   47: dup
+   48: put_var  "email"
+   53: goto8  18
+   55: get_var  "username"
+   60: push_atom_value  "(at)mac.com"
+   65: add
+   66: dup
+   67: put_var  "email"
+   72: drop
+   73: push_const8  0
+   75: push_const8  1
+   77: regexp
+   78: set_loc1
+   79: get_field2  "test"
+   84: get_var  "email"
+   89: call_method  1
+   92: if_false8  23
+   94: get_var  "email"
+   99: push_atom_value  " appears to be a valid email address."
+  104: add
+  105: put_loc2
+  106: get_var  "addResult"
+  111: get_loc2
+  112: call1
+  113: drop
+  114: goto8  21
+  116: get_var  "email"
+  121: push_atom_value  " does NOT appear to be a valid email address."
+  126: add
+  127: put_loc2
+  128: get_var  "addResult"
+  133: get_loc2
+  134: call1
+  135: drop
+  136: inc_loc  0
+  138: goto16  -129
+  141: push_0
+  142: put_loc3
+  143: get_loc3
+  144: push_i16  4000
+  147: lt
+  148: if_false  168
+  153: push_true
+  154: put_loc8  4
+  156: get_var  "makeNumber"
+  161: push_4
+  162: call1
+  163: put_loc8  5
+  165: get_loc3
+  166: push_2
+  167: mod
+  168: if_false8  13
+  170: get_loc8  5
+  172: push_atom_value  "xyz"
+  177: add
+  178: set_loc8  5
+  180: goto8  15
+  182: get_loc8  5
+  184: get_field2  "concat"
+  189: push_const8  2
+  191: call_method  1
+  194: set_loc8  5
+  196: drop
+  197: push_0
+  198: put_loc8  6
+  200: get_loc8  6
+  202: get_loc8  5
+  204: get_length
+  205: lt
+  206: if_false8  53
+  208: get_loc8  5
+  210: get_field2  "charAt"
+  215: get_loc8  6
+  217: call_method  1
+  220: set_loc8  7
+  222: push_const8  3
+  224: lt
+  225: dup
+  226: if_true8  7
+  228: drop
+  229: get_loc8  7
+  231: push_const8  4
+  233: gt
+  234: if_false8  21
+  236: push_false
+  237: put_loc8  4
+  239: get_loc8  5
+  241: push_atom_value  " contains letters."
+  246: add
+  247: put_loc2
+  248: get_var  "addResult"
+  253: get_loc2
+  254: call1
+  255: drop
+  256: inc_loc  6
+  258: goto8  -59
+  260: get_loc8  4
+  262: if_false8  28
+  264: get_loc8  5
+  266: get_length
+  267: push_5
+  268: gt
+  269: if_false8  21
+  271: push_false
+  272: put_loc8  4
+  274: get_loc8  5
+  276: push_atom_value  " is longer than five characters."
+  281: add
+  282: put_loc2
+  283: get_var  "addResult"
+  288: get_loc2
+  289: call1
+  290: drop
+  291: get_loc8  4
+  293: if_false8  18
+  295: get_loc8  5
+  297: push_atom_value  " appears to be a valid ZIP code."
+  302: add
+  303: put_loc2
+  304: get_var  "addResult"
+  309: get_loc2
+  310: call1
+  311: drop
+  312: inc_loc  3
+  314: goto16  -172
+  317: return_undef
+var count: 8
+  k: normal
+  pattern: normal
+  r: normal
+  s: normal
+  zipGood: normal
+  zip: normal
+  i: normal
+  ch: normal
+Constant pool
+length: 5
+    0: ptr 0x5573626bcd10    1: ptr 0x5573626b4b40    2: ptr 0x5573626c3320    3: ptr 0x5573626c3200    4: ptr 0x5573626c3130
+-- JSFunction makeName @ 0x5573626c3360
+source ptr: 0x5573626c5df0, ln: 62
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_0
+    3: put_loc1
+    4: get_loc1
+    5: get_arg0
+    6: lt
+    7: if_false8  45
+    9: get_var  "Math"
+   14: get_field2  "floor"
+   19: push_i8  26
+   21: get_var  "Math"
+   26: get_field2  "random"
+   31: call_method  0
+   34: mul
+   35: call_method  1
+   38: put_loc2
+   39: get_loc0
+   40: get_var  "letters"
+   45: get_loc2
+   46: get_array_el
+   47: add
+   48: put_loc0
+   49: inc_loc  1
+   51: goto8  -48
+   53: get_loc0
+   54: return
+var count: 3
+  tmp: normal
+  i: normal
+  l: normal
+Constant pool
+length: 0
+
+-- JSFunction makeNumber @ 0x5573626bba30
+source ptr: 0x5573626c6220, ln: 73
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_0
+    3: put_loc1
+    4: get_loc1
+    5: get_arg0
+    6: lt
+    7: if_false8  46
+    9: get_var  "Math"
+   14: get_field2  "floor"
+   19: push_i8  9
+   21: get_var  "Math"
+   26: get_field2  "random"
+   31: call_method  0
+   34: mul
+   35: call_method  1
+   38: put_loc2
+   39: get_loc0
+   40: get_field2  "concat"
+   45: get_loc2
+   46: call_method  1
+   49: put_loc0
+   50: inc_loc  1
+   52: goto8  -49
+   54: get_loc0
+   55: return
+var count: 3
+  tmp: normal
+  i: normal
+  l: normal
+Constant pool
+length: 0
+
+-- JSFunction addResult @ 0x5573626c6c20
+source ptr: 0x5573626c59f0, ln: 84
+arg count: 1
+stack size: 3
+Funtion bytecode:
+    0: get_var  "endResult"
+    5: push_atom_value  "\n"
+   10: get_arg0
+   11: add
+   12: add
+   13: dup
+   14: put_var  "endResult"
+   19: return_undef
+var count: 0
+Constant pool
+length: 0
+
+
+
+
+
+

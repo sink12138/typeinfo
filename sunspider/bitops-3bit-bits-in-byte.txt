@@ -1,0 +1,131 @@
+-- JSFunction <eval> @ 0x5623014489d0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "result", 00000000
+    6: check_define_var  "fast3bitlookup", 01000000
+   12: check_define_var  "TimeFunc", 01000000
+   18: check_define_var  "expected", 00000000
+   24: define_var  "result", 00000000
+   30: fclosure8  0
+   32: define_func  "fast3bitlookup", 00000000
+   38: fclosure8  1
+   40: define_func  "TimeFunc", 00000000
+   46: define_var  "expected", 00000000
+   52: push_0
+   53: put_var  "result"
+   58: get_var  "TimeFunc"
+   63: get_var  "fast3bitlookup"
+   68: call1
+   69: dup
+   70: put_var  "sum"
+   75: put_loc0
+   76: push_i32  512000
+   81: put_var  "expected"
+   86: undefined
+   87: put_loc0
+   88: get_var  "sum"
+   93: get_var  "expected"
+   98: neq
+   99: if_false8  25
+  101: push_atom_value  "ERROR: bad result: expected "
+  106: get_var  "expected"
+  111: add
+  112: push_atom_value  " but got "
+  117: add
+  118: get_var  "sum"
+  123: add
+  124: throw
+  125: get_loc0
+  126: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 2
+    0: ptr 0x562301443680    1: ptr 0x562301451b10
+-- JSFunction fast3bitlookup @ 0x562301443680
+source ptr: 0x562301450b70, ln: 7
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: push_i32  59796
+    5: put_loc1
+    6: push_3
+    7: get_loc1
+    8: get_arg0
+    9: push_1
+   10: shl
+   11: push_i8  14
+   13: and
+   14: sar
+   15: and
+   16: set_loc0
+   17: push_3
+   18: get_loc1
+   19: get_arg0
+   20: push_2
+   21: sar
+   22: push_i8  14
+   24: and
+   25: sar
+   26: and
+   27: add
+   28: set_loc0
+   29: push_3
+   30: get_loc1
+   31: get_arg0
+   32: push_5
+   33: sar
+   34: push_6
+   35: and
+   36: sar
+   37: and
+   38: add
+   39: set_loc0
+   40: return
+var count: 2
+  c: normal
+  bi3b: normal
+Constant pool
+length: 0
+
+-- JSFunction TimeFunc @ 0x562301451b10
+source ptr: 0x56230144b700, ln: 28
+arg count: 1
+stack size: 3
+Funtion bytecode:
+    0: push_0
+    1: put_loc3
+    2: push_0
+    3: put_loc0
+    4: get_loc0
+    5: push_i16  500
+    8: lt
+    9: if_false8  24
+   11: push_0
+   12: put_loc1
+   13: get_loc1
+   14: push_i16  256
+   17: lt
+   18: if_false8  11
+   20: get_loc3
+   21: get_arg0
+   22: get_loc1
+   23: call1
+   24: add
+   25: put_loc3
+   26: inc_loc  1
+   28: goto8  -16
+   30: inc_loc  0
+   32: goto8  -29
+   34: get_loc3
+   35: return
+var count: 4
+  x: normal
+  y: normal
+  t: normal
+  sum: normal
+Constant pool
+length: 0
+

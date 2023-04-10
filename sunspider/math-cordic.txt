@@ -1,0 +1,272 @@
+-- JSFunction <eval> @ 0x55717ffb1d00
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 13
+Funtion bytecode:
+    0: check_define_var  "AG_CONST", 00000000
+    6: check_define_var  "FIXED", 01000000
+   12: check_define_var  "FLOAT", 01000000
+   18: check_define_var  "DEG2RAD", 01000000
+   24: check_define_var  "Angles", 00000000
+   30: check_define_var  "Target", 00000000
+   36: check_define_var  "cordicsincos", 01000000
+   42: check_define_var  "total", 00000000
+   48: check_define_var  "cordic", 01000000
+   54: check_define_var  "expected", 00000000
+   60: define_var  "AG_CONST", 00000000
+   66: fclosure8  1
+   68: define_func  "FIXED", 00000000
+   74: fclosure8  2
+   76: define_func  "FLOAT", 00000000
+   82: fclosure8  3
+   84: define_func  "DEG2RAD", 00000000
+   90: define_var  "Angles", 00000000
+   96: define_var  "Target", 00000000
+  102: fclosure8  16
+  104: define_func  "cordicsincos", 00000000
+  110: define_var  "total", 00000000
+  116: fclosure8  17
+  118: define_func  "cordic", 00000000
+  124: define_var  "expected", 00000000
+  130: push_const8  0
+  132: put_var  "AG_CONST"
+  137: get_var  "FIXED"
+  142: push_i8  45
+  144: call1
+  145: get_var  "FIXED"
+  150: push_const8  4
+  152: call1
+  153: get_var  "FIXED"
+  158: push_const8  5
+  160: call1
+  161: get_var  "FIXED"
+  166: push_const8  6
+  168: call1
+  169: get_var  "FIXED"
+  174: push_const8  7
+  176: call1
+  177: get_var  "FIXED"
+  182: push_const8  8
+  184: call1
+  185: get_var  "FIXED"
+  190: push_const8  9
+  192: call1
+  193: get_var  "FIXED"
+  198: push_const8  10
+  200: call1
+  201: get_var  "FIXED"
+  206: push_const8  11
+  208: call1
+  209: get_var  "FIXED"
+  214: push_const8  12
+  216: call1
+  217: get_var  "FIXED"
+  222: push_const8  13
+  224: call1
+  225: get_var  "FIXED"
+  230: push_const8  14
+  232: call1
+  233: array_from  12
+  236: put_var  "Angles"
+  241: push_const8  15
+  243: put_var  "Target"
+  248: push_0
+  249: put_var  "total"
+  254: get_var  "cordic"
+  259: push_i16  25000
+  262: call1
+  263: put_loc0
+  264: push_const8  18
+  266: put_var  "expected"
+  271: undefined
+  272: put_loc0
+  273: get_var  "total"
+  278: get_var  "expected"
+  283: neq
+  284: if_false8  25
+  286: push_atom_value  "ERROR: bad result: expected "
+  291: get_var  "expected"
+  296: add
+  297: push_atom_value  " but got "
+  302: add
+  303: get_var  "total"
+  308: add
+  309: throw
+  310: get_loc0
+  311: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 19
+    0:     1: ptr 0x55717ffa8ed0    2: ptr 0x55717ffabb90    3: ptr 0x55717ffaef30    4:     5:     6:     7:     8:     9:    10:    11:    12:    13:    14:    15:    16: ptr 0x55717ff2b5b0   17: ptr 0x55717ffa9080   18: 
+-- JSFunction FIXED @ 0x55717ffa8ed0
+source ptr: 0x55717ffa4100, ln: 30
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: push_i32  65536
+    6: mul
+    7: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction FLOAT @ 0x55717ffabb90
+source ptr: 0x55717ff9e8e0, ln: 35
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: push_i32  65536
+    6: div
+    7: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction DEG2RAD @ 0x55717ffaef30
+source ptr: 0x55717ff9d910, ln: 40
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: push_const8  0
+    2: get_arg0
+    3: mul
+    4: return
+var count: 0
+Constant pool
+length: 1
+    0: 
+-- JSFunction cordicsincos @ 0x55717ff2b5b0
+source ptr: 0x55717ffb05f0, ln: 54
+arg count: 1
+stack size: 3
+Funtion bytecode:
+    0: get_var  "FIXED"
+    5: get_var  "AG_CONST"
+   10: call1
+   11: put_loc0
+   12: push_0
+   13: put_loc1
+   14: get_var  "FIXED"
+   19: get_arg0
+   20: call1
+   21: put_loc2
+   22: push_0
+   23: put_loc3
+   24: push_0
+   25: put_loc8  4
+   27: get_loc8  4
+   29: push_i8  12
+   31: lt
+   32: if_false8  71
+   34: get_loc2
+   35: get_loc3
+   36: gt
+   37: if_false8  32
+   39: get_loc0
+   40: get_loc1
+   41: get_loc8  4
+   43: sar
+   44: sub
+   45: put_loc8  5
+   47: get_loc0
+   48: get_loc8  4
+   50: sar
+   51: get_loc1
+   52: add
+   53: put_loc1
+   54: get_loc8  5
+   56: put_loc0
+   57: get_loc3
+   58: get_var  "Angles"
+   63: get_loc8  4
+   65: get_array_el
+   66: add
+   67: put_loc3
+   68: goto8  31
+   70: get_loc0
+   71: get_loc1
+   72: get_loc8  4
+   74: sar
+   75: add
+   76: put_loc8  5
+   78: get_loc0
+   79: get_loc8  4
+   81: sar
+   82: neg
+   83: get_loc1
+   84: add
+   85: put_loc1
+   86: get_loc8  5
+   88: put_loc0
+   89: get_loc3
+   90: get_var  "Angles"
+   95: get_loc8  4
+   97: get_array_el
+   98: sub
+   99: put_loc3
+  100: inc_loc  4
+  102: goto8  -76
+  104: get_var  "FLOAT"
+  109: get_loc0
+  110: call1
+  111: get_var  "FLOAT"
+  116: get_loc1
+  117: call1
+  118: mul
+  119: return
+var count: 6
+  X: normal
+  Y: normal
+  TargetAngle: normal
+  CurrAngle: normal
+  Step: normal
+  NewX: normal
+Constant pool
+length: 0
+
+-- JSFunction cordic @ 0x55717ffa9080
+source ptr: 0x55717ff9ea10, ln: 88
+arg count: 1
+stack size: 3
+Funtion bytecode:
+    0: get_var  "Date"
+    5: dup
+    6: call_constructor  0
+    9: put_loc0
+   10: push_0
+   11: put_loc1
+   12: get_loc1
+   13: get_arg0
+   14: lt
+   15: if_false8  29
+   17: get_var  "total"
+   22: get_var  "cordicsincos"
+   27: get_var  "Target"
+   32: call1
+   33: add
+   34: dup
+   35: put_var  "total"
+   40: drop
+   41: inc_loc  1
+   43: goto8  -32
+   45: get_var  "Date"
+   50: dup
+   51: call_constructor  0
+   54: set_loc2
+   55: get_field2  "getTime"
+   60: call_method  0
+   63: get_loc0
+   64: get_field2  "getTime"
+   69: call_method  0
+   72: sub
+   73: return
+var count: 3
+  start: normal
+  i: normal
+  end: normal
+Constant pool
+length: 0
+

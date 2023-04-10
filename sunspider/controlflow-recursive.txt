@@ -1,0 +1,200 @@
+-- JSFunction <eval> @ 0x563ba9006bf0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 6
+Funtion bytecode:
+    0: check_define_var  "ack", 01000000
+    6: check_define_var  "fib", 01000000
+   12: check_define_var  "tak", 01000000
+   18: check_define_var  "result", 00000000
+   24: check_define_var  "i", 00000000
+   30: check_define_var  "expected", 00000000
+   36: fclosure8  0
+   38: define_func  "ack", 00000000
+   44: fclosure8  1
+   46: define_func  "fib", 00000000
+   52: fclosure8  2
+   54: define_func  "tak", 00000000
+   60: define_var  "result", 00000000
+   66: define_var  "i", 00000000
+   72: define_var  "expected", 00000000
+   78: push_0
+   79: put_var  "result"
+   84: undefined
+   85: put_loc0
+   86: push_3
+   87: put_var  "i"
+   92: get_var  "i"
+   97: push_5
+   98: lte
+   99: if_false8  111
+  101: get_var  "result"
+  106: get_var  "ack"
+  111: push_3
+  112: get_var  "i"
+  117: call2
+  118: add
+  119: dup
+  120: put_var  "result"
+  125: put_loc0
+  126: get_var  "result"
+  131: get_var  "fib"
+  136: push_i8  17
+  138: get_var  "i"
+  143: add
+  144: call1
+  145: add
+  146: dup
+  147: put_var  "result"
+  152: put_loc0
+  153: get_var  "result"
+  158: get_var  "tak"
+  163: push_3
+  164: get_var  "i"
+  169: mul
+  170: push_3
+  171: add
+  172: push_2
+  173: get_var  "i"
+  178: mul
+  179: push_2
+  180: add
+  181: get_var  "i"
+  186: push_1
+  187: add
+  188: call3
+  189: add
+  190: dup
+  191: put_var  "result"
+  196: put_loc0
+  197: get_var  "i"
+  202: post_inc
+  203: put_var  "i"
+  208: drop
+  209: goto8  -118
+  211: push_i32  57775
+  216: put_var  "expected"
+  221: undefined
+  222: put_loc0
+  223: get_var  "result"
+  228: get_var  "expected"
+  233: neq
+  234: if_false8  25
+  236: push_atom_value  "ERROR: bad result: expected "
+  241: get_var  "expected"
+  246: add
+  247: push_atom_value  " but got "
+  252: add
+  253: get_var  "result"
+  258: add
+  259: throw
+  260: get_loc0
+  261: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 3
+    0: ptr 0x563ba9006130    1: ptr 0x563ba90169a0    2: ptr 0x563ba9008570
+-- JSFunction ack @ 0x563ba9006130
+source ptr: 0x563ba8fdecf0, ln: 5
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: eq
+    3: if_false8  5
+    5: get_arg1
+    6: push_1
+    7: add
+    8: return
+    9: get_arg1
+   10: push_0
+   11: eq
+   12: if_false8  13
+   14: get_var  "ack"
+   19: get_arg0
+   20: push_1
+   21: sub
+   22: push_1
+   23: tail_call  2
+   26: get_var  "ack"
+   31: get_arg0
+   32: push_1
+   33: sub
+   34: get_var  "ack"
+   39: get_arg0
+   40: get_arg1
+   41: push_1
+   42: sub
+   43: call2
+   44: tail_call  2
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction fib @ 0x563ba90169a0
+source ptr: 0x563ba9015ac0, ln: 11
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: push_2
+    2: lt
+    3: if_false8  3
+    5: push_1
+    6: return
+    7: get_var  "fib"
+   12: get_arg0
+   13: push_2
+   14: sub
+   15: call1
+   16: get_var  "fib"
+   21: get_arg0
+   22: push_1
+   23: sub
+   24: call1
+   25: add
+   26: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction tak @ 0x563ba9008570
+source ptr: 0x563ba9004150, ln: 16
+arg count: 3
+stack size: 7
+Funtion bytecode:
+    0: get_arg1
+    1: get_arg0
+    2: gte
+    3: if_false8  3
+    5: get_arg2
+    6: return
+    7: get_var  "tak"
+   12: get_var  "tak"
+   17: get_arg0
+   18: push_1
+   19: sub
+   20: get_arg1
+   21: get_arg2
+   22: call3
+   23: get_var  "tak"
+   28: get_arg1
+   29: push_1
+   30: sub
+   31: get_arg2
+   32: get_arg0
+   33: call3
+   34: get_var  "tak"
+   39: get_arg2
+   40: push_1
+   41: sub
+   42: get_arg0
+   43: get_arg1
+   44: call3
+   45: tail_call  3
+var count: 0
+Constant pool
+length: 0
+

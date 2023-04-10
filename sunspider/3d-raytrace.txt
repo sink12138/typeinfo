@@ -1,0 +1,2641 @@
+-- JSFunction <eval> @ 0x55c8fbe6f100
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 5
+Funtion bytecode:
+    0: check_define_var  "createVector", 01000000
+    6: check_define_var  "sqrLengthVector", 01000000
+   12: check_define_var  "lengthVector", 01000000
+   18: check_define_var  "addVector", 01000000
+   24: check_define_var  "subVector", 01000000
+   30: check_define_var  "scaleVector", 01000000
+   36: check_define_var  "normaliseVector", 01000000
+   42: check_define_var  "add", 01000000
+   48: check_define_var  "sub", 01000000
+   54: check_define_var  "scalev", 01000000
+   60: check_define_var  "dot", 01000000
+   66: check_define_var  "scale", 01000000
+   72: check_define_var  "cross", 01000000
+   78: check_define_var  "normalise", 01000000
+   84: check_define_var  "transformMatrix", 01000000
+   90: check_define_var  "invertMatrix", 01000000
+   96: check_define_var  "Triangle", 01000000
+  102: check_define_var  "Scene", 01000000
+  108: check_define_var  "zero", 00000000
+  114: check_define_var  "Camera", 01000000
+  120: check_define_var  "renderRows", 01000000
+  126: check_define_var  "raytraceScene", 01000000
+  132: check_define_var  "arrayToCanvasCommands", 01000000
+  138: check_define_var  "expectedLength", 00000000
+  144: fclosure8  0
+  146: define_func  "createVector", 00000000
+  152: fclosure8  1
+  154: define_func  "sqrLengthVector", 00000000
+  160: fclosure8  2
+  162: define_func  "lengthVector", 00000000
+  168: fclosure8  3
+  170: define_func  "addVector", 00000000
+  176: fclosure8  4
+  178: define_func  "subVector", 00000000
+  184: fclosure8  5
+  186: define_func  "scaleVector", 00000000
+  192: fclosure8  6
+  194: define_func  "normaliseVector", 00000000
+  200: fclosure8  7
+  202: define_func  "add", 00000000
+  208: fclosure8  8
+  210: define_func  "sub", 00000000
+  216: fclosure8  9
+  218: define_func  "scalev", 00000000
+  224: fclosure8  10
+  226: define_func  "dot", 00000000
+  232: fclosure8  11
+  234: define_func  "scale", 00000000
+  240: fclosure8  12
+  242: define_func  "cross", 00000000
+  248: fclosure8  13
+  250: define_func  "normalise", 00000000
+  256: fclosure8  14
+  258: define_func  "transformMatrix", 00000000
+  264: fclosure8  15
+  266: define_func  "invertMatrix", 00000000
+  272: fclosure8  16
+  274: define_func  "Triangle", 00000000
+  280: fclosure8  18
+  282: define_func  "Scene", 00000000
+  288: define_var  "zero", 00000000
+  294: fclosure8  21
+  296: define_func  "Camera", 00000000
+  302: fclosure8  23
+  304: define_func  "renderRows", 00000000
+  310: fclosure8  25
+  312: define_func  "raytraceScene", 00000000
+  318: fclosure8  26
+  320: define_func  "arrayToCanvasCommands", 00000000
+  326: define_var  "expectedLength", 00000000
+  332: get_var  "Triangle"
+  337: get_field  "prototype"
+  342: fclosure8  17
+  344: insert2
+  345: put_field  "intersect"
+  350: put_loc0
+  351: get_var  "Array"
+  356: dup
+  357: push_0
+  358: push_0
+  359: push_0
+  360: call_constructor  3
+  363: put_var  "zero"
+  368: get_var  "Scene"
+  373: get_field  "prototype"
+  378: fclosure8  19
+  380: insert2
+  381: put_field  "intersect"
+  386: put_loc0
+  387: get_var  "Scene"
+  392: get_field  "prototype"
+  397: fclosure8  20
+  399: insert2
+  400: put_field  "blocked"
+  405: put_loc0
+  406: get_var  "Camera"
+  411: get_field  "prototype"
+  416: fclosure8  22
+  418: insert2
+  419: put_field  "generateRayPair"
+  424: put_loc0
+  425: get_var  "Camera"
+  430: get_field  "prototype"
+  435: fclosure8  24
+  437: insert2
+  438: put_field  "render"
+  443: put_loc0
+  444: get_var  "arrayToCanvasCommands"
+  449: get_var  "raytraceScene"
+  454: call0
+  455: call1
+  456: dup
+  457: put_var  "testOutput"
+  462: put_loc0
+  463: push_i16  20970
+  466: put_var  "expectedLength"
+  471: undefined
+  472: put_loc0
+  473: get_var  "testOutput"
+  478: get_length
+  479: get_var  "expectedLength"
+  484: neq
+  485: if_false8  26
+  487: push_atom_value  "Error: bad result: expected length "
+  492: get_var  "expectedLength"
+  497: add
+  498: push_atom_value  " but got "
+  503: add
+  504: get_var  "testOutput"
+  509: get_length
+  510: add
+  511: throw
+  512: get_loc0
+  513: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 27
+    0: ptr 0x55c8fbe75af0    1: ptr 0x55c8fbe71870    2: ptr 0x55c8fbe751c0    3: ptr 0x55c8fbe76450    4: ptr 0x55c8fbe765a0    5: ptr 0x55c8fbe766d0    6: ptr 0x55c8fbe532d0    7: ptr 0x55c8fbe76850    8: ptr 0x55c8fbe651a0    9: ptr 0x55c8fbe65270   10: ptr 0x55c8fbe70290   11: ptr 0x55c8fbe65080   12: ptr 0x55c8fbe65a50   13: ptr 0x55c8fbe664f0   14: ptr 0x55c8fbe3c240   15: ptr 0x55c8fbe67930   16: ptr 0x55c8fbe69670   17: ptr 0x55c8fbe65c10   18: ptr 0x55c8fbe66c30   19: ptr 0x55c8fbe6cf00   20: ptr 0x55c8fbe6a5f0   21: ptr 0x55c8fbe6e770   22: ptr 0x55c8fbe75280   23: ptr 0x55c8fbe4fb80   24: ptr 0x55c8fbe5ea10   25: ptr 0x55c8fbe6d630   26: ptr 0x55c8fbe72990
+-- JSFunction createVector @ 0x55c8fbe75af0
+source ptr: 0x55c8fbe63a20, ln: 26
+arg count: 3
+stack size: 5
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: get_arg0
+    7: get_arg1
+    8: get_arg2
+    9: call_constructor  3
+   12: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction sqrLengthVector @ 0x55c8fbe71870
+source ptr: 0x55c8fbe4eeb0, ln: 30
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: get_array_el
+    3: get_arg0
+    4: push_0
+    5: get_array_el
+    6: mul
+    7: get_arg0
+    8: push_1
+    9: get_array_el
+   10: get_arg0
+   11: push_1
+   12: get_array_el
+   13: mul
+   14: add
+   15: get_arg0
+   16: push_2
+   17: get_array_el
+   18: get_arg0
+   19: push_2
+   20: get_array_el
+   21: mul
+   22: add
+   23: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction lengthVector @ 0x55c8fbe751c0
+source ptr: 0x55c8fbe4ecf0, ln: 34
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Math"
+    5: get_field2  "sqrt"
+   10: get_arg0
+   11: push_0
+   12: get_array_el
+   13: get_arg0
+   14: push_0
+   15: get_array_el
+   16: mul
+   17: get_arg0
+   18: push_1
+   19: get_array_el
+   20: get_arg0
+   21: push_1
+   22: get_array_el
+   23: mul
+   24: add
+   25: get_arg0
+   26: push_2
+   27: get_array_el
+   28: get_arg0
+   29: push_2
+   30: get_array_el
+   31: mul
+   32: add
+   33: tail_call_method  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction addVector @ 0x55c8fbe76450
+source ptr: 0x55c8fbe4dc60, ln: 38
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: to_propkey2
+    3: dup2
+    4: get_array_el
+    5: get_arg1
+    6: push_0
+    7: get_array_el
+    8: add
+    9: put_array_el
+   10: get_arg0
+   11: push_1
+   12: to_propkey2
+   13: dup2
+   14: get_array_el
+   15: get_arg1
+   16: push_1
+   17: get_array_el
+   18: add
+   19: put_array_el
+   20: get_arg0
+   21: push_2
+   22: to_propkey2
+   23: dup2
+   24: get_array_el
+   25: get_arg1
+   26: push_2
+   27: get_array_el
+   28: add
+   29: put_array_el
+   30: get_arg0
+   31: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction subVector @ 0x55c8fbe765a0
+source ptr: 0x55c8fbe4d200, ln: 45
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: to_propkey2
+    3: dup2
+    4: get_array_el
+    5: get_arg1
+    6: push_0
+    7: get_array_el
+    8: sub
+    9: put_array_el
+   10: get_arg0
+   11: push_1
+   12: to_propkey2
+   13: dup2
+   14: get_array_el
+   15: get_arg1
+   16: push_1
+   17: get_array_el
+   18: sub
+   19: put_array_el
+   20: get_arg0
+   21: push_2
+   22: to_propkey2
+   23: dup2
+   24: get_array_el
+   25: get_arg1
+   26: push_2
+   27: get_array_el
+   28: sub
+   29: put_array_el
+   30: get_arg0
+   31: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction scaleVector @ 0x55c8fbe766d0
+source ptr: 0x55c8fbe25cf0, ln: 52
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: to_propkey2
+    3: dup2
+    4: get_array_el
+    5: get_arg1
+    6: mul
+    7: put_array_el
+    8: get_arg0
+    9: push_1
+   10: to_propkey2
+   11: dup2
+   12: get_array_el
+   13: get_arg1
+   14: mul
+   15: put_array_el
+   16: get_arg0
+   17: push_2
+   18: to_propkey2
+   19: dup2
+   20: get_array_el
+   21: get_arg1
+   22: mul
+   23: put_array_el
+   24: get_arg0
+   25: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction normaliseVector @ 0x55c8fbe532d0
+source ptr: 0x55c8fbe50e90, ln: 59
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Math"
+    5: get_field2  "sqrt"
+   10: get_arg0
+   11: push_0
+   12: get_array_el
+   13: get_arg0
+   14: push_0
+   15: get_array_el
+   16: mul
+   17: get_arg0
+   18: push_1
+   19: get_array_el
+   20: get_arg0
+   21: push_1
+   22: get_array_el
+   23: mul
+   24: add
+   25: get_arg0
+   26: push_2
+   27: get_array_el
+   28: get_arg0
+   29: push_2
+   30: get_array_el
+   31: mul
+   32: add
+   33: call_method  1
+   36: put_loc0
+   37: get_arg0
+   38: push_0
+   39: to_propkey2
+   40: dup2
+   41: get_array_el
+   42: get_loc0
+   43: div
+   44: put_array_el
+   45: get_arg0
+   46: push_1
+   47: to_propkey2
+   48: dup2
+   49: get_array_el
+   50: get_loc0
+   51: div
+   52: put_array_el
+   53: get_arg0
+   54: push_2
+   55: to_propkey2
+   56: dup2
+   57: get_array_el
+   58: get_loc0
+   59: div
+   60: put_array_el
+   61: get_arg0
+   62: return
+var count: 1
+  len: normal
+Constant pool
+length: 0
+
+-- JSFunction add @ 0x55c8fbe76850
+source ptr: 0x55c8fbe5e7a0, ln: 67
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: get_arg0
+    7: push_0
+    8: get_array_el
+    9: get_arg1
+   10: push_0
+   11: get_array_el
+   12: add
+   13: get_arg0
+   14: push_1
+   15: get_array_el
+   16: get_arg1
+   17: push_1
+   18: get_array_el
+   19: add
+   20: get_arg0
+   21: push_2
+   22: get_array_el
+   23: get_arg1
+   24: push_2
+   25: get_array_el
+   26: add
+   27: call_constructor  3
+   30: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction sub @ 0x55c8fbe651a0
+source ptr: 0x55c8fbe5dd00, ln: 71
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: get_arg0
+    7: push_0
+    8: get_array_el
+    9: get_arg1
+   10: push_0
+   11: get_array_el
+   12: sub
+   13: get_arg0
+   14: push_1
+   15: get_array_el
+   16: get_arg1
+   17: push_1
+   18: get_array_el
+   19: sub
+   20: get_arg0
+   21: push_2
+   22: get_array_el
+   23: get_arg1
+   24: push_2
+   25: get_array_el
+   26: sub
+   27: call_constructor  3
+   30: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction scalev @ 0x55c8fbe65270
+source ptr: 0x55c8fbe5b9d0, ln: 75
+arg count: 2
+stack size: 7
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: get_arg0
+    7: push_0
+    8: get_array_el
+    9: get_arg1
+   10: push_0
+   11: get_array_el
+   12: mul
+   13: get_arg0
+   14: push_1
+   15: get_array_el
+   16: get_arg1
+   17: push_1
+   18: get_array_el
+   19: mul
+   20: get_arg0
+   21: push_2
+   22: get_array_el
+   23: get_arg1
+   24: push_2
+   25: get_array_el
+   26: mul
+   27: call_constructor  3
+   30: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction dot @ 0x55c8fbe70290
+source ptr: 0x55c8fbe65ed0, ln: 79
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: get_array_el
+    3: get_arg1
+    4: push_0
+    5: get_array_el
+    6: mul
+    7: get_arg0
+    8: push_1
+    9: get_array_el
+   10: get_arg1
+   11: push_1
+   12: get_array_el
+   13: mul
+   14: add
+   15: get_arg0
+   16: push_2
+   17: get_array_el
+   18: get_arg1
+   19: push_2
+   20: get_array_el
+   21: mul
+   22: add
+   23: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction scale @ 0x55c8fbe65080
+source ptr: 0x55c8fbe66200, ln: 83
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: push_0
+    2: get_array_el
+    3: get_arg1
+    4: mul
+    5: get_arg0
+    6: push_1
+    7: get_array_el
+    8: get_arg1
+    9: mul
+   10: get_arg0
+   11: push_2
+   12: get_array_el
+   13: get_arg1
+   14: mul
+   15: array_from  3
+   18: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction cross @ 0x55c8fbe65a50
+source ptr: 0x55c8fbe665c0, ln: 87
+arg count: 2
+stack size: 6
+Funtion bytecode:
+    0: get_arg0
+    1: push_1
+    2: get_array_el
+    3: get_arg1
+    4: push_2
+    5: get_array_el
+    6: mul
+    7: get_arg0
+    8: push_2
+    9: get_array_el
+   10: get_arg1
+   11: push_1
+   12: get_array_el
+   13: mul
+   14: sub
+   15: get_arg0
+   16: push_2
+   17: get_array_el
+   18: get_arg1
+   19: push_0
+   20: get_array_el
+   21: mul
+   22: get_arg0
+   23: push_0
+   24: get_array_el
+   25: get_arg1
+   26: push_2
+   27: get_array_el
+   28: mul
+   29: sub
+   30: get_arg0
+   31: push_0
+   32: get_array_el
+   33: get_arg1
+   34: push_1
+   35: get_array_el
+   36: mul
+   37: get_arg0
+   38: push_1
+   39: get_array_el
+   40: get_arg1
+   41: push_0
+   42: get_array_el
+   43: mul
+   44: sub
+   45: array_from  3
+   48: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction normalise @ 0x55c8fbe664f0
+source ptr: 0x55c8fbe47630, ln: 94
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: get_var  "lengthVector"
+    5: get_arg0
+    6: call1
+    7: put_loc0
+    8: get_arg0
+    9: push_0
+   10: get_array_el
+   11: get_loc0
+   12: div
+   13: get_arg0
+   14: push_1
+   15: get_array_el
+   16: get_loc0
+   17: div
+   18: get_arg0
+   19: push_2
+   20: get_array_el
+   21: get_loc0
+   22: div
+   23: array_from  3
+   26: return
+var count: 1
+  len: normal
+Constant pool
+length: 0
+
+-- JSFunction transformMatrix @ 0x55c8fbe3c240
+source ptr: 0x55c8fbe58620, ln: 99
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: set_loc0
+    2: push_0
+    3: get_array_el
+    4: get_arg1
+    5: push_0
+    6: get_array_el
+    7: mul
+    8: get_loc0
+    9: push_1
+   10: get_array_el
+   11: get_arg1
+   12: push_1
+   13: get_array_el
+   14: mul
+   15: add
+   16: get_loc0
+   17: push_2
+   18: get_array_el
+   19: get_arg1
+   20: push_2
+   21: get_array_el
+   22: mul
+   23: add
+   24: get_loc0
+   25: push_3
+   26: get_array_el
+   27: add
+   28: put_loc1
+   29: get_loc0
+   30: push_4
+   31: get_array_el
+   32: get_arg1
+   33: push_0
+   34: get_array_el
+   35: mul
+   36: get_loc0
+   37: push_5
+   38: get_array_el
+   39: get_arg1
+   40: push_1
+   41: get_array_el
+   42: mul
+   43: add
+   44: get_loc0
+   45: push_6
+   46: get_array_el
+   47: get_arg1
+   48: push_2
+   49: get_array_el
+   50: mul
+   51: add
+   52: get_loc0
+   53: push_7
+   54: get_array_el
+   55: add
+   56: put_loc2
+   57: get_loc0
+   58: push_i8  8
+   60: get_array_el
+   61: get_arg1
+   62: push_0
+   63: get_array_el
+   64: mul
+   65: get_loc0
+   66: push_i8  9
+   68: get_array_el
+   69: get_arg1
+   70: push_1
+   71: get_array_el
+   72: mul
+   73: add
+   74: get_loc0
+   75: push_i8  10
+   77: get_array_el
+   78: get_arg1
+   79: push_2
+   80: get_array_el
+   81: mul
+   82: add
+   83: get_loc0
+   84: push_i8  11
+   86: get_array_el
+   87: add
+   88: put_loc3
+   89: get_loc1
+   90: get_loc2
+   91: get_loc3
+   92: array_from  3
+   95: return
+var count: 4
+  vals: normal
+  x: normal
+  y: normal
+  z: normal
+Constant pool
+length: 0
+
+-- JSFunction invertMatrix @ 0x55c8fbe67930
+source ptr: 0x55c8fbe68480, ln: 107
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: get_var  "Array"
+    5: dup
+    6: push_i8  16
+    8: call_constructor  1
+   11: put_loc0
+   12: get_arg0
+   13: push_3
+   14: get_array_el
+   15: neg
+   16: put_loc1
+   17: get_arg0
+   18: push_7
+   19: get_array_el
+   20: neg
+   21: put_loc2
+   22: get_arg0
+   23: push_i8  11
+   25: get_array_el
+   26: neg
+   27: put_loc3
+   28: push_0
+   29: dup
+   30: put_var  "h"
+   35: drop
+   36: get_var  "h"
+   41: push_3
+   42: lt
+   43: if_false8  77
+   45: push_0
+   46: dup
+   47: put_var  "v"
+   52: drop
+   53: get_var  "v"
+   58: push_3
+   59: lt
+   60: if_false8  46
+   62: get_loc0
+   63: get_var  "h"
+   68: get_var  "v"
+   73: push_4
+   74: mul
+   75: add
+   76: to_propkey2
+   77: get_arg0
+   78: get_var  "v"
+   83: get_var  "h"
+   88: push_4
+   89: mul
+   90: add
+   91: get_array_el
+   92: put_array_el
+   93: get_var  "v"
+   98: post_inc
+   99: put_var  "v"
+  104: drop
+  105: goto8  -53
+  107: get_var  "h"
+  112: post_inc
+  113: put_var  "h"
+  118: drop
+  119: goto8  -84
+  121: push_0
+  122: dup
+  123: put_var  "i"
+  128: drop
+  129: get_var  "i"
+  134: push_i8  11
+  136: lt
+  137: if_false8  30
+  139: get_arg0
+  140: get_var  "i"
+  145: to_propkey2
+  146: get_loc0
+  147: get_var  "i"
+  152: get_array_el
+  153: put_array_el
+  154: get_var  "i"
+  159: post_inc
+  160: put_var  "i"
+  165: drop
+  166: goto8  -38
+  168: get_arg0
+  169: push_3
+  170: to_propkey2
+  171: get_loc1
+  172: get_arg0
+  173: push_0
+  174: get_array_el
+  175: mul
+  176: get_loc2
+  177: get_arg0
+  178: push_1
+  179: get_array_el
+  180: mul
+  181: add
+  182: get_loc3
+  183: get_arg0
+  184: push_2
+  185: get_array_el
+  186: mul
+  187: add
+  188: put_array_el
+  189: get_arg0
+  190: push_7
+  191: to_propkey2
+  192: get_loc1
+  193: get_arg0
+  194: push_4
+  195: get_array_el
+  196: mul
+  197: get_loc2
+  198: get_arg0
+  199: push_5
+  200: get_array_el
+  201: mul
+  202: add
+  203: get_loc3
+  204: get_arg0
+  205: push_6
+  206: get_array_el
+  207: mul
+  208: add
+  209: put_array_el
+  210: get_arg0
+  211: push_i8  11
+  213: to_propkey2
+  214: get_loc1
+  215: get_arg0
+  216: push_i8  8
+  218: get_array_el
+  219: mul
+  220: get_loc2
+  221: get_arg0
+  222: push_i8  9
+  224: get_array_el
+  225: mul
+  226: add
+  227: get_loc3
+  228: get_arg0
+  229: push_i8  10
+  231: get_array_el
+  232: mul
+  233: add
+  234: put_array_el
+  235: get_arg0
+  236: return
+var count: 4
+  temp: normal
+  tx: normal
+  ty: normal
+  tz: normal
+Constant pool
+length: 0
+
+-- JSFunction Triangle @ 0x55c8fbe69670
+source ptr: 0x55c8fbe69090, ln: 125
+arg count: 3
+stack size: 5
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  10
+    3: get_var  "sub"
+    8: get_arg2
+    9: get_arg0
+   10: call2
+   11: put_loc0
+   12: get_var  "sub"
+   17: get_arg1
+   18: get_arg0
+   19: call2
+   20: put_loc1
+   21: get_var  "cross"
+   26: get_loc0
+   27: get_loc1
+   28: call2
+   29: put_loc2
+   30: get_var  "Math"
+   35: get_field2  "abs"
+   40: get_loc2
+   41: push_0
+   42: get_array_el
+   43: call_method  1
+   46: get_var  "Math"
+   51: get_field2  "abs"
+   56: get_loc2
+   57: push_1
+   58: get_array_el
+   59: call_method  1
+   62: gt
+   63: if_false8  56
+   65: get_var  "Math"
+   70: get_field2  "abs"
+   75: get_loc2
+   76: push_0
+   77: get_array_el
+   78: call_method  1
+   81: get_var  "Math"
+   86: get_field2  "abs"
+   91: get_loc2
+   92: push_2
+   93: get_array_el
+   94: call_method  1
+   97: gt
+   98: if_false8  11
+  100: get_loc8  10
+  102: push_0
+  103: put_field  "axis"
+  108: goto8  64
+  110: get_loc8  10
+  112: push_2
+  113: put_field  "axis"
+  118: goto8  54
+  120: get_var  "Math"
+  125: get_field2  "abs"
+  130: get_loc2
+  131: push_1
+  132: get_array_el
+  133: call_method  1
+  136: get_var  "Math"
+  141: get_field2  "abs"
+  146: get_loc2
+  147: push_2
+  148: get_array_el
+  149: call_method  1
+  152: gt
+  153: if_false8  11
+  155: get_loc8  10
+  157: push_1
+  158: put_field  "axis"
+  163: goto8  9
+  165: get_loc8  10
+  167: push_2
+  168: put_field  "axis"
+  173: get_loc8  10
+  175: get_field  "axis"
+  180: push_1
+  181: add
+  182: push_3
+  183: mod
+  184: put_loc3
+  185: get_loc8  10
+  187: get_field  "axis"
+  192: push_2
+  193: add
+  194: push_3
+  195: mod
+  196: put_loc8  4
+  198: get_loc0
+  199: get_loc3
+  200: get_array_el
+  201: put_loc8  5
+  203: get_loc0
+  204: get_loc8  4
+  206: get_array_el
+  207: put_loc8  6
+  209: get_loc1
+  210: get_loc3
+  211: get_array_el
+  212: put_loc8  7
+  214: get_loc1
+  215: get_loc8  4
+  217: get_array_el
+  218: put_loc8  8
+  220: get_loc8  10
+  222: get_var  "normalise"
+  227: get_loc2
+  228: call1
+  229: put_field  "normal"
+  234: get_loc8  10
+  236: get_loc2
+  237: get_loc3
+  238: get_array_el
+  239: get_loc2
+  240: get_loc8  10
+  242: get_field  "axis"
+  247: get_array_el
+  248: div
+  249: put_field  "nu"
+  254: get_loc8  10
+  256: get_loc2
+  257: get_loc8  4
+  259: get_array_el
+  260: get_loc2
+  261: get_loc8  10
+  263: get_field  "axis"
+  268: get_array_el
+  269: div
+  270: put_field  "nv"
+  275: get_loc8  10
+  277: get_var  "dot"
+  282: get_loc2
+  283: get_arg0
+  284: call2
+  285: get_loc2
+  286: get_loc8  10
+  288: get_field  "axis"
+  293: get_array_el
+  294: div
+  295: put_field  "nd"
+  300: get_loc8  5
+  302: get_loc8  8
+  304: mul
+  305: get_loc8  6
+  307: get_loc8  7
+  309: mul
+  310: sub
+  311: put_loc8  9
+  313: get_loc8  10
+  315: get_arg0
+  316: get_loc3
+  317: get_array_el
+  318: put_field  "eu"
+  323: get_loc8  10
+  325: get_arg0
+  326: get_loc8  4
+  328: get_array_el
+  329: put_field  "ev"
+  334: get_loc8  10
+  336: get_loc8  5
+  338: get_loc8  9
+  340: div
+  341: put_field  "nu1"
+  346: get_loc8  10
+  348: get_loc8  6
+  350: neg
+  351: get_loc8  9
+  353: div
+  354: put_field  "nv1"
+  359: get_loc8  10
+  361: get_loc8  8
+  363: get_loc8  9
+  365: div
+  366: put_field  "nu2"
+  371: get_loc8  10
+  373: get_loc8  7
+  375: neg
+  376: get_loc8  9
+  378: div
+  379: put_field  "nv2"
+  384: get_loc8  10
+  386: push_const8  0
+  388: push_const8  1
+  390: push_const8  2
+  392: array_from  3
+  395: put_field  "material"
+  400: return_undef
+var count: 11
+  edge1: normal
+  edge2: normal
+  normal: normal
+  u: normal
+  v: normal
+  u1: normal
+  v1: normal
+  u2: normal
+  v2: normal
+  det: normal
+  this: normal
+Constant pool
+length: 3
+    0:     1:     2: 
+-- JSFunction  5äûÈU @ 0x55c8fbe65c10
+source ptr: 0x55c8fbe6abe0, ln: 160
+arg count: 4
+stack size: 4
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  8
+    3: get_loc8  8
+    5: get_field  "axis"
+   10: push_1
+   11: add
+   12: push_3
+   13: mod
+   14: put_loc0
+   15: get_loc8  8
+   17: get_field  "axis"
+   22: push_2
+   23: add
+   24: push_3
+   25: mod
+   26: put_loc1
+   27: get_arg1
+   28: get_loc8  8
+   30: get_field  "axis"
+   35: get_array_el
+   36: get_loc8  8
+   38: get_field  "nu"
+   43: get_arg1
+   44: get_loc0
+   45: get_array_el
+   46: mul
+   47: add
+   48: get_loc8  8
+   50: get_field  "nv"
+   55: get_arg1
+   56: get_loc1
+   57: get_array_el
+   58: mul
+   59: add
+   60: put_loc2
+   61: get_loc8  8
+   63: get_field  "nd"
+   68: get_arg0
+   69: get_loc8  8
+   71: get_field  "axis"
+   76: get_array_el
+   77: sub
+   78: get_loc8  8
+   80: get_field  "nu"
+   85: get_arg0
+   86: get_loc0
+   87: get_array_el
+   88: mul
+   89: sub
+   90: get_loc8  8
+   92: get_field  "nv"
+   97: get_arg0
+   98: get_loc1
+   99: get_array_el
+  100: mul
+  101: sub
+  102: get_loc2
+  103: div
+  104: set_loc3
+  105: get_arg2
+  106: lt
+  107: dup
+  108: if_true8  5
+  110: drop
+  111: get_loc3
+  112: get_arg3
+  113: gt
+  114: if_false8  3
+  116: null
+  117: return
+  118: get_arg0
+  119: get_loc0
+  120: get_array_el
+  121: get_loc3
+  122: get_arg1
+  123: get_loc0
+  124: get_array_el
+  125: mul
+  126: add
+  127: get_loc8  8
+  129: get_field  "eu"
+  134: sub
+  135: put_loc8  4
+  137: get_arg0
+  138: get_loc1
+  139: get_array_el
+  140: get_loc3
+  141: get_arg1
+  142: get_loc1
+  143: get_array_el
+  144: mul
+  145: add
+  146: get_loc8  8
+  148: get_field  "ev"
+  153: sub
+  154: set_loc8  5
+  156: get_loc8  8
+  158: get_field  "nu1"
+  163: mul
+  164: get_loc8  4
+  166: get_loc8  8
+  168: get_field  "nv1"
+  173: mul
+  174: add
+  175: set_loc8  6
+  177: push_0
+  178: lt
+  179: if_false8  3
+  181: null
+  182: return
+  183: get_loc8  4
+  185: get_loc8  8
+  187: get_field  "nu2"
+  192: mul
+  193: get_loc8  5
+  195: get_loc8  8
+  197: get_field  "nv2"
+  202: mul
+  203: add
+  204: set_loc8  7
+  206: push_0
+  207: lt
+  208: if_false8  3
+  210: null
+  211: return
+  212: get_loc8  6
+  214: get_loc8  7
+  216: add
+  217: push_1
+  218: gt
+  219: if_false8  3
+  221: null
+  222: return
+  223: get_loc3
+  224: return
+var count: 9
+  u: normal
+  v: normal
+  d: normal
+  t: normal
+  Pu: normal
+  Pv: normal
+  a2: normal
+  a3: normal
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction Scene @ 0x55c8fbe66c30
+source ptr: 0x55c8fbe6b160, ln: 181
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_loc0
+    3: get_arg0
+    4: put_field  "triangles"
+    9: get_loc0
+   10: array_from  0
+   13: put_field  "lights"
+   18: get_loc0
+   19: push_0
+   20: push_0
+   21: push_0
+   22: array_from  3
+   25: put_field  "ambient"
+   30: get_loc0
+   31: push_const8  0
+   33: push_const8  1
+   35: push_1
+   36: array_from  3
+   39: put_field  "background"
+   44: return_undef
+var count: 1
+  this: normal
+Constant pool
+length: 2
+    0:     1: 
+-- JSFunction  5äûÈU @ 0x55c8fbe6cf00
+source ptr: 0x55c8fbe6ddf0, ln: 189
+arg count: 4
+stack size: 7
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  14
+    3: null
+    4: put_loc0
+    5: push_0
+    6: put_loc8  9
+    8: get_loc8  9
+   10: get_loc8  14
+   12: get_field  "triangles"
+   17: get_length
+   18: lt
+   19: if_false8  51
+   21: get_loc8  14
+   23: get_field  "triangles"
+   28: get_loc8  9
+   30: get_array_el
+   31: set_loc1
+   32: get_field2  "intersect"
+   37: get_arg0
+   38: get_arg1
+   39: get_arg2
+   40: get_arg3
+   41: call_method  4
+   44: set_loc2
+   45: null
+   46: eq
+   47: dup
+   48: if_true8  12
+   50: drop
+   51: get_loc2
+   52: get_arg3
+   53: gt
+   54: dup
+   55: if_true8  5
+   57: drop
+   58: get_loc2
+   59: get_arg2
+   60: lt
+   61: if_true8  5
+   63: get_loc2
+   64: put_arg3
+   65: get_loc1
+   66: put_loc0
+   67: inc_loc  9
+   69: goto8  -62
+   71: get_loc0
+   72: lnot
+   73: if_false8  32
+   75: get_loc8  14
+   77: get_field  "background"
+   82: push_0
+   83: get_array_el
+   84: get_loc8  14
+   86: get_field  "background"
+   91: push_1
+   92: get_array_el
+   93: get_loc8  14
+   95: get_field  "background"
+  100: push_2
+  101: get_array_el
+  102: array_from  3
+  105: return
+  106: get_loc0
+  107: get_field  "normal"
+  112: put_loc3
+  113: get_var  "add"
+  118: get_arg0
+  119: get_var  "scale"
+  124: get_arg1
+  125: get_arg3
+  126: call2
+  127: call2
+  128: put_loc8  4
+  130: get_var  "dot"
+  135: get_arg1
+  136: get_loc3
+  137: call2
+  138: push_0
+  139: gt
+  140: if_false8  17
+  142: get_loc3
+  143: push_0
+  144: get_array_el
+  145: neg
+  146: get_loc3
+  147: push_1
+  148: get_array_el
+  149: neg
+  150: get_loc3
+  151: push_2
+  152: get_array_el
+  153: neg
+  154: array_from  3
+  157: put_loc3
+  158: null
+  159: put_loc8  5
+  161: get_loc0
+  162: get_field  "shader"
+  167: if_false8  18
+  169: get_loc0
+  170: get_field2  "shader"
+  175: get_loc0
+  176: get_loc8  4
+  178: get_arg1
+  179: call_method  3
+  182: put_loc8  5
+  184: goto8  9
+  186: get_loc0
+  187: get_field  "material"
+  192: put_loc8  5
+  194: null
+  195: put_loc8  6
+  197: get_loc8  5
+  199: get_field  "reflection"
+  204: push_const8  0
+  206: gt
+  207: if_false8  66
+  209: get_var  "addVector"
+  214: get_var  "scale"
+  219: get_loc3
+  220: push_i8  -2
+  222: get_var  "dot"
+  227: get_arg1
+  228: get_loc3
+  229: call2
+  230: mul
+  231: call2
+  232: get_arg1
+  233: call2
+  234: put_loc8  7
+  236: get_loc8  14
+  238: get_field2  "intersect"
+  243: get_loc8  4
+  245: get_loc8  7
+  247: push_const8  1
+  249: push_i32  1000000
+  254: call_method  4
+  257: put_loc8  6
+  259: get_loc8  5
+  261: get_field  "reflection"
+  266: push_const8  2
+  268: gte
+  269: if_false8  4
+  271: get_loc8  6
+  273: return
+  274: get_loc8  14
+  276: get_field  "ambient"
+  281: push_0
+  282: get_array_el
+  283: get_loc8  14
+  285: get_field  "ambient"
+  290: push_1
+  291: get_array_el
+  292: get_loc8  14
+  294: get_field  "ambient"
+  299: push_2
+  300: get_array_el
+  301: array_from  3
+  304: put_loc8  8
+  306: push_0
+  307: put_loc8  9
+  309: get_loc8  9
+  311: get_loc8  14
+  313: get_field  "lights"
+  318: get_length
+  319: lt
+  320: if_false8  116
+  322: get_loc8  14
+  324: get_field  "lights"
+  329: get_loc8  9
+  331: get_array_el
+  332: put_loc8  10
+  334: get_var  "sub"
+  339: get_loc8  10
+  341: get_loc8  4
+  343: call2
+  344: put_loc8  11
+  346: get_var  "lengthVector"
+  351: get_loc8  11
+  353: call1
+  354: put_loc8  12
+  356: get_var  "scaleVector"
+  361: get_loc8  11
+  363: push_1
+  364: get_loc8  12
+  366: div
+  367: call2
+  368: drop
+  369: get_loc8  12
+  371: push_const8  3
+  373: sub
+  374: put_loc8  12
+  376: get_loc8  14
+  378: get_field2  "blocked"
+  383: get_loc8  4
+  385: get_loc8  11
+  387: get_loc8  12
+  389: call_method  3
+  392: if_true8  40
+  394: get_var  "dot"
+  399: get_loc3
+  400: get_loc8  11
+  402: call2
+  403: set_loc8  13
+  405: push_0
+  406: gt
+  407: if_false8  25
+  409: get_var  "addVector"
+  414: get_loc8  8
+  416: get_var  "scale"
+  421: get_loc8  10
+  423: get_field  "colour"
+  428: get_loc8  13
+  430: call2
+  431: call2
+  432: drop
+  433: inc_loc  9
+  435: goto8  -127
+  437: get_var  "scalev"
+  442: get_loc8  8
+  444: get_loc8  5
+  446: call2
+  447: put_loc8  8
+  449: get_loc8  6
+  451: if_false8  41
+  453: get_var  "addVector"
+  458: get_var  "scaleVector"
+  463: get_loc8  8
+  465: push_1
+  466: get_loc8  5
+  468: get_field  "reflection"
+  473: sub
+  474: call2
+  475: get_var  "scaleVector"
+  480: get_loc8  6
+  482: get_loc8  5
+  484: get_field  "reflection"
+  489: call2
+  490: call2
+  491: put_loc8  8
+  493: get_loc8  8
+  495: return
+var count: 15
+  closest: normal
+  triangle: normal
+  d: normal
+  normal: normal
+  hit: normal
+  colour: normal
+  reflected: normal
+  reflection: normal
+  l: normal
+  i: normal
+  light: normal
+  toLight: normal
+  distance: normal
+  nl: normal
+  this: normal
+Constant pool
+length: 4
+    0:     1:     2:     3: 
+-- JSFunction  5äûÈU @ 0x55c8fbe6a5f0
+source ptr: 0x55c8fbdda5b0, ln: 244
+arg count: 3
+stack size: 6
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  4
+    3: push_const8  0
+    5: put_loc0
+    6: null
+    7: put_loc1
+    8: push_0
+    9: dup
+   10: put_var  "i"
+   15: drop
+   16: get_var  "i"
+   21: get_loc8  4
+   23: get_field  "triangles"
+   28: get_length
+   29: lt
+   30: if_false8  62
+   32: get_loc8  4
+   34: get_field  "triangles"
+   39: get_var  "i"
+   44: get_array_el
+   45: set_loc2
+   46: get_field2  "intersect"
+   51: get_arg0
+   52: get_arg1
+   53: get_loc0
+   54: get_arg2
+   55: call_method  4
+   58: set_loc3
+   59: null
+   60: eq
+   61: dup
+   62: if_true8  12
+   64: drop
+   65: get_loc3
+   66: get_arg2
+   67: gt
+   68: dup
+   69: if_true8  5
+   71: drop
+   72: get_loc3
+   73: get_loc0
+   74: lt
+   75: if_true8  3
+   77: push_true
+   78: return
+   79: get_var  "i"
+   84: post_inc
+   85: put_var  "i"
+   90: drop
+   91: goto8  -76
+   93: push_false
+   94: return
+var count: 5
+  near: normal
+  closest: normal
+  triangle: normal
+  d: normal
+  this: normal
+Constant pool
+length: 1
+    0: 
+-- JSFunction Camera @ 0x55c8fbe6e770
+source ptr: 0x55c8fbe6ecf0, ln: 261
+arg count: 3
+stack size: 7
+Funtion bytecode:
+    0: push_this
+    1: put_loc8  4
+    3: get_var  "normaliseVector"
+    8: get_var  "subVector"
+   13: get_arg1
+   14: get_arg0
+   15: call2
+   16: call1
+   17: put_loc0
+   18: get_var  "normaliseVector"
+   23: get_var  "cross"
+   28: get_arg2
+   29: get_loc0
+   30: call2
+   31: call1
+   32: put_loc1
+   33: get_var  "normaliseVector"
+   38: get_var  "cross"
+   43: get_loc1
+   44: get_var  "subVector"
+   49: push_0
+   50: push_0
+   51: push_0
+   52: array_from  3
+   55: get_loc0
+   56: call2
+   57: call2
+   58: call1
+   59: put_loc2
+   60: get_var  "Array"
+   65: dup
+   66: push_i8  16
+   68: call_constructor  1
+   71: set_loc3
+   72: push_0
+   73: to_propkey2
+   74: get_loc1
+   75: push_0
+   76: get_array_el
+   77: put_array_el
+   78: get_loc3
+   79: push_1
+   80: to_propkey2
+   81: get_loc1
+   82: push_1
+   83: get_array_el
+   84: put_array_el
+   85: get_loc3
+   86: push_2
+   87: to_propkey2
+   88: get_loc1
+   89: push_2
+   90: get_array_el
+   91: put_array_el
+   92: get_loc3
+   93: push_4
+   94: to_propkey2
+   95: get_loc2
+   96: push_0
+   97: get_array_el
+   98: put_array_el
+   99: get_loc3
+  100: push_5
+  101: to_propkey2
+  102: get_loc2
+  103: push_1
+  104: get_array_el
+  105: put_array_el
+  106: get_loc3
+  107: push_6
+  108: to_propkey2
+  109: get_loc2
+  110: push_2
+  111: get_array_el
+  112: put_array_el
+  113: get_loc3
+  114: push_i8  8
+  116: to_propkey2
+  117: get_loc0
+  118: push_0
+  119: get_array_el
+  120: put_array_el
+  121: get_loc3
+  122: push_i8  9
+  124: to_propkey2
+  125: get_loc0
+  126: push_1
+  127: get_array_el
+  128: put_array_el
+  129: get_loc3
+  130: push_i8  10
+  132: to_propkey2
+  133: get_loc0
+  134: push_2
+  135: get_array_el
+  136: put_array_el
+  137: get_var  "invertMatrix"
+  142: get_loc3
+  143: call1
+  144: drop
+  145: get_loc3
+  146: push_3
+  147: push_0
+  148: put_array_el
+  149: get_loc3
+  150: push_7
+  151: push_0
+  152: put_array_el
+  153: get_loc3
+  154: push_i8  11
+  156: push_0
+  157: put_array_el
+  158: get_loc8  4
+  160: get_arg0
+  161: put_field  "origin"
+  166: get_loc8  4
+  168: get_var  "Array"
+  173: dup
+  174: push_4
+  175: call_constructor  1
+  178: put_field  "directions"
+  183: get_loc8  4
+  185: get_field  "directions"
+  190: push_0
+  191: to_propkey2
+  192: get_var  "normalise"
+  197: push_const8  0
+  199: neg
+  200: push_const8  1
+  202: push_1
+  203: array_from  3
+  206: call1
+  207: put_array_el
+  208: get_loc8  4
+  210: get_field  "directions"
+  215: push_1
+  216: to_propkey2
+  217: get_var  "normalise"
+  222: push_const8  2
+  224: push_const8  3
+  226: push_1
+  227: array_from  3
+  230: call1
+  231: put_array_el
+  232: get_loc8  4
+  234: get_field  "directions"
+  239: push_2
+  240: to_propkey2
+  241: get_var  "normalise"
+  246: push_const8  4
+  248: push_const8  5
+  250: neg
+  251: push_1
+  252: array_from  3
+  255: call1
+  256: put_array_el
+  257: get_loc8  4
+  259: get_field  "directions"
+  264: push_3
+  265: to_propkey2
+  266: get_var  "normalise"
+  271: push_const8  6
+  273: neg
+  274: push_const8  7
+  276: neg
+  277: push_1
+  278: array_from  3
+  281: call1
+  282: put_array_el
+  283: get_loc8  4
+  285: get_field  "directions"
+  290: push_0
+  291: to_propkey2
+  292: get_var  "transformMatrix"
+  297: get_loc3
+  298: get_loc8  4
+  300: get_field  "directions"
+  305: push_0
+  306: get_array_el
+  307: call2
+  308: put_array_el
+  309: get_loc8  4
+  311: get_field  "directions"
+  316: push_1
+  317: to_propkey2
+  318: get_var  "transformMatrix"
+  323: get_loc3
+  324: get_loc8  4
+  326: get_field  "directions"
+  331: push_1
+  332: get_array_el
+  333: call2
+  334: put_array_el
+  335: get_loc8  4
+  337: get_field  "directions"
+  342: push_2
+  343: to_propkey2
+  344: get_var  "transformMatrix"
+  349: get_loc3
+  350: get_loc8  4
+  352: get_field  "directions"
+  357: push_2
+  358: get_array_el
+  359: call2
+  360: put_array_el
+  361: get_loc8  4
+  363: get_field  "directions"
+  368: push_3
+  369: to_propkey2
+  370: get_var  "transformMatrix"
+  375: get_loc3
+  376: get_loc8  4
+  378: get_field  "directions"
+  383: push_3
+  384: get_array_el
+  385: call2
+  386: put_array_el
+  387: return_undef
+var count: 5
+  zaxis: normal
+  xaxis: normal
+  yaxis: normal
+  m: normal
+  this: normal
+Constant pool
+length: 8
+    0:     1:     2:     3:     4:     5:     6:     7: 
+-- JSFunction  5äûÈU @ 0x55c8fbe75280
+source ptr: 0x55c8fbe6fd80, ln: 283
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: push_this
+    1: put_loc0
+    2: get_var  "Array"
+    7: dup
+    8: get_var  "Object"
+   13: dup
+   14: call_constructor  0
+   17: get_var  "Object"
+   22: dup
+   23: call_constructor  0
+   26: call_constructor  2
+   29: dup
+   30: put_var  "rays"
+   35: drop
+   36: get_var  "rays"
+   41: push_0
+   42: get_array_el
+   43: get_loc0
+   44: get_field  "origin"
+   49: put_field  "origin"
+   54: get_var  "rays"
+   59: push_1
+   60: get_array_el
+   61: get_loc0
+   62: get_field  "origin"
+   67: put_field  "origin"
+   72: get_var  "rays"
+   77: push_0
+   78: get_array_el
+   79: get_var  "addVector"
+   84: get_var  "scale"
+   89: get_loc0
+   90: get_field  "directions"
+   95: push_0
+   96: get_array_el
+   97: get_arg0
+   98: call2
+   99: get_var  "scale"
+  104: get_loc0
+  105: get_field  "directions"
+  110: push_3
+  111: get_array_el
+  112: push_1
+  113: get_arg0
+  114: sub
+  115: call2
+  116: call2
+  117: put_field  "dir"
+  122: get_var  "rays"
+  127: push_1
+  128: get_array_el
+  129: get_var  "addVector"
+  134: get_var  "scale"
+  139: get_loc0
+  140: get_field  "directions"
+  145: push_1
+  146: get_array_el
+  147: get_arg0
+  148: call2
+  149: get_var  "scale"
+  154: get_loc0
+  155: get_field  "directions"
+  160: push_2
+  161: get_array_el
+  162: push_1
+  163: get_arg0
+  164: sub
+  165: call2
+  166: call2
+  167: put_field  "dir"
+  172: get_var  "rays"
+  177: return
+var count: 1
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction renderRows @ 0x55c8fbe4fb80
+source ptr: 0x55c8fbe70e40, ln: 292
+arg count: 7
+stack size: 7
+Funtion bytecode:
+    0: get_arg  5
+    3: put_loc0
+    4: get_loc0
+    5: get_arg  6
+    8: lt
+    9: if_false  147
+   14: get_arg0
+   15: get_field2  "generateRayPair"
+   20: get_loc0
+   21: get_arg  4
+   24: div
+   25: call_method  1
+   28: put_loc1
+   29: push_0
+   30: put_loc2
+   31: get_loc2
+   32: get_arg3
+   33: lt
+   34: if_false8  117
+   36: get_loc2
+   37: get_arg3
+   38: div
+   39: put_loc3
+   40: get_var  "addVector"
+   45: get_var  "scale"
+   50: get_loc1
+   51: push_0
+   52: get_array_el
+   53: get_field  "origin"
+   58: get_loc3
+   59: call2
+   60: get_var  "scale"
+   65: get_loc1
+   66: push_1
+   67: get_array_el
+   68: get_field  "origin"
+   73: push_1
+   74: get_loc3
+   75: sub
+   76: call2
+   77: call2
+   78: put_loc8  4
+   80: get_var  "normaliseVector"
+   85: get_var  "addVector"
+   90: get_var  "scale"
+   95: get_loc1
+   96: push_0
+   97: get_array_el
+   98: get_field  "dir"
+  103: get_loc3
+  104: call2
+  105: get_var  "scale"
+  110: get_loc1
+  111: push_1
+  112: get_array_el
+  113: get_field  "dir"
+  118: push_1
+  119: get_loc3
+  120: sub
+  121: call2
+  122: call2
+  123: call1
+  124: put_loc8  5
+  126: get_arg1
+  127: get_field2  "intersect"
+  132: get_loc8  4
+  134: get_loc8  5
+  136: call_method  2
+  139: put_loc8  6
+  141: get_arg2
+  142: get_loc0
+  143: get_array_el
+  144: get_loc2
+  145: get_loc8  6
+  147: put_array_el
+  148: inc_loc  2
+  150: goto8  -120
+  152: inc_loc  0
+  154: goto16  -151
+  157: return_undef
+var count: 7
+  y: normal
+  rays: normal
+  x: normal
+  xp: normal
+  origin: normal
+  dir: normal
+  l: normal
+Constant pool
+length: 0
+
+-- JSFunction  5äûÈU @ 0x55c8fbe5ea10
+source ptr: 0x55c8fbe5b350, ln: 305
+arg count: 4
+stack size: 8
+Funtion bytecode:
+    0: push_this
+    1: put_loc2
+    2: get_loc2
+    3: put_loc0
+    4: push_0
+    5: put_loc1
+    6: get_var  "renderRows"
+   11: get_loc0
+   12: get_arg0
+   13: get_arg1
+   14: get_arg2
+   15: get_arg3
+   16: push_0
+   17: get_arg3
+   18: call  7
+   21: return_undef
+var count: 3
+  cam: normal
+  row: normal
+  this: normal
+Constant pool
+length: 0
+
+-- JSFunction raytraceScene @ 0x55c8fbe6d630
+source ptr: 0x55c8fbe74020, ln: 313
+arg count: 0
+stack size: 8
+Funtion bytecode:
+    0: get_var  "Date"
+    5: dup
+    6: call_constructor  0
+    9: get_field2  "getTime"
+   14: call_method  0
+   17: put_loc0
+   18: push_2
+   19: push_6
+   20: mul
+   21: put_loc1
+   22: get_var  "Array"
+   27: dup
+   28: call_constructor  0
+   31: put_loc2
+   32: get_var  "createVector"
+   37: push_i8  -10
+   39: push_i8  10
+   41: push_i8  -10
+   43: call3
+   44: put_loc3
+   45: get_var  "createVector"
+   50: push_i8  10
+   52: push_i8  10
+   54: push_i8  -10
+   56: call3
+   57: put_loc8  4
+   59: get_var  "createVector"
+   64: push_i8  -10
+   66: push_i8  10
+   68: push_i8  10
+   70: call3
+   71: put_loc8  5
+   73: get_var  "createVector"
+   78: push_i8  10
+   80: push_i8  10
+   82: push_i8  10
+   84: call3
+   85: put_loc8  6
+   87: get_var  "createVector"
+   92: push_i8  -10
+   94: push_i8  -10
+   96: push_i8  -10
+   98: call3
+   99: put_loc8  7
+  101: get_var  "createVector"
+  106: push_i8  10
+  108: push_i8  -10
+  110: push_i8  -10
+  112: call3
+  113: put_loc8  8
+  115: get_var  "createVector"
+  120: push_i8  -10
+  122: push_i8  -10
+  124: push_i8  10
+  126: call3
+  127: put_loc8  9
+  129: get_var  "createVector"
+  134: push_i8  10
+  136: push_i8  -10
+  138: push_i8  10
+  140: call3
+  141: put_loc8  10
+  143: push_0
+  144: put_loc8  11
+  146: get_loc2
+  147: get_loc8  11
+  149: post_inc
+  150: put_loc8  11
+  152: to_propkey2
+  153: get_var  "Triangle"
+  158: dup
+  159: get_loc3
+  160: get_loc8  4
+  162: get_loc8  8
+  164: call_constructor  3
+  167: put_array_el
+  168: get_loc2
+  169: get_loc8  11
+  171: post_inc
+  172: put_loc8  11
+  174: to_propkey2
+  175: get_var  "Triangle"
+  180: dup
+  181: get_loc3
+  182: get_loc8  8
+  184: get_loc8  7
+  186: call_constructor  3
+  189: put_array_el
+  190: get_loc2
+  191: get_loc8  11
+  193: post_inc
+  194: put_loc8  11
+  196: to_propkey2
+  197: get_var  "Triangle"
+  202: dup
+  203: get_loc8  5
+  205: get_loc8  6
+  207: get_loc8  10
+  209: call_constructor  3
+  212: put_array_el
+  213: get_loc2
+  214: get_loc8  11
+  216: post_inc
+  217: put_loc8  11
+  219: to_propkey2
+  220: get_var  "Triangle"
+  225: dup
+  226: get_loc8  5
+  228: get_loc8  10
+  230: get_loc8  9
+  232: call_constructor  3
+  235: put_array_el
+  236: get_loc2
+  237: get_loc8  11
+  239: post_inc
+  240: put_loc8  11
+  242: to_propkey2
+  243: get_var  "Triangle"
+  248: dup
+  249: get_loc8  5
+  251: get_loc3
+  252: get_loc8  9
+  254: call_constructor  3
+  257: put_array_el
+  258: get_loc2
+  259: get_loc8  11
+  261: post_inc
+  262: put_loc8  11
+  264: to_propkey2
+  265: get_var  "Triangle"
+  270: dup
+  271: get_loc3
+  272: get_loc8  7
+  274: get_loc8  9
+  276: call_constructor  3
+  279: put_array_el
+  280: get_loc2
+  281: get_loc8  11
+  283: post_inc
+  284: put_loc8  11
+  286: to_propkey2
+  287: get_var  "Triangle"
+  292: dup
+  293: get_loc8  6
+  295: get_loc8  4
+  297: get_loc8  10
+  299: call_constructor  3
+  302: put_array_el
+  303: get_loc2
+  304: get_loc8  11
+  306: post_inc
+  307: put_loc8  11
+  309: to_propkey2
+  310: get_var  "Triangle"
+  315: dup
+  316: get_loc8  4
+  318: get_loc8  8
+  320: get_loc8  10
+  322: call_constructor  3
+  325: put_array_el
+  326: get_loc2
+  327: get_loc8  11
+  329: post_inc
+  330: put_loc8  11
+  332: to_propkey2
+  333: get_var  "Triangle"
+  338: dup
+  339: get_loc8  5
+  341: get_loc8  6
+  343: get_loc8  4
+  345: call_constructor  3
+  348: put_array_el
+  349: get_loc2
+  350: get_loc8  11
+  352: post_inc
+  353: put_loc8  11
+  355: to_propkey2
+  356: get_var  "Triangle"
+  361: dup
+  362: get_loc8  5
+  364: get_loc8  4
+  366: get_loc3
+  367: call_constructor  3
+  370: put_array_el
+  371: get_loc2
+  372: get_loc8  11
+  374: post_inc
+  375: put_loc8  11
+  377: to_propkey2
+  378: get_var  "Triangle"
+  383: dup
+  384: get_loc8  9
+  386: get_loc8  10
+  388: get_loc8  8
+  390: call_constructor  3
+  393: put_array_el
+  394: get_loc2
+  395: get_loc8  11
+  397: post_inc
+  398: put_loc8  11
+  400: to_propkey2
+  401: get_var  "Triangle"
+  406: dup
+  407: get_loc8  9
+  409: get_loc8  8
+  411: get_loc8  7
+  413: call_constructor  3
+  416: put_array_el
+  417: get_var  "createVector"
+  422: push_0
+  423: push_const8  0
+  425: push_0
+  426: call3
+  427: put_loc8  12
+  429: get_var  "createVector"
+  434: push_const8  1
+  436: push_const8  2
+  438: push_const8  3
+  440: call3
+  441: set_loc8  13
+  443: push_1
+  444: put_field  "reflection"
+  449: fclosure8  4
+  451: set_name  "floorShader"
+  456: put_loc8  14
+  458: get_var  "createVector"
+  463: push_i16  -1000
+  466: push_i8  -30
+  468: push_i16  -1000
+  471: call3
+  472: put_loc8  15
+  474: get_var  "createVector"
+  479: push_i16  1000
+  482: push_i8  -30
+  484: push_i16  -1000
+  487: call3
+  488: put_loc8  16
+  490: get_var  "createVector"
+  495: push_i16  -1000
+  498: push_i8  -30
+  500: push_i16  1000
+  503: call3
+  504: put_loc8  17
+  506: get_var  "createVector"
+  511: push_i16  1000
+  514: push_i8  -30
+  516: push_i16  1000
+  519: call3
+  520: put_loc8  18
+  522: get_loc2
+  523: get_loc8  11
+  525: post_inc
+  526: put_loc8  11
+  528: to_propkey2
+  529: get_var  "Triangle"
+  534: dup
+  535: get_loc8  17
+  537: get_loc8  18
+  539: get_loc8  16
+  541: call_constructor  3
+  544: put_array_el
+  545: get_loc2
+  546: get_loc8  11
+  548: push_1
+  549: sub
+  550: get_array_el
+  551: get_loc8  14
+  553: put_field  "shader"
+  558: get_loc2
+  559: get_loc8  11
+  561: post_inc
+  562: put_loc8  11
+  564: to_propkey2
+  565: get_var  "Triangle"
+  570: dup
+  571: get_loc8  17
+  573: get_loc8  16
+  575: get_loc8  15
+  577: call_constructor  3
+  580: put_array_el
+  581: get_loc2
+  582: get_loc8  11
+  584: push_1
+  585: sub
+  586: get_array_el
+  587: get_loc8  14
+  589: put_field  "shader"
+  594: get_var  "Scene"
+  599: dup
+  600: get_loc2
+  601: call_constructor  1
+  604: set_loc8  19
+  606: get_field  "lights"
+  611: push_0
+  612: to_propkey2
+  613: get_var  "createVector"
+  618: push_i8  20
+  620: push_i8  38
+  622: push_i8  -22
+  624: call3
+  625: put_array_el
+  626: get_loc8  19
+  628: get_field  "lights"
+  633: push_0
+  634: get_array_el
+  635: get_var  "createVector"
+  640: push_const8  5
+  642: push_const8  6
+  644: push_const8  7
+  646: call3
+  647: put_field  "colour"
+  652: get_loc8  19
+  654: get_field  "lights"
+  659: push_1
+  660: to_propkey2
+  661: get_var  "createVector"
+  666: push_i8  -23
+  668: push_i8  40
+  670: push_i8  17
+  672: call3
+  673: put_array_el
+  674: get_loc8  19
+  676: get_field  "lights"
+  681: push_1
+  682: get_array_el
+  683: get_var  "createVector"
+  688: push_const8  8
+  690: push_const8  9
+  692: push_const8  10
+  694: call3
+  695: put_field  "colour"
+  700: get_loc8  19
+  702: get_field  "lights"
+  707: push_2
+  708: to_propkey2
+  709: get_var  "createVector"
+  714: push_i8  23
+  716: push_i8  20
+  718: push_i8  17
+  720: call3
+  721: put_array_el
+  722: get_loc8  19
+  724: get_field  "lights"
+  729: push_2
+  730: get_array_el
+  731: get_var  "createVector"
+  736: push_const8  11
+  738: push_const8  12
+  740: push_const8  13
+  742: call3
+  743: put_field  "colour"
+  748: get_loc8  19
+  750: get_var  "createVector"
+  755: push_const8  14
+  757: push_const8  15
+  759: push_const8  16
+  761: call3
+  762: put_field  "ambient"
+  767: push_i8  30
+  769: put_loc8  20
+  771: get_var  "Array"
+  776: dup
+  777: call_constructor  0
+  780: put_loc8  21
+  782: push_0
+  783: put_loc8  22
+  785: get_loc8  22
+  787: get_loc8  20
+  789: lt
+  790: if_false8  43
+  792: get_loc8  21
+  794: get_loc8  22
+  796: to_propkey2
+  797: get_var  "Array"
+  802: dup
+  803: call_constructor  0
+  806: put_array_el
+  807: push_0
+  808: put_loc8  23
+  810: get_loc8  23
+  812: get_loc8  20
+  814: lt
+  815: if_false8  14
+  817: get_loc8  21
+  819: get_loc8  22
+  821: get_array_el
+  822: get_loc8  23
+  824: push_0
+  825: put_array_el
+  826: inc_loc  23
+  828: goto8  -19
+  830: inc_loc  22
+  832: goto8  -48
+  834: get_var  "Camera"
+  839: dup
+  840: get_var  "createVector"
+  845: push_i8  -40
+  847: push_i8  40
+  849: push_i8  40
+  851: call3
+  852: get_var  "createVector"
+  857: push_0
+  858: push_0
+  859: push_0
+  860: call3
+  861: get_var  "createVector"
+  866: push_0
+  867: push_1
+  868: push_0
+  869: call3
+  870: call_constructor  3
+  873: set_loc8  24
+  875: get_field2  "render"
+  880: get_loc8  19
+  882: get_loc8  21
+  884: get_loc8  20
+  886: get_loc8  20
+  888: call_method  4
+  891: drop
+  892: get_loc8  21
+  894: return
+var count: 25
+  startDate: normal
+  numTriangles: normal
+  triangles: normal
+  tfl: normal
+  tfr: normal
+  tbl: normal
+  tbr: normal
+  bfl: normal
+  bfr: normal
+  bbl: normal
+  bbr: normal
+  i: normal
+  green: captured normal
+  grey: captured normal
+  floorShader: normal
+  ffl: normal
+  ffr: normal
+  fbl: normal
+  fbr: normal
+  _scene: normal
+  size: normal
+  pixels: normal
+  y: normal
+  x: normal
+  _camera: normal
+Constant pool
+length: 17
+    0:     1:     2:     3:     4: ptr 0x55c8fbe66d30    5:     6:     7:     8:     9:    10:    11:    12:    13:    14:    15:    16: 
+-- JSFunction arrayToCanvasCommands @ 0x55c8fbe72990
+source ptr: 0x55c8fbe75bc0, ln: 405
+arg count: 1
+stack size: 4
+Funtion bytecode:
+    0: push_atom_value  "<canvas id="renderCanvas" width="30px" height="30px"></canvas><scr"
+    5: push_atom_value  "ipt>\nvar pixels = ["
+   10: add
+   11: put_loc0
+   12: push_i8  30
+   14: put_loc1
+   15: push_0
+   16: put_loc2
+   17: get_loc2
+   18: get_loc1
+   19: lt
+   20: if_false8  50
+   22: push_atom_value  "["
+   27: add_loc  0
+   29: push_0
+   30: put_loc3
+   31: get_loc3
+   32: get_loc1
+   33: lt
+   34: if_false8  25
+   36: get_loc0
+   37: push_atom_value  "["
+   42: get_arg0
+   43: get_loc2
+   44: get_array_el
+   45: get_loc3
+   46: get_array_el
+   47: add
+   48: push_atom_value  "],"
+   53: add
+   54: add
+   55: put_loc0
+   56: inc_loc  3
+   58: goto8  -28
+   60: push_atom_value  "],"
+   65: add_loc  0
+   67: inc_loc  2
+   69: goto8  -53
+   71: get_loc0
+   72: push_atom_value  "];\n    var canvas = document.getElementById("renderCanvas").getContext("2d");\n\n\n    var size = 30;\n    canvas.fillStyle = "red";\n    canvas.fillRect(0, 0, size, size);\n    canvas.scale(1, -1);\n    canvas.translate(0, -size);\n\n    if (!canvas.setFillColor)\n        canvas.setFillColor = function(r, g, b, a) {\n            this.fillStyle = "rgb("+[Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255)]+")";\n    }\n\nfor (var y = 0; y < size; y++) {\n  for (var x = 0; x < size; x++) {\n    var l = pixels[y][x];\n    canvas.setFillColor(l[0], l[1], l[2], 1);\n    canvas.fillRect(x, y, 1, 1);\n  }\n}</scr"
+   77: push_atom_value  "ipt>"
+   82: add
+   83: add
+   84: set_loc0
+   85: return
+var count: 4
+  s: normal
+  size: normal
+  y: normal
+  x: normal
+Constant pool
+length: 0
+
+-- JSFunction  5äûÈU @ 0x55c8fbe66d30
+source ptr: 0x55c8fbe72ac0, ln: 357
+arg count: 3
+stack size: 3
+Funtion bytecode:
+    0: get_arg1
+    1: push_0
+    2: get_array_el
+    3: push_i8  32
+    5: div
+    6: push_2
+    7: mod
+    8: push_2
+    9: add
+   10: push_2
+   11: mod
+   12: put_loc0
+   13: get_arg1
+   14: push_2
+   15: get_array_el
+   16: push_i8  32
+   18: div
+   19: push_const8  0
+   21: add
+   22: push_2
+   23: mod
+   24: push_2
+   25: add
+   26: push_2
+   27: mod
+   28: put_loc1
+   29: get_loc0
+   30: push_1
+   31: lt
+   32: get_loc1
+   33: push_1
+   34: lt
+   35: neq
+   36: if_false8  3
+   38: get_var_ref0
+   39: return
+   40: get_var_ref1
+   41: return
+var count: 2
+  x: normal
+  z: normal
+Constant pool
+length: 1
+    0: 

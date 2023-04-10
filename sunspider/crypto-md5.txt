@@ -1,0 +1,1815 @@
+-- JSFunction <eval> @ 0x55c0bd0fa7a0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "hexcase", 00000000
+    6: check_define_var  "b64pad", 00000000
+   12: check_define_var  "chrsz", 00000000
+   18: check_define_var  "hex_md5", 01000000
+   24: check_define_var  "b64_md5", 01000000
+   30: check_define_var  "str_md5", 01000000
+   36: check_define_var  "hex_hmac_md5", 01000000
+   42: check_define_var  "b64_hmac_md5", 01000000
+   48: check_define_var  "str_hmac_md5", 01000000
+   54: check_define_var  "md5_vm_test", 01000000
+   60: check_define_var  "core_md5", 01000000
+   66: check_define_var  "md5_cmn", 01000000
+   72: check_define_var  "md5_ff", 01000000
+   78: check_define_var  "md5_gg", 01000000
+   84: check_define_var  "md5_hh", 01000000
+   90: check_define_var  "md5_ii", 01000000
+   96: check_define_var  "core_hmac_md5", 01000000
+  102: check_define_var  "safe_add", 01000000
+  108: check_define_var  "bit_rol", 01000000
+  114: check_define_var  "str2binl", 01000000
+  120: check_define_var  "binl2str", 01000000
+  126: check_define_var  "binl2hex", 01000000
+  132: check_define_var  "binl2b64", 01000000
+  138: check_define_var  "plainText", 00000000
+  144: check_define_var  "i", 00000000
+  150: check_define_var  "md5Output", 00000000
+  156: check_define_var  "expected", 00000000
+  162: define_var  "hexcase", 00000000
+  168: define_var  "b64pad", 00000000
+  174: define_var  "chrsz", 00000000
+  180: fclosure8  0
+  182: define_func  "hex_md5", 00000000
+  188: fclosure8  1
+  190: define_func  "b64_md5", 00000000
+  196: fclosure8  2
+  198: define_func  "str_md5", 00000000
+  204: fclosure8  3
+  206: define_func  "hex_hmac_md5", 00000000
+  212: fclosure8  4
+  214: define_func  "b64_hmac_md5", 00000000
+  220: fclosure8  5
+  222: define_func  "str_hmac_md5", 00000000
+  228: fclosure8  6
+  230: define_func  "md5_vm_test", 00000000
+  236: fclosure8  7
+  238: define_func  "core_md5", 00000000
+  244: fclosure8  8
+  246: define_func  "md5_cmn", 00000000
+  252: fclosure8  9
+  254: define_func  "md5_ff", 00000000
+  260: fclosure8  10
+  262: define_func  "md5_gg", 00000000
+  268: fclosure8  11
+  270: define_func  "md5_hh", 00000000
+  276: fclosure8  12
+  278: define_func  "md5_ii", 00000000
+  284: fclosure8  13
+  286: define_func  "core_hmac_md5", 00000000
+  292: fclosure8  14
+  294: define_func  "safe_add", 00000000
+  300: fclosure8  15
+  302: define_func  "bit_rol", 00000000
+  308: fclosure8  16
+  310: define_func  "str2binl", 00000000
+  316: fclosure8  17
+  318: define_func  "binl2str", 00000000
+  324: fclosure8  18
+  326: define_func  "binl2hex", 00000000
+  332: fclosure8  19
+  334: define_func  "binl2b64", 00000000
+  340: define_var  "plainText", 00000000
+  346: define_var  "i", 00000000
+  352: define_var  "md5Output", 00000000
+  358: define_var  "expected", 00000000
+  364: push_0
+  365: put_var  "hexcase"
+  370: push_empty_string
+  371: put_var  "b64pad"
+  376: push_i8  8
+  378: put_var  "chrsz"
+  383: push_atom_value  "Rebellious subjects, enemies to peace,\nProfaners of this neighbour-stained steel,--\nWill they not hear? What, ho! you men, you beasts,\nThat quench the fire of your pernicious rage\nWith purple fountains issuing from your veins,\nOn pain of torture, from those bloody hands\nThrow your mistemper'd weapons to the ground,\nAnd hear the sentence of your moved prince.\nThree civil brawls, bred of an airy word,\nBy thee, old Capulet, and Montague,\nHave thrice disturb'd the quiet of our streets,\nAnd made Verona's ancient citizens\nCast by their grave beseeming ornaments,\nTo wield old partisans, in hands as old,\nCanker'd with peace, to part your canker'd hate:\nIf ever you disturb our streets again,\nYour lives shall pay the forfeit of the peace.\nFor this time, all the rest depart away:\nYou Capulet; shall go along with me:\nAnd, Montague, come you this afternoon,\nTo know our further pleasure in this case,\nTo old Free-town, our common judgment-place.\nOnce more, on pain of death, all men depart."
+  388: put_var  "plainText"
+  393: undefined
+  394: put_loc0
+  395: push_0
+  396: put_var  "i"
+  401: get_var  "i"
+  406: push_4
+  407: lt
+  408: if_false8  33
+  410: get_var  "plainText"
+  415: get_var  "plainText"
+  420: add
+  421: dup
+  422: put_var  "plainText"
+  427: put_loc0
+  428: get_var  "i"
+  433: post_inc
+  434: put_var  "i"
+  439: drop
+  440: goto8  -40
+  442: get_var  "hex_md5"
+  447: get_var  "plainText"
+  452: call1
+  453: put_var  "md5Output"
+  458: push_atom_value  "a831e91e0f70eddcb70dc61c6f82f6cd"
+  463: put_var  "expected"
+  468: undefined
+  469: put_loc0
+  470: get_var  "md5Output"
+  475: get_var  "expected"
+  480: neq
+  481: if_false8  25
+  483: push_atom_value  "ERROR: bad result: expected "
+  488: get_var  "expected"
+  493: add
+  494: push_atom_value  " but got "
+  499: add
+  500: get_var  "md5Output"
+  505: add
+  506: throw
+  507: get_loc0
+  508: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 20
+    0: ptr 0x55c0bd0fe300    1: ptr 0x55c0bd101ae0    2: ptr 0x55c0bd102020    3: ptr 0x55c0bd102110    4: ptr 0x55c0bd1021d0    5: ptr 0x55c0bd102290    6: ptr 0x55c0bd0ef350    7: ptr 0x55c0bd0f9210    8: ptr 0x55c0bd0ef500    9: ptr 0x55c0bd0f7fc0   10: ptr 0x55c0bd0fcc90   11: ptr 0x55c0bd0f2a10   12: ptr 0x55c0bd0fd370   13: ptr 0x55c0bd0fd8a0   14: ptr 0x55c0bd1019b0   15: ptr 0x55c0bd0fe4e0   16: ptr 0x55c0bd0fe8e0   17: ptr 0x55c0bd0f80e0   18: ptr 0x55c0bd0ff9d0   19: ptr 0x55c0bd0fdb30
+-- JSFunction hex_md5 @ 0x55c0bd0fe300
+source ptr: 0x55c0bd0f68f0, ln: 22
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binl2hex"
+    5: get_var  "core_md5"
+   10: get_var  "str2binl"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction b64_md5 @ 0x55c0bd101ae0
+source ptr: 0x55c0bd0f6cd0, ln: 23
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binl2b64"
+    5: get_var  "core_md5"
+   10: get_var  "str2binl"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str_md5 @ 0x55c0bd102020
+source ptr: 0x55c0bd0f70c0, ln: 24
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binl2str"
+    5: get_var  "core_md5"
+   10: get_var  "str2binl"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction hex_hmac_md5 @ 0x55c0bd102110
+source ptr: 0x55c0bd0f7420, ln: 25
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binl2hex"
+    5: get_var  "core_hmac_md5"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction b64_hmac_md5 @ 0x55c0bd1021d0
+source ptr: 0x55c0bd0f7830, ln: 26
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binl2b64"
+    5: get_var  "core_hmac_md5"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str_hmac_md5 @ 0x55c0bd102290
+source ptr: 0x55c0bd0f7b50, ln: 27
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binl2str"
+    5: get_var  "core_hmac_md5"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction md5_vm_test @ 0x55c0bd0ef350
+source ptr: 0x55c0bd0f27a0, ln: 32
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var  "hex_md5"
+    5: push_atom_value  "abc"
+   10: call1
+   11: push_atom_value  "900150983cd24fb0d6963f7d28e17f72"
+   16: eq
+   17: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction core_md5 @ 0x55c0bd0f9210
+source ptr: 0x55c0bd0fbcf0, ln: 40
+arg count: 2
+stack size: 8
+Funtion bytecode:
+    0: get_arg0
+    1: get_arg1
+    2: push_5
+    3: sar
+    4: to_propkey2
+    5: dup2
+    6: get_array_el
+    7: push_i16  128
+   10: get_arg1
+   11: push_i8  32
+   13: mod
+   14: shl
+   15: or
+   16: put_array_el
+   17: get_arg0
+   18: get_arg1
+   19: push_i8  64
+   21: add
+   22: push_i8  9
+   24: shr
+   25: push_4
+   26: shl
+   27: push_i8  14
+   29: add
+   30: get_arg1
+   31: put_array_el
+   32: push_i32  1732584193
+   37: put_loc0
+   38: push_i32  -271733879
+   43: put_loc1
+   44: push_i32  -1732584194
+   49: put_loc2
+   50: push_i32  271733878
+   55: put_loc3
+   56: push_0
+   57: put_loc8  4
+   59: get_loc8  4
+   61: get_arg0
+   62: get_length
+   63: lt
+   64: if_false  1743
+   69: get_loc0
+   70: put_loc8  5
+   72: get_loc1
+   73: put_loc8  6
+   75: get_loc2
+   76: put_loc8  7
+   78: get_loc3
+   79: put_loc8  8
+   81: get_var  "md5_ff"
+   86: get_loc0
+   87: get_loc1
+   88: get_loc2
+   89: get_loc3
+   90: get_arg0
+   91: get_loc8  4
+   93: push_0
+   94: add
+   95: get_array_el
+   96: push_7
+   97: push_i32  -680876936
+  102: call  7
+  105: put_loc0
+  106: get_var  "md5_ff"
+  111: get_loc3
+  112: get_loc0
+  113: get_loc1
+  114: get_loc2
+  115: get_arg0
+  116: get_loc8  4
+  118: push_1
+  119: add
+  120: get_array_el
+  121: push_i8  12
+  123: push_i32  -389564586
+  128: call  7
+  131: put_loc3
+  132: get_var  "md5_ff"
+  137: get_loc2
+  138: get_loc3
+  139: get_loc0
+  140: get_loc1
+  141: get_arg0
+  142: get_loc8  4
+  144: push_2
+  145: add
+  146: get_array_el
+  147: push_i8  17
+  149: push_i32  606105819
+  154: call  7
+  157: put_loc2
+  158: get_var  "md5_ff"
+  163: get_loc1
+  164: get_loc2
+  165: get_loc3
+  166: get_loc0
+  167: get_arg0
+  168: get_loc8  4
+  170: push_3
+  171: add
+  172: get_array_el
+  173: push_i8  22
+  175: push_i32  -1044525330
+  180: call  7
+  183: put_loc1
+  184: get_var  "md5_ff"
+  189: get_loc0
+  190: get_loc1
+  191: get_loc2
+  192: get_loc3
+  193: get_arg0
+  194: get_loc8  4
+  196: push_4
+  197: add
+  198: get_array_el
+  199: push_7
+  200: push_i32  -176418897
+  205: call  7
+  208: put_loc0
+  209: get_var  "md5_ff"
+  214: get_loc3
+  215: get_loc0
+  216: get_loc1
+  217: get_loc2
+  218: get_arg0
+  219: get_loc8  4
+  221: push_5
+  222: add
+  223: get_array_el
+  224: push_i8  12
+  226: push_i32  1200080426
+  231: call  7
+  234: put_loc3
+  235: get_var  "md5_ff"
+  240: get_loc2
+  241: get_loc3
+  242: get_loc0
+  243: get_loc1
+  244: get_arg0
+  245: get_loc8  4
+  247: push_6
+  248: add
+  249: get_array_el
+  250: push_i8  17
+  252: push_i32  -1473231341
+  257: call  7
+  260: put_loc2
+  261: get_var  "md5_ff"
+  266: get_loc1
+  267: get_loc2
+  268: get_loc3
+  269: get_loc0
+  270: get_arg0
+  271: get_loc8  4
+  273: push_7
+  274: add
+  275: get_array_el
+  276: push_i8  22
+  278: push_i32  -45705983
+  283: call  7
+  286: put_loc1
+  287: get_var  "md5_ff"
+  292: get_loc0
+  293: get_loc1
+  294: get_loc2
+  295: get_loc3
+  296: get_arg0
+  297: get_loc8  4
+  299: push_i8  8
+  301: add
+  302: get_array_el
+  303: push_7
+  304: push_i32  1770035416
+  309: call  7
+  312: put_loc0
+  313: get_var  "md5_ff"
+  318: get_loc3
+  319: get_loc0
+  320: get_loc1
+  321: get_loc2
+  322: get_arg0
+  323: get_loc8  4
+  325: push_i8  9
+  327: add
+  328: get_array_el
+  329: push_i8  12
+  331: push_i32  -1958414417
+  336: call  7
+  339: put_loc3
+  340: get_var  "md5_ff"
+  345: get_loc2
+  346: get_loc3
+  347: get_loc0
+  348: get_loc1
+  349: get_arg0
+  350: get_loc8  4
+  352: push_i8  10
+  354: add
+  355: get_array_el
+  356: push_i8  17
+  358: push_i32  -42063
+  363: call  7
+  366: put_loc2
+  367: get_var  "md5_ff"
+  372: get_loc1
+  373: get_loc2
+  374: get_loc3
+  375: get_loc0
+  376: get_arg0
+  377: get_loc8  4
+  379: push_i8  11
+  381: add
+  382: get_array_el
+  383: push_i8  22
+  385: push_i32  -1990404162
+  390: call  7
+  393: put_loc1
+  394: get_var  "md5_ff"
+  399: get_loc0
+  400: get_loc1
+  401: get_loc2
+  402: get_loc3
+  403: get_arg0
+  404: get_loc8  4
+  406: push_i8  12
+  408: add
+  409: get_array_el
+  410: push_7
+  411: push_i32  1804603682
+  416: call  7
+  419: put_loc0
+  420: get_var  "md5_ff"
+  425: get_loc3
+  426: get_loc0
+  427: get_loc1
+  428: get_loc2
+  429: get_arg0
+  430: get_loc8  4
+  432: push_i8  13
+  434: add
+  435: get_array_el
+  436: push_i8  12
+  438: push_i32  -40341101
+  443: call  7
+  446: put_loc3
+  447: get_var  "md5_ff"
+  452: get_loc2
+  453: get_loc3
+  454: get_loc0
+  455: get_loc1
+  456: get_arg0
+  457: get_loc8  4
+  459: push_i8  14
+  461: add
+  462: get_array_el
+  463: push_i8  17
+  465: push_i32  -1502002290
+  470: call  7
+  473: put_loc2
+  474: get_var  "md5_ff"
+  479: get_loc1
+  480: get_loc2
+  481: get_loc3
+  482: get_loc0
+  483: get_arg0
+  484: get_loc8  4
+  486: push_i8  15
+  488: add
+  489: get_array_el
+  490: push_i8  22
+  492: push_i32  1236535329
+  497: call  7
+  500: put_loc1
+  501: get_var  "md5_gg"
+  506: get_loc0
+  507: get_loc1
+  508: get_loc2
+  509: get_loc3
+  510: get_arg0
+  511: get_loc8  4
+  513: push_1
+  514: add
+  515: get_array_el
+  516: push_5
+  517: push_i32  -165796510
+  522: call  7
+  525: put_loc0
+  526: get_var  "md5_gg"
+  531: get_loc3
+  532: get_loc0
+  533: get_loc1
+  534: get_loc2
+  535: get_arg0
+  536: get_loc8  4
+  538: push_6
+  539: add
+  540: get_array_el
+  541: push_i8  9
+  543: push_i32  -1069501632
+  548: call  7
+  551: put_loc3
+  552: get_var  "md5_gg"
+  557: get_loc2
+  558: get_loc3
+  559: get_loc0
+  560: get_loc1
+  561: get_arg0
+  562: get_loc8  4
+  564: push_i8  11
+  566: add
+  567: get_array_el
+  568: push_i8  14
+  570: push_i32  643717713
+  575: call  7
+  578: put_loc2
+  579: get_var  "md5_gg"
+  584: get_loc1
+  585: get_loc2
+  586: get_loc3
+  587: get_loc0
+  588: get_arg0
+  589: get_loc8  4
+  591: push_0
+  592: add
+  593: get_array_el
+  594: push_i8  20
+  596: push_i32  -373897302
+  601: call  7
+  604: put_loc1
+  605: get_var  "md5_gg"
+  610: get_loc0
+  611: get_loc1
+  612: get_loc2
+  613: get_loc3
+  614: get_arg0
+  615: get_loc8  4
+  617: push_5
+  618: add
+  619: get_array_el
+  620: push_5
+  621: push_i32  -701558691
+  626: call  7
+  629: put_loc0
+  630: get_var  "md5_gg"
+  635: get_loc3
+  636: get_loc0
+  637: get_loc1
+  638: get_loc2
+  639: get_arg0
+  640: get_loc8  4
+  642: push_i8  10
+  644: add
+  645: get_array_el
+  646: push_i8  9
+  648: push_i32  38016083
+  653: call  7
+  656: put_loc3
+  657: get_var  "md5_gg"
+  662: get_loc2
+  663: get_loc3
+  664: get_loc0
+  665: get_loc1
+  666: get_arg0
+  667: get_loc8  4
+  669: push_i8  15
+  671: add
+  672: get_array_el
+  673: push_i8  14
+  675: push_i32  -660478335
+  680: call  7
+  683: put_loc2
+  684: get_var  "md5_gg"
+  689: get_loc1
+  690: get_loc2
+  691: get_loc3
+  692: get_loc0
+  693: get_arg0
+  694: get_loc8  4
+  696: push_4
+  697: add
+  698: get_array_el
+  699: push_i8  20
+  701: push_i32  -405537848
+  706: call  7
+  709: put_loc1
+  710: get_var  "md5_gg"
+  715: get_loc0
+  716: get_loc1
+  717: get_loc2
+  718: get_loc3
+  719: get_arg0
+  720: get_loc8  4
+  722: push_i8  9
+  724: add
+  725: get_array_el
+  726: push_5
+  727: push_i32  568446438
+  732: call  7
+  735: put_loc0
+  736: get_var  "md5_gg"
+  741: get_loc3
+  742: get_loc0
+  743: get_loc1
+  744: get_loc2
+  745: get_arg0
+  746: get_loc8  4
+  748: push_i8  14
+  750: add
+  751: get_array_el
+  752: push_i8  9
+  754: push_i32  -1019803690
+  759: call  7
+  762: put_loc3
+  763: get_var  "md5_gg"
+  768: get_loc2
+  769: get_loc3
+  770: get_loc0
+  771: get_loc1
+  772: get_arg0
+  773: get_loc8  4
+  775: push_3
+  776: add
+  777: get_array_el
+  778: push_i8  14
+  780: push_i32  -187363961
+  785: call  7
+  788: put_loc2
+  789: get_var  "md5_gg"
+  794: get_loc1
+  795: get_loc2
+  796: get_loc3
+  797: get_loc0
+  798: get_arg0
+  799: get_loc8  4
+  801: push_i8  8
+  803: add
+  804: get_array_el
+  805: push_i8  20
+  807: push_i32  1163531501
+  812: call  7
+  815: put_loc1
+  816: get_var  "md5_gg"
+  821: get_loc0
+  822: get_loc1
+  823: get_loc2
+  824: get_loc3
+  825: get_arg0
+  826: get_loc8  4
+  828: push_i8  13
+  830: add
+  831: get_array_el
+  832: push_5
+  833: push_i32  -1444681467
+  838: call  7
+  841: put_loc0
+  842: get_var  "md5_gg"
+  847: get_loc3
+  848: get_loc0
+  849: get_loc1
+  850: get_loc2
+  851: get_arg0
+  852: get_loc8  4
+  854: push_2
+  855: add
+  856: get_array_el
+  857: push_i8  9
+  859: push_i32  -51403784
+  864: call  7
+  867: put_loc3
+  868: get_var  "md5_gg"
+  873: get_loc2
+  874: get_loc3
+  875: get_loc0
+  876: get_loc1
+  877: get_arg0
+  878: get_loc8  4
+  880: push_7
+  881: add
+  882: get_array_el
+  883: push_i8  14
+  885: push_i32  1735328473
+  890: call  7
+  893: put_loc2
+  894: get_var  "md5_gg"
+  899: get_loc1
+  900: get_loc2
+  901: get_loc3
+  902: get_loc0
+  903: get_arg0
+  904: get_loc8  4
+  906: push_i8  12
+  908: add
+  909: get_array_el
+  910: push_i8  20
+  912: push_i32  -1926607734
+  917: call  7
+  920: put_loc1
+  921: get_var  "md5_hh"
+  926: get_loc0
+  927: get_loc1
+  928: get_loc2
+  929: get_loc3
+  930: get_arg0
+  931: get_loc8  4
+  933: push_5
+  934: add
+  935: get_array_el
+  936: push_4
+  937: push_i32  -378558
+  942: call  7
+  945: put_loc0
+  946: get_var  "md5_hh"
+  951: get_loc3
+  952: get_loc0
+  953: get_loc1
+  954: get_loc2
+  955: get_arg0
+  956: get_loc8  4
+  958: push_i8  8
+  960: add
+  961: get_array_el
+  962: push_i8  11
+  964: push_i32  -2022574463
+  969: call  7
+  972: put_loc3
+  973: get_var  "md5_hh"
+  978: get_loc2
+  979: get_loc3
+  980: get_loc0
+  981: get_loc1
+  982: get_arg0
+  983: get_loc8  4
+  985: push_i8  11
+  987: add
+  988: get_array_el
+  989: push_i8  16
+  991: push_i32  1839030562
+  996: call  7
+  999: put_loc2
+  1000: get_var  "md5_hh"
+  1005: get_loc1
+  1006: get_loc2
+  1007: get_loc3
+  1008: get_loc0
+  1009: get_arg0
+  1010: get_loc8  4
+  1012: push_i8  14
+  1014: add
+  1015: get_array_el
+  1016: push_i8  23
+  1018: push_i32  -35309556
+  1023: call  7
+  1026: put_loc1
+  1027: get_var  "md5_hh"
+  1032: get_loc0
+  1033: get_loc1
+  1034: get_loc2
+  1035: get_loc3
+  1036: get_arg0
+  1037: get_loc8  4
+  1039: push_1
+  1040: add
+  1041: get_array_el
+  1042: push_4
+  1043: push_i32  -1530992060
+  1048: call  7
+  1051: put_loc0
+  1052: get_var  "md5_hh"
+  1057: get_loc3
+  1058: get_loc0
+  1059: get_loc1
+  1060: get_loc2
+  1061: get_arg0
+  1062: get_loc8  4
+  1064: push_4
+  1065: add
+  1066: get_array_el
+  1067: push_i8  11
+  1069: push_i32  1272893353
+  1074: call  7
+  1077: put_loc3
+  1078: get_var  "md5_hh"
+  1083: get_loc2
+  1084: get_loc3
+  1085: get_loc0
+  1086: get_loc1
+  1087: get_arg0
+  1088: get_loc8  4
+  1090: push_7
+  1091: add
+  1092: get_array_el
+  1093: push_i8  16
+  1095: push_i32  -155497632
+  1100: call  7
+  1103: put_loc2
+  1104: get_var  "md5_hh"
+  1109: get_loc1
+  1110: get_loc2
+  1111: get_loc3
+  1112: get_loc0
+  1113: get_arg0
+  1114: get_loc8  4
+  1116: push_i8  10
+  1118: add
+  1119: get_array_el
+  1120: push_i8  23
+  1122: push_i32  -1094730640
+  1127: call  7
+  1130: put_loc1
+  1131: get_var  "md5_hh"
+  1136: get_loc0
+  1137: get_loc1
+  1138: get_loc2
+  1139: get_loc3
+  1140: get_arg0
+  1141: get_loc8  4
+  1143: push_i8  13
+  1145: add
+  1146: get_array_el
+  1147: push_4
+  1148: push_i32  681279174
+  1153: call  7
+  1156: put_loc0
+  1157: get_var  "md5_hh"
+  1162: get_loc3
+  1163: get_loc0
+  1164: get_loc1
+  1165: get_loc2
+  1166: get_arg0
+  1167: get_loc8  4
+  1169: push_0
+  1170: add
+  1171: get_array_el
+  1172: push_i8  11
+  1174: push_i32  -358537222
+  1179: call  7
+  1182: put_loc3
+  1183: get_var  "md5_hh"
+  1188: get_loc2
+  1189: get_loc3
+  1190: get_loc0
+  1191: get_loc1
+  1192: get_arg0
+  1193: get_loc8  4
+  1195: push_3
+  1196: add
+  1197: get_array_el
+  1198: push_i8  16
+  1200: push_i32  -722521979
+  1205: call  7
+  1208: put_loc2
+  1209: get_var  "md5_hh"
+  1214: get_loc1
+  1215: get_loc2
+  1216: get_loc3
+  1217: get_loc0
+  1218: get_arg0
+  1219: get_loc8  4
+  1221: push_6
+  1222: add
+  1223: get_array_el
+  1224: push_i8  23
+  1226: push_i32  76029189
+  1231: call  7
+  1234: put_loc1
+  1235: get_var  "md5_hh"
+  1240: get_loc0
+  1241: get_loc1
+  1242: get_loc2
+  1243: get_loc3
+  1244: get_arg0
+  1245: get_loc8  4
+  1247: push_i8  9
+  1249: add
+  1250: get_array_el
+  1251: push_4
+  1252: push_i32  -640364487
+  1257: call  7
+  1260: put_loc0
+  1261: get_var  "md5_hh"
+  1266: get_loc3
+  1267: get_loc0
+  1268: get_loc1
+  1269: get_loc2
+  1270: get_arg0
+  1271: get_loc8  4
+  1273: push_i8  12
+  1275: add
+  1276: get_array_el
+  1277: push_i8  11
+  1279: push_i32  -421815835
+  1284: call  7
+  1287: put_loc3
+  1288: get_var  "md5_hh"
+  1293: get_loc2
+  1294: get_loc3
+  1295: get_loc0
+  1296: get_loc1
+  1297: get_arg0
+  1298: get_loc8  4
+  1300: push_i8  15
+  1302: add
+  1303: get_array_el
+  1304: push_i8  16
+  1306: push_i32  530742520
+  1311: call  7
+  1314: put_loc2
+  1315: get_var  "md5_hh"
+  1320: get_loc1
+  1321: get_loc2
+  1322: get_loc3
+  1323: get_loc0
+  1324: get_arg0
+  1325: get_loc8  4
+  1327: push_2
+  1328: add
+  1329: get_array_el
+  1330: push_i8  23
+  1332: push_i32  -995338651
+  1337: call  7
+  1340: put_loc1
+  1341: get_var  "md5_ii"
+  1346: get_loc0
+  1347: get_loc1
+  1348: get_loc2
+  1349: get_loc3
+  1350: get_arg0
+  1351: get_loc8  4
+  1353: push_0
+  1354: add
+  1355: get_array_el
+  1356: push_6
+  1357: push_i32  -198630844
+  1362: call  7
+  1365: put_loc0
+  1366: get_var  "md5_ii"
+  1371: get_loc3
+  1372: get_loc0
+  1373: get_loc1
+  1374: get_loc2
+  1375: get_arg0
+  1376: get_loc8  4
+  1378: push_7
+  1379: add
+  1380: get_array_el
+  1381: push_i8  10
+  1383: push_i32  1126891415
+  1388: call  7
+  1391: put_loc3
+  1392: get_var  "md5_ii"
+  1397: get_loc2
+  1398: get_loc3
+  1399: get_loc0
+  1400: get_loc1
+  1401: get_arg0
+  1402: get_loc8  4
+  1404: push_i8  14
+  1406: add
+  1407: get_array_el
+  1408: push_i8  15
+  1410: push_i32  -1416354905
+  1415: call  7
+  1418: put_loc2
+  1419: get_var  "md5_ii"
+  1424: get_loc1
+  1425: get_loc2
+  1426: get_loc3
+  1427: get_loc0
+  1428: get_arg0
+  1429: get_loc8  4
+  1431: push_5
+  1432: add
+  1433: get_array_el
+  1434: push_i8  21
+  1436: push_i32  -57434055
+  1441: call  7
+  1444: put_loc1
+  1445: get_var  "md5_ii"
+  1450: get_loc0
+  1451: get_loc1
+  1452: get_loc2
+  1453: get_loc3
+  1454: get_arg0
+  1455: get_loc8  4
+  1457: push_i8  12
+  1459: add
+  1460: get_array_el
+  1461: push_6
+  1462: push_i32  1700485571
+  1467: call  7
+  1470: put_loc0
+  1471: get_var  "md5_ii"
+  1476: get_loc3
+  1477: get_loc0
+  1478: get_loc1
+  1479: get_loc2
+  1480: get_arg0
+  1481: get_loc8  4
+  1483: push_3
+  1484: add
+  1485: get_array_el
+  1486: push_i8  10
+  1488: push_i32  -1894986606
+  1493: call  7
+  1496: put_loc3
+  1497: get_var  "md5_ii"
+  1502: get_loc2
+  1503: get_loc3
+  1504: get_loc0
+  1505: get_loc1
+  1506: get_arg0
+  1507: get_loc8  4
+  1509: push_i8  10
+  1511: add
+  1512: get_array_el
+  1513: push_i8  15
+  1515: push_i32  -1051523
+  1520: call  7
+  1523: put_loc2
+  1524: get_var  "md5_ii"
+  1529: get_loc1
+  1530: get_loc2
+  1531: get_loc3
+  1532: get_loc0
+  1533: get_arg0
+  1534: get_loc8  4
+  1536: push_1
+  1537: add
+  1538: get_array_el
+  1539: push_i8  21
+  1541: push_i32  -2054922799
+  1546: call  7
+  1549: put_loc1
+  1550: get_var  "md5_ii"
+  1555: get_loc0
+  1556: get_loc1
+  1557: get_loc2
+  1558: get_loc3
+  1559: get_arg0
+  1560: get_loc8  4
+  1562: push_i8  8
+  1564: add
+  1565: get_array_el
+  1566: push_6
+  1567: push_i32  1873313359
+  1572: call  7
+  1575: put_loc0
+  1576: get_var  "md5_ii"
+  1581: get_loc3
+  1582: get_loc0
+  1583: get_loc1
+  1584: get_loc2
+  1585: get_arg0
+  1586: get_loc8  4
+  1588: push_i8  15
+  1590: add
+  1591: get_array_el
+  1592: push_i8  10
+  1594: push_i32  -30611744
+  1599: call  7
+  1602: put_loc3
+  1603: get_var  "md5_ii"
+  1608: get_loc2
+  1609: get_loc3
+  1610: get_loc0
+  1611: get_loc1
+  1612: get_arg0
+  1613: get_loc8  4
+  1615: push_6
+  1616: add
+  1617: get_array_el
+  1618: push_i8  15
+  1620: push_i32  -1560198380
+  1625: call  7
+  1628: put_loc2
+  1629: get_var  "md5_ii"
+  1634: get_loc1
+  1635: get_loc2
+  1636: get_loc3
+  1637: get_loc0
+  1638: get_arg0
+  1639: get_loc8  4
+  1641: push_i8  13
+  1643: add
+  1644: get_array_el
+  1645: push_i8  21
+  1647: push_i32  1309151649
+  1652: call  7
+  1655: put_loc1
+  1656: get_var  "md5_ii"
+  1661: get_loc0
+  1662: get_loc1
+  1663: get_loc2
+  1664: get_loc3
+  1665: get_arg0
+  1666: get_loc8  4
+  1668: push_4
+  1669: add
+  1670: get_array_el
+  1671: push_6
+  1672: push_i32  -145523070
+  1677: call  7
+  1680: put_loc0
+  1681: get_var  "md5_ii"
+  1686: get_loc3
+  1687: get_loc0
+  1688: get_loc1
+  1689: get_loc2
+  1690: get_arg0
+  1691: get_loc8  4
+  1693: push_i8  11
+  1695: add
+  1696: get_array_el
+  1697: push_i8  10
+  1699: push_i32  -1120210379
+  1704: call  7
+  1707: put_loc3
+  1708: get_var  "md5_ii"
+  1713: get_loc2
+  1714: get_loc3
+  1715: get_loc0
+  1716: get_loc1
+  1717: get_arg0
+  1718: get_loc8  4
+  1720: push_2
+  1721: add
+  1722: get_array_el
+  1723: push_i8  15
+  1725: push_i32  718787259
+  1730: call  7
+  1733: put_loc2
+  1734: get_var  "md5_ii"
+  1739: get_loc1
+  1740: get_loc2
+  1741: get_loc3
+  1742: get_loc0
+  1743: get_arg0
+  1744: get_loc8  4
+  1746: push_i8  9
+  1748: add
+  1749: get_array_el
+  1750: push_i8  21
+  1752: push_i32  -343485551
+  1757: call  7
+  1760: put_loc1
+  1761: get_var  "safe_add"
+  1766: get_loc0
+  1767: get_loc8  5
+  1769: call2
+  1770: put_loc0
+  1771: get_var  "safe_add"
+  1776: get_loc1
+  1777: get_loc8  6
+  1779: call2
+  1780: put_loc1
+  1781: get_var  "safe_add"
+  1786: get_loc2
+  1787: get_loc8  7
+  1789: call2
+  1790: put_loc2
+  1791: get_var  "safe_add"
+  1796: get_loc3
+  1797: get_loc8  8
+  1799: call2
+  1800: put_loc3
+  1801: push_i8  16
+  1803: add_loc  4
+  1805: goto16  -1747
+  1808: get_var  "Array"
+  1813: get_loc0
+  1814: get_loc1
+  1815: get_loc2
+  1816: get_loc3
+  1817: tail_call  4
+var count: 9
+  a: normal
+  b: normal
+  c: normal
+  d: normal
+  i: normal
+  olda: normal
+  oldb: normal
+  oldc: normal
+  oldd: normal
+Constant pool
+length: 0
+
+-- JSFunction md5_cmn @ 0x55c0bd0ef500
+source ptr: 0x55c0bd0e2eb0, ln: 138
+arg count: 6
+stack size: 7
+Funtion bytecode:
+    0: get_var  "safe_add"
+    5: get_var  "bit_rol"
+   10: get_var  "safe_add"
+   15: get_var  "safe_add"
+   20: get_arg1
+   21: get_arg0
+   22: call2
+   23: get_var  "safe_add"
+   28: get_arg3
+   29: get_arg  5
+   32: call2
+   33: call2
+   34: get_arg  4
+   37: call2
+   38: get_arg2
+   39: tail_call  2
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction md5_ff @ 0x55c0bd0f7fc0
+source ptr: 0x55c0bd0f6d60, ln: 142
+arg count: 7
+stack size: 7
+Funtion bytecode:
+    0: get_var  "md5_cmn"
+    5: get_arg1
+    6: get_arg2
+    7: and
+    8: get_arg1
+    9: not
+   10: get_arg3
+   11: and
+   12: or
+   13: get_arg0
+   14: get_arg1
+   15: get_arg  4
+   18: get_arg  5
+   21: get_arg  6
+   24: tail_call  6
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction md5_gg @ 0x55c0bd0fcc90
+source ptr: 0x55c0bd0f1d00, ln: 146
+arg count: 7
+stack size: 7
+Funtion bytecode:
+    0: get_var  "md5_cmn"
+    5: get_arg1
+    6: get_arg3
+    7: and
+    8: get_arg2
+    9: get_arg3
+   10: not
+   11: and
+   12: or
+   13: get_arg0
+   14: get_arg1
+   15: get_arg  4
+   18: get_arg  5
+   21: get_arg  6
+   24: tail_call  6
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction md5_hh @ 0x55c0bd0f2a10
+source ptr: 0x55c0bd0f7e80, ln: 150
+arg count: 7
+stack size: 7
+Funtion bytecode:
+    0: get_var  "md5_cmn"
+    5: get_arg1
+    6: get_arg2
+    7: xor
+    8: get_arg3
+    9: xor
+   10: get_arg0
+   11: get_arg1
+   12: get_arg  4
+   15: get_arg  5
+   18: get_arg  6
+   21: tail_call  6
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction md5_ii @ 0x55c0bd0fd370
+source ptr: 0x55c0bd0f89a0, ln: 154
+arg count: 7
+stack size: 7
+Funtion bytecode:
+    0: get_var  "md5_cmn"
+    5: get_arg2
+    6: get_arg1
+    7: get_arg3
+    8: not
+    9: or
+   10: xor
+   11: get_arg0
+   12: get_arg1
+   13: get_arg  4
+   16: get_arg  5
+   19: get_arg  6
+   22: tail_call  6
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction core_hmac_md5 @ 0x55c0bd0fd8a0
+source ptr: 0x55c0bd086190, ln: 162
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_var  "str2binl"
+    5: get_arg0
+    6: call1
+    7: set_loc0
+    8: get_length
+    9: push_i8  16
+   11: gt
+   12: if_false8  17
+   14: get_var  "core_md5"
+   19: get_loc0
+   20: get_arg0
+   21: get_length
+   22: get_var  "chrsz"
+   27: mul
+   28: call2
+   29: put_loc0
+   30: get_var  "Array"
+   35: push_i8  16
+   37: call1
+   38: put_loc1
+   39: get_var  "Array"
+   44: push_i8  16
+   46: call1
+   47: put_loc2
+   48: push_0
+   49: put_loc3
+   50: get_loc3
+   51: push_i8  16
+   53: lt
+   54: if_false8  31
+   56: get_loc1
+   57: get_loc3
+   58: to_propkey2
+   59: get_loc0
+   60: get_loc3
+   61: get_array_el
+   62: push_i32  909522486
+   67: xor
+   68: put_array_el
+   69: get_loc2
+   70: get_loc3
+   71: to_propkey2
+   72: get_loc0
+   73: get_loc3
+   74: get_array_el
+   75: push_i32  1549556828
+   80: xor
+   81: put_array_el
+   82: inc_loc  3
+   84: goto8  -35
+   86: get_var  "core_md5"
+   91: get_loc1
+   92: get_field2  "concat"
+   97: get_var  "str2binl"
+  102: get_arg1
+  103: call1
+  104: call_method  1
+  107: push_i16  512
+  110: get_arg1
+  111: get_length
+  112: get_var  "chrsz"
+  117: mul
+  118: add
+  119: call2
+  120: put_loc8  4
+  122: get_var  "core_md5"
+  127: get_loc2
+  128: get_field2  "concat"
+  133: get_loc8  4
+  135: call_method  1
+  138: push_i16  512
+  141: push_i16  128
+  144: add
+  145: tail_call  2
+var count: 5
+  bkey: normal
+  ipad: normal
+  opad: normal
+  i: normal
+  hash: normal
+Constant pool
+length: 0
+
+-- JSFunction safe_add @ 0x55c0bd1019b0
+source ptr: 0x55c0bd0fec20, ln: 182
+arg count: 2
+stack size: 3
+Funtion bytecode:
+    0: get_arg0
+    1: push_i32  65535
+    6: and
+    7: get_arg1
+    8: push_i32  65535
+   13: and
+   14: add
+   15: put_loc0
+   16: get_arg0
+   17: push_i8  16
+   19: sar
+   20: get_arg1
+   21: push_i8  16
+   23: sar
+   24: add
+   25: get_loc0
+   26: push_i8  16
+   28: sar
+   29: add
+   30: set_loc1
+   31: push_i8  16
+   33: shl
+   34: get_loc0
+   35: push_i32  65535
+   40: and
+   41: or
+   42: return
+var count: 2
+  lsw: normal
+  msw: normal
+Constant pool
+length: 0
+
+-- JSFunction bit_rol @ 0x55c0bd0fe4e0
+source ptr: 0x55c0bd0fd310, ln: 192
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_arg1
+    2: shl
+    3: get_arg0
+    4: push_i8  32
+    6: get_arg1
+    7: sub
+    8: shr
+    9: or
+   10: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str2binl @ 0x55c0bd0fe8e0
+source ptr: 0x55c0bd0e4e90, ln: 201
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: get_var  "Array"
+    5: call0
+    6: put_loc0
+    7: push_1
+    8: get_var  "chrsz"
+   13: shl
+   14: push_1
+   15: sub
+   16: put_loc1
+   17: push_0
+   18: put_loc2
+   19: get_loc2
+   20: get_arg0
+   21: get_length
+   22: get_var  "chrsz"
+   27: mul
+   28: lt
+   29: if_false8  43
+   31: get_loc0
+   32: get_loc2
+   33: push_5
+   34: sar
+   35: to_propkey2
+   36: dup2
+   37: get_array_el
+   38: get_arg0
+   39: get_field2  "charCodeAt"
+   44: get_loc2
+   45: get_var  "chrsz"
+   50: div
+   51: call_method  1
+   54: get_loc1
+   55: and
+   56: get_loc2
+   57: push_i8  32
+   59: mod
+   60: shl
+   61: or
+   62: put_array_el
+   63: get_loc2
+   64: get_var  "chrsz"
+   69: add
+   70: put_loc2
+   71: goto8  -53
+   73: get_loc0
+   74: return
+var count: 3
+  bin: normal
+  mask: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binl2str @ 0x55c0bd0f80e0
+source ptr: 0x55c0bd0e4190, ln: 213
+arg count: 1
+stack size: 6
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_1
+    3: get_var  "chrsz"
+    8: shl
+    9: push_1
+   10: sub
+   11: put_loc1
+   12: push_0
+   13: put_loc2
+   14: get_loc2
+   15: get_arg0
+   16: get_length
+   17: push_i8  32
+   19: mul
+   20: lt
+   21: if_false8  39
+   23: get_loc0
+   24: get_var  "String"
+   29: get_field2  "fromCharCode"
+   34: get_arg0
+   35: get_loc2
+   36: push_5
+   37: sar
+   38: get_array_el
+   39: get_loc2
+   40: push_i8  32
+   42: mod
+   43: shr
+   44: get_loc1
+   45: and
+   46: call_method  1
+   49: add
+   50: put_loc0
+   51: get_loc2
+   52: get_var  "chrsz"
+   57: add
+   58: put_loc2
+   59: goto8  -46
+   61: get_loc0
+   62: return
+var count: 3
+  str: normal
+  mask: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binl2hex @ 0x55c0bd0ff9d0
+source ptr: 0x55c0bd0d0240, ln: 225
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: get_var  "hexcase"
+    5: if_false8  8
+    7: push_atom_value  "0123456789ABCDEF"
+   12: goto8  6
+   14: push_atom_value  "0123456789abcdef"
+   19: put_loc0
+   20: push_empty_string
+   21: put_loc1
+   22: push_0
+   23: put_loc2
+   24: get_loc2
+   25: get_arg0
+   26: get_length
+   27: push_4
+   28: mul
+   29: lt
+   30: if_false8  59
+   32: get_loc1
+   33: get_loc0
+   34: get_field2  "charAt"
+   39: get_arg0
+   40: get_loc2
+   41: push_2
+   42: sar
+   43: get_array_el
+   44: get_loc2
+   45: push_4
+   46: mod
+   47: push_i8  8
+   49: mul
+   50: push_4
+   51: add
+   52: sar
+   53: push_i8  15
+   55: and
+   56: call_method  1
+   59: get_loc0
+   60: get_field2  "charAt"
+   65: get_arg0
+   66: get_loc2
+   67: push_2
+   68: sar
+   69: get_array_el
+   70: get_loc2
+   71: push_4
+   72: mod
+   73: push_i8  8
+   75: mul
+   76: sar
+   77: push_i8  15
+   79: and
+   80: call_method  1
+   83: add
+   84: add
+   85: put_loc1
+   86: inc_loc  2
+   88: goto8  -65
+   90: get_loc1
+   91: return
+var count: 3
+  hex_tab: normal
+  str: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binl2b64 @ 0x55c0bd0fdb30
+source ptr: 0x55c0bd1009c0, ln: 240
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: push_atom_value  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    5: put_loc0
+    6: push_empty_string
+    7: put_loc1
+    8: push_0
+    9: put_loc2
+   10: get_loc2
+   11: get_arg0
+   12: get_length
+   13: push_4
+   14: mul
+   15: lt
+   16: if_false  138
+   21: get_arg0
+   22: get_loc2
+   23: push_2
+   24: sar
+   25: get_array_el
+   26: push_i8  8
+   28: get_loc2
+   29: push_4
+   30: mod
+   31: mul
+   32: sar
+   33: push_i16  255
+   36: and
+   37: push_i8  16
+   39: shl
+   40: get_arg0
+   41: get_loc2
+   42: push_1
+   43: add
+   44: push_2
+   45: sar
+   46: get_array_el
+   47: push_i8  8
+   49: get_loc2
+   50: push_1
+   51: add
+   52: push_4
+   53: mod
+   54: mul
+   55: sar
+   56: push_i16  255
+   59: and
+   60: push_i8  8
+   62: shl
+   63: or
+   64: get_arg0
+   65: get_loc2
+   66: push_2
+   67: add
+   68: push_2
+   69: sar
+   70: get_array_el
+   71: push_i8  8
+   73: get_loc2
+   74: push_2
+   75: add
+   76: push_4
+   77: mod
+   78: mul
+   79: sar
+   80: push_i16  255
+   83: and
+   84: or
+   85: put_loc3
+   86: push_0
+   87: put_loc8  4
+   89: get_loc8  4
+   91: push_4
+   92: lt
+   93: if_false8  55
+   95: get_loc2
+   96: push_i8  8
+   98: mul
+   99: get_loc8  4
+  101: push_6
+  102: mul
+  103: add
+  104: get_arg0
+  105: get_length
+  106: push_i8  32
+  108: mul
+  109: gt
+  110: if_false8  11
+  112: get_loc1
+  113: get_var  "b64pad"
+  118: add
+  119: put_loc1
+  120: goto8  24
+  122: get_loc1
+  123: get_loc0
+  124: get_field2  "charAt"
+  129: get_loc3
+  130: push_6
+  131: push_3
+  132: get_loc8  4
+  134: sub
+  135: mul
+  136: sar
+  137: push_i8  63
+  139: and
+  140: call_method  1
+  143: add
+  144: put_loc1
+  145: inc_loc  4
+  147: goto8  -59
+  149: push_3
+  150: add_loc  2
+  152: goto16  -143
+  155: get_loc1
+  156: return
+var count: 5
+  tab: normal
+  str: normal
+  i: normal
+  triplet: normal
+  j: normal
+Constant pool
+length: 0
+

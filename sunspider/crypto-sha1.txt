@@ -1,0 +1,1007 @@
+-- JSFunction <eval> @ 0x55aa77a16df0
+source ptr: 0x0, ln: 1
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: check_define_var  "hexcase", 00000000
+    6: check_define_var  "b64pad", 00000000
+   12: check_define_var  "chrsz", 00000000
+   18: check_define_var  "hex_sha1", 01000000
+   24: check_define_var  "b64_sha1", 01000000
+   30: check_define_var  "str_sha1", 01000000
+   36: check_define_var  "hex_hmac_sha1", 01000000
+   42: check_define_var  "b64_hmac_sha1", 01000000
+   48: check_define_var  "str_hmac_sha1", 01000000
+   54: check_define_var  "sha1_vm_test", 01000000
+   60: check_define_var  "core_sha1", 01000000
+   66: check_define_var  "sha1_ft", 01000000
+   72: check_define_var  "sha1_kt", 01000000
+   78: check_define_var  "core_hmac_sha1", 01000000
+   84: check_define_var  "safe_add", 01000000
+   90: check_define_var  "rol", 01000000
+   96: check_define_var  "str2binb", 01000000
+  102: check_define_var  "binb2str", 01000000
+  108: check_define_var  "binb2hex", 01000000
+  114: check_define_var  "binb2b64", 01000000
+  120: check_define_var  "plainText", 00000000
+  126: check_define_var  "i", 00000000
+  132: check_define_var  "sha1Output", 00000000
+  138: check_define_var  "expected", 00000000
+  144: define_var  "hexcase", 00000000
+  150: define_var  "b64pad", 00000000
+  156: define_var  "chrsz", 00000000
+  162: fclosure8  0
+  164: define_func  "hex_sha1", 00000000
+  170: fclosure8  1
+  172: define_func  "b64_sha1", 00000000
+  178: fclosure8  2
+  180: define_func  "str_sha1", 00000000
+  186: fclosure8  3
+  188: define_func  "hex_hmac_sha1", 00000000
+  194: fclosure8  4
+  196: define_func  "b64_hmac_sha1", 00000000
+  202: fclosure8  5
+  204: define_func  "str_hmac_sha1", 00000000
+  210: fclosure8  6
+  212: define_func  "sha1_vm_test", 00000000
+  218: fclosure8  7
+  220: define_func  "core_sha1", 00000000
+  226: fclosure8  8
+  228: define_func  "sha1_ft", 00000000
+  234: fclosure8  9
+  236: define_func  "sha1_kt", 00000000
+  242: fclosure8  10
+  244: define_func  "core_hmac_sha1", 00000000
+  250: fclosure8  11
+  252: define_func  "safe_add", 00000000
+  258: fclosure8  12
+  260: define_func  "rol", 00000000
+  266: fclosure8  13
+  268: define_func  "str2binb", 00000000
+  274: fclosure8  14
+  276: define_func  "binb2str", 00000000
+  282: fclosure8  15
+  284: define_func  "binb2hex", 00000000
+  290: fclosure8  16
+  292: define_func  "binb2b64", 00000000
+  298: define_var  "plainText", 00000000
+  304: define_var  "i", 00000000
+  310: define_var  "sha1Output", 00000000
+  316: define_var  "expected", 00000000
+  322: push_0
+  323: put_var  "hexcase"
+  328: push_empty_string
+  329: put_var  "b64pad"
+  334: push_i8  8
+  336: put_var  "chrsz"
+  341: push_atom_value  "Two households, both alike in dignity,\nIn fair Verona, where we lay our scene,\nFrom ancient grudge break to new mutiny,\nWhere civil blood makes civil hands unclean.\nFrom forth the fatal loins of these two foes\nA pair of star-cross'd lovers take their life;\nWhole misadventured piteous overthrows\nDo with their death bury their parents' strife.\nThe fearful passage of their death-mark'd love,\nAnd the continuance of their parents' rage,\nWhich, but their children's end, nought could remove,\nIs now the two hours' traffic of our stage;\nThe which if you with patient ears attend,\nWhat here shall miss, our toil shall strive to mend."
+  346: put_var  "plainText"
+  351: undefined
+  352: put_loc0
+  353: push_0
+  354: put_var  "i"
+  359: get_var  "i"
+  364: push_4
+  365: lt
+  366: if_false8  33
+  368: get_var  "plainText"
+  373: get_var  "plainText"
+  378: add
+  379: dup
+  380: put_var  "plainText"
+  385: put_loc0
+  386: get_var  "i"
+  391: post_inc
+  392: put_var  "i"
+  397: drop
+  398: goto8  -40
+  400: get_var  "hex_sha1"
+  405: get_var  "plainText"
+  410: call1
+  411: put_var  "sha1Output"
+  416: push_atom_value  "2524d264def74cce2498bf112bedf00e6c0b796d"
+  421: put_var  "expected"
+  426: undefined
+  427: put_loc0
+  428: get_var  "sha1Output"
+  433: get_var  "expected"
+  438: neq
+  439: if_false8  25
+  441: push_atom_value  "ERROR: bad result: expected "
+  446: get_var  "expected"
+  451: add
+  452: push_atom_value  " but got "
+  457: add
+  458: get_var  "sha1Output"
+  463: add
+  464: throw
+  465: get_loc0
+  466: return
+var count: 1
+  <ret>: normal
+Constant pool
+length: 17
+    0: ptr 0x55aa77a15890    1: ptr 0x55aa77a15c10    2: ptr 0x55aa77a16150    3: ptr 0x55aa77a16210    4: ptr 0x55aa77a162d0    5: ptr 0x55aa77a16390    6: ptr 0x55aa77a07330    7: ptr 0x55aa77a11110    8: ptr 0x55aa77a15ae0    9: ptr 0x55aa77a114b0   10: ptr 0x55aa77a16500   11: ptr 0x55aa77a11a90   12: ptr 0x55aa77a10410   13: ptr 0x55aa77a074e0   14: ptr 0x55aa77a148a0   15: ptr 0x55aa77a13cd0   16: ptr 0x55aa77a14be0
+-- JSFunction hex_sha1 @ 0x55aa77a15890
+source ptr: 0x55aa77a0db60, ln: 22
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binb2hex"
+    5: get_var  "core_sha1"
+   10: get_var  "str2binb"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction b64_sha1 @ 0x55aa77a15c10
+source ptr: 0x55aa77a0df50, ln: 23
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binb2b64"
+    5: get_var  "core_sha1"
+   10: get_var  "str2binb"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str_sha1 @ 0x55aa77a16150
+source ptr: 0x55aa77a0e350, ln: 24
+arg count: 1
+stack size: 5
+Funtion bytecode:
+    0: get_var  "binb2str"
+    5: get_var  "core_sha1"
+   10: get_var  "str2binb"
+   15: get_arg0
+   16: call1
+   17: get_arg0
+   18: get_length
+   19: get_var  "chrsz"
+   24: mul
+   25: call2
+   26: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction hex_hmac_sha1 @ 0x55aa77a16210
+source ptr: 0x55aa77a0e6b0, ln: 25
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binb2hex"
+    5: get_var  "core_hmac_sha1"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction b64_hmac_sha1 @ 0x55aa77a162d0
+source ptr: 0x55aa77a0eac0, ln: 26
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binb2b64"
+    5: get_var  "core_hmac_sha1"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str_hmac_sha1 @ 0x55aa77a16390
+source ptr: 0x55aa77a0ede0, ln: 27
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_var  "binb2str"
+    5: get_var  "core_hmac_sha1"
+   10: get_arg0
+   11: get_arg1
+   12: call2
+   13: tail_call  1
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction sha1_vm_test @ 0x55aa77a07330
+source ptr: 0x55aa77a0a780, ln: 32
+arg count: 0
+stack size: 2
+Funtion bytecode:
+    0: get_var  "hex_sha1"
+    5: push_atom_value  "abc"
+   10: call1
+   11: push_atom_value  "a9993e364706816aba3e25717850c26c9cd0d89d"
+   16: eq
+   17: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction core_sha1 @ 0x55aa77a11110
+source ptr: 0x55aa77a104d0, ln: 40
+arg count: 2
+stack size: 8
+Funtion bytecode:
+    0: get_arg0
+    1: get_arg1
+    2: push_5
+    3: sar
+    4: to_propkey2
+    5: dup2
+    6: get_array_el
+    7: push_i16  128
+   10: push_i8  24
+   12: get_arg1
+   13: push_i8  32
+   15: mod
+   16: sub
+   17: shl
+   18: or
+   19: put_array_el
+   20: get_arg0
+   21: get_arg1
+   22: push_i8  64
+   24: add
+   25: push_i8  9
+   27: sar
+   28: push_4
+   29: shl
+   30: push_i8  15
+   32: add
+   33: get_arg1
+   34: put_array_el
+   35: get_var  "Array"
+   40: push_i8  80
+   42: call1
+   43: put_loc0
+   44: push_i32  1732584193
+   49: put_loc1
+   50: push_i32  -271733879
+   55: put_loc2
+   56: push_i32  -1732584194
+   61: put_loc3
+   62: push_i32  271733878
+   67: put_loc8  4
+   69: push_i32  -1009589776
+   74: put_loc8  5
+   76: push_0
+   77: put_loc8  6
+   79: get_loc8  6
+   81: get_arg0
+   82: get_length
+   83: lt
+   84: if_false  247
+   89: get_loc1
+   90: put_loc8  7
+   92: get_loc2
+   93: put_loc8  8
+   95: get_loc3
+   96: put_loc8  9
+   98: get_loc8  4
+  100: put_loc8  10
+  102: get_loc8  5
+  104: put_loc8  11
+  106: push_0
+  107: put_loc8  12
+  109: get_loc8  12
+  111: push_i8  80
+  113: lt
+  114: if_false  156
+  119: get_loc8  12
+  121: push_i8  16
+  123: lt
+  124: if_false8  15
+  126: get_loc0
+  127: get_loc8  12
+  129: to_propkey2
+  130: get_arg0
+  131: get_loc8  6
+  133: get_loc8  12
+  135: add
+  136: get_array_el
+  137: put_array_el
+  138: goto8  43
+  140: get_loc0
+  141: get_loc8  12
+  143: to_propkey2
+  144: get_var  "rol"
+  149: get_loc0
+  150: get_loc8  12
+  152: push_3
+  153: sub
+  154: get_array_el
+  155: get_loc0
+  156: get_loc8  12
+  158: push_i8  8
+  160: sub
+  161: get_array_el
+  162: xor
+  163: get_loc0
+  164: get_loc8  12
+  166: push_i8  14
+  168: sub
+  169: get_array_el
+  170: xor
+  171: get_loc0
+  172: get_loc8  12
+  174: push_i8  16
+  176: sub
+  177: get_array_el
+  178: xor
+  179: push_1
+  180: call2
+  181: put_array_el
+  182: get_var  "safe_add"
+  187: get_var  "safe_add"
+  192: get_var  "rol"
+  197: get_loc1
+  198: push_5
+  199: call2
+  200: get_var  "sha1_ft"
+  205: get_loc8  12
+  207: get_loc2
+  208: get_loc3
+  209: get_loc8  4
+  211: call  4
+  214: call2
+  215: get_var  "safe_add"
+  220: get_var  "safe_add"
+  225: get_loc8  5
+  227: get_loc0
+  228: get_loc8  12
+  230: get_array_el
+  231: call2
+  232: get_var  "sha1_kt"
+  237: get_loc8  12
+  239: call1
+  240: call2
+  241: call2
+  242: put_loc8  13
+  244: get_loc8  4
+  246: put_loc8  5
+  248: get_loc3
+  249: put_loc8  4
+  251: get_var  "rol"
+  256: get_loc2
+  257: push_i8  30
+  259: call2
+  260: put_loc3
+  261: get_loc1
+  262: put_loc2
+  263: get_loc8  13
+  265: put_loc1
+  266: inc_loc  12
+  268: goto16  -160
+  271: get_var  "safe_add"
+  276: get_loc1
+  277: get_loc8  7
+  279: call2
+  280: put_loc1
+  281: get_var  "safe_add"
+  286: get_loc2
+  287: get_loc8  8
+  289: call2
+  290: put_loc2
+  291: get_var  "safe_add"
+  296: get_loc3
+  297: get_loc8  9
+  299: call2
+  300: put_loc3
+  301: get_var  "safe_add"
+  306: get_loc8  4
+  308: get_loc8  10
+  310: call2
+  311: put_loc8  4
+  313: get_var  "safe_add"
+  318: get_loc8  5
+  320: get_loc8  11
+  322: call2
+  323: put_loc8  5
+  325: push_i8  16
+  327: add_loc  6
+  329: goto16  -251
+  332: get_var  "Array"
+  337: get_loc1
+  338: get_loc2
+  339: get_loc3
+  340: get_loc8  4
+  342: get_loc8  5
+  344: tail_call  5
+var count: 14
+  w: normal
+  a: normal
+  b: normal
+  c: normal
+  d: normal
+  e: normal
+  i: normal
+  olda: normal
+  oldb: normal
+  oldc: normal
+  oldd: normal
+  olde: normal
+  j: normal
+  t: normal
+Constant pool
+length: 0
+
+-- JSFunction sha1_ft @ 0x55aa77a15ae0
+source ptr: 0x55aa77a11820, ln: 88
+arg count: 4
+stack size: 3
+Funtion bytecode:
+    0: get_arg0
+    1: push_i8  20
+    3: lt
+    4: if_false8  10
+    6: get_arg1
+    7: get_arg2
+    8: and
+    9: get_arg1
+   10: not
+   11: get_arg3
+   12: and
+   13: or
+   14: return
+   15: get_arg0
+   16: push_i8  40
+   18: lt
+   19: if_false8  7
+   21: get_arg1
+   22: get_arg2
+   23: xor
+   24: get_arg3
+   25: xor
+   26: return
+   27: get_arg0
+   28: push_i8  60
+   30: lt
+   31: if_false8  13
+   33: get_arg1
+   34: get_arg2
+   35: and
+   36: get_arg1
+   37: get_arg3
+   38: and
+   39: or
+   40: get_arg2
+   41: get_arg3
+   42: and
+   43: or
+   44: return
+   45: get_arg1
+   46: get_arg2
+   47: xor
+   48: get_arg3
+   49: xor
+   50: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction sha1_kt @ 0x55aa77a114b0
+source ptr: 0x55aa77a0f750, ln: 99
+arg count: 1
+stack size: 2
+Funtion bytecode:
+    0: get_arg0
+    1: push_i8  20
+    3: lt
+    4: if_false8  7
+    6: push_i32  1518500249
+   11: return
+   12: get_arg0
+   13: push_i8  40
+   15: lt
+   16: if_false8  7
+   18: push_i32  1859775393
+   23: return
+   24: get_arg0
+   25: push_i8  60
+   27: lt
+   28: if_false8  7
+   30: push_i32  -1894007588
+   35: return
+   36: push_i32  -899497514
+   41: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction core_hmac_sha1 @ 0x55aa77a16500
+source ptr: 0x55aa779a0190, ln: 108
+arg count: 2
+stack size: 5
+Funtion bytecode:
+    0: get_var  "str2binb"
+    5: get_arg0
+    6: call1
+    7: set_loc0
+    8: get_length
+    9: push_i8  16
+   11: gt
+   12: if_false8  17
+   14: get_var  "core_sha1"
+   19: get_loc0
+   20: get_arg0
+   21: get_length
+   22: get_var  "chrsz"
+   27: mul
+   28: call2
+   29: put_loc0
+   30: get_var  "Array"
+   35: push_i8  16
+   37: call1
+   38: put_loc1
+   39: get_var  "Array"
+   44: push_i8  16
+   46: call1
+   47: put_loc2
+   48: push_0
+   49: put_loc3
+   50: get_loc3
+   51: push_i8  16
+   53: lt
+   54: if_false8  31
+   56: get_loc1
+   57: get_loc3
+   58: to_propkey2
+   59: get_loc0
+   60: get_loc3
+   61: get_array_el
+   62: push_i32  909522486
+   67: xor
+   68: put_array_el
+   69: get_loc2
+   70: get_loc3
+   71: to_propkey2
+   72: get_loc0
+   73: get_loc3
+   74: get_array_el
+   75: push_i32  1549556828
+   80: xor
+   81: put_array_el
+   82: inc_loc  3
+   84: goto8  -35
+   86: get_var  "core_sha1"
+   91: get_loc1
+   92: get_field2  "concat"
+   97: get_var  "str2binb"
+  102: get_arg1
+  103: call1
+  104: call_method  1
+  107: push_i16  512
+  110: get_arg1
+  111: get_length
+  112: get_var  "chrsz"
+  117: mul
+  118: add
+  119: call2
+  120: put_loc8  4
+  122: get_var  "core_sha1"
+  127: get_loc2
+  128: get_field2  "concat"
+  133: get_loc8  4
+  135: call_method  1
+  138: push_i16  512
+  141: push_i16  160
+  144: add
+  145: tail_call  2
+var count: 5
+  bkey: normal
+  ipad: normal
+  opad: normal
+  i: normal
+  hash: normal
+Constant pool
+length: 0
+
+-- JSFunction safe_add @ 0x55aa77a11a90
+source ptr: 0x55aa77a12d00, ln: 128
+arg count: 2
+stack size: 3
+Funtion bytecode:
+    0: get_arg0
+    1: push_i32  65535
+    6: and
+    7: get_arg1
+    8: push_i32  65535
+   13: and
+   14: add
+   15: put_loc0
+   16: get_arg0
+   17: push_i8  16
+   19: sar
+   20: get_arg1
+   21: push_i8  16
+   23: sar
+   24: add
+   25: get_loc0
+   26: push_i8  16
+   28: sar
+   29: add
+   30: set_loc1
+   31: push_i8  16
+   33: shl
+   34: get_loc0
+   35: push_i32  65535
+   40: and
+   41: or
+   42: return
+var count: 2
+  lsw: normal
+  msw: normal
+Constant pool
+length: 0
+
+-- JSFunction rol @ 0x55aa77a10410
+source ptr: 0x55aa77a12370, ln: 138
+arg count: 2
+stack size: 4
+Funtion bytecode:
+    0: get_arg0
+    1: get_arg1
+    2: shl
+    3: get_arg0
+    4: push_i8  32
+    6: get_arg1
+    7: sub
+    8: shr
+    9: or
+   10: return
+var count: 0
+Constant pool
+length: 0
+
+-- JSFunction str2binb @ 0x55aa77a074e0
+source ptr: 0x55aa779ff2f0, ln: 147
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: get_var  "Array"
+    5: call0
+    6: put_loc0
+    7: push_1
+    8: get_var  "chrsz"
+   13: shl
+   14: push_1
+   15: sub
+   16: put_loc1
+   17: push_0
+   18: put_loc2
+   19: get_loc2
+   20: get_arg0
+   21: get_length
+   22: get_var  "chrsz"
+   27: mul
+   28: lt
+   29: if_false8  52
+   31: get_loc0
+   32: get_loc2
+   33: push_5
+   34: sar
+   35: to_propkey2
+   36: dup2
+   37: get_array_el
+   38: get_arg0
+   39: get_field2  "charCodeAt"
+   44: get_loc2
+   45: get_var  "chrsz"
+   50: div
+   51: call_method  1
+   54: get_loc1
+   55: and
+   56: push_i8  32
+   58: get_var  "chrsz"
+   63: sub
+   64: get_loc2
+   65: push_i8  32
+   67: mod
+   68: sub
+   69: shl
+   70: or
+   71: put_array_el
+   72: get_loc2
+   73: get_var  "chrsz"
+   78: add
+   79: put_loc2
+   80: goto8  -62
+   82: get_loc0
+   83: return
+var count: 3
+  bin: normal
+  mask: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binb2str @ 0x55aa77a148a0
+source ptr: 0x55aa779fcf90, ln: 159
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: push_empty_string
+    1: put_loc0
+    2: push_1
+    3: get_var  "chrsz"
+    8: shl
+    9: push_1
+   10: sub
+   11: put_loc1
+   12: push_0
+   13: put_loc2
+   14: get_loc2
+   15: get_arg0
+   16: get_length
+   17: push_i8  32
+   19: mul
+   20: lt
+   21: if_false8  48
+   23: get_loc0
+   24: get_var  "String"
+   29: get_field2  "fromCharCode"
+   34: get_arg0
+   35: get_loc2
+   36: push_5
+   37: sar
+   38: get_array_el
+   39: push_i8  32
+   41: get_var  "chrsz"
+   46: sub
+   47: get_loc2
+   48: push_i8  32
+   50: mod
+   51: sub
+   52: shr
+   53: get_loc1
+   54: and
+   55: call_method  1
+   58: add
+   59: put_loc0
+   60: get_loc2
+   61: get_var  "chrsz"
+   66: add
+   67: put_loc2
+   68: goto8  -55
+   70: get_loc0
+   71: return
+var count: 3
+  str: normal
+  mask: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binb2hex @ 0x55aa77a13cd0
+source ptr: 0x55aa77a141a0, ln: 171
+arg count: 1
+stack size: 8
+Funtion bytecode:
+    0: get_var  "hexcase"
+    5: if_false8  8
+    7: push_atom_value  "0123456789ABCDEF"
+   12: goto8  6
+   14: push_atom_value  "0123456789abcdef"
+   19: put_loc0
+   20: push_empty_string
+   21: put_loc1
+   22: push_0
+   23: put_loc2
+   24: get_loc2
+   25: get_arg0
+   26: get_length
+   27: push_4
+   28: mul
+   29: lt
+   30: if_false8  63
+   32: get_loc1
+   33: get_loc0
+   34: get_field2  "charAt"
+   39: get_arg0
+   40: get_loc2
+   41: push_2
+   42: sar
+   43: get_array_el
+   44: push_3
+   45: get_loc2
+   46: push_4
+   47: mod
+   48: sub
+   49: push_i8  8
+   51: mul
+   52: push_4
+   53: add
+   54: sar
+   55: push_i8  15
+   57: and
+   58: call_method  1
+   61: get_loc0
+   62: get_field2  "charAt"
+   67: get_arg0
+   68: get_loc2
+   69: push_2
+   70: sar
+   71: get_array_el
+   72: push_3
+   73: get_loc2
+   74: push_4
+   75: mod
+   76: sub
+   77: push_i8  8
+   79: mul
+   80: sar
+   81: push_i8  15
+   83: and
+   84: call_method  1
+   87: add
+   88: add
+   89: put_loc1
+   90: inc_loc  2
+   92: goto8  -69
+   94: get_loc1
+   95: return
+var count: 3
+  hex_tab: normal
+  str: normal
+  i: normal
+Constant pool
+length: 0
+
+-- JSFunction binb2b64 @ 0x55aa77a14be0
+source ptr: 0x55aa77a151c0, ln: 186
+arg count: 1
+stack size: 7
+Funtion bytecode:
+    0: push_atom_value  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    5: put_loc0
+    6: push_empty_string
+    7: put_loc1
+    8: push_0
+    9: put_loc2
+   10: get_loc2
+   11: get_arg0
+   12: get_length
+   13: push_4
+   14: mul
+   15: lt
+   16: if_false  144
+   21: get_arg0
+   22: get_loc2
+   23: push_2
+   24: sar
+   25: get_array_el
+   26: push_i8  8
+   28: push_3
+   29: get_loc2
+   30: push_4
+   31: mod
+   32: sub
+   33: mul
+   34: sar
+   35: push_i16  255
+   38: and
+   39: push_i8  16
+   41: shl
+   42: get_arg0
+   43: get_loc2
+   44: push_1
+   45: add
+   46: push_2
+   47: sar
+   48: get_array_el
+   49: push_i8  8
+   51: push_3
+   52: get_loc2
+   53: push_1
+   54: add
+   55: push_4
+   56: mod
+   57: sub
+   58: mul
+   59: sar
+   60: push_i16  255
+   63: and
+   64: push_i8  8
+   66: shl
+   67: or
+   68: get_arg0
+   69: get_loc2
+   70: push_2
+   71: add
+   72: push_2
+   73: sar
+   74: get_array_el
+   75: push_i8  8
+   77: push_3
+   78: get_loc2
+   79: push_2
+   80: add
+   81: push_4
+   82: mod
+   83: sub
+   84: mul
+   85: sar
+   86: push_i16  255
+   89: and
+   90: or
+   91: put_loc3
+   92: push_0
+   93: put_loc8  4
+   95: get_loc8  4
+   97: push_4
+   98: lt
+   99: if_false8  55
+  101: get_loc2
+  102: push_i8  8
+  104: mul
+  105: get_loc8  4
+  107: push_6
+  108: mul
+  109: add
+  110: get_arg0
+  111: get_length
+  112: push_i8  32
+  114: mul
+  115: gt
+  116: if_false8  11
+  118: get_loc1
+  119: get_var  "b64pad"
+  124: add
+  125: put_loc1
+  126: goto8  24
+  128: get_loc1
+  129: get_loc0
+  130: get_field2  "charAt"
+  135: get_loc3
+  136: push_6
+  137: push_3
+  138: get_loc8  4
+  140: sub
+  141: mul
+  142: sar
+  143: push_i8  63
+  145: and
+  146: call_method  1
+  149: add
+  150: put_loc1
+  151: inc_loc  4
+  153: goto8  -59
+  155: push_3
+  156: add_loc  2
+  158: goto16  -149
+  161: get_loc1
+  162: return
+var count: 5
+  tab: normal
+  str: normal
+  i: normal
+  triplet: normal
+  j: normal
+Constant pool
+length: 0
+
