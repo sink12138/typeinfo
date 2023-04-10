@@ -9,7 +9,7 @@ Funtion bytecode:
    14: get_loc0
    15: return
 var count: 1
-  <ret>: normal
+  <ret>: normal.
 Constant pool
 length: 1
     0: ptr 0x56071a904ab0

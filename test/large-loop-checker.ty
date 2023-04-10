@@ -1,0 +1,41 @@
+fn: loop
+args: [{"name":"n","type":"any"},{"name":"seed","type":"any"}]
+return: (n: any, seed: any) => any
+byte: [
+  {
+    "name": "l",
+    "type": "any"
+  },
+  {
+    "name": "i",
+    "type": "number"
+  },
+  {
+    "name": "<",
+    "type": "boolean"
+  },
+  {
+    "name": "=",
+    "type": "number"
+  },
+  {
+    "name": "+",
+    "type": "number"
+  },
+  {
+    "name": "=",
+    "type": "number"
+  },
+  {
+    "name": "*",
+    "type": "number"
+  },
+  {
+    "name": ">",
+    "type": "boolean"
+  },
+  {
+    "name": "-=",
+    "type": "number"
+  }
+]
