@@ -48,6 +48,19 @@ export class Matcher {
   decoder: Decoder;
   funcTypes: FnType[];
 
+  getChecker(): void {
+    this.checker = new Checker();
+    this.checker.getTypeInfo(this.fileName.concat(".ts"), {
+      target: ts.ScriptTarget.ES5,
+      module: ts.ModuleKind.CommonJS
+    });
+  }
+
+  getDecoder(): void {
+    this.decoder = new Decoder();
+    this.decoder.decodeBytecode(this.fileName.concat(".txt"));
+  }
+
   init(fileName:string): void {
     this.fileName = fileName;
     this.getChecker();
@@ -94,19 +107,6 @@ export class Matcher {
       }
       this.funcTypes.push(fnType);
     }
-  }
-
-  getChecker(): void {
-    this.checker = new Checker();
-    this.checker.getTypeInfo(this.fileName.concat(".ts"), {
-      target: ts.ScriptTarget.ES5,
-      module: ts.ModuleKind.CommonJS
-    });
-  }
-
-  getDecoder(): void {
-    this.decoder = new Decoder();
-    this.decoder.decodeBytecode(this.fileName.concat(".txt"));
   }
 
   generateArg(fn: CheckerFn): TypeInfo[] {

@@ -18,6 +18,17 @@ var Type;
 var Matcher = /** @class */ (function () {
     function Matcher() {
     }
+    Matcher.prototype.getChecker = function () {
+        this.checker = new checker_1.Checker();
+        this.checker.getTypeInfo(this.fileName.concat(".ts"), {
+            target: ts.ScriptTarget.ES5,
+            module: ts.ModuleKind.CommonJS
+        });
+    };
+    Matcher.prototype.getDecoder = function () {
+        this.decoder = new decoder_1.Decoder();
+        this.decoder.decodeBytecode(this.fileName.concat(".txt"));
+    };
     Matcher.prototype.init = function (fileName) {
         this.fileName = fileName;
         this.getChecker();
@@ -65,17 +76,6 @@ var Matcher = /** @class */ (function () {
             }
             this.funcTypes.push(fnType);
         }
-    };
-    Matcher.prototype.getChecker = function () {
-        this.checker = new checker_1.Checker();
-        this.checker.getTypeInfo(this.fileName.concat(".ts"), {
-            target: ts.ScriptTarget.ES5,
-            module: ts.ModuleKind.CommonJS
-        });
-    };
-    Matcher.prototype.getDecoder = function () {
-        this.decoder = new decoder_1.Decoder();
-        this.decoder.decodeBytecode(this.fileName.concat(".txt"));
     };
     Matcher.prototype.generateArg = function (fn) {
         if (fn == undefined)
@@ -149,30 +149,39 @@ var Matcher = /** @class */ (function () {
     };
     Matcher.prototype.generateByte = function (dFn, cFn) {
         var types = [];
-        if (cFn != undefined) {
-            for (var _i = 0, _a = dFn.bytecodes; _i < _a.length; _i++) {
-                var byte = _a[_i];
-                types.push({
-                    offset: byte.offset,
-                    type: byte.type,
-                    opcode: byte.item[0],
-                    item: byte.item.slice(1)
-                });
-            }
+        for (var _i = 0, _a = dFn.bytecodes; _i < _a.length; _i++) {
+            var byte = _a[_i];
+            types.push({
+                offset: byte.offset,
+                type: byte.type,
+                opcode: byte.item[0],
+                item: byte.item.slice(1)
+            });
         }
-        else {
-            for (var _b = 0, _c = dFn.bytecodes; _b < _c.length; _b++) {
-                var byte = _c[_b];
-                types.push({
-                    offset: byte.offset,
-                    type: byte.type,
-                    opcode: byte.item[0],
-                    item: byte.item.slice(1)
-                });
-            }
-        }
+        // if (cFn != undefined) {
+        //   for (const byte of dFn.bytecodes) {
+        //     types.push({
+        //       offset: byte.offset,
+        //       type: byte.type,
+        //       opcode: byte.item[0],
+        //       item: byte.item.slice(1)
+        //     })
+        //   }
+        // } else {
+        //   for (const byte of dFn.bytecodes) {
+        //     types.push({
+        //       offset: byte.offset,
+        //       type: byte.type,
+        //       opcode: byte.item[0],
+        //       item: byte.item.slice(1)
+        //     })
+        //   }
+        // }
         return types;
     };
+    Matcher.prototype.matchByteLoc = function () { };
+    Matcher.prototype.matchByteArg = function () { };
+    Matcher.prototype.matchByteRet = function () { };
     return Matcher;
 }());
 exports.Matcher = Matcher;

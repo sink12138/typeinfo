@@ -62,7 +62,7 @@ function printTypeFile(fileName: string): void {
     output = output.concat("\n");
   }
 
-  fs.writeFileSync(fileName + ".ts.ty", output);
+  fs.writeFileSync(fileName + ".js.ty", output);
 
 }
 
