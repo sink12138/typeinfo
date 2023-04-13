@@ -1,0 +1,103 @@
+[
+    {
+        "fnName": "TimeFunc",
+        "returnType": "(func: any) => number",
+        "argType": [
+            {
+                "name": "b",
+                "type": "any"
+            },
+            {
+                "name": "func",
+                "type": "any"
+            }
+        ],
+        "localType": [],
+        "byteType": [
+            {
+                "name": "result",
+                "type": "number"
+            },
+            {
+                "name": "m",
+                "type": "number"
+            },
+            {
+                "name": "c",
+                "type": "number"
+            },
+            {
+                "name": "<",
+                "type": "boolean"
+            },
+            {
+                "name": "&",
+                "type": "number"
+            },
+            {
+                "name": "<<=",
+                "type": "number"
+            },
+            {
+                "name": "x",
+                "type": "any"
+            },
+            {
+                "name": "y",
+                "type": "any"
+            },
+            {
+                "name": "t",
+                "type": "any"
+            },
+            {
+                "name": "sum",
+                "type": "number"
+            },
+            {
+                "name": "x",
+                "type": "any"
+            },
+            {
+                "name": "<",
+                "type": "boolean"
+            },
+            {
+                "name": "y",
+                "type": "any"
+            },
+            {
+                "name": "<",
+                "type": "boolean"
+            },
+            {
+                "name": "+=",
+                "type": "any"
+            },
+            {
+                "name": "=",
+                "type": "number"
+            },
+            {
+                "name": "expected",
+                "type": "number"
+            },
+            {
+                "name": "!=",
+                "type": "boolean"
+            },
+            {
+                "name": "+",
+                "type": "string"
+            },
+            {
+                "name": "+",
+                "type": "string"
+            },
+            {
+                "name": "+",
+                "type": "string"
+            }
+        ]
+    }
+]

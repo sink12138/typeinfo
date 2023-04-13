@@ -1,4 +1,4 @@
-(fn _JS_F6<eval>__0x55f974a2b860 
+(fn _JS_F6<eval>__root 
   ; source ptr: 0x0, ln: 1
   ; arg count: 0
   (sig (args any  ; this
@@ -52,7 +52,7 @@
     ;   1: 
 )
 
-(fn _JS_F10bitsinbyte__0x55f974a240d0 
+(fn _JS_F10bitsinbyte__root.0 
   ; source ptr: 0x55f974a220f0, ln: 8
   ; arg count: 1
   (sig (args any  ; this
@@ -91,7 +91,7 @@
   ; length: 0
 )
 
-(fn _JS_F8TimeFunc__0x55f974a347b0 
+(fn _JS_F8TimeFunc__root.1 
   ; source ptr: 0x55f974a2e590, ln: 17
   ; arg count: 1
   (sig (args any  ; this

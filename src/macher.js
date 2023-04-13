@@ -2,6 +2,7 @@
 exports.__esModule = true;
 exports.Matcher = void 0;
 var ts = require("typescript");
+var fs = require("fs");
 var decoder_1 = require("./decoder");
 var checker_1 = require("./checker");
 var Type;
@@ -36,20 +37,24 @@ var Matcher = /** @class */ (function () {
         this.funcTypes = [];
     };
     Matcher.prototype.match = function () {
-        var length = this.decoder.fns.length;
         var cfns = this.checker.fns;
         var dfns = this.decoder.fns;
-        console.log("----------------------CHECKER----------------------");
-        console.log(JSON.stringify(cfns, null, 4));
-        console.log("----------------------DECODER----------------------");
-        console.log(JSON.stringify(dfns, null, 4));
-        console.log("----------------------MATHCER----------------------");
-        var i = 0;
         for (var _i = 0, dfns_1 = dfns; _i < dfns_1.length; _i++) {
             var dfn = dfns_1[_i];
+            console.log(dfn.rootmap);
+        }
+        console.log("----------------------CHECKER----------------------");
+        fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 4));
+        console.log("----------------------DECODER----------------------");
+        fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 4));
+        console.log("----------------------MATHCER----------------------");
+        var i = 0;
+        var rootmap = new Map();
+        var _loop_1 = function (dfn) {
             var fnType = {
                 name: dfn.name,
                 path: dfn.path,
+                root: -2,
                 ptr: dfn.ptr,
                 ln: dfn.ln,
                 arg: dfn.arg,
@@ -63,18 +68,30 @@ var Matcher = /** @class */ (function () {
             };
             if (dfn.name != "<eval>") {
                 var cfn = cfns[i];
-                fnType.args = this.generateArg(cfn);
-                fnType["return"] = this.generateRet(cfn);
-                fnType.locs = this.generateLoc(dfn, cfn);
-                fnType.bytecodes = this.generateByte(dfn, cfn);
+                fnType.args = this_1.generateArg(cfn);
+                fnType["return"] = this_1.generateRet(cfn);
+                fnType.locs = this_1.generateLoc(dfn, cfn);
+                fnType.bytecodes = this_1.generateByte(dfn, cfn);
+                rootmap.forEach(function (value, key) {
+                    if (value == fnType.path)
+                        fnType.root = key;
+                });
                 i++;
             }
             else {
+                if (dfn.rootmap)
+                    rootmap = dfn.rootmap;
+                fnType.root = -1;
                 fnType["return"] = "any";
-                fnType.locs = this.generateLoc(dfn);
-                fnType.bytecodes = this.generateByte(dfn);
+                fnType.locs = this_1.generateLoc(dfn);
+                fnType.bytecodes = this_1.generateByte(dfn);
             }
-            this.funcTypes.push(fnType);
+            this_1.funcTypes.push(fnType);
+        };
+        var this_1 = this;
+        for (var _a = 0, dfns_2 = dfns; _a < dfns_2.length; _a++) {
+            var dfn = dfns_2[_a];
+            _loop_1(dfn);
         }
     };
     Matcher.prototype.generateArg = function (fn) {

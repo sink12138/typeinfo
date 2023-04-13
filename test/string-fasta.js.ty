@@ -1,4 +1,4 @@
-(fn _JS_F6<eval>__0x55d5f0be9750 
+(fn _JS_F6<eval>__root 
   ; source ptr: 0x0, ln: 1
   ; arg count: 0
   (sig (args any  ; this
@@ -182,7 +182,7 @@
     ;  22: 
 )
 
-(fn _JS_F4rand__0x55d5f0be72d0 
+(fn _JS_F4rand__root.0 
   ; source ptr: 0x55d5f0be5220, ln: 8
   ; arg count: 1
   (sig (args any  ; this
@@ -219,7 +219,7 @@
   ; length: 0
 )
 
-(fn _JS_F14makeCumulative__0x55d5f0bd5690 
+(fn _JS_F14makeCumulative__root.20 
   ; source ptr: 0x55d5f0bdfb60, ln: 36
   ; arg count: 1
   (sig (args any  ; this
@@ -260,7 +260,7 @@
   ; length: 0
 )
 
-(fn _JS_F11fastaRepeat__0x55d5f0bc4240 
+(fn _JS_F11fastaRepeat__root.21 
   ; source ptr: 0x55d5f0be6e10, ln: 44
   ; arg count: 2
   (sig (args any  ; this
@@ -344,7 +344,7 @@
   ; length: 0
 )
 
-(fn _JS_F11fastaRandom__0x55d5f0be8f90 
+(fn _JS_F11fastaRandom__root.22 
   ; source ptr: 0x55d5f0be7a20, ln: 60
   ; arg count: 2
   (sig (args any  ; this

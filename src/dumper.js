@@ -9,10 +9,13 @@ function printTypeFile(fileName) {
     matcher.init(fileName);
     matcher.match();
     var fns = matcher.funcTypes;
-    console.log(JSON.stringify(fns, null, 4));
+    fs.writeFileSync("fns.txt", JSON.stringify(fns, null, 4));
     for (var i = 0; i < fns.length; i++) {
         var fn = fns[i];
-        output = output.concat("(fn _JS_F".concat(fn.name.length).concat(fn.name, "__").concat(fn.path, " \n"));
+        var root = "";
+        if (fn.root != -1)
+            root = "." + fn.root.toString();
+        output = output.concat("(fn _JS_F".concat(fn.name.length).concat(fn.name, "__root").concat(root, " \n"));
         output = output.concat("  ; source ptr: ".concat(fn.ptr, ", ln: ").concat(fn.ln, "\n"));
         // signature
         output = output.concat("  ; arg count: ".concat(fn.arg, "\n"));

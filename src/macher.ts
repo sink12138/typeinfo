@@ -30,6 +30,7 @@ export interface ByteInfo extends ByteCode {
 export interface FnType {
   name: string;
   path: string;
+  root: number;
   ptr: string;
   ln: string;
   arg: string;
@@ -69,19 +70,21 @@ export class Matcher {
   }
 
   match(): void {
-    let length = this.decoder.fns.length;
     let cfns = this.checker.fns;
     let dfns = this.decoder.fns;
+    for (const dfn of dfns) console.log(dfn.rootmap);
     console.log("----------------------CHECKER----------------------");
-    console.log(JSON.stringify(cfns, null, 4));
+    fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 4));
     console.log("----------------------DECODER----------------------");
-    console.log(JSON.stringify(dfns, null, 4));
+    fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 4));
     console.log("----------------------MATHCER----------------------");
     let i = 0;
+    let rootmap:Map<number, string> = new Map();
     for (const dfn of dfns) {
       let fnType:FnType = {
         name: dfn.name,
         path: dfn.path,
+        root: -2,
         ptr: dfn.ptr,
         ln: dfn.ln,
         arg: dfn.arg,
@@ -99,8 +102,13 @@ export class Matcher {
         fnType.return = this.generateRet(cfn);
         fnType.locs = this.generateLoc(dfn, cfn);
         fnType.bytecodes = this.generateByte(dfn, cfn)
+        rootmap.forEach((value, key) => {
+          if (value == fnType.path) fnType.root = key;
+        })
         i++;
       } else {
+        if (dfn.rootmap) rootmap = dfn.rootmap;
+        fnType.root = -1;
         fnType.return = "any";
         fnType.locs = this.generateLoc(dfn);
         fnType.bytecodes = this.generateByte(dfn);

@@ -11,11 +11,13 @@ function printTypeFile(fileName: string): void {
   matcher.init(fileName);
   matcher.match();
   let fns = matcher.funcTypes;
-  console.log(JSON.stringify(fns, null, 4));
+  fs.writeFileSync("fns.txt", JSON.stringify(fns, null, 4));
 
   for (let i = 0; i < fns.length; i++) {
     let fn = fns[i];
-    output = output.concat(`(fn _JS_F${fn.name.length}${fn.name}__${fn.path} \n`);
+    let root = "";
+    if (fn.root != -1) root = "." + fn.root.toString();
+    output = output.concat(`(fn _JS_F${fn.name.length}${fn.name}__root${root} \n`);
     output = output.concat(`  ; source ptr: ${fn.ptr}, ln: ${fn.ln}\n`);
     
     // signature

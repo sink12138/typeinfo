@@ -1,0 +1,712 @@
+[
+    {
+        "name": "<eval>",
+        "path": "0x55f974a2b860",
+        "ptr": "0x0",
+        "ln": "1",
+        "arg": "0",
+        "stack": "2",
+        "var": "1",
+        "length": "2",
+        "bytecodes": [
+            {
+                "type": "any",
+                "offset": 0,
+                "item": [
+                    "check_define_var",
+                    "\"result\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 6,
+                "item": [
+                    "check_define_var",
+                    "\"bitsinbyte\"",
+                    "01000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 12,
+                "item": [
+                    "check_define_var",
+                    "\"TimeFunc\"",
+                    "01000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 18,
+                "item": [
+                    "check_define_var",
+                    "\"expected\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 24,
+                "item": [
+                    "define_var",
+                    "\"result\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 30,
+                "item": [
+                    "fclosure8",
+                    "0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 32,
+                "item": [
+                    "define_func",
+                    "\"bitsinbyte\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 38,
+                "item": [
+                    "fclosure8",
+                    "1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 40,
+                "item": [
+                    "define_func",
+                    "\"TimeFunc\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 46,
+                "item": [
+                    "define_var",
+                    "\"expected\"",
+                    "00000000"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 52,
+                "item": [
+                    "push_0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 53,
+                "item": [
+                    "put_var",
+                    "\"result\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 58,
+                "item": [
+                    "get_var",
+                    "\"TimeFunc\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 63,
+                "item": [
+                    "get_var",
+                    "\"bitsinbyte\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 68,
+                "item": [
+                    "call1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 69,
+                "item": [
+                    "dup"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 70,
+                "item": [
+                    "put_var",
+                    "\"result\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 75,
+                "item": [
+                    "put_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 76,
+                "item": [
+                    "push_i32",
+                    "358400"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 81,
+                "item": [
+                    "put_var",
+                    "\"expected\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 86,
+                "item": [
+                    "undefined"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 87,
+                "item": [
+                    "put_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 88,
+                "item": [
+                    "get_var",
+                    "\"result\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 93,
+                "item": [
+                    "get_var",
+                    "\"expected\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 98,
+                "item": [
+                    "neq"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 99,
+                "item": [
+                    "if_false8",
+                    "25"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 101,
+                "item": [
+                    "push_atom_value",
+                    "\"ERROR:",
+                    "bad",
+                    "result:",
+                    "expected",
+                    "\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 106,
+                "item": [
+                    "get_var",
+                    "\"expected\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 111,
+                "item": [
+                    "add"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 112,
+                "item": [
+                    "push_atom_value",
+                    "\"",
+                    "but",
+                    "got",
+                    "\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 117,
+                "item": [
+                    "add"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 118,
+                "item": [
+                    "get_var",
+                    "\"result\""
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 123,
+                "item": [
+                    "add"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 124,
+                "item": [
+                    "throw"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 125,
+                "item": [
+                    "get_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 126,
+                "item": [
+                    "return"
+                ]
+            }
+        ],
+        "locs": [
+            {
+                "name": "<ret>",
+                "type": [
+                    "normal"
+                ]
+            }
+        ],
+        "rootmap": {}
+    },
+    {
+        "name": "bitsinbyte",
+        "path": "0x55f974a240d0",
+        "ptr": "0x55f974a220f0",
+        "ln": "8",
+        "arg": "1",
+        "stack": "2",
+        "var": "2",
+        "length": "0",
+        "bytecodes": [
+            {
+                "type": "any",
+                "offset": 0,
+                "item": [
+                    "push_1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 1,
+                "item": [
+                    "put_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 2,
+                "item": [
+                    "push_0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 3,
+                "item": [
+                    "put_loc1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 4,
+                "item": [
+                    "get_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 5,
+                "item": [
+                    "push_i16",
+                    "256"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 8,
+                "item": [
+                    "lt"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 9,
+                "item": [
+                    "if_false8",
+                    "14"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 11,
+                "item": [
+                    "get_arg0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 12,
+                "item": [
+                    "get_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 13,
+                "item": [
+                    "and"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 14,
+                "item": [
+                    "if_false8",
+                    "3"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 16,
+                "item": [
+                    "inc_loc",
+                    "1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 18,
+                "item": [
+                    "get_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 19,
+                "item": [
+                    "push_1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 20,
+                "item": [
+                    "shl"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 21,
+                "item": [
+                    "put_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 22,
+                "item": [
+                    "goto8",
+                    "-19"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 24,
+                "item": [
+                    "get_loc1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 25,
+                "item": [
+                    "return"
+                ]
+            }
+        ],
+        "locs": [
+            {
+                "name": "m",
+                "type": [
+                    "normal"
+                ]
+            },
+            {
+                "name": "c",
+                "type": [
+                    "normal"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "TimeFunc",
+        "path": "0x55f974a347b0",
+        "ptr": "0x55f974a2e590",
+        "ln": "17",
+        "arg": "1",
+        "stack": "3",
+        "var": "4",
+        "length": "0",
+        "bytecodes": [
+            {
+                "type": "any",
+                "offset": 0,
+                "item": [
+                    "push_0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 1,
+                "item": [
+                    "put_loc3"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 2,
+                "item": [
+                    "push_0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 3,
+                "item": [
+                    "put_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 4,
+                "item": [
+                    "get_loc0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 5,
+                "item": [
+                    "push_i16",
+                    "350"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 8,
+                "item": [
+                    "lt"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 9,
+                "item": [
+                    "if_false8",
+                    "24"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 11,
+                "item": [
+                    "push_0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 12,
+                "item": [
+                    "put_loc1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 13,
+                "item": [
+                    "get_loc1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 14,
+                "item": [
+                    "push_i16",
+                    "256"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 17,
+                "item": [
+                    "lt"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 18,
+                "item": [
+                    "if_false8",
+                    "11"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 20,
+                "item": [
+                    "get_loc3"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 21,
+                "item": [
+                    "get_arg0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 22,
+                "item": [
+                    "get_loc1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 23,
+                "item": [
+                    "call1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 24,
+                "item": [
+                    "add"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 25,
+                "item": [
+                    "put_loc3"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 26,
+                "item": [
+                    "inc_loc",
+                    "1"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 28,
+                "item": [
+                    "goto8",
+                    "-16"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 30,
+                "item": [
+                    "inc_loc",
+                    "0"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 32,
+                "item": [
+                    "goto8",
+                    "-29"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 34,
+                "item": [
+                    "get_loc3"
+                ]
+            },
+            {
+                "type": "any",
+                "offset": 35,
+                "item": [
+                    "return"
+                ]
+            }
+        ],
+        "locs": [
+            {
+                "name": "x",
+                "type": [
+                    "normal"
+                ]
+            },
+            {
+                "name": "y",
+                "type": [
+                    "normal"
+                ]
+            },
+            {
+                "name": "t",
+                "type": [
+                    "normal"
+                ]
+            },
+            {
+                "name": "sum",
+                "type": [
+                    "normal"
+                ]
+            }
+        ]
+    }
+]

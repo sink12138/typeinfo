@@ -1,0 +1,690 @@
+[
+    {
+        "name": "<eval>",
+        "path": "0x55f974a2b860",
+        "root": -1,
+        "ptr": "0x0",
+        "ln": "1",
+        "arg": "0",
+        "args": [],
+        "return": "any",
+        "stack": "2",
+        "var": "1",
+        "locs": [
+            {
+                "type": "any",
+                "name": "<ret>",
+                "extend": [
+                    "normal"
+                ]
+            }
+        ],
+        "length": "2",
+        "bytecodes": [
+            {
+                "offset": 0,
+                "type": "any",
+                "opcode": "check_define_var",
+                "item": [
+                    "\"result\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 6,
+                "type": "any",
+                "opcode": "check_define_var",
+                "item": [
+                    "\"bitsinbyte\"",
+                    "01000000"
+                ]
+            },
+            {
+                "offset": 12,
+                "type": "any",
+                "opcode": "check_define_var",
+                "item": [
+                    "\"TimeFunc\"",
+                    "01000000"
+                ]
+            },
+            {
+                "offset": 18,
+                "type": "any",
+                "opcode": "check_define_var",
+                "item": [
+                    "\"expected\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 24,
+                "type": "any",
+                "opcode": "define_var",
+                "item": [
+                    "\"result\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 30,
+                "type": "any",
+                "opcode": "fclosure8",
+                "item": [
+                    "0"
+                ]
+            },
+            {
+                "offset": 32,
+                "type": "any",
+                "opcode": "define_func",
+                "item": [
+                    "\"bitsinbyte\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 38,
+                "type": "any",
+                "opcode": "fclosure8",
+                "item": [
+                    "1"
+                ]
+            },
+            {
+                "offset": 40,
+                "type": "any",
+                "opcode": "define_func",
+                "item": [
+                    "\"TimeFunc\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 46,
+                "type": "any",
+                "opcode": "define_var",
+                "item": [
+                    "\"expected\"",
+                    "00000000"
+                ]
+            },
+            {
+                "offset": 52,
+                "type": "any",
+                "opcode": "push_0",
+                "item": []
+            },
+            {
+                "offset": 53,
+                "type": "any",
+                "opcode": "put_var",
+                "item": [
+                    "\"result\""
+                ]
+            },
+            {
+                "offset": 58,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"TimeFunc\""
+                ]
+            },
+            {
+                "offset": 63,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"bitsinbyte\""
+                ]
+            },
+            {
+                "offset": 68,
+                "type": "any",
+                "opcode": "call1",
+                "item": []
+            },
+            {
+                "offset": 69,
+                "type": "any",
+                "opcode": "dup",
+                "item": []
+            },
+            {
+                "offset": 70,
+                "type": "any",
+                "opcode": "put_var",
+                "item": [
+                    "\"result\""
+                ]
+            },
+            {
+                "offset": 75,
+                "type": "any",
+                "opcode": "put_loc0",
+                "item": []
+            },
+            {
+                "offset": 76,
+                "type": "any",
+                "opcode": "push_i32",
+                "item": [
+                    "358400"
+                ]
+            },
+            {
+                "offset": 81,
+                "type": "any",
+                "opcode": "put_var",
+                "item": [
+                    "\"expected\""
+                ]
+            },
+            {
+                "offset": 86,
+                "type": "any",
+                "opcode": "undefined",
+                "item": []
+            },
+            {
+                "offset": 87,
+                "type": "any",
+                "opcode": "put_loc0",
+                "item": []
+            },
+            {
+                "offset": 88,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"result\""
+                ]
+            },
+            {
+                "offset": 93,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"expected\""
+                ]
+            },
+            {
+                "offset": 98,
+                "type": "any",
+                "opcode": "neq",
+                "item": []
+            },
+            {
+                "offset": 99,
+                "type": "any",
+                "opcode": "if_false8",
+                "item": [
+                    "25"
+                ]
+            },
+            {
+                "offset": 101,
+                "type": "any",
+                "opcode": "push_atom_value",
+                "item": [
+                    "\"ERROR:",
+                    "bad",
+                    "result:",
+                    "expected",
+                    "\""
+                ]
+            },
+            {
+                "offset": 106,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"expected\""
+                ]
+            },
+            {
+                "offset": 111,
+                "type": "any",
+                "opcode": "add",
+                "item": []
+            },
+            {
+                "offset": 112,
+                "type": "any",
+                "opcode": "push_atom_value",
+                "item": [
+                    "\"",
+                    "but",
+                    "got",
+                    "\""
+                ]
+            },
+            {
+                "offset": 117,
+                "type": "any",
+                "opcode": "add",
+                "item": []
+            },
+            {
+                "offset": 118,
+                "type": "any",
+                "opcode": "get_var",
+                "item": [
+                    "\"result\""
+                ]
+            },
+            {
+                "offset": 123,
+                "type": "any",
+                "opcode": "add",
+                "item": []
+            },
+            {
+                "offset": 124,
+                "type": "any",
+                "opcode": "throw",
+                "item": []
+            },
+            {
+                "offset": 125,
+                "type": "any",
+                "opcode": "get_loc0",
+                "item": []
+            },
+            {
+                "offset": 126,
+                "type": "any",
+                "opcode": "return",
+                "item": []
+            }
+        ]
+    },
+    {
+        "name": "bitsinbyte",
+        "path": "0x55f974a240d0",
+        "root": 0,
+        "ptr": "0x55f974a220f0",
+        "ln": "8",
+        "arg": "1",
+        "args": [
+            {
+                "name": "b",
+                "type": "any"
+            },
+            {
+                "name": "func",
+                "type": "any"
+            }
+        ],
+        "return": "number",
+        "stack": "2",
+        "var": "2",
+        "locs": [
+            {
+                "type": "number",
+                "name": "m",
+                "extend": [
+                    "normal"
+                ]
+            },
+            {
+                "type": "number",
+                "name": "c",
+                "extend": [
+                    "normal"
+                ]
+            }
+        ],
+        "length": "0",
+        "bytecodes": [
+            {
+                "offset": 0,
+                "type": "any",
+                "opcode": "push_1",
+                "item": []
+            },
+            {
+                "offset": 1,
+                "type": "any",
+                "opcode": "put_loc0",
+                "item": []
+            },
+            {
+                "offset": 2,
+                "type": "any",
+                "opcode": "push_0",
+                "item": []
+            },
+            {
+                "offset": 3,
+                "type": "any",
+                "opcode": "put_loc1",
+                "item": []
+            },
+            {
+                "offset": 4,
+                "type": "any",
+                "opcode": "get_loc0",
+                "item": []
+            },
+            {
+                "offset": 5,
+                "type": "any",
+                "opcode": "push_i16",
+                "item": [
+                    "256"
+                ]
+            },
+            {
+                "offset": 8,
+                "type": "any",
+                "opcode": "lt",
+                "item": []
+            },
+            {
+                "offset": 9,
+                "type": "any",
+                "opcode": "if_false8",
+                "item": [
+                    "14"
+                ]
+            },
+            {
+                "offset": 11,
+                "type": "any",
+                "opcode": "get_arg0",
+                "item": []
+            },
+            {
+                "offset": 12,
+                "type": "any",
+                "opcode": "get_loc0",
+                "item": []
+            },
+            {
+                "offset": 13,
+                "type": "any",
+                "opcode": "and",
+                "item": []
+            },
+            {
+                "offset": 14,
+                "type": "any",
+                "opcode": "if_false8",
+                "item": [
+                    "3"
+                ]
+            },
+            {
+                "offset": 16,
+                "type": "any",
+                "opcode": "inc_loc",
+                "item": [
+                    "1"
+                ]
+            },
+            {
+                "offset": 18,
+                "type": "any",
+                "opcode": "get_loc0",
+                "item": []
+            },
+            {
+                "offset": 19,
+                "type": "any",
+                "opcode": "push_1",
+                "item": []
+            },
+            {
+                "offset": 20,
+                "type": "any",
+                "opcode": "shl",
+                "item": []
+            },
+            {
+                "offset": 21,
+                "type": "any",
+                "opcode": "put_loc0",
+                "item": []
+            },
+            {
+                "offset": 22,
+                "type": "any",
+                "opcode": "goto8",
+                "item": [
+                    "-19"
+                ]
+            },
+            {
+                "offset": 24,
+                "type": "any",
+                "opcode": "get_loc1",
+                "item": []
+            },
+            {
+                "offset": 25,
+                "type": "any",
+                "opcode": "return",
+                "item": []
+            }
+        ]
+    },
+    {
+        "name": "TimeFunc",
+        "path": "0x55f974a347b0",
+        "root": 1,
+        "ptr": "0x55f974a2e590",
+        "ln": "17",
+        "arg": "1",
+        "args": [],
+        "return": "",
+        "stack": "3",
+        "var": "4",
+        "locs": [
+            {
+                "type": "any",
+                "name": "x",
+                "extend": [
+                    "normal"
+                ]
+            },
+            {
+                "type": "any",
+                "name": "y",
+                "extend": [
+                    "normal"
+                ]
+            },
+            {
+                "type": "any",
+                "name": "t",
+                "extend": [
+                    "normal"
+                ]
+            },
+            {
+                "type": "any",
+                "name": "sum",
+                "extend": [
+                    "normal"
+                ]
+            }
+        ],
+        "length": "0",
+        "bytecodes": [
+            {
+                "offset": 0,
+                "type": "any",
+                "opcode": "push_0",
+                "item": []
+            },
+            {
+                "offset": 1,
+                "type": "any",
+                "opcode": "put_loc3",
+                "item": []
+            },
+            {
+                "offset": 2,
+                "type": "any",
+                "opcode": "push_0",
+                "item": []
+            },
+            {
+                "offset": 3,
+                "type": "any",
+                "opcode": "put_loc0",
+                "item": []
+            },
+            {
+                "offset": 4,
+                "type": "any",
+                "opcode": "get_loc0",
+                "item": []
+            },
+            {
+                "offset": 5,
+                "type": "any",
+                "opcode": "push_i16",
+                "item": [
+                    "350"
+                ]
+            },
+            {
+                "offset": 8,
+                "type": "any",
+                "opcode": "lt",
+                "item": []
+            },
+            {
+                "offset": 9,
+                "type": "any",
+                "opcode": "if_false8",
+                "item": [
+                    "24"
+                ]
+            },
+            {
+                "offset": 11,
+                "type": "any",
+                "opcode": "push_0",
+                "item": []
+            },
+            {
+                "offset": 12,
+                "type": "any",
+                "opcode": "put_loc1",
+                "item": []
+            },
+            {
+                "offset": 13,
+                "type": "any",
+                "opcode": "get_loc1",
+                "item": []
+            },
+            {
+                "offset": 14,
+                "type": "any",
+                "opcode": "push_i16",
+                "item": [
+                    "256"
+                ]
+            },
+            {
+                "offset": 17,
+                "type": "any",
+                "opcode": "lt",
+                "item": []
+            },
+            {
+                "offset": 18,
+                "type": "any",
+                "opcode": "if_false8",
+                "item": [
+                    "11"
+                ]
+            },
+            {
+                "offset": 20,
+                "type": "any",
+                "opcode": "get_loc3",
+                "item": []
+            },
+            {
+                "offset": 21,
+                "type": "any",
+                "opcode": "get_arg0",
+                "item": []
+            },
+            {
+                "offset": 22,
+                "type": "any",
+                "opcode": "get_loc1",
+                "item": []
+            },
+            {
+                "offset": 23,
+                "type": "any",
+                "opcode": "call1",
+                "item": []
+            },
+            {
+                "offset": 24,
+                "type": "any",
+                "opcode": "add",
+                "item": []
+            },
+            {
+                "offset": 25,
+                "type": "any",
+                "opcode": "put_loc3",
+                "item": []
+            },
+            {
+                "offset": 26,
+                "type": "any",
+                "opcode": "inc_loc",
+                "item": [
+                    "1"
+                ]
+            },
+            {
+                "offset": 28,
+                "type": "any",
+                "opcode": "goto8",
+                "item": [
+                    "-16"
+                ]
+            },
+            {
+                "offset": 30,
+                "type": "any",
+                "opcode": "inc_loc",
+                "item": [
+                    "0"
+                ]
+            },
+            {
+                "offset": 32,
+                "type": "any",
+                "opcode": "goto8",
+                "item": [
+                    "-29"
+                ]
+            },
+            {
+                "offset": 34,
+                "type": "any",
+                "opcode": "get_loc3",
+                "item": []
+            },
+            {
+                "offset": 35,
+                "type": "any",
+                "opcode": "return",
+                "item": []
+            }
+        ]
+    }
+]
