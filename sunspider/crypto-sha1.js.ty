@@ -1,0 +1,1158 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "hexcase", 00000000
+    (  6 any)  ; check_define_var  "b64pad", 00000000
+    ( 12 any)  ; check_define_var  "chrsz", 00000000
+    ( 18 any)  ; check_define_var  "hex_sha1", 01000000
+    ( 24 any)  ; check_define_var  "b64_sha1", 01000000
+    ( 30 any)  ; check_define_var  "str_sha1", 01000000
+    ( 36 any)  ; check_define_var  "hex_hmac_sha1", 01000000
+    ( 42 any)  ; check_define_var  "b64_hmac_sha1", 01000000
+    ( 48 any)  ; check_define_var  "str_hmac_sha1", 01000000
+    ( 54 any)  ; check_define_var  "sha1_vm_test", 01000000
+    ( 60 any)  ; check_define_var  "core_sha1", 01000000
+    ( 66 any)  ; check_define_var  "sha1_ft", 01000000
+    ( 72 any)  ; check_define_var  "sha1_kt", 01000000
+    ( 78 any)  ; check_define_var  "core_hmac_sha1", 01000000
+    ( 84 any)  ; check_define_var  "safe_add", 01000000
+    ( 90 any)  ; check_define_var  "rol", 01000000
+    ( 96 any)  ; check_define_var  "str2binb", 01000000
+    (102 any)  ; check_define_var  "binb2str", 01000000
+    (108 any)  ; check_define_var  "binb2hex", 01000000
+    (114 any)  ; check_define_var  "binb2b64", 01000000
+    (120 any)  ; check_define_var  "plainText", 00000000
+    (126 any)  ; check_define_var  "i", 00000000
+    (132 any)  ; check_define_var  "sha1Output", 00000000
+    (138 any)  ; check_define_var  "expected", 00000000
+    (144 any)  ; define_var  "hexcase", 00000000
+    (150 any)  ; define_var  "b64pad", 00000000
+    (156 any)  ; define_var  "chrsz", 00000000
+    (162 any)  ; fclosure8  0
+    (164 any)  ; define_func  "hex_sha1", 00000000
+    (170 any)  ; fclosure8  1
+    (172 any)  ; define_func  "b64_sha1", 00000000
+    (178 any)  ; fclosure8  2
+    (180 any)  ; define_func  "str_sha1", 00000000
+    (186 any)  ; fclosure8  3
+    (188 any)  ; define_func  "hex_hmac_sha1", 00000000
+    (194 any)  ; fclosure8  4
+    (196 any)  ; define_func  "b64_hmac_sha1", 00000000
+    (202 any)  ; fclosure8  5
+    (204 any)  ; define_func  "str_hmac_sha1", 00000000
+    (210 any)  ; fclosure8  6
+    (212 any)  ; define_func  "sha1_vm_test", 00000000
+    (218 any)  ; fclosure8  7
+    (220 any)  ; define_func  "core_sha1", 00000000
+    (226 any)  ; fclosure8  8
+    (228 any)  ; define_func  "sha1_ft", 00000000
+    (234 any)  ; fclosure8  9
+    (236 any)  ; define_func  "sha1_kt", 00000000
+    (242 any)  ; fclosure8  10
+    (244 any)  ; define_func  "core_hmac_sha1", 00000000
+    (250 any)  ; fclosure8  11
+    (252 any)  ; define_func  "safe_add", 00000000
+    (258 any)  ; fclosure8  12
+    (260 any)  ; define_func  "rol", 00000000
+    (266 any)  ; fclosure8  13
+    (268 any)  ; define_func  "str2binb", 00000000
+    (274 any)  ; fclosure8  14
+    (276 any)  ; define_func  "binb2str", 00000000
+    (282 any)  ; fclosure8  15
+    (284 any)  ; define_func  "binb2hex", 00000000
+    (290 any)  ; fclosure8  16
+    (292 any)  ; define_func  "binb2b64", 00000000
+    (298 any)  ; define_var  "plainText", 00000000
+    (304 any)  ; define_var  "i", 00000000
+    (310 any)  ; define_var  "sha1Output", 00000000
+    (316 any)  ; define_var  "expected", 00000000
+    (322 any)  ; push_0 
+    (323 any)  ; put_var  "hexcase"
+    (328 any)  ; push_empty_string 
+    (329 any)  ; put_var  "b64pad"
+    (334 any)  ; push_i8  8
+    (336 any)  ; put_var  "chrsz"
+    (341 any)  ; push_atom_value  "Two, households, both, alike, in, dignity\nIn, fair, Verona, where, we, lay, our, scene\nFrom, ancient, grudge, break, to, new, mutiny\nWhere, civil, blood, makes, civil, hands, unclean.\nFrom, forth, the, fatal, loins, of, these, two, foes\nA, pair, of, star-cross'd, lovers, take, their, life;\nWhole, misadventured, piteous, overthrows\nDo, with, their, death, bury, their, parents', strife.\nThe, fearful, passage, of, their, death-mark'd, love\nAnd, the, continuance, of, their, parents', rage\nWhich,, but, their, children's, end, nought, could, remove\nIs, now, the, two, hours', traffic, of, our, stage;\nThe, which, if, you, with, patient, ears, attend\nWhat, here, shall, miss, our, toil, shall, strive, to, mend."
+    (346 any)  ; put_var  "plainText"
+    (351 any)  ; undefined 
+    (352 any)  ; put_loc0 
+    (353 any)  ; push_0 
+    (354 any)  ; put_var  "i"
+    (359 any)  ; get_var  "i"
+    (364 any)  ; push_4 
+    (365 any)  ; lt 
+    (366 any)  ; if_false8  33
+    (368 any)  ; get_var  "plainText"
+    (373 any)  ; get_var  "plainText"
+    (378 any)  ; add 
+    (379 any)  ; dup 
+    (380 any)  ; put_var  "plainText"
+    (385 any)  ; put_loc0 
+    (386 any)  ; get_var  "i"
+    (391 any)  ; post_inc 
+    (392 any)  ; put_var  "i"
+    (397 any)  ; drop 
+    (398 any)  ; goto8  -40
+    (400 any)  ; get_var  "hex_sha1"
+    (405 any)  ; get_var  "plainText"
+    (410 any)  ; call1 
+    (411 any)  ; put_var  "sha1Output"
+    (416 any)  ; push_atom_value  "2524d264def74cce2498bf112bedf00e6c0b796d"
+    (421 any)  ; put_var  "expected"
+    (426 any)  ; undefined 
+    (427 any)  ; put_loc0 
+    (428 any)  ; get_var  "sha1Output"
+    (433 any)  ; get_var  "expected"
+    (438 any)  ; neq 
+    (439 any)  ; if_false8  25
+    (441 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (446 any)  ; get_var  "expected"
+    (451 any)  ; add 
+    (452 any)  ; push_atom_value  ", but, got, "
+    (457 any)  ; add 
+    (458 any)  ; get_var  "sha1Output"
+    (463 any)  ; add 
+    (464 any)  ; throw 
+    (465 any)  ; get_loc0 
+    (466 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 17
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+    ;   7: 
+    ;   8: 
+    ;   9: 
+    ;  10: 
+    ;  11: 
+    ;  12: 
+    ;  13: 
+    ;  14: 
+    ;  15: 
+    ;  16: 
+)
+
+(fn _JS_F8hex_sha1__root.0 
+  ; source ptr: 0x55aa77a0db60, ln: 22
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; s
+    )
+  string)  ; return
+  ; stack size: 5
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2hex"
+    (  5 any)  ; get_var  "core_sha1"
+    ( 10 any)  ; get_var  "str2binb"
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; call1 
+    ( 17 any)  ; get_arg0 
+    ( 18 any)  ; get_length 
+    ( 19 any)  ; get_var  "chrsz"
+    ( 24 any)  ; mul 
+    ( 25 any)  ; call2 
+    ( 26 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8b64_sha1__root.1 
+  ; source ptr: 0x55aa77a0df50, ln: 23
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; s
+    )
+  string)  ; return
+  ; stack size: 5
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2b64"
+    (  5 any)  ; get_var  "core_sha1"
+    ( 10 any)  ; get_var  "str2binb"
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; call1 
+    ( 17 any)  ; get_arg0 
+    ( 18 any)  ; get_length 
+    ( 19 any)  ; get_var  "chrsz"
+    ( 24 any)  ; mul 
+    ( 25 any)  ; call2 
+    ( 26 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8str_sha1__root.2 
+  ; source ptr: 0x55aa77a0e350, ln: 24
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; s
+    )
+  string)  ; return
+  ; stack size: 5
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2str"
+    (  5 any)  ; get_var  "core_sha1"
+    ( 10 any)  ; get_var  "str2binb"
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; call1 
+    ( 17 any)  ; get_arg0 
+    ( 18 any)  ; get_length 
+    ( 19 any)  ; get_var  "chrsz"
+    ( 24 any)  ; mul 
+    ( 25 any)  ; call2 
+    ( 26 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F13hex_hmac_sha1__root.3 
+  ; source ptr: 0x55aa77a0e6b0, ln: 25
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; key
+      any  ; data
+    )
+  string)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2hex"
+    (  5 any)  ; get_var  "core_hmac_sha1"
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; get_arg1 
+    ( 12 any)  ; call2 
+    ( 13 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F13b64_hmac_sha1__root.4 
+  ; source ptr: 0x55aa77a0eac0, ln: 26
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; key
+      any  ; data
+    )
+  string)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2b64"
+    (  5 any)  ; get_var  "core_hmac_sha1"
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; get_arg1 
+    ( 12 any)  ; call2 
+    ( 13 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F13str_hmac_sha1__root.5 
+  ; source ptr: 0x55aa77a0ede0, ln: 27
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; key
+      any  ; data
+    )
+  string)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "binb2str"
+    (  5 any)  ; get_var  "core_hmac_sha1"
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; get_arg1 
+    ( 12 any)  ; call2 
+    ( 13 any)  ; tail_call  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F12sha1_vm_test__root.6 
+  ; source ptr: 0x55aa77a0a780, ln: 32
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  boolean)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "hex_sha1"
+    (  5 any)  ; push_atom_value  "abc"
+    ( 10 any)  ; call1 
+    ( 11 any)  ; push_atom_value  "a9993e364706816aba3e25717850c26c9cd0d89d"
+    ( 16 any)  ; eq 
+    ( 17 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F9core_sha1__root.7 
+  ; source ptr: 0x55aa77a104d0, ln: 40
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; x
+      any  ; len
+    )
+  number[])  ; return
+  ; stack size: 8
+  (locs  ; var count: 14
+    any[]  ; w: normal
+    number  ; a: normal
+    number  ; b: normal
+    number  ; c: normal
+    number  ; d: normal
+    number  ; e: normal
+    number  ; i: normal
+    number  ; olda: normal
+    number  ; oldb: normal
+    number  ; oldc: normal
+    number  ; oldd: normal
+    number  ; olde: normal
+    number  ; j: normal
+    number  ; t: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; get_arg1 
+    (  2 any)  ; push_5 
+    (  3 any)  ; sar 
+    (  4 any)  ; to_propkey2 
+    (  5 any)  ; dup2 
+    (  6 any)  ; get_array_el 
+    (  7 any)  ; push_i16  128
+    ( 10 any)  ; push_i8  24
+    ( 12 any)  ; get_arg1 
+    ( 13 any)  ; push_i8  32
+    ( 15 any)  ; mod 
+    ( 16 any)  ; sub 
+    ( 17 any)  ; shl 
+    ( 18 any)  ; or 
+    ( 19 any)  ; put_array_el 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; get_arg1 
+    ( 22 any)  ; push_i8  64
+    ( 24 any)  ; add 
+    ( 25 any)  ; push_i8  9
+    ( 27 any)  ; sar 
+    ( 28 any)  ; push_4 
+    ( 29 any)  ; shl 
+    ( 30 any)  ; push_i8  15
+    ( 32 any)  ; add 
+    ( 33 any)  ; get_arg1 
+    ( 34 any)  ; put_array_el 
+    ( 35 any)  ; get_var  "Array"
+    ( 40 any)  ; push_i8  80
+    ( 42 any)  ; call1 
+    ( 43 any)  ; put_loc0 
+    ( 44 any)  ; push_i32  1732584193
+    ( 49 any)  ; put_loc1 
+    ( 50 any)  ; push_i32  -271733879
+    ( 55 any)  ; put_loc2 
+    ( 56 any)  ; push_i32  -1732584194
+    ( 61 any)  ; put_loc3 
+    ( 62 any)  ; push_i32  271733878
+    ( 67 any)  ; put_loc8  4
+    ( 69 any)  ; push_i32  -1009589776
+    ( 74 any)  ; put_loc8  5
+    ( 76 any)  ; push_0 
+    ( 77 any)  ; put_loc8  6
+    ( 79 any)  ; get_loc8  6
+    ( 81 any)  ; get_arg0 
+    ( 82 any)  ; get_length 
+    ( 83 any)  ; lt 
+    ( 84 any)  ; if_false  247
+    ( 89 any)  ; get_loc1 
+    ( 90 any)  ; put_loc8  7
+    ( 92 any)  ; get_loc2 
+    ( 93 any)  ; put_loc8  8
+    ( 95 any)  ; get_loc3 
+    ( 96 any)  ; put_loc8  9
+    ( 98 any)  ; get_loc8  4
+    (100 any)  ; put_loc8  10
+    (102 any)  ; get_loc8  5
+    (104 any)  ; put_loc8  11
+    (106 any)  ; push_0 
+    (107 any)  ; put_loc8  12
+    (109 any)  ; get_loc8  12
+    (111 any)  ; push_i8  80
+    (113 any)  ; lt 
+    (114 any)  ; if_false  156
+    (119 any)  ; get_loc8  12
+    (121 any)  ; push_i8  16
+    (123 any)  ; lt 
+    (124 any)  ; if_false8  15
+    (126 any)  ; get_loc0 
+    (127 any)  ; get_loc8  12
+    (129 any)  ; to_propkey2 
+    (130 any)  ; get_arg0 
+    (131 any)  ; get_loc8  6
+    (133 any)  ; get_loc8  12
+    (135 any)  ; add 
+    (136 any)  ; get_array_el 
+    (137 any)  ; put_array_el 
+    (138 any)  ; goto8  43
+    (140 any)  ; get_loc0 
+    (141 any)  ; get_loc8  12
+    (143 any)  ; to_propkey2 
+    (144 any)  ; get_var  "rol"
+    (149 any)  ; get_loc0 
+    (150 any)  ; get_loc8  12
+    (152 any)  ; push_3 
+    (153 any)  ; sub 
+    (154 any)  ; get_array_el 
+    (155 any)  ; get_loc0 
+    (156 any)  ; get_loc8  12
+    (158 any)  ; push_i8  8
+    (160 any)  ; sub 
+    (161 any)  ; get_array_el 
+    (162 any)  ; xor 
+    (163 any)  ; get_loc0 
+    (164 any)  ; get_loc8  12
+    (166 any)  ; push_i8  14
+    (168 any)  ; sub 
+    (169 any)  ; get_array_el 
+    (170 any)  ; xor 
+    (171 any)  ; get_loc0 
+    (172 any)  ; get_loc8  12
+    (174 any)  ; push_i8  16
+    (176 any)  ; sub 
+    (177 any)  ; get_array_el 
+    (178 any)  ; xor 
+    (179 any)  ; push_1 
+    (180 any)  ; call2 
+    (181 any)  ; put_array_el 
+    (182 any)  ; get_var  "safe_add"
+    (187 any)  ; get_var  "safe_add"
+    (192 any)  ; get_var  "rol"
+    (197 any)  ; get_loc1 
+    (198 any)  ; push_5 
+    (199 any)  ; call2 
+    (200 any)  ; get_var  "sha1_ft"
+    (205 any)  ; get_loc8  12
+    (207 any)  ; get_loc2 
+    (208 any)  ; get_loc3 
+    (209 any)  ; get_loc8  4
+    (211 any)  ; call  4
+    (214 any)  ; call2 
+    (215 any)  ; get_var  "safe_add"
+    (220 any)  ; get_var  "safe_add"
+    (225 any)  ; get_loc8  5
+    (227 any)  ; get_loc0 
+    (228 any)  ; get_loc8  12
+    (230 any)  ; get_array_el 
+    (231 any)  ; call2 
+    (232 any)  ; get_var  "sha1_kt"
+    (237 any)  ; get_loc8  12
+    (239 any)  ; call1 
+    (240 any)  ; call2 
+    (241 any)  ; call2 
+    (242 any)  ; put_loc8  13
+    (244 any)  ; get_loc8  4
+    (246 any)  ; put_loc8  5
+    (248 any)  ; get_loc3 
+    (249 any)  ; put_loc8  4
+    (251 any)  ; get_var  "rol"
+    (256 any)  ; get_loc2 
+    (257 any)  ; push_i8  30
+    (259 any)  ; call2 
+    (260 any)  ; put_loc3 
+    (261 any)  ; get_loc1 
+    (262 any)  ; put_loc2 
+    (263 any)  ; get_loc8  13
+    (265 any)  ; put_loc1 
+    (266 any)  ; inc_loc  12
+    (268 any)  ; goto16  -160
+    (271 any)  ; get_var  "safe_add"
+    (276 any)  ; get_loc1 
+    (277 any)  ; get_loc8  7
+    (279 any)  ; call2 
+    (280 any)  ; put_loc1 
+    (281 any)  ; get_var  "safe_add"
+    (286 any)  ; get_loc2 
+    (287 any)  ; get_loc8  8
+    (289 any)  ; call2 
+    (290 any)  ; put_loc2 
+    (291 any)  ; get_var  "safe_add"
+    (296 any)  ; get_loc3 
+    (297 any)  ; get_loc8  9
+    (299 any)  ; call2 
+    (300 any)  ; put_loc3 
+    (301 any)  ; get_var  "safe_add"
+    (306 any)  ; get_loc8  4
+    (308 any)  ; get_loc8  10
+    (310 any)  ; call2 
+    (311 any)  ; put_loc8  4
+    (313 any)  ; get_var  "safe_add"
+    (318 any)  ; get_loc8  5
+    (320 any)  ; get_loc8  11
+    (322 any)  ; call2 
+    (323 any)  ; put_loc8  5
+    (325 any)  ; push_i8  16
+    (327 any)  ; add_loc  6
+    (329 any)  ; goto16  -251
+    (332 any)  ; get_var  "Array"
+    (337 any)  ; get_loc1 
+    (338 any)  ; get_loc2 
+    (339 any)  ; get_loc3 
+    (340 any)  ; get_loc8  4
+    (342 any)  ; get_loc8  5
+    (344 any)  ; tail_call  5
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7sha1_ft__root.8 
+  ; source ptr: 0x55aa77a11820, ln: 88
+  ; arg count: 4
+  (sig (args any  ; this
+      any  ; t
+      any  ; b
+      any  ; c
+      any  ; d
+    )
+  number)  ; return
+  ; stack size: 3
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_i8  20
+    (  3 any)  ; lt 
+    (  4 any)  ; if_false8  10
+    (  6 any)  ; get_arg1 
+    (  7 any)  ; get_arg2 
+    (  8 any)  ; and 
+    (  9 any)  ; get_arg1 
+    ( 10 any)  ; not 
+    ( 11 any)  ; get_arg3 
+    ( 12 any)  ; and 
+    ( 13 any)  ; or 
+    ( 14 any)  ; return 
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; push_i8  40
+    ( 18 any)  ; lt 
+    ( 19 any)  ; if_false8  7
+    ( 21 any)  ; get_arg1 
+    ( 22 any)  ; get_arg2 
+    ( 23 any)  ; xor 
+    ( 24 any)  ; get_arg3 
+    ( 25 any)  ; xor 
+    ( 26 any)  ; return 
+    ( 27 any)  ; get_arg0 
+    ( 28 any)  ; push_i8  60
+    ( 30 any)  ; lt 
+    ( 31 any)  ; if_false8  13
+    ( 33 any)  ; get_arg1 
+    ( 34 any)  ; get_arg2 
+    ( 35 any)  ; and 
+    ( 36 any)  ; get_arg1 
+    ( 37 any)  ; get_arg3 
+    ( 38 any)  ; and 
+    ( 39 any)  ; or 
+    ( 40 any)  ; get_arg2 
+    ( 41 any)  ; get_arg3 
+    ( 42 any)  ; and 
+    ( 43 any)  ; or 
+    ( 44 any)  ; return 
+    ( 45 any)  ; get_arg1 
+    ( 46 any)  ; get_arg2 
+    ( 47 any)  ; xor 
+    ( 48 any)  ; get_arg3 
+    ( 49 any)  ; xor 
+    ( 50 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7sha1_kt__root.9 
+  ; source ptr: 0x55aa77a0f750, ln: 99
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; t
+    )
+  -899497514)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_i8  20
+    (  3 any)  ; lt 
+    (  4 any)  ; if_false8  7
+    (  6 any)  ; push_i32  1518500249
+    ( 11 any)  ; return 
+    ( 12 any)  ; get_arg0 
+    ( 13 any)  ; push_i8  40
+    ( 15 any)  ; lt 
+    ( 16 any)  ; if_false8  7
+    ( 18 any)  ; push_i32  1859775393
+    ( 23 any)  ; return 
+    ( 24 any)  ; get_arg0 
+    ( 25 any)  ; push_i8  60
+    ( 27 any)  ; lt 
+    ( 28 any)  ; if_false8  7
+    ( 30 any)  ; push_i32  -1894007588
+    ( 35 any)  ; return 
+    ( 36 any)  ; push_i32  -899497514
+    ( 41 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F14core_hmac_sha1__root.10 
+  ; source ptr: 0x55aa779a0190, ln: 108
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; key
+      any  ; data
+    )
+  number[])  ; return
+  ; stack size: 5
+  (locs  ; var count: 5
+    any[]  ; bkey: normal
+    any[]  ; ipad: normal
+    any[]  ; opad: normal
+    number  ; i: normal
+    number[]  ; hash: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "str2binb"
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; call1 
+    (  7 any)  ; set_loc0 
+    (  8 any)  ; get_length 
+    (  9 any)  ; push_i8  16
+    ( 11 any)  ; gt 
+    ( 12 any)  ; if_false8  17
+    ( 14 any)  ; get_var  "core_sha1"
+    ( 19 any)  ; get_loc0 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; get_length 
+    ( 22 any)  ; get_var  "chrsz"
+    ( 27 any)  ; mul 
+    ( 28 any)  ; call2 
+    ( 29 any)  ; put_loc0 
+    ( 30 any)  ; get_var  "Array"
+    ( 35 any)  ; push_i8  16
+    ( 37 any)  ; call1 
+    ( 38 any)  ; put_loc1 
+    ( 39 any)  ; get_var  "Array"
+    ( 44 any)  ; push_i8  16
+    ( 46 any)  ; call1 
+    ( 47 any)  ; put_loc2 
+    ( 48 any)  ; push_0 
+    ( 49 any)  ; put_loc3 
+    ( 50 any)  ; get_loc3 
+    ( 51 any)  ; push_i8  16
+    ( 53 any)  ; lt 
+    ( 54 any)  ; if_false8  31
+    ( 56 any)  ; get_loc1 
+    ( 57 any)  ; get_loc3 
+    ( 58 any)  ; to_propkey2 
+    ( 59 any)  ; get_loc0 
+    ( 60 any)  ; get_loc3 
+    ( 61 any)  ; get_array_el 
+    ( 62 any)  ; push_i32  909522486
+    ( 67 any)  ; xor 
+    ( 68 any)  ; put_array_el 
+    ( 69 any)  ; get_loc2 
+    ( 70 any)  ; get_loc3 
+    ( 71 any)  ; to_propkey2 
+    ( 72 any)  ; get_loc0 
+    ( 73 any)  ; get_loc3 
+    ( 74 any)  ; get_array_el 
+    ( 75 any)  ; push_i32  1549556828
+    ( 80 any)  ; xor 
+    ( 81 any)  ; put_array_el 
+    ( 82 any)  ; inc_loc  3
+    ( 84 any)  ; goto8  -35
+    ( 86 any)  ; get_var  "core_sha1"
+    ( 91 any)  ; get_loc1 
+    ( 92 any)  ; get_field2  "concat"
+    ( 97 any)  ; get_var  "str2binb"
+    (102 any)  ; get_arg1 
+    (103 any)  ; call1 
+    (104 any)  ; call_method  1
+    (107 any)  ; push_i16  512
+    (110 any)  ; get_arg1 
+    (111 any)  ; get_length 
+    (112 any)  ; get_var  "chrsz"
+    (117 any)  ; mul 
+    (118 any)  ; add 
+    (119 any)  ; call2 
+    (120 any)  ; put_loc8  4
+    (122 any)  ; get_var  "core_sha1"
+    (127 any)  ; get_loc2 
+    (128 any)  ; get_field2  "concat"
+    (133 any)  ; get_loc8  4
+    (135 any)  ; call_method  1
+    (138 any)  ; push_i16  512
+    (141 any)  ; push_i16  160
+    (144 any)  ; add 
+    (145 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8safe_add__root.11 
+  ; source ptr: 0x55aa77a12d00, ln: 128
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; x
+      any  ; y
+    )
+  number)  ; return
+  ; stack size: 3
+  (locs  ; var count: 2
+    number  ; lsw: normal
+    number  ; msw: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_i32  65535
+    (  6 any)  ; and 
+    (  7 any)  ; get_arg1 
+    (  8 any)  ; push_i32  65535
+    ( 13 any)  ; and 
+    ( 14 any)  ; add 
+    ( 15 any)  ; put_loc0 
+    ( 16 any)  ; get_arg0 
+    ( 17 any)  ; push_i8  16
+    ( 19 any)  ; sar 
+    ( 20 any)  ; get_arg1 
+    ( 21 any)  ; push_i8  16
+    ( 23 any)  ; sar 
+    ( 24 any)  ; add 
+    ( 25 any)  ; get_loc0 
+    ( 26 any)  ; push_i8  16
+    ( 28 any)  ; sar 
+    ( 29 any)  ; add 
+    ( 30 any)  ; set_loc1 
+    ( 31 any)  ; push_i8  16
+    ( 33 any)  ; shl 
+    ( 34 any)  ; get_loc0 
+    ( 35 any)  ; push_i32  65535
+    ( 40 any)  ; and 
+    ( 41 any)  ; or 
+    ( 42 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F3rol__root.12 
+  ; source ptr: 0x55aa77a12370, ln: 138
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; num
+      any  ; cnt
+    )
+  number)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; get_arg1 
+    (  2 any)  ; shl 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; push_i8  32
+    (  6 any)  ; get_arg1 
+    (  7 any)  ; sub 
+    (  8 any)  ; shr 
+    (  9 any)  ; or 
+    ( 10 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8str2binb__root.13 
+  ; source ptr: 0x55aa779ff2f0, ln: 147
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; str
+    )
+  any[])  ; return
+  ; stack size: 7
+  (locs  ; var count: 3
+    any[]  ; bin: normal
+    number  ; mask: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; call0 
+    (  6 any)  ; put_loc0 
+    (  7 any)  ; push_1 
+    (  8 any)  ; get_var  "chrsz"
+    ( 13 any)  ; shl 
+    ( 14 any)  ; push_1 
+    ( 15 any)  ; sub 
+    ( 16 any)  ; put_loc1 
+    ( 17 any)  ; push_0 
+    ( 18 any)  ; put_loc2 
+    ( 19 any)  ; get_loc2 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; get_length 
+    ( 22 any)  ; get_var  "chrsz"
+    ( 27 any)  ; mul 
+    ( 28 any)  ; lt 
+    ( 29 any)  ; if_false8  52
+    ( 31 any)  ; get_loc0 
+    ( 32 any)  ; get_loc2 
+    ( 33 any)  ; push_5 
+    ( 34 any)  ; sar 
+    ( 35 any)  ; to_propkey2 
+    ( 36 any)  ; dup2 
+    ( 37 any)  ; get_array_el 
+    ( 38 any)  ; get_arg0 
+    ( 39 any)  ; get_field2  "charCodeAt"
+    ( 44 any)  ; get_loc2 
+    ( 45 any)  ; get_var  "chrsz"
+    ( 50 any)  ; div 
+    ( 51 any)  ; call_method  1
+    ( 54 any)  ; get_loc1 
+    ( 55 any)  ; and 
+    ( 56 any)  ; push_i8  32
+    ( 58 any)  ; get_var  "chrsz"
+    ( 63 any)  ; sub 
+    ( 64 any)  ; get_loc2 
+    ( 65 any)  ; push_i8  32
+    ( 67 any)  ; mod 
+    ( 68 any)  ; sub 
+    ( 69 any)  ; shl 
+    ( 70 any)  ; or 
+    ( 71 any)  ; put_array_el 
+    ( 72 any)  ; get_loc2 
+    ( 73 any)  ; get_var  "chrsz"
+    ( 78 any)  ; add 
+    ( 79 any)  ; put_loc2 
+    ( 80 any)  ; goto8  -62
+    ( 82 any)  ; get_loc0 
+    ( 83 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8binb2str__root.14 
+  ; source ptr: 0x55aa779fcf90, ln: 159
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; bin
+    )
+  string)  ; return
+  ; stack size: 7
+  (locs  ; var count: 3
+    string  ; str: normal
+    number  ; mask: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_empty_string 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; push_1 
+    (  3 any)  ; get_var  "chrsz"
+    (  8 any)  ; shl 
+    (  9 any)  ; push_1 
+    ( 10 any)  ; sub 
+    ( 11 any)  ; put_loc1 
+    ( 12 any)  ; push_0 
+    ( 13 any)  ; put_loc2 
+    ( 14 any)  ; get_loc2 
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; get_length 
+    ( 17 any)  ; push_i8  32
+    ( 19 any)  ; mul 
+    ( 20 any)  ; lt 
+    ( 21 any)  ; if_false8  48
+    ( 23 any)  ; get_loc0 
+    ( 24 any)  ; get_var  "String"
+    ( 29 any)  ; get_field2  "fromCharCode"
+    ( 34 any)  ; get_arg0 
+    ( 35 any)  ; get_loc2 
+    ( 36 any)  ; push_5 
+    ( 37 any)  ; sar 
+    ( 38 any)  ; get_array_el 
+    ( 39 any)  ; push_i8  32
+    ( 41 any)  ; get_var  "chrsz"
+    ( 46 any)  ; sub 
+    ( 47 any)  ; get_loc2 
+    ( 48 any)  ; push_i8  32
+    ( 50 any)  ; mod 
+    ( 51 any)  ; sub 
+    ( 52 any)  ; shr 
+    ( 53 any)  ; get_loc1 
+    ( 54 any)  ; and 
+    ( 55 any)  ; call_method  1
+    ( 58 any)  ; add 
+    ( 59 any)  ; put_loc0 
+    ( 60 any)  ; get_loc2 
+    ( 61 any)  ; get_var  "chrsz"
+    ( 66 any)  ; add 
+    ( 67 any)  ; put_loc2 
+    ( 68 any)  ; goto8  -55
+    ( 70 any)  ; get_loc0 
+    ( 71 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8binb2hex__root.15 
+  ; source ptr: 0x55aa77a141a0, ln: 171
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; binarray
+    )
+  string)  ; return
+  ; stack size: 8
+  (locs  ; var count: 3
+    string  ; hex_tab: normal
+    string  ; str: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "hexcase"
+    (  5 any)  ; if_false8  8
+    (  7 any)  ; push_atom_value  "0123456789ABCDEF"
+    ( 12 any)  ; goto8  6
+    ( 14 any)  ; push_atom_value  "0123456789abcdef"
+    ( 19 any)  ; put_loc0 
+    ( 20 any)  ; push_empty_string 
+    ( 21 any)  ; put_loc1 
+    ( 22 any)  ; push_0 
+    ( 23 any)  ; put_loc2 
+    ( 24 any)  ; get_loc2 
+    ( 25 any)  ; get_arg0 
+    ( 26 any)  ; get_length 
+    ( 27 any)  ; push_4 
+    ( 28 any)  ; mul 
+    ( 29 any)  ; lt 
+    ( 30 any)  ; if_false8  63
+    ( 32 any)  ; get_loc1 
+    ( 33 any)  ; get_loc0 
+    ( 34 any)  ; get_field2  "charAt"
+    ( 39 any)  ; get_arg0 
+    ( 40 any)  ; get_loc2 
+    ( 41 any)  ; push_2 
+    ( 42 any)  ; sar 
+    ( 43 any)  ; get_array_el 
+    ( 44 any)  ; push_3 
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; push_4 
+    ( 47 any)  ; mod 
+    ( 48 any)  ; sub 
+    ( 49 any)  ; push_i8  8
+    ( 51 any)  ; mul 
+    ( 52 any)  ; push_4 
+    ( 53 any)  ; add 
+    ( 54 any)  ; sar 
+    ( 55 any)  ; push_i8  15
+    ( 57 any)  ; and 
+    ( 58 any)  ; call_method  1
+    ( 61 any)  ; get_loc0 
+    ( 62 any)  ; get_field2  "charAt"
+    ( 67 any)  ; get_arg0 
+    ( 68 any)  ; get_loc2 
+    ( 69 any)  ; push_2 
+    ( 70 any)  ; sar 
+    ( 71 any)  ; get_array_el 
+    ( 72 any)  ; push_3 
+    ( 73 any)  ; get_loc2 
+    ( 74 any)  ; push_4 
+    ( 75 any)  ; mod 
+    ( 76 any)  ; sub 
+    ( 77 any)  ; push_i8  8
+    ( 79 any)  ; mul 
+    ( 80 any)  ; sar 
+    ( 81 any)  ; push_i8  15
+    ( 83 any)  ; and 
+    ( 84 any)  ; call_method  1
+    ( 87 any)  ; add 
+    ( 88 any)  ; add 
+    ( 89 any)  ; put_loc1 
+    ( 90 any)  ; inc_loc  2
+    ( 92 any)  ; goto8  -69
+    ( 94 any)  ; get_loc1 
+    ( 95 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8binb2b64__root.16 
+  ; source ptr: 0x55aa77a151c0, ln: 186
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; binarray
+    )
+  string)  ; return
+  ; stack size: 7
+  (locs  ; var count: 5
+    string  ; tab: normal
+    string  ; str: normal
+    number  ; i: normal
+    number  ; triplet: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_atom_value  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    (  5 any)  ; put_loc0 
+    (  6 any)  ; push_empty_string 
+    (  7 any)  ; put_loc1 
+    (  8 any)  ; push_0 
+    (  9 any)  ; put_loc2 
+    ( 10 any)  ; get_loc2 
+    ( 11 any)  ; get_arg0 
+    ( 12 any)  ; get_length 
+    ( 13 any)  ; push_4 
+    ( 14 any)  ; mul 
+    ( 15 any)  ; lt 
+    ( 16 any)  ; if_false  144
+    ( 21 any)  ; get_arg0 
+    ( 22 any)  ; get_loc2 
+    ( 23 any)  ; push_2 
+    ( 24 any)  ; sar 
+    ( 25 any)  ; get_array_el 
+    ( 26 any)  ; push_i8  8
+    ( 28 any)  ; push_3 
+    ( 29 any)  ; get_loc2 
+    ( 30 any)  ; push_4 
+    ( 31 any)  ; mod 
+    ( 32 any)  ; sub 
+    ( 33 any)  ; mul 
+    ( 34 any)  ; sar 
+    ( 35 any)  ; push_i16  255
+    ( 38 any)  ; and 
+    ( 39 any)  ; push_i8  16
+    ( 41 any)  ; shl 
+    ( 42 any)  ; get_arg0 
+    ( 43 any)  ; get_loc2 
+    ( 44 any)  ; push_1 
+    ( 45 any)  ; add 
+    ( 46 any)  ; push_2 
+    ( 47 any)  ; sar 
+    ( 48 any)  ; get_array_el 
+    ( 49 any)  ; push_i8  8
+    ( 51 any)  ; push_3 
+    ( 52 any)  ; get_loc2 
+    ( 53 any)  ; push_1 
+    ( 54 any)  ; add 
+    ( 55 any)  ; push_4 
+    ( 56 any)  ; mod 
+    ( 57 any)  ; sub 
+    ( 58 any)  ; mul 
+    ( 59 any)  ; sar 
+    ( 60 any)  ; push_i16  255
+    ( 63 any)  ; and 
+    ( 64 any)  ; push_i8  8
+    ( 66 any)  ; shl 
+    ( 67 any)  ; or 
+    ( 68 any)  ; get_arg0 
+    ( 69 any)  ; get_loc2 
+    ( 70 any)  ; push_2 
+    ( 71 any)  ; add 
+    ( 72 any)  ; push_2 
+    ( 73 any)  ; sar 
+    ( 74 any)  ; get_array_el 
+    ( 75 any)  ; push_i8  8
+    ( 77 any)  ; push_3 
+    ( 78 any)  ; get_loc2 
+    ( 79 any)  ; push_2 
+    ( 80 any)  ; add 
+    ( 81 any)  ; push_4 
+    ( 82 any)  ; mod 
+    ( 83 any)  ; sub 
+    ( 84 any)  ; mul 
+    ( 85 any)  ; sar 
+    ( 86 any)  ; push_i16  255
+    ( 89 any)  ; and 
+    ( 90 any)  ; or 
+    ( 91 any)  ; put_loc3 
+    ( 92 any)  ; push_0 
+    ( 93 any)  ; put_loc8  4
+    ( 95 any)  ; get_loc8  4
+    ( 97 any)  ; push_4 
+    ( 98 any)  ; lt 
+    ( 99 any)  ; if_false8  55
+    (101 any)  ; get_loc2 
+    (102 any)  ; push_i8  8
+    (104 any)  ; mul 
+    (105 any)  ; get_loc8  4
+    (107 any)  ; push_6 
+    (108 any)  ; mul 
+    (109 any)  ; add 
+    (110 any)  ; get_arg0 
+    (111 any)  ; get_length 
+    (112 any)  ; push_i8  32
+    (114 any)  ; mul 
+    (115 any)  ; gt 
+    (116 any)  ; if_false8  11
+    (118 any)  ; get_loc1 
+    (119 any)  ; get_var  "b64pad"
+    (124 any)  ; add 
+    (125 any)  ; put_loc1 
+    (126 any)  ; goto8  24
+    (128 any)  ; get_loc1 
+    (129 any)  ; get_loc0 
+    (130 any)  ; get_field2  "charAt"
+    (135 any)  ; get_loc3 
+    (136 any)  ; push_6 
+    (137 any)  ; push_3 
+    (138 any)  ; get_loc8  4
+    (140 any)  ; sub 
+    (141 any)  ; mul 
+    (142 any)  ; sar 
+    (143 any)  ; push_i8  63
+    (145 any)  ; and 
+    (146 any)  ; call_method  1
+    (149 any)  ; add 
+    (150 any)  ; put_loc1 
+    (151 any)  ; inc_loc  4
+    (153 any)  ; goto8  -59
+    (155 any)  ; push_3 
+    (156 any)  ; add_loc  2
+    (158 any)  ; goto16  -149
+    (161 any)  ; get_loc1 
+    (162 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

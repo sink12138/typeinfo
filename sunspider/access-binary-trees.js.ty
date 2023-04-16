@@ -1,0 +1,304 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 4
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "TreeNode", 01000000
+    (  6 any)  ; check_define_var  "bottomUpTree", 01000000
+    ( 12 any)  ; check_define_var  "ret", 00000000
+    ( 18 any)  ; check_define_var  "n", 00000000
+    ( 24 any)  ; check_define_var  "minDepth", 00000000
+    ( 30 any)  ; check_define_var  "maxDepth", 00000000
+    ( 36 any)  ; check_define_var  "stretchDepth", 00000000
+    ( 42 any)  ; check_define_var  "check", 00000000
+    ( 48 any)  ; check_define_var  "longLivedTree", 00000000
+    ( 54 any)  ; check_define_var  "depth", 00000000
+    ( 60 any)  ; check_define_var  "iterations", 00000000
+    ( 66 any)  ; check_define_var  "i", 00000000
+    ( 72 any)  ; check_define_var  "expected", 00000000
+    ( 78 any)  ; fclosure8  0
+    ( 80 any)  ; define_func  "TreeNode", 00000000
+    ( 86 any)  ; fclosure8  2
+    ( 88 any)  ; define_func  "bottomUpTree", 00000000
+    ( 94 any)  ; define_var  "ret", 00000000
+    (100 any)  ; define_var  "n", 00000000
+    (106 any)  ; define_var  "minDepth", 00000000
+    (112 any)  ; define_var  "maxDepth", 00000000
+    (118 any)  ; define_var  "stretchDepth", 00000000
+    (124 any)  ; define_var  "check", 00000000
+    (130 any)  ; define_var  "longLivedTree", 00000000
+    (136 any)  ; define_var  "depth", 00000000
+    (142 any)  ; define_var  "iterations", 00000000
+    (148 any)  ; define_var  "i", 00000000
+    (154 any)  ; define_var  "expected", 00000000
+    (160 any)  ; get_var  "TreeNode"
+    (165 any)  ; get_field  "prototype"
+    (170 any)  ; fclosure8  1
+    (172 any)  ; insert2 
+    (173 any)  ; put_field  "itemCheck"
+    (178 any)  ; put_loc0 
+    (179 any)  ; push_0 
+    (180 any)  ; put_var  "ret"
+    (185 any)  ; undefined 
+    (186 any)  ; put_loc0 
+    (187 any)  ; push_4 
+    (188 any)  ; put_var  "n"
+    (193 any)  ; get_var  "n"
+    (198 any)  ; push_7 
+    (199 any)  ; lte 
+    (200 any)  ; if_false  324
+    (205 any)  ; push_4 
+    (206 any)  ; put_var  "minDepth"
+    (211 any)  ; get_var  "Math"
+    (216 any)  ; get_field2  "max"
+    (221 any)  ; get_var  "minDepth"
+    (226 any)  ; push_2 
+    (227 any)  ; add 
+    (228 any)  ; get_var  "n"
+    (233 any)  ; call_method  2
+    (236 any)  ; put_var  "maxDepth"
+    (241 any)  ; get_var  "maxDepth"
+    (246 any)  ; push_1 
+    (247 any)  ; add 
+    (248 any)  ; put_var  "stretchDepth"
+    (253 any)  ; get_var  "bottomUpTree"
+    (258 any)  ; push_0 
+    (259 any)  ; get_var  "stretchDepth"
+    (264 any)  ; call2 
+    (265 any)  ; get_field2  "itemCheck"
+    (270 any)  ; call_method  0
+    (273 any)  ; put_var  "check"
+    (278 any)  ; get_var  "bottomUpTree"
+    (283 any)  ; push_0 
+    (284 any)  ; get_var  "maxDepth"
+    (289 any)  ; call2 
+    (290 any)  ; put_var  "longLivedTree"
+    (295 any)  ; undefined 
+    (296 any)  ; put_loc0 
+    (297 any)  ; get_var  "minDepth"
+    (302 any)  ; put_var  "depth"
+    (307 any)  ; get_var  "depth"
+    (312 any)  ; get_var  "maxDepth"
+    (317 any)  ; lte 
+    (318 any)  ; if_false  163
+    (323 any)  ; push_1 
+    (324 any)  ; get_var  "maxDepth"
+    (329 any)  ; get_var  "depth"
+    (334 any)  ; sub 
+    (335 any)  ; get_var  "minDepth"
+    (340 any)  ; add 
+    (341 any)  ; shl 
+    (342 any)  ; put_var  "iterations"
+    (347 any)  ; push_0 
+    (348 any)  ; dup 
+    (349 any)  ; put_var  "check"
+    (354 any)  ; put_loc0 
+    (355 any)  ; undefined 
+    (356 any)  ; put_loc0 
+    (357 any)  ; push_1 
+    (358 any)  ; put_var  "i"
+    (363 any)  ; get_var  "i"
+    (368 any)  ; get_var  "iterations"
+    (373 any)  ; lte 
+    (374 any)  ; if_false8  90
+    (376 any)  ; get_var  "check"
+    (381 any)  ; get_var  "bottomUpTree"
+    (386 any)  ; get_var  "i"
+    (391 any)  ; get_var  "depth"
+    (396 any)  ; call2 
+    (397 any)  ; get_field2  "itemCheck"
+    (402 any)  ; call_method  0
+    (405 any)  ; add 
+    (406 any)  ; dup 
+    (407 any)  ; put_var  "check"
+    (412 any)  ; put_loc0 
+    (413 any)  ; get_var  "check"
+    (418 any)  ; get_var  "bottomUpTree"
+    (423 any)  ; get_var  "i"
+    (428 any)  ; neg 
+    (429 any)  ; get_var  "depth"
+    (434 any)  ; call2 
+    (435 any)  ; get_field2  "itemCheck"
+    (440 any)  ; call_method  0
+    (443 any)  ; add 
+    (444 any)  ; dup 
+    (445 any)  ; put_var  "check"
+    (450 any)  ; put_loc0 
+    (451 any)  ; get_var  "i"
+    (456 any)  ; post_inc 
+    (457 any)  ; put_var  "i"
+    (462 any)  ; drop 
+    (463 any)  ; goto8  -101
+    (465 any)  ; get_var  "depth"
+    (470 any)  ; push_2 
+    (471 any)  ; add 
+    (472 any)  ; dup 
+    (473 any)  ; put_var  "depth"
+    (478 any)  ; drop 
+    (479 any)  ; goto16  -173
+    (482 any)  ; get_var  "ret"
+    (487 any)  ; get_var  "longLivedTree"
+    (492 any)  ; get_field2  "itemCheck"
+    (497 any)  ; call_method  0
+    (500 any)  ; add 
+    (501 any)  ; dup 
+    (502 any)  ; put_var  "ret"
+    (507 any)  ; put_loc0 
+    (508 any)  ; get_var  "n"
+    (513 any)  ; push_1 
+    (514 any)  ; add 
+    (515 any)  ; dup 
+    (516 any)  ; put_var  "n"
+    (521 any)  ; drop 
+    (522 any)  ; goto16  -330
+    (525 any)  ; push_i8  -4
+    (527 any)  ; put_var  "expected"
+    (532 any)  ; undefined 
+    (533 any)  ; put_loc0 
+    (534 any)  ; get_var  "ret"
+    (539 any)  ; get_var  "expected"
+    (544 any)  ; neq 
+    (545 any)  ; if_false8  25
+    (547 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (552 any)  ; get_var  "expected"
+    (557 any)  ; add 
+    (558 any)  ; push_atom_value  ", but, got, "
+    (563 any)  ; add 
+    (564 any)  ; get_var  "ret"
+    (569 any)  ; add 
+    (570 any)  ; throw 
+    (571 any)  ; get_loc0 
+    (572 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 3
+    ;   0: 
+    ;   1: 
+    ;   2: 
+)
+
+(fn _JS_F8TreeNode__root.0 
+  ; source ptr: 0x55a8ee846430, ln: 5
+  ; arg count: 3
+  (sig (args any  ; this
+      any  ; left
+      any  ; right
+      any  ; item
+    )
+  void)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; put_field  "left"
+    (  9 any)  ; get_loc0 
+    ( 10 any)  ; get_arg1 
+    ( 11 any)  ; put_field  "right"
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; get_arg2 
+    ( 18 any)  ; put_field  "item"
+    ( 23 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F0__root.1 
+  ; source ptr: 0x55a8ee820cf0, ln: 11
+  ; arg count: 0
+  (sig (args any  ; this
+      any  ; item
+      any  ; depth
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_field  "left"
+    (  8 any)  ; null 
+    (  9 any)  ; eq 
+    ( 10 any)  ; if_false8  8
+    ( 12 any)  ; get_loc0 
+    ( 13 any)  ; get_field  "item"
+    ( 18 any)  ; return 
+    ( 19 any)  ; get_loc0 
+    ( 20 any)  ; get_field  "item"
+    ( 25 any)  ; get_loc0 
+    ( 26 any)  ; get_field  "left"
+    ( 31 any)  ; get_field2  "itemCheck"
+    ( 36 any)  ; call_method  0
+    ( 39 any)  ; add 
+    ( 40 any)  ; get_loc0 
+    ( 41 any)  ; get_field  "right"
+    ( 46 any)  ; get_field2  "itemCheck"
+    ( 51 any)  ; call_method  0
+    ( 54 any)  ; sub 
+    ( 55 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F12bottomUpTree__root.2 
+  ; source ptr: 0x55a8ee855f90, ln: 16
+  ; arg count: 2
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 7
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg1 
+    (  1 any)  ; push_0 
+    (  2 any)  ; gt 
+    (  3 any)  ; if_false8  38
+    (  5 any)  ; get_var  "TreeNode"
+    ( 10 any)  ; dup 
+    ( 11 any)  ; get_var  "bottomUpTree"
+    ( 16 any)  ; push_2 
+    ( 17 any)  ; get_arg0 
+    ( 18 any)  ; mul 
+    ( 19 any)  ; push_1 
+    ( 20 any)  ; sub 
+    ( 21 any)  ; get_arg1 
+    ( 22 any)  ; push_1 
+    ( 23 any)  ; sub 
+    ( 24 any)  ; call2 
+    ( 25 any)  ; get_var  "bottomUpTree"
+    ( 30 any)  ; push_2 
+    ( 31 any)  ; get_arg0 
+    ( 32 any)  ; mul 
+    ( 33 any)  ; get_arg1 
+    ( 34 any)  ; push_1 
+    ( 35 any)  ; sub 
+    ( 36 any)  ; call2 
+    ( 37 any)  ; get_arg0 
+    ( 38 any)  ; call_constructor  3
+    ( 41 any)  ; return 
+    ( 42 any)  ; get_var  "TreeNode"
+    ( 47 any)  ; dup 
+    ( 48 any)  ; null 
+    ( 49 any)  ; null 
+    ( 50 any)  ; get_arg0 
+    ( 51 any)  ; call_constructor  3
+    ( 54 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

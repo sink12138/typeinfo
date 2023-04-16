@@ -1,0 +1,255 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "pad", 01000000
+    (  6 any)  ; check_define_var  "primes", 01000000
+    ( 12 any)  ; check_define_var  "sieve", 01000000
+    ( 18 any)  ; check_define_var  "result", 00000000
+    ( 24 any)  ; check_define_var  "sum", 00000000
+    ( 30 any)  ; check_define_var  "i", 00000000
+    ( 36 any)  ; check_define_var  "expected", 00000000
+    ( 42 any)  ; fclosure8  0
+    ( 44 any)  ; define_func  "pad", 00000000
+    ( 50 any)  ; fclosure8  1
+    ( 52 any)  ; define_func  "primes", 00000000
+    ( 58 any)  ; fclosure8  2
+    ( 60 any)  ; define_func  "sieve", 00000000
+    ( 66 any)  ; define_var  "result", 00000000
+    ( 72 any)  ; define_var  "sum", 00000000
+    ( 78 any)  ; define_var  "i", 00000000
+    ( 84 any)  ; define_var  "expected", 00000000
+    ( 90 any)  ; get_var  "sieve"
+    ( 95 any)  ; call0 
+    ( 96 any)  ; put_var  "result"
+    (101 any)  ; push_0 
+    (102 any)  ; put_var  "sum"
+    (107 any)  ; undefined 
+    (108 any)  ; put_loc0 
+    (109 any)  ; push_0 
+    (110 any)  ; put_var  "i"
+    (115 any)  ; get_var  "i"
+    (120 any)  ; get_var  "result"
+    (125 any)  ; get_length 
+    (126 any)  ; lt 
+    (127 any)  ; if_false8  40
+    (129 any)  ; get_var  "sum"
+    (134 any)  ; get_var  "result"
+    (139 any)  ; get_var  "i"
+    (144 any)  ; get_array_el 
+    (145 any)  ; add 
+    (146 any)  ; dup 
+    (147 any)  ; put_var  "sum"
+    (152 any)  ; put_loc0 
+    (153 any)  ; get_var  "i"
+    (158 any)  ; inc 
+    (159 any)  ; dup 
+    (160 any)  ; put_var  "i"
+    (165 any)  ; drop 
+    (166 any)  ; goto8  -52
+    (168 any)  ; push_const8  3
+    (170 any)  ; neg 
+    (171 any)  ; put_var  "expected"
+    (176 any)  ; undefined 
+    (177 any)  ; put_loc0 
+    (178 any)  ; get_var  "sum"
+    (183 any)  ; get_var  "expected"
+    (188 any)  ; neq 
+    (189 any)  ; if_false8  25
+    (191 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (196 any)  ; get_var  "expected"
+    (201 any)  ; add 
+    (202 any)  ; push_atom_value  ", but, got, "
+    (207 any)  ; add 
+    (208 any)  ; get_var  "sum"
+    (213 any)  ; add 
+    (214 any)  ; throw 
+    (215 any)  ; get_loc0 
+    (216 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 4
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+)
+
+(fn _JS_F3pad__root.0 
+  ; source ptr: 0x55a3cb42d230, ln: 6
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; n
+      any  ; width
+    )
+  any)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+    any  ; s: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; get_field2  "toString"
+    (  6 any)  ; call_method  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; get_loc0 
+    ( 11 any)  ; get_length 
+    ( 12 any)  ; get_arg1 
+    ( 13 any)  ; lt 
+    ( 14 any)  ; if_false8  11
+    ( 16 any)  ; push_atom_value  ", "
+    ( 21 any)  ; get_loc0 
+    ( 22 any)  ; add 
+    ( 23 any)  ; put_loc0 
+    ( 24 any)  ; goto8  -15
+    ( 26 any)  ; get_loc0 
+    ( 27 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6primes__root.1 
+  ; source ptr: 0x55a3cb4369a0, ln: 12
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; isPrime
+      any  ; n
+    )
+  void)  ; return
+  ; stack size: 6
+  (locs  ; var count: 5
+    any  ; i: normal
+    number  ; count: normal
+    number  ; m: normal
+    number  ; size: normal
+    any  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; put_loc1 
+    (  2 any)  ; push_i16  10000
+    (  5 any)  ; get_arg1 
+    (  6 any)  ; shl 
+    (  7 any)  ; set_loc2 
+    (  8 any)  ; push_i8  31
+    ( 10 any)  ; add 
+    ( 11 any)  ; push_5 
+    ( 12 any)  ; sar 
+    ( 13 any)  ; put_loc3 
+    ( 14 any)  ; push_0 
+    ( 15 any)  ; put_loc0 
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; get_loc3 
+    ( 18 any)  ; lt 
+    ( 19 any)  ; if_false8  10
+    ( 21 any)  ; get_arg0 
+    ( 22 any)  ; get_loc0 
+    ( 23 any)  ; push_const8  0
+    ( 25 any)  ; put_array_el 
+    ( 26 any)  ; inc_loc  0
+    ( 28 any)  ; goto8  -13
+    ( 30 any)  ; push_2 
+    ( 31 any)  ; put_loc0 
+    ( 32 any)  ; get_loc0 
+    ( 33 any)  ; get_loc2 
+    ( 34 any)  ; lt 
+    ( 35 any)  ; if_false8  55
+    ( 37 any)  ; get_arg0 
+    ( 38 any)  ; get_loc0 
+    ( 39 any)  ; push_5 
+    ( 40 any)  ; sar 
+    ( 41 any)  ; get_array_el 
+    ( 42 any)  ; push_1 
+    ( 43 any)  ; get_loc0 
+    ( 44 any)  ; push_i8  31
+    ( 46 any)  ; and 
+    ( 47 any)  ; shl 
+    ( 48 any)  ; and 
+    ( 49 any)  ; if_false8  37
+    ( 51 any)  ; get_loc0 
+    ( 52 any)  ; get_loc0 
+    ( 53 any)  ; add 
+    ( 54 any)  ; put_loc8  4
+    ( 56 any)  ; get_loc8  4
+    ( 58 any)  ; get_loc2 
+    ( 59 any)  ; lt 
+    ( 60 any)  ; if_false8  24
+    ( 62 any)  ; get_arg0 
+    ( 63 any)  ; get_loc8  4
+    ( 65 any)  ; push_5 
+    ( 66 any)  ; sar 
+    ( 67 any)  ; to_propkey2 
+    ( 68 any)  ; dup2 
+    ( 69 any)  ; get_array_el 
+    ( 70 any)  ; push_1 
+    ( 71 any)  ; get_loc8  4
+    ( 73 any)  ; push_i8  31
+    ( 75 any)  ; and 
+    ( 76 any)  ; shl 
+    ( 77 any)  ; not 
+    ( 78 any)  ; and 
+    ( 79 any)  ; put_array_el 
+    ( 80 any)  ; get_loc0 
+    ( 81 any)  ; add_loc  4
+    ( 83 any)  ; goto8  -28
+    ( 85 any)  ; inc_loc  1
+    ( 87 any)  ; inc_loc  0
+    ( 89 any)  ; goto8  -58
+    ( 91 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+
+(fn _JS_F5sieve__root.2 
+  ; source ptr: 0x55a3cb440070, ln: 25
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any[])  ; return
+  ; stack size: 4
+  (locs  ; var count: 2
+    number  ; i: normal
+    any[]  ; isPrime: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_4 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; push_4 
+    (  4 any)  ; lte 
+    (  5 any)  ; if_false8  34
+    (  7 any)  ; get_var  "Array"
+    ( 12 any)  ; dup 
+    ( 13 any)  ; push_i16  10000
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; shl 
+    ( 18 any)  ; push_i8  31
+    ( 20 any)  ; add 
+    ( 21 any)  ; push_5 
+    ( 22 any)  ; sar 
+    ( 23 any)  ; call_constructor  1
+    ( 26 any)  ; put_loc1 
+    ( 27 any)  ; get_var  "primes"
+    ( 32 any)  ; get_loc1 
+    ( 33 any)  ; get_loc0 
+    ( 34 any)  ; call2 
+    ( 35 any)  ; drop 
+    ( 36 any)  ; inc_loc  0
+    ( 38 any)  ; goto8  -37
+    ( 40 any)  ; get_loc1 
+    ( 41 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

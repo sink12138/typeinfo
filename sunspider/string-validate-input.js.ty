@@ -1,0 +1,409 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 28
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "endResult", 00000000
+    (  6 any)  ; check_define_var  "doTest", 01000000
+    ( 12 any)  ; check_define_var  "makeName", 01000000
+    ( 18 any)  ; check_define_var  "makeNumber", 01000000
+    ( 24 any)  ; check_define_var  "addResult", 01000000
+    ( 30 any)  ; define_var  "endResult", 00000000
+    ( 36 any)  ; fclosure8  3
+    ( 38 any)  ; define_func  "doTest", 00000000
+    ( 44 any)  ; fclosure8  4
+    ( 46 any)  ; define_func  "makeName", 00000000
+    ( 52 any)  ; fclosure8  5
+    ( 54 any)  ; define_func  "makeNumber", 00000000
+    ( 60 any)  ; fclosure8  6
+    ( 62 any)  ; define_func  "addResult", 00000000
+    ( 68 any)  ; get_var  "Array"
+    ( 73 any)  ; dup 
+    ( 74 any)  ; push_atom_value  "a"
+    ( 79 any)  ; push_atom_value  "b"
+    ( 84 any)  ; push_atom_value  "c"
+    ( 89 any)  ; push_atom_value  "d"
+    ( 94 any)  ; push_atom_value  "e"
+    ( 99 any)  ; push_atom_value  "f"
+    (104 any)  ; push_atom_value  "g"
+    (109 any)  ; push_atom_value  "h"
+    (114 any)  ; push_atom_value  "i"
+    (119 any)  ; push_atom_value  "j"
+    (124 any)  ; push_atom_value  "k"
+    (129 any)  ; push_atom_value  "l"
+    (134 any)  ; push_atom_value  "m"
+    (139 any)  ; push_atom_value  "n"
+    (144 any)  ; push_atom_value  "o"
+    (149 any)  ; push_atom_value  "p"
+    (154 any)  ; push_atom_value  "q"
+    (159 any)  ; push_atom_value  "r"
+    (164 any)  ; push_atom_value  "s"
+    (169 any)  ; push_atom_value  "t"
+    (174 any)  ; push_atom_value  "u"
+    (179 any)  ; push_atom_value  "v"
+    (184 any)  ; push_atom_value  "w"
+    (189 any)  ; push_atom_value  "x"
+    (194 any)  ; push_atom_value  "y"
+    (199 any)  ; push_atom_value  "z"
+    (204 any)  ; call_constructor  26
+    (207 any)  ; dup 
+    (208 any)  ; put_var  "letters"
+    (213 any)  ; put_loc0 
+    (214 any)  ; get_var  "Array"
+    (219 any)  ; dup 
+    (220 any)  ; push_1 
+    (221 any)  ; push_2 
+    (222 any)  ; push_3 
+    (223 any)  ; push_4 
+    (224 any)  ; push_5 
+    (225 any)  ; push_6 
+    (226 any)  ; push_7 
+    (227 any)  ; push_i8  8
+    (229 any)  ; push_i8  9
+    (231 any)  ; push_i8  10
+    (233 any)  ; push_i8  11
+    (235 any)  ; push_i8  12
+    (237 any)  ; push_i8  13
+    (239 any)  ; push_i8  14
+    (241 any)  ; push_i8  15
+    (243 any)  ; push_i8  16
+    (245 any)  ; push_i8  17
+    (247 any)  ; push_i8  18
+    (249 any)  ; push_i8  19
+    (251 any)  ; push_i8  20
+    (253 any)  ; push_i8  21
+    (255 any)  ; push_i8  22
+    (257 any)  ; push_i8  23
+    (259 any)  ; push_i8  24
+    (261 any)  ; push_i8  25
+    (263 any)  ; push_i8  26
+    (265 any)  ; call_constructor  26
+    (268 any)  ; dup 
+    (269 any)  ; put_var  "numbers"
+    (274 any)  ; put_loc0 
+    (275 any)  ; get_var  "Array"
+    (280 any)  ; dup 
+    (281 any)  ; push_atom_value  "FF"
+    (286 any)  ; push_atom_value  "CC"
+    (291 any)  ; push_const8  0
+    (293 any)  ; push_const8  1
+    (295 any)  ; push_const8  2
+    (297 any)  ; push_atom_value  "00"
+    (302 any)  ; call_constructor  6
+    (305 any)  ; dup 
+    (306 any)  ; put_var  "colors"
+    (311 any)  ; put_loc0 
+    (312 any)  ; get_var  "doTest"
+    (317 any)  ; call0 
+    (318 any)  ; set_loc0 
+    (319 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 7
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+)
+
+(fn _JS_F6doTest__root.3 
+  ; source ptr: 0x5573626c51b0, ln: 7
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  void)  ; return
+  ; stack size: 3
+  (locs  ; var count: 8
+    number  ; k: normal
+    RegExp  ; pattern: normal
+    string  ; r: normal
+    number  ; s: normal
+    boolean  ; zipGood: normal
+    string  ; zip: normal
+    number  ; i: normal
+    string  ; ch: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_empty_string 
+    (  1 any)  ; dup 
+    (  2 any)  ; put_var  "endResult"
+    (  7 any)  ; drop 
+    (  8 any)  ; push_0 
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; get_loc0 
+    ( 11 any)  ; push_i16  4000
+    ( 14 any)  ; lt 
+    ( 15 any)  ; if_false8  125
+    ( 17 any)  ; get_var  "makeName"
+    ( 22 any)  ; push_6 
+    ( 23 any)  ; call1 
+    ( 24 any)  ; dup 
+    ( 25 any)  ; put_var  "username"
+    ( 30 any)  ; drop 
+    ( 31 any)  ; get_loc0 
+    ( 32 any)  ; push_2 
+    ( 33 any)  ; mod 
+    ( 34 any)  ; if_false8  20
+    ( 36 any)  ; get_var  "username"
+    ( 41 any)  ; push_atom_value  "@mac.com"
+    ( 46 any)  ; add 
+    ( 47 any)  ; dup 
+    ( 48 any)  ; put_var  "email"
+    ( 53 any)  ; goto8  18
+    ( 55 any)  ; get_var  "username"
+    ( 60 any)  ; push_atom_value  "(at)mac.com"
+    ( 65 any)  ; add 
+    ( 66 any)  ; dup 
+    ( 67 any)  ; put_var  "email"
+    ( 72 any)  ; drop 
+    ( 73 any)  ; push_const8  0
+    ( 75 any)  ; push_const8  1
+    ( 77 any)  ; regexp 
+    ( 78 any)  ; set_loc1 
+    ( 79 any)  ; get_field2  "test"
+    ( 84 any)  ; get_var  "email"
+    ( 89 any)  ; call_method  1
+    ( 92 any)  ; if_false8  23
+    ( 94 any)  ; get_var  "email"
+    ( 99 any)  ; push_atom_value  ", appears, to, be, a, valid, email, address."
+    (104 any)  ; add 
+    (105 any)  ; put_loc2 
+    (106 any)  ; get_var  "addResult"
+    (111 any)  ; get_loc2 
+    (112 any)  ; call1 
+    (113 any)  ; drop 
+    (114 any)  ; goto8  21
+    (116 any)  ; get_var  "email"
+    (121 any)  ; push_atom_value  ", does, NOT, appear, to, be, a, valid, email, address."
+    (126 any)  ; add 
+    (127 any)  ; put_loc2 
+    (128 any)  ; get_var  "addResult"
+    (133 any)  ; get_loc2 
+    (134 any)  ; call1 
+    (135 any)  ; drop 
+    (136 any)  ; inc_loc  0
+    (138 any)  ; goto16  -129
+    (141 any)  ; push_0 
+    (142 any)  ; put_loc3 
+    (143 any)  ; get_loc3 
+    (144 any)  ; push_i16  4000
+    (147 any)  ; lt 
+    (148 any)  ; if_false  168
+    (153 any)  ; push_true 
+    (154 any)  ; put_loc8  4
+    (156 any)  ; get_var  "makeNumber"
+    (161 any)  ; push_4 
+    (162 any)  ; call1 
+    (163 any)  ; put_loc8  5
+    (165 any)  ; get_loc3 
+    (166 any)  ; push_2 
+    (167 any)  ; mod 
+    (168 any)  ; if_false8  13
+    (170 any)  ; get_loc8  5
+    (172 any)  ; push_atom_value  "xyz"
+    (177 any)  ; add 
+    (178 any)  ; set_loc8  5
+    (180 any)  ; goto8  15
+    (182 any)  ; get_loc8  5
+    (184 any)  ; get_field2  "concat"
+    (189 any)  ; push_const8  2
+    (191 any)  ; call_method  1
+    (194 any)  ; set_loc8  5
+    (196 any)  ; drop 
+    (197 any)  ; push_0 
+    (198 any)  ; put_loc8  6
+    (200 any)  ; get_loc8  6
+    (202 any)  ; get_loc8  5
+    (204 any)  ; get_length 
+    (205 any)  ; lt 
+    (206 any)  ; if_false8  53
+    (208 any)  ; get_loc8  5
+    (210 any)  ; get_field2  "charAt"
+    (215 any)  ; get_loc8  6
+    (217 any)  ; call_method  1
+    (220 any)  ; set_loc8  7
+    (222 any)  ; push_const8  3
+    (224 any)  ; lt 
+    (225 any)  ; dup 
+    (226 any)  ; if_true8  7
+    (228 any)  ; drop 
+    (229 any)  ; get_loc8  7
+    (231 any)  ; push_const8  4
+    (233 any)  ; gt 
+    (234 any)  ; if_false8  21
+    (236 any)  ; push_false 
+    (237 any)  ; put_loc8  4
+    (239 any)  ; get_loc8  5
+    (241 any)  ; push_atom_value  ", contains, letters."
+    (246 any)  ; add 
+    (247 any)  ; put_loc2 
+    (248 any)  ; get_var  "addResult"
+    (253 any)  ; get_loc2 
+    (254 any)  ; call1 
+    (255 any)  ; drop 
+    (256 any)  ; inc_loc  6
+    (258 any)  ; goto8  -59
+    (260 any)  ; get_loc8  4
+    (262 any)  ; if_false8  28
+    (264 any)  ; get_loc8  5
+    (266 any)  ; get_length 
+    (267 any)  ; push_5 
+    (268 any)  ; gt 
+    (269 any)  ; if_false8  21
+    (271 any)  ; push_false 
+    (272 any)  ; put_loc8  4
+    (274 any)  ; get_loc8  5
+    (276 any)  ; push_atom_value  ", is, longer, than, five, characters."
+    (281 any)  ; add 
+    (282 any)  ; put_loc2 
+    (283 any)  ; get_var  "addResult"
+    (288 any)  ; get_loc2 
+    (289 any)  ; call1 
+    (290 any)  ; drop 
+    (291 any)  ; get_loc8  4
+    (293 any)  ; if_false8  18
+    (295 any)  ; get_loc8  5
+    (297 any)  ; push_atom_value  ", appears, to, be, a, valid, ZIP, code."
+    (302 any)  ; add 
+    (303 any)  ; put_loc2 
+    (304 any)  ; get_var  "addResult"
+    (309 any)  ; get_loc2 
+    (310 any)  ; call1 
+    (311 any)  ; drop 
+    (312 any)  ; inc_loc  3
+    (314 any)  ; goto16  -172
+    (317 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 5
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+)
+
+(fn _JS_F8makeName__root.4 
+  ; source ptr: 0x5573626c5df0, ln: 62
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  string)  ; return
+  ; stack size: 5
+  (locs  ; var count: 3
+    string  ; tmp: normal
+    number  ; i: normal
+    number  ; l: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_empty_string 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; push_0 
+    (  3 any)  ; put_loc1 
+    (  4 any)  ; get_loc1 
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; lt 
+    (  7 any)  ; if_false8  45
+    (  9 any)  ; get_var  "Math"
+    ( 14 any)  ; get_field2  "floor"
+    ( 19 any)  ; push_i8  26
+    ( 21 any)  ; get_var  "Math"
+    ( 26 any)  ; get_field2  "random"
+    ( 31 any)  ; call_method  0
+    ( 34 any)  ; mul 
+    ( 35 any)  ; call_method  1
+    ( 38 any)  ; put_loc2 
+    ( 39 any)  ; get_loc0 
+    ( 40 any)  ; get_var  "letters"
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; add 
+    ( 48 any)  ; put_loc0 
+    ( 49 any)  ; inc_loc  1
+    ( 51 any)  ; goto8  -48
+    ( 53 any)  ; get_loc0 
+    ( 54 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F10makeNumber__root.5 
+  ; source ptr: 0x5573626c6220, ln: 73
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  string)  ; return
+  ; stack size: 5
+  (locs  ; var count: 3
+    string  ; tmp: normal
+    number  ; i: normal
+    number  ; l: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_empty_string 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; push_0 
+    (  3 any)  ; put_loc1 
+    (  4 any)  ; get_loc1 
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; lt 
+    (  7 any)  ; if_false8  46
+    (  9 any)  ; get_var  "Math"
+    ( 14 any)  ; get_field2  "floor"
+    ( 19 any)  ; push_i8  9
+    ( 21 any)  ; get_var  "Math"
+    ( 26 any)  ; get_field2  "random"
+    ( 31 any)  ; call_method  0
+    ( 34 any)  ; mul 
+    ( 35 any)  ; call_method  1
+    ( 38 any)  ; put_loc2 
+    ( 39 any)  ; get_loc0 
+    ( 40 any)  ; get_field2  "concat"
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; call_method  1
+    ( 49 any)  ; put_loc0 
+    ( 50 any)  ; inc_loc  1
+    ( 52 any)  ; goto8  -49
+    ( 54 any)  ; get_loc0 
+    ( 55 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F9addResult__root.6 
+  ; source ptr: 0x5573626c59f0, ln: 84
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; r
+    )
+  void)  ; return
+  ; stack size: 3
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "endResult"
+    (  5 any)  ; push_atom_value  "\n"
+    ( 10 any)  ; get_arg0 
+    ( 11 any)  ; add 
+    ( 12 any)  ; add 
+    ( 13 any)  ; dup 
+    ( 14 any)  ; put_var  "endResult"
+    ( 19 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

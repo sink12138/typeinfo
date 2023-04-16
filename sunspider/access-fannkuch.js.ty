@@ -1,0 +1,310 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "fannkuch", 01000000
+    (  6 any)  ; check_define_var  "n", 00000000
+    ( 12 any)  ; check_define_var  "ret", 00000000
+    ( 18 any)  ; check_define_var  "expected", 00000000
+    ( 24 any)  ; fclosure8  0
+    ( 26 any)  ; define_func  "fannkuch", 00000000
+    ( 32 any)  ; define_var  "n", 00000000
+    ( 38 any)  ; define_var  "ret", 00000000
+    ( 44 any)  ; define_var  "expected", 00000000
+    ( 50 any)  ; push_i8  8
+    ( 52 any)  ; put_var  "n"
+    ( 57 any)  ; get_var  "fannkuch"
+    ( 62 any)  ; get_var  "n"
+    ( 67 any)  ; call1 
+    ( 68 any)  ; put_var  "ret"
+    ( 73 any)  ; push_i8  22
+    ( 75 any)  ; put_var  "expected"
+    ( 80 any)  ; undefined 
+    ( 81 any)  ; put_loc0 
+    ( 82 any)  ; get_var  "ret"
+    ( 87 any)  ; get_var  "expected"
+    ( 92 any)  ; neq 
+    ( 93 any)  ; if_false8  25
+    ( 95 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (100 any)  ; get_var  "expected"
+    (105 any)  ; add 
+    (106 any)  ; push_atom_value  ", but, got, "
+    (111 any)  ; add 
+    (112 any)  ; get_var  "ret"
+    (117 any)  ; add 
+    (118 any)  ; throw 
+    (119 any)  ; get_loc0 
+    (120 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+
+(fn _JS_F8fannkuch__root.0 
+  ; source ptr: 0x55ecbfff2350, ln: 5
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  number)  ; return
+  ; stack size: 5
+  (locs  ; var count: 16
+    number  ; check: normal
+    any[]  ; perm: normal
+    any[]  ; perm1: normal
+    any[]  ; count: normal
+    any[]  ; maxPerm: normal
+    number  ; maxFlipsCount: normal
+    number  ; m: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    any  ; r: normal
+    string  ; s: normal
+    number  ; flipsCount: normal
+    any  ; k: normal
+    number  ; k2: normal
+    any  ; temp: normal
+    any  ; perm0: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_var  "Array"
+    (  7 any)  ; get_arg0 
+    (  8 any)  ; call1 
+    (  9 any)  ; put_loc1 
+    ( 10 any)  ; get_var  "Array"
+    ( 15 any)  ; get_arg0 
+    ( 16 any)  ; call1 
+    ( 17 any)  ; put_loc2 
+    ( 18 any)  ; get_var  "Array"
+    ( 23 any)  ; get_arg0 
+    ( 24 any)  ; call1 
+    ( 25 any)  ; put_loc3 
+    ( 26 any)  ; get_var  "Array"
+    ( 31 any)  ; get_arg0 
+    ( 32 any)  ; call1 
+    ( 33 any)  ; put_loc8  4
+    ( 35 any)  ; push_0 
+    ( 36 any)  ; put_loc8  5
+    ( 38 any)  ; get_arg0 
+    ( 39 any)  ; push_1 
+    ( 40 any)  ; sub 
+    ( 41 any)  ; put_loc8  6
+    ( 43 any)  ; push_0 
+    ( 44 any)  ; put_loc8  7
+    ( 46 any)  ; get_loc8  7
+    ( 48 any)  ; get_arg0 
+    ( 49 any)  ; lt 
+    ( 50 any)  ; if_false8  11
+    ( 52 any)  ; get_loc2 
+    ( 53 any)  ; get_loc8  7
+    ( 55 any)  ; get_loc8  7
+    ( 57 any)  ; put_array_el 
+    ( 58 any)  ; inc_loc  7
+    ( 60 any)  ; goto8  -15
+    ( 62 any)  ; get_arg0 
+    ( 63 any)  ; put_loc8  8
+    ( 65 any)  ; get_loc0 
+    ( 66 any)  ; push_i8  30
+    ( 68 any)  ; lt 
+    ( 69 any)  ; if_false8  38
+    ( 71 any)  ; push_empty_string 
+    ( 72 any)  ; put_loc8  9
+    ( 74 any)  ; push_0 
+    ( 75 any)  ; put_loc8  7
+    ( 77 any)  ; get_loc8  7
+    ( 79 any)  ; get_arg0 
+    ( 80 any)  ; lt 
+    ( 81 any)  ; if_false8  24
+    ( 83 any)  ; get_loc8  9
+    ( 85 any)  ; get_loc2 
+    ( 86 any)  ; get_loc8  7
+    ( 88 any)  ; get_array_el 
+    ( 89 any)  ; push_1 
+    ( 90 any)  ; add 
+    ( 91 any)  ; get_field2  "toString"
+    ( 96 any)  ; call_method  0
+    ( 99 any)  ; add 
+    (100 any)  ; put_loc8  9
+    (102 any)  ; inc_loc  7
+    (104 any)  ; goto8  -28
+    (106 any)  ; inc_loc  0
+    (108 any)  ; get_loc8  8
+    (110 any)  ; push_1 
+    (111 any)  ; neq 
+    (112 any)  ; if_false8  13
+    (114 any)  ; get_loc3 
+    (115 any)  ; get_loc8  8
+    (117 any)  ; push_1 
+    (118 any)  ; sub 
+    (119 any)  ; get_loc8  8
+    (121 any)  ; put_array_el 
+    (122 any)  ; dec_loc  8
+    (124 any)  ; goto8  -17
+    (126 any)  ; get_loc2 
+    (127 any)  ; push_0 
+    (128 any)  ; get_array_el 
+    (129 any)  ; push_0 
+    (130 any)  ; eq 
+    (131 any)  ; dup 
+    (132 any)  ; if_true8  9
+    (134 any)  ; drop 
+    (135 any)  ; get_loc2 
+    (136 any)  ; get_loc8  6
+    (138 any)  ; get_array_el 
+    (139 any)  ; get_loc8  6
+    (141 any)  ; eq 
+    (142 any)  ; lnot 
+    (143 any)  ; if_false8  123
+    (145 any)  ; push_0 
+    (146 any)  ; put_loc8  7
+    (148 any)  ; get_loc8  7
+    (150 any)  ; get_arg0 
+    (151 any)  ; lt 
+    (152 any)  ; if_false8  14
+    (154 any)  ; get_loc1 
+    (155 any)  ; get_loc8  7
+    (157 any)  ; to_propkey2 
+    (158 any)  ; get_loc2 
+    (159 any)  ; get_loc8  7
+    (161 any)  ; get_array_el 
+    (162 any)  ; put_array_el 
+    (163 any)  ; inc_loc  7
+    (165 any)  ; goto8  -18
+    (167 any)  ; push_0 
+    (168 any)  ; put_loc8  10
+    (170 any)  ; get_loc1 
+    (171 any)  ; push_0 
+    (172 any)  ; get_array_el 
+    (173 any)  ; set_loc8  11
+    (175 any)  ; push_0 
+    (176 any)  ; eq 
+    (177 any)  ; lnot 
+    (178 any)  ; if_false8  54
+    (180 any)  ; get_loc8  11
+    (182 any)  ; push_1 
+    (183 any)  ; add 
+    (184 any)  ; push_1 
+    (185 any)  ; sar 
+    (186 any)  ; put_loc8  12
+    (188 any)  ; push_0 
+    (189 any)  ; put_loc8  7
+    (191 any)  ; get_loc8  7
+    (193 any)  ; get_loc8  12
+    (195 any)  ; lt 
+    (196 any)  ; if_false8  32
+    (198 any)  ; get_loc1 
+    (199 any)  ; get_loc8  7
+    (201 any)  ; get_array_el 
+    (202 any)  ; put_loc8  13
+    (204 any)  ; get_loc1 
+    (205 any)  ; get_loc8  7
+    (207 any)  ; to_propkey2 
+    (208 any)  ; get_loc1 
+    (209 any)  ; get_loc8  11
+    (211 any)  ; get_loc8  7
+    (213 any)  ; sub 
+    (214 any)  ; get_array_el 
+    (215 any)  ; put_array_el 
+    (216 any)  ; get_loc1 
+    (217 any)  ; get_loc8  11
+    (219 any)  ; get_loc8  7
+    (221 any)  ; sub 
+    (222 any)  ; get_loc8  13
+    (224 any)  ; put_array_el 
+    (225 any)  ; inc_loc  7
+    (227 any)  ; goto8  -37
+    (229 any)  ; inc_loc  10
+    (231 any)  ; goto8  -62
+    (233 any)  ; get_loc8  10
+    (235 any)  ; get_loc8  5
+    (237 any)  ; gt 
+    (238 any)  ; if_false8  28
+    (240 any)  ; get_loc8  10
+    (242 any)  ; put_loc8  5
+    (244 any)  ; push_0 
+    (245 any)  ; put_loc8  7
+    (247 any)  ; get_loc8  7
+    (249 any)  ; get_arg0 
+    (250 any)  ; lt 
+    (251 any)  ; if_false8  15
+    (253 any)  ; get_loc8  4
+    (255 any)  ; get_loc8  7
+    (257 any)  ; to_propkey2 
+    (258 any)  ; get_loc2 
+    (259 any)  ; get_loc8  7
+    (261 any)  ; get_array_el 
+    (262 any)  ; put_array_el 
+    (263 any)  ; inc_loc  7
+    (265 any)  ; goto8  -19
+    (267 any)  ; get_loc8  8
+    (269 any)  ; get_arg0 
+    (270 any)  ; eq 
+    (271 any)  ; if_false8  4
+    (273 any)  ; get_loc8  5
+    (275 any)  ; return 
+    (276 any)  ; get_loc2 
+    (277 any)  ; push_0 
+    (278 any)  ; get_array_el 
+    (279 any)  ; put_loc8  14
+    (281 any)  ; push_0 
+    (282 any)  ; put_loc8  7
+    (284 any)  ; get_loc8  7
+    (286 any)  ; get_loc8  8
+    (288 any)  ; lt 
+    (289 any)  ; if_false8  22
+    (291 any)  ; get_loc8  7
+    (293 any)  ; push_1 
+    (294 any)  ; add 
+    (295 any)  ; put_loc8  15
+    (297 any)  ; get_loc2 
+    (298 any)  ; get_loc8  7
+    (300 any)  ; to_propkey2 
+    (301 any)  ; get_loc2 
+    (302 any)  ; get_loc8  15
+    (304 any)  ; get_array_el 
+    (305 any)  ; put_array_el 
+    (306 any)  ; get_loc8  15
+    (308 any)  ; put_loc8  7
+    (310 any)  ; goto8  -27
+    (312 any)  ; get_loc2 
+    (313 any)  ; get_loc8  8
+    (315 any)  ; get_loc8  14
+    (317 any)  ; put_array_el 
+    (318 any)  ; get_loc3 
+    (319 any)  ; get_loc8  8
+    (321 any)  ; to_propkey2 
+    (322 any)  ; get_loc3 
+    (323 any)  ; get_loc8  8
+    (325 any)  ; get_array_el 
+    (326 any)  ; push_1 
+    (327 any)  ; sub 
+    (328 any)  ; put_array_el 
+    (329 any)  ; get_loc3 
+    (330 any)  ; get_loc8  8
+    (332 any)  ; get_array_el 
+    (333 any)  ; push_0 
+    (334 any)  ; gt 
+    (335 any)  ; if_true8  5
+    (337 any)  ; inc_loc  8
+    (339 any)  ; goto8  -73
+    (341 any)  ; goto16  -277
+  )
+  ; Constant pool
+  ; length: 0
+)
+

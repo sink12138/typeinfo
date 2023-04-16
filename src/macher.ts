@@ -62,7 +62,7 @@ export class Matcher {
     this.decoder.decodeBytecode(this.fileName.concat(".txt"));
   }
 
-  init(fileName:string): void {
+  init(fileName: string): void {
     this.fileName = fileName;
     this.getChecker();
     this.getDecoder();
@@ -72,16 +72,15 @@ export class Matcher {
   match(): void {
     let cfns = this.checker.fns;
     let dfns = this.decoder.fns;
-    for (const dfn of dfns) console.log(dfn.rootmap);
     console.log("----------------------CHECKER----------------------");
-    fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 4));
+    fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 2));
     console.log("----------------------DECODER----------------------");
-    fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 4));
+    fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 2));
     console.log("----------------------MATHCER----------------------");
     let i = 0;
-    let rootmap:Map<number, string> = new Map();
+    let rootmap: Map<number, string> = new Map();
     for (const dfn of dfns) {
-      let fnType:FnType = {
+      let fnType: FnType = {
         name: dfn.name,
         path: dfn.path,
         root: -2,
@@ -180,7 +179,7 @@ export class Matcher {
   }
 
   generateByte(dFn: DecoderFn, cFn?: CheckerFn): ByteInfo[] {
-    let types:ByteInfo[] = [];
+    let types: ByteInfo[] = [];
     for (const byte of dFn.bytecodes) {
       types.push({
         offset: byte.offset,
@@ -211,7 +210,7 @@ export class Matcher {
     return types;
   }
 
-  matchByteLoc():void {}
-  matchByteArg():void {}
-  matchByteRet():void {}
+  matchByteLoc(): void { }
+  matchByteArg(): void { }
+  matchByteRet(): void { }
 }

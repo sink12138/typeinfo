@@ -1,9 +1,10 @@
 "use strict";
 exports.__esModule = true;
+exports.printTypeFile = void 0;
 var fs = require("fs");
 var macher_1 = require("./macher");
 //typefile dumper
-function printTypeFile(fileName) {
+function printTypeFile(fileName, out) {
     var output = "";
     var matcher = new macher_1.Matcher();
     matcher.init(fileName);
@@ -66,4 +67,4 @@ function printTypeFile(fileName) {
     }
     fs.writeFileSync(fileName + ".js.ty", output);
 }
-printTypeFile(process.argv[2]);
+exports.printTypeFile = printTypeFile;

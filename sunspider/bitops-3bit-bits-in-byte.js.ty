@@ -10,28 +10,28 @@
   )
   (bytecodes 
     (  0 any)  ; check_define_var  "result", 00000000
-    (  6 any)  ; check_define_var  "bitsinbyte", 01000000
+    (  6 any)  ; check_define_var  "fast3bitlookup", 01000000
     ( 12 any)  ; check_define_var  "TimeFunc", 01000000
     ( 18 any)  ; check_define_var  "expected", 00000000
     ( 24 any)  ; define_var  "result", 00000000
     ( 30 any)  ; fclosure8  0
-    ( 32 any)  ; define_func  "bitsinbyte", 00000000
+    ( 32 any)  ; define_func  "fast3bitlookup", 00000000
     ( 38 any)  ; fclosure8  1
     ( 40 any)  ; define_func  "TimeFunc", 00000000
     ( 46 any)  ; define_var  "expected", 00000000
     ( 52 any)  ; push_0 
     ( 53 any)  ; put_var  "result"
     ( 58 any)  ; get_var  "TimeFunc"
-    ( 63 any)  ; get_var  "bitsinbyte"
+    ( 63 any)  ; get_var  "fast3bitlookup"
     ( 68 any)  ; call1 
     ( 69 any)  ; dup 
-    ( 70 any)  ; put_var  "result"
+    ( 70 any)  ; put_var  "sum"
     ( 75 any)  ; put_loc0 
-    ( 76 any)  ; push_i32  358400
+    ( 76 any)  ; push_i32  512000
     ( 81 any)  ; put_var  "expected"
     ( 86 any)  ; undefined 
     ( 87 any)  ; put_loc0 
-    ( 88 any)  ; get_var  "result"
+    ( 88 any)  ; get_var  "sum"
     ( 93 any)  ; get_var  "expected"
     ( 98 any)  ; neq 
     ( 99 any)  ; if_false8  25
@@ -40,7 +40,7 @@
     (111 any)  ; add 
     (112 any)  ; push_atom_value  ", but, got, "
     (117 any)  ; add 
-    (118 any)  ; get_var  "result"
+    (118 any)  ; get_var  "sum"
     (123 any)  ; add 
     (124 any)  ; throw 
     (125 any)  ; get_loc0 
@@ -52,46 +52,61 @@
     ;   1: 
 )
 
-(fn _JS_F10bitsinbyte__root.0 
-  ; source ptr: 0x55f974a220f0, ln: 8
+(fn _JS_F14fast3bitlookup__root.0 
+  ; source ptr: 0x562301450b70, ln: 7
   ; arg count: 1
   (sig (args any  ; this
       any  ; b
     )
-  number)  ; return
-  ; stack size: 2
+  any)  ; return
+  ; stack size: 5
   (locs  ; var count: 2
-    number  ; m: normal
-    number  ; c: normal
+    any  ; c: normal
+    number  ; bi3b: normal
   )
   (bytecodes 
-    (  0 any)  ; push_1 
-    (  1 any)  ; put_loc0 
-    (  2 any)  ; push_0 
-    (  3 any)  ; put_loc1 
-    (  4 any)  ; get_loc0 
-    (  5 any)  ; push_i16  256
-    (  8 any)  ; lt 
-    (  9 any)  ; if_false8  14
-    ( 11 any)  ; get_arg0 
-    ( 12 any)  ; get_loc0 
+    (  0 any)  ; push_i32  59796
+    (  5 any)  ; put_loc1 
+    (  6 any)  ; push_3 
+    (  7 any)  ; get_loc1 
+    (  8 any)  ; get_arg0 
+    (  9 any)  ; push_1 
+    ( 10 any)  ; shl 
+    ( 11 any)  ; push_i8  14
     ( 13 any)  ; and 
-    ( 14 any)  ; if_false8  3
-    ( 16 any)  ; inc_loc  1
-    ( 18 any)  ; get_loc0 
-    ( 19 any)  ; push_1 
-    ( 20 any)  ; shl 
-    ( 21 any)  ; put_loc0 
-    ( 22 any)  ; goto8  -19
-    ( 24 any)  ; get_loc1 
-    ( 25 any)  ; return 
+    ( 14 any)  ; sar 
+    ( 15 any)  ; and 
+    ( 16 any)  ; set_loc0 
+    ( 17 any)  ; push_3 
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; get_arg0 
+    ( 20 any)  ; push_2 
+    ( 21 any)  ; sar 
+    ( 22 any)  ; push_i8  14
+    ( 24 any)  ; and 
+    ( 25 any)  ; sar 
+    ( 26 any)  ; and 
+    ( 27 any)  ; add 
+    ( 28 any)  ; set_loc0 
+    ( 29 any)  ; push_3 
+    ( 30 any)  ; get_loc1 
+    ( 31 any)  ; get_arg0 
+    ( 32 any)  ; push_5 
+    ( 33 any)  ; sar 
+    ( 34 any)  ; push_6 
+    ( 35 any)  ; and 
+    ( 36 any)  ; sar 
+    ( 37 any)  ; and 
+    ( 38 any)  ; add 
+    ( 39 any)  ; set_loc0 
+    ( 40 any)  ; return 
   )
   ; Constant pool
   ; length: 0
 )
 
 (fn _JS_F8TimeFunc__root.1 
-  ; source ptr: 0x55f974a2e590, ln: 17
+  ; source ptr: 0x56230144b700, ln: 28
   ; arg count: 1
   (sig (args any  ; this
       any  ; func
@@ -112,7 +127,7 @@
     (  2 any)  ; push_0 
     (  3 any)  ; put_loc0 
     (  4 any)  ; get_loc0 
-    (  5 any)  ; push_i16  350
+    (  5 any)  ; push_i16  500
     (  8 any)  ; lt 
     (  9 any)  ; if_false8  24
     ( 11 any)  ; push_0 

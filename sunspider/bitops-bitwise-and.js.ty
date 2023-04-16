@@ -1,0 +1,66 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "i", 00000000
+    (  6 any)  ; check_define_var  "result", 00000000
+    ( 12 any)  ; check_define_var  "expected", 00000000
+    ( 18 any)  ; define_var  "i", 00000000
+    ( 24 any)  ; define_var  "result", 00000000
+    ( 30 any)  ; define_var  "expected", 00000000
+    ( 36 any)  ; push_const8  0
+    ( 38 any)  ; dup 
+    ( 39 any)  ; put_var  "bitwiseAndValue"
+    ( 44 any)  ; put_loc0 
+    ( 45 any)  ; undefined 
+    ( 46 any)  ; put_loc0 
+    ( 47 any)  ; push_0 
+    ( 48 any)  ; put_var  "i"
+    ( 53 any)  ; get_var  "i"
+    ( 58 any)  ; push_i32  600000
+    ( 63 any)  ; lt 
+    ( 64 any)  ; if_false8  33
+    ( 66 any)  ; get_var  "bitwiseAndValue"
+    ( 71 any)  ; get_var  "i"
+    ( 76 any)  ; and 
+    ( 77 any)  ; dup 
+    ( 78 any)  ; put_var  "bitwiseAndValue"
+    ( 83 any)  ; put_loc0 
+    ( 84 any)  ; get_var  "i"
+    ( 89 any)  ; post_inc 
+    ( 90 any)  ; put_var  "i"
+    ( 95 any)  ; drop 
+    ( 96 any)  ; goto8  -44
+    ( 98 any)  ; get_var  "bitwiseAndValue"
+    (103 any)  ; put_var  "result"
+    (108 any)  ; push_0 
+    (109 any)  ; put_var  "expected"
+    (114 any)  ; undefined 
+    (115 any)  ; put_loc0 
+    (116 any)  ; get_var  "result"
+    (121 any)  ; get_var  "expected"
+    (126 any)  ; neq 
+    (127 any)  ; if_false8  25
+    (129 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (134 any)  ; get_var  "expected"
+    (139 any)  ; add 
+    (140 any)  ; push_atom_value  ", but, got, "
+    (145 any)  ; add 
+    (146 any)  ; get_var  "result"
+    (151 any)  ; add 
+    (152 any)  ; throw 
+    (153 any)  ; get_loc0 
+    (154 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+

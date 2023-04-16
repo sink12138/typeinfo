@@ -1,0 +1,369 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "A", 01000000
+    (  6 any)  ; check_define_var  "Au", 01000000
+    ( 12 any)  ; check_define_var  "Atu", 01000000
+    ( 18 any)  ; check_define_var  "AtAu", 01000000
+    ( 24 any)  ; check_define_var  "spectralnorm", 01000000
+    ( 30 any)  ; check_define_var  "total", 00000000
+    ( 36 any)  ; check_define_var  "i", 00000000
+    ( 42 any)  ; check_define_var  "expected", 00000000
+    ( 48 any)  ; fclosure8  0
+    ( 50 any)  ; define_func  "A", 00000000
+    ( 56 any)  ; fclosure8  1
+    ( 58 any)  ; define_func  "Au", 00000000
+    ( 64 any)  ; fclosure8  2
+    ( 66 any)  ; define_func  "Atu", 00000000
+    ( 72 any)  ; fclosure8  3
+    ( 74 any)  ; define_func  "AtAu", 00000000
+    ( 80 any)  ; fclosure8  4
+    ( 82 any)  ; define_func  "spectralnorm", 00000000
+    ( 88 any)  ; define_var  "total", 00000000
+    ( 94 any)  ; define_var  "i", 00000000
+    (100 any)  ; define_var  "expected", 00000000
+    (106 any)  ; push_0 
+    (107 any)  ; put_var  "total"
+    (112 any)  ; undefined 
+    (113 any)  ; put_loc0 
+    (114 any)  ; push_6 
+    (115 any)  ; put_var  "i"
+    (120 any)  ; get_var  "i"
+    (125 any)  ; push_i8  48
+    (127 any)  ; lte 
+    (128 any)  ; if_false8  41
+    (130 any)  ; get_var  "total"
+    (135 any)  ; get_var  "spectralnorm"
+    (140 any)  ; get_var  "i"
+    (145 any)  ; call1 
+    (146 any)  ; add 
+    (147 any)  ; dup 
+    (148 any)  ; put_var  "total"
+    (153 any)  ; put_loc0 
+    (154 any)  ; get_var  "i"
+    (159 any)  ; push_2 
+    (160 any)  ; mul 
+    (161 any)  ; dup 
+    (162 any)  ; put_var  "i"
+    (167 any)  ; drop 
+    (168 any)  ; goto8  -49
+    (170 any)  ; push_const8  5
+    (172 any)  ; put_var  "expected"
+    (177 any)  ; undefined 
+    (178 any)  ; put_loc0 
+    (179 any)  ; get_var  "total"
+    (184 any)  ; get_var  "expected"
+    (189 any)  ; neq 
+    (190 any)  ; if_false8  25
+    (192 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (197 any)  ; get_var  "expected"
+    (202 any)  ; add 
+    (203 any)  ; push_atom_value  ", but, got, "
+    (208 any)  ; add 
+    (209 any)  ; get_var  "total"
+    (214 any)  ; add 
+    (215 any)  ; throw 
+    (216 any)  ; get_loc0 
+    (217 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 6
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+)
+
+(fn _JS_F1A__root.0 
+  ; source ptr: 0x55f9b3117040, ln: 6
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; i
+      any  ; j
+    )
+  number)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; push_1 
+    (  1 any)  ; get_arg0 
+    (  2 any)  ; get_arg1 
+    (  3 any)  ; add 
+    (  4 any)  ; get_arg0 
+    (  5 any)  ; get_arg1 
+    (  6 any)  ; add 
+    (  7 any)  ; push_1 
+    (  8 any)  ; add 
+    (  9 any)  ; mul 
+    ( 10 any)  ; push_2 
+    ( 11 any)  ; div 
+    ( 12 any)  ; get_arg0 
+    ( 13 any)  ; add 
+    ( 14 any)  ; push_1 
+    ( 15 any)  ; add 
+    ( 16 any)  ; div 
+    ( 17 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F2Au__root.1 
+  ; source ptr: 0x55f9b3120f00, ln: 10
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; u
+      any  ; v
+    )
+  void)  ; return
+  ; stack size: 4
+  (locs  ; var count: 3
+    number  ; i: normal
+    number  ; t: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; get_length 
+    (  5 any)  ; lt 
+    (  6 any)  ; if_false8  38
+    (  8 any)  ; push_0 
+    (  9 any)  ; put_loc1 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; put_loc2 
+    ( 12 any)  ; get_loc2 
+    ( 13 any)  ; get_arg0 
+    ( 14 any)  ; get_length 
+    ( 15 any)  ; lt 
+    ( 16 any)  ; if_false8  20
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; get_var  "A"
+    ( 24 any)  ; get_loc0 
+    ( 25 any)  ; get_loc2 
+    ( 26 any)  ; call2 
+    ( 27 any)  ; get_arg0 
+    ( 28 any)  ; get_loc2 
+    ( 29 any)  ; get_array_el 
+    ( 30 any)  ; mul 
+    ( 31 any)  ; add 
+    ( 32 any)  ; put_loc1 
+    ( 33 any)  ; inc_loc  2
+    ( 35 any)  ; goto8  -24
+    ( 37 any)  ; get_arg1 
+    ( 38 any)  ; get_loc0 
+    ( 39 any)  ; get_loc1 
+    ( 40 any)  ; put_array_el 
+    ( 41 any)  ; inc_loc  0
+    ( 43 any)  ; goto8  -42
+    ( 45 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F3Atu__root.2 
+  ; source ptr: 0x55f9b3121800, ln: 19
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; u
+      any  ; v
+    )
+  void)  ; return
+  ; stack size: 4
+  (locs  ; var count: 3
+    number  ; i: normal
+    number  ; t: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; get_length 
+    (  5 any)  ; lt 
+    (  6 any)  ; if_false8  38
+    (  8 any)  ; push_0 
+    (  9 any)  ; put_loc1 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; put_loc2 
+    ( 12 any)  ; get_loc2 
+    ( 13 any)  ; get_arg0 
+    ( 14 any)  ; get_length 
+    ( 15 any)  ; lt 
+    ( 16 any)  ; if_false8  20
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; get_var  "A"
+    ( 24 any)  ; get_loc2 
+    ( 25 any)  ; get_loc0 
+    ( 26 any)  ; call2 
+    ( 27 any)  ; get_arg0 
+    ( 28 any)  ; get_loc2 
+    ( 29 any)  ; get_array_el 
+    ( 30 any)  ; mul 
+    ( 31 any)  ; add 
+    ( 32 any)  ; put_loc1 
+    ( 33 any)  ; inc_loc  2
+    ( 35 any)  ; goto8  -24
+    ( 37 any)  ; get_arg1 
+    ( 38 any)  ; get_loc0 
+    ( 39 any)  ; get_loc1 
+    ( 40 any)  ; put_array_el 
+    ( 41 any)  ; inc_loc  0
+    ( 43 any)  ; goto8  -42
+    ( 45 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F4AtAu__root.3 
+  ; source ptr: 0x55f9b3111190, ln: 28
+  ; arg count: 3
+  (sig (args any  ; this
+      any  ; u
+      any  ; v
+      any  ; w
+    )
+  void)  ; return
+  ; stack size: 3
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Au"
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; get_arg2 
+    (  7 any)  ; call2 
+    (  8 any)  ; drop 
+    (  9 any)  ; get_var  "Atu"
+    ( 14 any)  ; get_arg2 
+    ( 15 any)  ; get_arg1 
+    ( 16 any)  ; call2 
+    ( 17 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F12spectralnorm__root.4 
+  ; source ptr: 0x55f9b3118a50, ln: 33
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  number)  ; return
+  ; stack size: 6
+  (locs  ; var count: 6
+    any  ; i: normal
+    any[]  ; u: normal
+    any[]  ; v: normal
+    any[]  ; w: normal
+    number  ; vv: normal
+    number  ; vBv: normal
+  )
+  (bytecodes 
+    (  0 any)  ; array_from  0
+    (  3 any)  ; put_loc1 
+    (  4 any)  ; array_from  0
+    (  7 any)  ; put_loc2 
+    (  8 any)  ; array_from  0
+    ( 11 any)  ; put_loc3 
+    ( 12 any)  ; push_0 
+    ( 13 any)  ; put_loc8  4
+    ( 15 any)  ; push_0 
+    ( 16 any)  ; put_loc8  5
+    ( 18 any)  ; push_0 
+    ( 19 any)  ; put_loc0 
+    ( 20 any)  ; get_loc0 
+    ( 21 any)  ; get_arg0 
+    ( 22 any)  ; lt 
+    ( 23 any)  ; if_false8  19
+    ( 25 any)  ; get_loc1 
+    ( 26 any)  ; get_loc0 
+    ( 27 any)  ; push_1 
+    ( 28 any)  ; put_array_el 
+    ( 29 any)  ; get_loc2 
+    ( 30 any)  ; get_loc0 
+    ( 31 any)  ; to_propkey2 
+    ( 32 any)  ; get_loc3 
+    ( 33 any)  ; get_loc0 
+    ( 34 any)  ; to_propkey2 
+    ( 35 any)  ; push_0 
+    ( 36 any)  ; insert3 
+    ( 37 any)  ; put_array_el 
+    ( 38 any)  ; put_array_el 
+    ( 39 any)  ; inc_loc  0
+    ( 41 any)  ; goto8  -22
+    ( 43 any)  ; push_0 
+    ( 44 any)  ; put_loc0 
+    ( 45 any)  ; get_loc0 
+    ( 46 any)  ; push_i8  10
+    ( 48 any)  ; lt 
+    ( 49 any)  ; if_false8  25
+    ( 51 any)  ; get_var  "AtAu"
+    ( 56 any)  ; get_loc1 
+    ( 57 any)  ; get_loc2 
+    ( 58 any)  ; get_loc3 
+    ( 59 any)  ; call3 
+    ( 60 any)  ; drop 
+    ( 61 any)  ; get_var  "AtAu"
+    ( 66 any)  ; get_loc2 
+    ( 67 any)  ; get_loc1 
+    ( 68 any)  ; get_loc3 
+    ( 69 any)  ; call3 
+    ( 70 any)  ; drop 
+    ( 71 any)  ; inc_loc  0
+    ( 73 any)  ; goto8  -29
+    ( 75 any)  ; push_0 
+    ( 76 any)  ; put_loc0 
+    ( 77 any)  ; get_loc0 
+    ( 78 any)  ; get_arg0 
+    ( 79 any)  ; lt 
+    ( 80 any)  ; if_false8  29
+    ( 82 any)  ; get_loc8  5
+    ( 84 any)  ; get_loc1 
+    ( 85 any)  ; get_loc0 
+    ( 86 any)  ; get_array_el 
+    ( 87 any)  ; get_loc2 
+    ( 88 any)  ; get_loc0 
+    ( 89 any)  ; get_array_el 
+    ( 90 any)  ; mul 
+    ( 91 any)  ; add 
+    ( 92 any)  ; put_loc8  5
+    ( 94 any)  ; get_loc8  4
+    ( 96 any)  ; get_loc2 
+    ( 97 any)  ; get_loc0 
+    ( 98 any)  ; get_array_el 
+    ( 99 any)  ; get_loc2 
+    (100 any)  ; get_loc0 
+    (101 any)  ; get_array_el 
+    (102 any)  ; mul 
+    (103 any)  ; add 
+    (104 any)  ; put_loc8  4
+    (106 any)  ; inc_loc  0
+    (108 any)  ; goto8  -32
+    (110 any)  ; get_var  "Math"
+    (115 any)  ; get_field2  "sqrt"
+    (120 any)  ; get_loc8  5
+    (122 any)  ; get_loc8  4
+    (124 any)  ; div 
+    (125 any)  ; tail_call_method  1
+  )
+  ; Constant pool
+  ; length: 0
+)
+

@@ -1,0 +1,259 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "partial", 01000000
+    (  6 any)  ; check_define_var  "total", 00000000
+    ( 12 any)  ; check_define_var  "i", 00000000
+    ( 18 any)  ; check_define_var  "expected", 00000000
+    ( 24 any)  ; fclosure8  0
+    ( 26 any)  ; define_func  "partial", 00000000
+    ( 32 any)  ; define_var  "total", 00000000
+    ( 38 any)  ; define_var  "i", 00000000
+    ( 44 any)  ; define_var  "expected", 00000000
+    ( 50 any)  ; push_0 
+    ( 51 any)  ; put_var  "total"
+    ( 56 any)  ; undefined 
+    ( 57 any)  ; put_loc0 
+    ( 58 any)  ; push_i16  1024
+    ( 61 any)  ; put_var  "i"
+    ( 66 any)  ; get_var  "i"
+    ( 71 any)  ; push_i16  16384
+    ( 74 any)  ; lte 
+    ( 75 any)  ; if_false8  41
+    ( 77 any)  ; get_var  "total"
+    ( 82 any)  ; get_var  "partial"
+    ( 87 any)  ; get_var  "i"
+    ( 92 any)  ; call1 
+    ( 93 any)  ; add 
+    ( 94 any)  ; dup 
+    ( 95 any)  ; put_var  "total"
+    (100 any)  ; put_loc0 
+    (101 any)  ; get_var  "i"
+    (106 any)  ; push_2 
+    (107 any)  ; mul 
+    (108 any)  ; dup 
+    (109 any)  ; put_var  "i"
+    (114 any)  ; drop 
+    (115 any)  ; goto8  -50
+    (117 any)  ; push_const8  1
+    (119 any)  ; put_var  "expected"
+    (124 any)  ; undefined 
+    (125 any)  ; put_loc0 
+    (126 any)  ; get_var  "total"
+    (131 any)  ; get_var  "expected"
+    (136 any)  ; neq 
+    (137 any)  ; if_false8  25
+    (139 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (144 any)  ; get_var  "expected"
+    (149 any)  ; add 
+    (150 any)  ; push_atom_value  ", but, got, "
+    (155 any)  ; add 
+    (156 any)  ; get_var  "total"
+    (161 any)  ; add 
+    (162 any)  ; throw 
+    (163 any)  ; get_loc0 
+    (164 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 2
+    ;   0: 
+    ;   1: 
+)
+
+(fn _JS_F7partial__root.0 
+  ; source ptr: 0x55cff4ff6ad0, ln: 5
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  any)  ; return
+  ; stack size: 6
+  (locs  ; var count: 5
+    number  ; a1: normal
+    number  ; twothirds: normal
+    number  ; alt: normal
+    number  ; k2: normal
+    number  ; k: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_0 
+    (  1 any)  ; dup 
+    (  2 any)  ; put_var  "a9"
+    (  7 any)  ; dup 
+    (  8 any)  ; put_var  "a8"
+    ( 13 any)  ; dup 
+    ( 14 any)  ; put_var  "a7"
+    ( 19 any)  ; dup 
+    ( 20 any)  ; put_var  "a6"
+    ( 25 any)  ; dup 
+    ( 26 any)  ; put_var  "a5"
+    ( 31 any)  ; dup 
+    ( 32 any)  ; put_var  "a4"
+    ( 37 any)  ; dup 
+    ( 38 any)  ; put_var  "a3"
+    ( 43 any)  ; dup 
+    ( 44 any)  ; put_var  "a2"
+    ( 49 any)  ; put_loc0 
+    ( 50 any)  ; push_2 
+    ( 51 any)  ; push_3 
+    ( 52 any)  ; div 
+    ( 53 any)  ; put_loc1 
+    ( 54 any)  ; push_minus1 
+    ( 55 any)  ; put_loc2 
+    ( 56 any)  ; push_0 
+    ( 57 any)  ; dup 
+    ( 58 any)  ; put_var  "ck"
+    ( 63 any)  ; dup 
+    ( 64 any)  ; put_var  "sk"
+    ( 69 any)  ; dup 
+    ( 70 any)  ; put_var  "k3"
+    ( 75 any)  ; put_loc3 
+    ( 76 any)  ; push_1 
+    ( 77 any)  ; put_loc8  4
+    ( 79 any)  ; get_loc8  4
+    ( 81 any)  ; get_arg0 
+    ( 82 any)  ; lte 
+    ( 83 any)  ; if_false  281
+    ( 88 any)  ; get_loc8  4
+    ( 90 any)  ; get_loc8  4
+    ( 92 any)  ; mul 
+    ( 93 any)  ; set_loc3 
+    ( 94 any)  ; get_loc8  4
+    ( 96 any)  ; mul 
+    ( 97 any)  ; dup 
+    ( 98 any)  ; put_var  "k3"
+    (103 any)  ; drop 
+    (104 any)  ; get_var  "Math"
+    (109 any)  ; get_field2  "sin"
+    (114 any)  ; get_loc8  4
+    (116 any)  ; call_method  1
+    (119 any)  ; dup 
+    (120 any)  ; put_var  "sk"
+    (125 any)  ; drop 
+    (126 any)  ; get_var  "Math"
+    (131 any)  ; get_field2  "cos"
+    (136 any)  ; get_loc8  4
+    (138 any)  ; call_method  1
+    (141 any)  ; dup 
+    (142 any)  ; put_var  "ck"
+    (147 any)  ; drop 
+    (148 any)  ; get_loc2 
+    (149 any)  ; neg 
+    (150 any)  ; put_loc2 
+    (151 any)  ; get_loc0 
+    (152 any)  ; get_var  "Math"
+    (157 any)  ; get_field2  "pow"
+    (162 any)  ; get_loc1 
+    (163 any)  ; get_loc8  4
+    (165 any)  ; push_1 
+    (166 any)  ; sub 
+    (167 any)  ; call_method  2
+    (170 any)  ; add 
+    (171 any)  ; put_loc0 
+    (172 any)  ; get_var  "a2"
+    (177 any)  ; get_var  "Math"
+    (182 any)  ; get_field2  "pow"
+    (187 any)  ; get_loc8  4
+    (189 any)  ; push_const8  0
+    (191 any)  ; neg 
+    (192 any)  ; call_method  2
+    (195 any)  ; add 
+    (196 any)  ; dup 
+    (197 any)  ; put_var  "a2"
+    (202 any)  ; drop 
+    (203 any)  ; get_var  "a3"
+    (208 any)  ; push_1 
+    (209 any)  ; get_loc8  4
+    (211 any)  ; get_loc8  4
+    (213 any)  ; push_1 
+    (214 any)  ; add 
+    (215 any)  ; mul 
+    (216 any)  ; div 
+    (217 any)  ; add 
+    (218 any)  ; dup 
+    (219 any)  ; put_var  "a3"
+    (224 any)  ; drop 
+    (225 any)  ; get_var  "a4"
+    (230 any)  ; push_1 
+    (231 any)  ; get_var  "k3"
+    (236 any)  ; get_var  "sk"
+    (241 any)  ; mul 
+    (242 any)  ; get_var  "sk"
+    (247 any)  ; mul 
+    (248 any)  ; div 
+    (249 any)  ; add 
+    (250 any)  ; dup 
+    (251 any)  ; put_var  "a4"
+    (256 any)  ; drop 
+    (257 any)  ; get_var  "a5"
+    (262 any)  ; push_1 
+    (263 any)  ; get_var  "k3"
+    (268 any)  ; get_var  "ck"
+    (273 any)  ; mul 
+    (274 any)  ; get_var  "ck"
+    (279 any)  ; mul 
+    (280 any)  ; div 
+    (281 any)  ; add 
+    (282 any)  ; dup 
+    (283 any)  ; put_var  "a5"
+    (288 any)  ; drop 
+    (289 any)  ; get_var  "a6"
+    (294 any)  ; push_1 
+    (295 any)  ; get_loc8  4
+    (297 any)  ; div 
+    (298 any)  ; add 
+    (299 any)  ; dup 
+    (300 any)  ; put_var  "a6"
+    (305 any)  ; drop 
+    (306 any)  ; get_var  "a7"
+    (311 any)  ; push_1 
+    (312 any)  ; get_loc3 
+    (313 any)  ; div 
+    (314 any)  ; add 
+    (315 any)  ; dup 
+    (316 any)  ; put_var  "a7"
+    (321 any)  ; drop 
+    (322 any)  ; get_var  "a8"
+    (327 any)  ; get_loc2 
+    (328 any)  ; get_loc8  4
+    (330 any)  ; div 
+    (331 any)  ; add 
+    (332 any)  ; dup 
+    (333 any)  ; put_var  "a8"
+    (338 any)  ; drop 
+    (339 any)  ; get_var  "a9"
+    (344 any)  ; get_loc2 
+    (345 any)  ; push_2 
+    (346 any)  ; get_loc8  4
+    (348 any)  ; mul 
+    (349 any)  ; push_1 
+    (350 any)  ; sub 
+    (351 any)  ; div 
+    (352 any)  ; add 
+    (353 any)  ; dup 
+    (354 any)  ; put_var  "a9"
+    (359 any)  ; drop 
+    (360 any)  ; inc_loc  4
+    (362 any)  ; goto16  -284
+    (365 any)  ; get_var  "a6"
+    (370 any)  ; get_var  "a7"
+    (375 any)  ; add 
+    (376 any)  ; get_var  "a8"
+    (381 any)  ; add 
+    (382 any)  ; get_var  "a9"
+    (387 any)  ; add 
+    (388 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+

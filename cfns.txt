@@ -1,103 +1,253 @@
 [
-    {
-        "fnName": "TimeFunc",
-        "returnType": "(func: any) => number",
-        "argType": [
-            {
-                "name": "b",
-                "type": "any"
-            },
-            {
-                "name": "func",
-                "type": "any"
-            }
-        ],
-        "localType": [],
-        "byteType": [
-            {
-                "name": "result",
-                "type": "number"
-            },
-            {
-                "name": "m",
-                "type": "number"
-            },
-            {
-                "name": "c",
-                "type": "number"
-            },
-            {
-                "name": "<",
-                "type": "boolean"
-            },
-            {
-                "name": "&",
-                "type": "number"
-            },
-            {
-                "name": "<<=",
-                "type": "number"
-            },
-            {
-                "name": "x",
-                "type": "any"
-            },
-            {
-                "name": "y",
-                "type": "any"
-            },
-            {
-                "name": "t",
-                "type": "any"
-            },
-            {
-                "name": "sum",
-                "type": "number"
-            },
-            {
-                "name": "x",
-                "type": "any"
-            },
-            {
-                "name": "<",
-                "type": "boolean"
-            },
-            {
-                "name": "y",
-                "type": "any"
-            },
-            {
-                "name": "<",
-                "type": "boolean"
-            },
-            {
-                "name": "+=",
-                "type": "any"
-            },
-            {
-                "name": "=",
-                "type": "number"
-            },
-            {
-                "name": "expected",
-                "type": "number"
-            },
-            {
-                "name": "!=",
-                "type": "boolean"
-            },
-            {
-                "name": "+",
-                "type": "string"
-            },
-            {
-                "name": "+",
-                "type": "string"
-            },
-            {
-                "name": "+",
-                "type": "string"
-            }
-        ]
-    }
+  {
+    "fnName": "doTest",
+    "returnType": "() => void",
+    "argType": [],
+    "byteType": [
+      {
+        "name": "=",
+        "type": "\"\""
+      },
+      {
+        "name": "k",
+        "type": "number"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "%",
+        "type": "number"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "pattern",
+        "type": "RegExp"
+      },
+      {
+        "name": "r",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "s",
+        "type": "number"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": "zipGood",
+        "type": "boolean"
+      },
+      {
+        "name": "zip",
+        "type": "string"
+      },
+      {
+        "name": "%",
+        "type": "number"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "i",
+        "type": "number"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": "ch",
+        "type": "string"
+      },
+      {
+        "name": "||",
+        "type": "boolean"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": ">",
+        "type": "boolean"
+      },
+      {
+        "name": "=",
+        "type": "false"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "&&",
+        "type": "boolean"
+      },
+      {
+        "name": ">",
+        "type": "boolean"
+      },
+      {
+        "name": "=",
+        "type": "false"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "fnName": "makeName",
+    "returnType": "(n: any) => string",
+    "argType": [
+      {
+        "name": "n",
+        "type": "any"
+      }
+    ],
+    "byteType": [
+      {
+        "name": "tmp",
+        "type": "string"
+      },
+      {
+        "name": "i",
+        "type": "number"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": "l",
+        "type": "number"
+      },
+      {
+        "name": "*",
+        "type": "number"
+      },
+      {
+        "name": "+=",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "fnName": "makeNumber",
+    "returnType": "(n: any) => string",
+    "argType": [
+      {
+        "name": "n",
+        "type": "any"
+      }
+    ],
+    "byteType": [
+      {
+        "name": "tmp",
+        "type": "string"
+      },
+      {
+        "name": "i",
+        "type": "number"
+      },
+      {
+        "name": "<",
+        "type": "boolean"
+      },
+      {
+        "name": "l",
+        "type": "number"
+      },
+      {
+        "name": "*",
+        "type": "number"
+      },
+      {
+        "name": "=",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "fnName": "addResult",
+    "returnType": "(r: any) => void",
+    "argType": [
+      {
+        "name": "r",
+        "type": "any"
+      }
+    ],
+    "byteType": [
+      {
+        "name": "+=",
+        "type": "string"
+      },
+      {
+        "name": "+",
+        "type": "string"
+      }
+    ]
+  }
 ]

@@ -1,0 +1,902 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "PI", 00000000
+    (  6 any)  ; check_define_var  "SOLAR_MASS", 00000000
+    ( 12 any)  ; check_define_var  "DAYS_PER_YEAR", 00000000
+    ( 18 any)  ; check_define_var  "Body", 01000000
+    ( 24 any)  ; check_define_var  "Jupiter", 01000000
+    ( 30 any)  ; check_define_var  "Saturn", 01000000
+    ( 36 any)  ; check_define_var  "Uranus", 01000000
+    ( 42 any)  ; check_define_var  "Neptune", 01000000
+    ( 48 any)  ; check_define_var  "Sun", 01000000
+    ( 54 any)  ; check_define_var  "NBodySystem", 01000000
+    ( 60 any)  ; check_define_var  "ret", 00000000
+    ( 66 any)  ; check_define_var  "n", 00000000
+    ( 72 any)  ; check_define_var  "expected", 00000000
+    ( 78 any)  ; define_var  "PI", 00000000
+    ( 84 any)  ; define_var  "SOLAR_MASS", 00000000
+    ( 90 any)  ; define_var  "DAYS_PER_YEAR", 00000000
+    ( 96 any)  ; fclosure8  2
+    ( 98 any)  ; define_func  "Body", 00000000
+    (104 any)  ; fclosure8  4
+    (106 any)  ; define_func  "Jupiter", 00000000
+    (112 any)  ; fclosure8  5
+    (114 any)  ; define_func  "Saturn", 00000000
+    (120 any)  ; fclosure8  6
+    (122 any)  ; define_func  "Uranus", 00000000
+    (128 any)  ; fclosure8  7
+    (130 any)  ; define_func  "Neptune", 00000000
+    (136 any)  ; fclosure8  8
+    (138 any)  ; define_func  "Sun", 00000000
+    (144 any)  ; fclosure8  9
+    (146 any)  ; define_func  "NBodySystem", 00000000
+    (152 any)  ; define_var  "ret", 00000000
+    (158 any)  ; define_var  "n", 00000000
+    (164 any)  ; define_var  "expected", 00000000
+    (170 any)  ; push_const8  0
+    (172 any)  ; put_var  "PI"
+    (177 any)  ; push_4 
+    (178 any)  ; get_var  "PI"
+    (183 any)  ; mul 
+    (184 any)  ; get_var  "PI"
+    (189 any)  ; mul 
+    (190 any)  ; put_var  "SOLAR_MASS"
+    (195 any)  ; push_const8  1
+    (197 any)  ; put_var  "DAYS_PER_YEAR"
+    (202 any)  ; get_var  "Body"
+    (207 any)  ; get_field  "prototype"
+    (212 any)  ; fclosure8  3
+    (214 any)  ; insert2 
+    (215 any)  ; put_field  "offsetMomentum"
+    (220 any)  ; put_loc0 
+    (221 any)  ; get_var  "NBodySystem"
+    (226 any)  ; get_field  "prototype"
+    (231 any)  ; fclosure8  10
+    (233 any)  ; insert2 
+    (234 any)  ; put_field  "advance"
+    (239 any)  ; put_loc0 
+    (240 any)  ; get_var  "NBodySystem"
+    (245 any)  ; get_field  "prototype"
+    (250 any)  ; fclosure8  11
+    (252 any)  ; insert2 
+    (253 any)  ; put_field  "energy"
+    (258 any)  ; put_loc0 
+    (259 any)  ; push_0 
+    (260 any)  ; put_var  "ret"
+    (265 any)  ; undefined 
+    (266 any)  ; put_loc0 
+    (267 any)  ; push_3 
+    (268 any)  ; put_var  "n"
+    (273 any)  ; get_var  "n"
+    (278 any)  ; push_i8  24
+    (280 any)  ; lte 
+    (281 any)  ; if_false8  21
+    (283 any)  ; fclosure8  12
+    (285 any)  ; call0 
+    (286 any)  ; put_loc0 
+    (287 any)  ; get_var  "n"
+    (292 any)  ; push_2 
+    (293 any)  ; mul 
+    (294 any)  ; dup 
+    (295 any)  ; put_var  "n"
+    (300 any)  ; drop 
+    (301 any)  ; goto8  -29
+    (303 any)  ; push_const8  13
+    (305 any)  ; neg 
+    (306 any)  ; put_var  "expected"
+    (311 any)  ; undefined 
+    (312 any)  ; put_loc0 
+    (313 any)  ; get_var  "ret"
+    (318 any)  ; get_var  "expected"
+    (323 any)  ; neq 
+    (324 any)  ; if_false8  25
+    (326 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (331 any)  ; get_var  "expected"
+    (336 any)  ; add 
+    (337 any)  ; push_atom_value  ", but, got, "
+    (342 any)  ; add 
+    (343 any)  ; get_var  "ret"
+    (348 any)  ; add 
+    (349 any)  ; throw 
+    (350 any)  ; get_loc0 
+    (351 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 14
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+    ;   7: 
+    ;   8: 
+    ;   9: 
+    ;  10: 
+    ;  11: 
+    ;  12: 
+    ;  13: 
+)
+
+(fn _JS_F4Body__root.2 
+  ; source ptr: 0x55865da0c3e0, ln: 9
+  ; arg count: 7
+  (sig (args any  ; this
+      any  ; x
+      any  ; y
+      any  ; z
+      any  ; vx
+      any  ; vy
+      any  ; vz
+      any  ; mass
+      any  ; px
+      any  ; py
+      any  ; pz
+    )
+  void)  ; return
+  ; stack size: 2
+  (locs  ; var count: 1
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; put_field  "x"
+    (  9 any)  ; get_loc0 
+    ( 10 any)  ; get_arg1 
+    ( 11 any)  ; put_field  "y"
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; get_arg2 
+    ( 18 any)  ; put_field  "z"
+    ( 23 any)  ; get_loc0 
+    ( 24 any)  ; get_arg3 
+    ( 25 any)  ; put_field  "vx"
+    ( 30 any)  ; get_loc0 
+    ( 31 any)  ; get_arg  4
+    ( 34 any)  ; put_field  "vy"
+    ( 39 any)  ; get_loc0 
+    ( 40 any)  ; get_arg  5
+    ( 43 any)  ; put_field  "vz"
+    ( 48 any)  ; get_loc0 
+    ( 49 any)  ; get_arg  6
+    ( 52 any)  ; put_field  "mass"
+    ( 57 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6��]�U__root.3 
+  ; source ptr: 0x55865da06330, ln: 19
+  ; arg count: 3
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; neg 
+    (  5 any)  ; get_var  "SOLAR_MASS"
+    ( 10 any)  ; div 
+    ( 11 any)  ; put_field  "vx"
+    ( 16 any)  ; get_loc0 
+    ( 17 any)  ; get_arg1 
+    ( 18 any)  ; neg 
+    ( 19 any)  ; get_var  "SOLAR_MASS"
+    ( 24 any)  ; div 
+    ( 25 any)  ; put_field  "vy"
+    ( 30 any)  ; get_loc0 
+    ( 31 any)  ; get_arg2 
+    ( 32 any)  ; neg 
+    ( 33 any)  ; get_var  "SOLAR_MASS"
+    ( 38 any)  ; div 
+    ( 39 any)  ; put_field  "vz"
+    ( 44 any)  ; get_loc0 
+    ( 45 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7Jupiter__root.4 
+  ; source ptr: 0x55865da0cef0, ln: 26
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 10
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Body"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_const8  0
+    (  8 any)  ; push_const8  1
+    ( 10 any)  ; neg 
+    ( 11 any)  ; push_const8  2
+    ( 13 any)  ; neg 
+    ( 14 any)  ; push_const8  3
+    ( 16 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 21 any)  ; mul 
+    ( 22 any)  ; push_const8  4
+    ( 24 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 29 any)  ; mul 
+    ( 30 any)  ; push_const8  5
+    ( 32 any)  ; neg 
+    ( 33 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 38 any)  ; mul 
+    ( 39 any)  ; push_const8  6
+    ( 41 any)  ; get_var  "SOLAR_MASS"
+    ( 46 any)  ; mul 
+    ( 47 any)  ; call_constructor  7
+    ( 50 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 7
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+)
+
+(fn _JS_F6Saturn__root.5 
+  ; source ptr: 0x55865da0d5c0, ln: 38
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 10
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Body"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_const8  0
+    (  8 any)  ; push_const8  1
+    ( 10 any)  ; push_const8  2
+    ( 12 any)  ; neg 
+    ( 13 any)  ; push_const8  3
+    ( 15 any)  ; neg 
+    ( 16 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 21 any)  ; mul 
+    ( 22 any)  ; push_const8  4
+    ( 24 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 29 any)  ; mul 
+    ( 30 any)  ; push_const8  5
+    ( 32 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 37 any)  ; mul 
+    ( 38 any)  ; push_const8  6
+    ( 40 any)  ; get_var  "SOLAR_MASS"
+    ( 45 any)  ; mul 
+    ( 46 any)  ; call_constructor  7
+    ( 49 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 7
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+)
+
+(fn _JS_F6Uranus__root.6 
+  ; source ptr: 0x55865da0dbd0, ln: 50
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 10
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Body"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_const8  0
+    (  8 any)  ; push_const8  1
+    ( 10 any)  ; neg 
+    ( 11 any)  ; push_const8  2
+    ( 13 any)  ; neg 
+    ( 14 any)  ; push_const8  3
+    ( 16 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 21 any)  ; mul 
+    ( 22 any)  ; push_const8  4
+    ( 24 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 29 any)  ; mul 
+    ( 30 any)  ; push_const8  5
+    ( 32 any)  ; neg 
+    ( 33 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 38 any)  ; mul 
+    ( 39 any)  ; push_const8  6
+    ( 41 any)  ; get_var  "SOLAR_MASS"
+    ( 46 any)  ; mul 
+    ( 47 any)  ; call_constructor  7
+    ( 50 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 7
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+)
+
+(fn _JS_F7Neptune__root.7 
+  ; source ptr: 0x55865da0e270, ln: 62
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 10
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Body"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_const8  0
+    (  8 any)  ; push_const8  1
+    ( 10 any)  ; neg 
+    ( 11 any)  ; push_const8  2
+    ( 13 any)  ; push_const8  3
+    ( 15 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 20 any)  ; mul 
+    ( 21 any)  ; push_const8  4
+    ( 23 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 28 any)  ; mul 
+    ( 29 any)  ; push_const8  5
+    ( 31 any)  ; neg 
+    ( 32 any)  ; get_var  "DAYS_PER_YEAR"
+    ( 37 any)  ; mul 
+    ( 38 any)  ; push_const8  6
+    ( 40 any)  ; get_var  "SOLAR_MASS"
+    ( 45 any)  ; mul 
+    ( 46 any)  ; call_constructor  7
+    ( 49 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 7
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+)
+
+(fn _JS_F3Sun__root.8 
+  ; source ptr: 0x55865da0e650, ln: 74
+  ; arg count: 0
+  (sig (args any  ; this
+      any  ; bodies
+      any  ; dt
+    )
+  void)  ; return
+  ; stack size: 9
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Body"
+    (  5 any)  ; dup 
+    (  6 any)  ; push_0 
+    (  7 any)  ; push_0 
+    (  8 any)  ; push_0 
+    (  9 any)  ; push_0 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; push_0 
+    ( 12 any)  ; get_var  "SOLAR_MASS"
+    ( 17 any)  ; call_constructor  7
+    ( 20 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F11NBodySystem__root.9 
+  ; source ptr: 0x55865d9875b0, ln: 79
+  ; arg count: 1
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 5
+  (locs  ; var count: 8
+    any  ; px: normal
+    any  ; py: normal
+    any  ; pz: normal
+    any  ; size: normal
+    any  ; i: normal
+    any  ; b: normal
+    any  ; m: normal
+    any  ; this: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc8  7
+    (  3 any)  ; get_loc8  7
+    (  5 any)  ; get_arg0 
+    (  6 any)  ; put_field  "bodies"
+    ( 11 any)  ; push_0 
+    ( 12 any)  ; put_loc0 
+    ( 13 any)  ; push_0 
+    ( 14 any)  ; put_loc1 
+    ( 15 any)  ; push_0 
+    ( 16 any)  ; put_loc2 
+    ( 17 any)  ; get_loc8  7
+    ( 19 any)  ; get_field  "bodies"
+    ( 24 any)  ; get_length 
+    ( 25 any)  ; put_loc3 
+    ( 26 any)  ; push_0 
+    ( 27 any)  ; put_loc8  4
+    ( 29 any)  ; get_loc8  4
+    ( 31 any)  ; get_loc3 
+    ( 32 any)  ; lt 
+    ( 33 any)  ; if_false8  63
+    ( 35 any)  ; get_loc8  7
+    ( 37 any)  ; get_field  "bodies"
+    ( 42 any)  ; get_loc8  4
+    ( 44 any)  ; get_array_el 
+    ( 45 any)  ; set_loc8  5
+    ( 47 any)  ; get_field  "mass"
+    ( 52 any)  ; put_loc8  6
+    ( 54 any)  ; get_loc0 
+    ( 55 any)  ; get_loc8  5
+    ( 57 any)  ; get_field  "vx"
+    ( 62 any)  ; get_loc8  6
+    ( 64 any)  ; mul 
+    ( 65 any)  ; add 
+    ( 66 any)  ; put_loc0 
+    ( 67 any)  ; get_loc1 
+    ( 68 any)  ; get_loc8  5
+    ( 70 any)  ; get_field  "vy"
+    ( 75 any)  ; get_loc8  6
+    ( 77 any)  ; mul 
+    ( 78 any)  ; add 
+    ( 79 any)  ; put_loc1 
+    ( 80 any)  ; get_loc2 
+    ( 81 any)  ; get_loc8  5
+    ( 83 any)  ; get_field  "vz"
+    ( 88 any)  ; get_loc8  6
+    ( 90 any)  ; mul 
+    ( 91 any)  ; add 
+    ( 92 any)  ; put_loc2 
+    ( 93 any)  ; inc_loc  4
+    ( 95 any)  ; goto8  -67
+    ( 97 any)  ; get_loc8  7
+    ( 99 any)  ; get_field  "bodies"
+    (104 any)  ; push_0 
+    (105 any)  ; get_array_el 
+    (106 any)  ; get_field2  "offsetMomentum"
+    (111 any)  ; get_loc0 
+    (112 any)  ; get_loc1 
+    (113 any)  ; get_loc2 
+    (114 any)  ; call_method  3
+    (117 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6��]�U__root.10 
+  ; source ptr: 0x55865da10770, ln: 95
+  ; arg count: 1
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 5
+  (locs  ; var count: 12
+    any  ; dx: normal
+    any  ; dy: normal
+    any  ; dz: normal
+    any  ; distance: normal
+    any  ; mag: normal
+    any  ; size: normal
+    any  ; i: normal
+    any  ; bodyi: normal
+    any  ; j: normal
+    any  ; bodyj: normal
+    any  ; body: normal
+    any  ; this: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc8  11
+    (  3 any)  ; get_loc8  11
+    (  5 any)  ; get_field  "bodies"
+    ( 10 any)  ; get_length 
+    ( 11 any)  ; put_loc8  5
+    ( 13 any)  ; push_0 
+    ( 14 any)  ; put_loc8  6
+    ( 16 any)  ; get_loc8  6
+    ( 18 any)  ; get_loc8  5
+    ( 20 any)  ; lt 
+    ( 21 any)  ; if_false  286
+    ( 26 any)  ; get_loc8  11
+    ( 28 any)  ; get_field  "bodies"
+    ( 33 any)  ; get_loc8  6
+    ( 35 any)  ; get_array_el 
+    ( 36 any)  ; put_loc8  7
+    ( 38 any)  ; get_loc8  6
+    ( 40 any)  ; push_1 
+    ( 41 any)  ; add 
+    ( 42 any)  ; put_loc8  8
+    ( 44 any)  ; get_loc8  8
+    ( 46 any)  ; get_loc8  5
+    ( 48 any)  ; lt 
+    ( 49 any)  ; if_false  253
+    ( 54 any)  ; get_loc8  11
+    ( 56 any)  ; get_field  "bodies"
+    ( 61 any)  ; get_loc8  8
+    ( 63 any)  ; get_array_el 
+    ( 64 any)  ; put_loc8  9
+    ( 66 any)  ; get_loc8  7
+    ( 68 any)  ; get_field  "x"
+    ( 73 any)  ; get_loc8  9
+    ( 75 any)  ; get_field  "x"
+    ( 80 any)  ; sub 
+    ( 81 any)  ; put_loc0 
+    ( 82 any)  ; get_loc8  7
+    ( 84 any)  ; get_field  "y"
+    ( 89 any)  ; get_loc8  9
+    ( 91 any)  ; get_field  "y"
+    ( 96 any)  ; sub 
+    ( 97 any)  ; put_loc1 
+    ( 98 any)  ; get_loc8  7
+    (100 any)  ; get_field  "z"
+    (105 any)  ; get_loc8  9
+    (107 any)  ; get_field  "z"
+    (112 any)  ; sub 
+    (113 any)  ; put_loc2 
+    (114 any)  ; get_var  "Math"
+    (119 any)  ; get_field2  "sqrt"
+    (124 any)  ; get_loc0 
+    (125 any)  ; get_loc0 
+    (126 any)  ; mul 
+    (127 any)  ; get_loc1 
+    (128 any)  ; get_loc1 
+    (129 any)  ; mul 
+    (130 any)  ; add 
+    (131 any)  ; get_loc2 
+    (132 any)  ; get_loc2 
+    (133 any)  ; mul 
+    (134 any)  ; add 
+    (135 any)  ; call_method  1
+    (138 any)  ; put_loc3 
+    (139 any)  ; get_arg0 
+    (140 any)  ; get_loc3 
+    (141 any)  ; get_loc3 
+    (142 any)  ; mul 
+    (143 any)  ; get_loc3 
+    (144 any)  ; mul 
+    (145 any)  ; div 
+    (146 any)  ; put_loc8  4
+    (148 any)  ; get_loc8  7
+    (150 any)  ; get_field2  "vx"
+    (155 any)  ; get_loc0 
+    (156 any)  ; get_loc8  9
+    (158 any)  ; get_field  "mass"
+    (163 any)  ; mul 
+    (164 any)  ; get_loc8  4
+    (166 any)  ; mul 
+    (167 any)  ; sub 
+    (168 any)  ; put_field  "vx"
+    (173 any)  ; get_loc8  7
+    (175 any)  ; get_field2  "vy"
+    (180 any)  ; get_loc1 
+    (181 any)  ; get_loc8  9
+    (183 any)  ; get_field  "mass"
+    (188 any)  ; mul 
+    (189 any)  ; get_loc8  4
+    (191 any)  ; mul 
+    (192 any)  ; sub 
+    (193 any)  ; put_field  "vy"
+    (198 any)  ; get_loc8  7
+    (200 any)  ; get_field2  "vz"
+    (205 any)  ; get_loc2 
+    (206 any)  ; get_loc8  9
+    (208 any)  ; get_field  "mass"
+    (213 any)  ; mul 
+    (214 any)  ; get_loc8  4
+    (216 any)  ; mul 
+    (217 any)  ; sub 
+    (218 any)  ; put_field  "vz"
+    (223 any)  ; get_loc8  9
+    (225 any)  ; get_field2  "vx"
+    (230 any)  ; get_loc0 
+    (231 any)  ; get_loc8  7
+    (233 any)  ; get_field  "mass"
+    (238 any)  ; mul 
+    (239 any)  ; get_loc8  4
+    (241 any)  ; mul 
+    (242 any)  ; add 
+    (243 any)  ; put_field  "vx"
+    (248 any)  ; get_loc8  9
+    (250 any)  ; get_field2  "vy"
+    (255 any)  ; get_loc1 
+    (256 any)  ; get_loc8  7
+    (258 any)  ; get_field  "mass"
+    (263 any)  ; mul 
+    (264 any)  ; get_loc8  4
+    (266 any)  ; mul 
+    (267 any)  ; add 
+    (268 any)  ; put_field  "vy"
+    (273 any)  ; get_loc8  9
+    (275 any)  ; get_field2  "vz"
+    (280 any)  ; get_loc2 
+    (281 any)  ; get_loc8  7
+    (283 any)  ; get_field  "mass"
+    (288 any)  ; mul 
+    (289 any)  ; get_loc8  4
+    (291 any)  ; mul 
+    (292 any)  ; add 
+    (293 any)  ; put_field  "vz"
+    (298 any)  ; inc_loc  8
+    (300 any)  ; goto16  -257
+    (303 any)  ; inc_loc  6
+    (305 any)  ; goto16  -290
+    (308 any)  ; push_0 
+    (309 any)  ; put_loc8  6
+    (311 any)  ; get_loc8  6
+    (313 any)  ; get_loc8  5
+    (315 any)  ; lt 
+    (316 any)  ; if_false8  81
+    (318 any)  ; get_loc8  11
+    (320 any)  ; get_field  "bodies"
+    (325 any)  ; get_loc8  6
+    (327 any)  ; get_array_el 
+    (328 any)  ; set_loc8  10
+    (330 any)  ; get_field2  "x"
+    (335 any)  ; get_arg0 
+    (336 any)  ; get_loc8  10
+    (338 any)  ; get_field  "vx"
+    (343 any)  ; mul 
+    (344 any)  ; add 
+    (345 any)  ; put_field  "x"
+    (350 any)  ; get_loc8  10
+    (352 any)  ; get_field2  "y"
+    (357 any)  ; get_arg0 
+    (358 any)  ; get_loc8  10
+    (360 any)  ; get_field  "vy"
+    (365 any)  ; mul 
+    (366 any)  ; add 
+    (367 any)  ; put_field  "y"
+    (372 any)  ; get_loc8  10
+    (374 any)  ; get_field2  "z"
+    (379 any)  ; get_arg0 
+    (380 any)  ; get_loc8  10
+    (382 any)  ; get_field  "vz"
+    (387 any)  ; mul 
+    (388 any)  ; add 
+    (389 any)  ; put_field  "z"
+    (394 any)  ; inc_loc  6
+    (396 any)  ; goto8  -86
+    (398 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6��]�U__root.11 
+  ; source ptr: 0x55865da11620, ln: 128
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 5
+  (locs  ; var count: 11
+    any  ; dx: normal
+    any  ; dy: normal
+    any  ; dz: normal
+    any  ; distance: normal
+    any  ; e: normal
+    any  ; size: normal
+    any  ; i: normal
+    any  ; bodyi: normal
+    any  ; j: normal
+    any  ; bodyj: normal
+    any  ; this: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc8  10
+    (  3 any)  ; push_0 
+    (  4 any)  ; put_loc8  4
+    (  6 any)  ; get_loc8  10
+    (  8 any)  ; get_field  "bodies"
+    ( 13 any)  ; get_length 
+    ( 14 any)  ; put_loc8  5
+    ( 16 any)  ; push_0 
+    ( 17 any)  ; put_loc8  6
+    ( 19 any)  ; get_loc8  6
+    ( 21 any)  ; get_loc8  5
+    ( 23 any)  ; lt 
+    ( 24 any)  ; if_false  208
+    ( 29 any)  ; get_loc8  10
+    ( 31 any)  ; get_field  "bodies"
+    ( 36 any)  ; get_loc8  6
+    ( 38 any)  ; get_array_el 
+    ( 39 any)  ; put_loc8  7
+    ( 41 any)  ; get_loc8  4
+    ( 43 any)  ; push_const8  0
+    ( 45 any)  ; get_loc8  7
+    ( 47 any)  ; get_field  "mass"
+    ( 52 any)  ; mul 
+    ( 53 any)  ; get_loc8  7
+    ( 55 any)  ; get_field  "vx"
+    ( 60 any)  ; get_loc8  7
+    ( 62 any)  ; get_field  "vx"
+    ( 67 any)  ; mul 
+    ( 68 any)  ; get_loc8  7
+    ( 70 any)  ; get_field  "vy"
+    ( 75 any)  ; get_loc8  7
+    ( 77 any)  ; get_field  "vy"
+    ( 82 any)  ; mul 
+    ( 83 any)  ; add 
+    ( 84 any)  ; get_loc8  7
+    ( 86 any)  ; get_field  "vz"
+    ( 91 any)  ; get_loc8  7
+    ( 93 any)  ; get_field  "vz"
+    ( 98 any)  ; mul 
+    ( 99 any)  ; add 
+    (100 any)  ; mul 
+    (101 any)  ; add 
+    (102 any)  ; put_loc8  4
+    (104 any)  ; get_loc8  6
+    (106 any)  ; push_1 
+    (107 any)  ; add 
+    (108 any)  ; put_loc8  8
+    (110 any)  ; get_loc8  8
+    (112 any)  ; get_loc8  5
+    (114 any)  ; lt 
+    (115 any)  ; if_false8  112
+    (117 any)  ; get_loc8  10
+    (119 any)  ; get_field  "bodies"
+    (124 any)  ; get_loc8  8
+    (126 any)  ; get_array_el 
+    (127 any)  ; put_loc8  9
+    (129 any)  ; get_loc8  7
+    (131 any)  ; get_field  "x"
+    (136 any)  ; get_loc8  9
+    (138 any)  ; get_field  "x"
+    (143 any)  ; sub 
+    (144 any)  ; put_loc0 
+    (145 any)  ; get_loc8  7
+    (147 any)  ; get_field  "y"
+    (152 any)  ; get_loc8  9
+    (154 any)  ; get_field  "y"
+    (159 any)  ; sub 
+    (160 any)  ; put_loc1 
+    (161 any)  ; get_loc8  7
+    (163 any)  ; get_field  "z"
+    (168 any)  ; get_loc8  9
+    (170 any)  ; get_field  "z"
+    (175 any)  ; sub 
+    (176 any)  ; put_loc2 
+    (177 any)  ; get_var  "Math"
+    (182 any)  ; get_field2  "sqrt"
+    (187 any)  ; get_loc0 
+    (188 any)  ; get_loc0 
+    (189 any)  ; mul 
+    (190 any)  ; get_loc1 
+    (191 any)  ; get_loc1 
+    (192 any)  ; mul 
+    (193 any)  ; add 
+    (194 any)  ; get_loc2 
+    (195 any)  ; get_loc2 
+    (196 any)  ; mul 
+    (197 any)  ; add 
+    (198 any)  ; call_method  1
+    (201 any)  ; put_loc3 
+    (202 any)  ; get_loc8  4
+    (204 any)  ; get_loc8  7
+    (206 any)  ; get_field  "mass"
+    (211 any)  ; get_loc8  9
+    (213 any)  ; get_field  "mass"
+    (218 any)  ; mul 
+    (219 any)  ; get_loc3 
+    (220 any)  ; div 
+    (221 any)  ; sub 
+    (222 any)  ; put_loc8  4
+    (224 any)  ; inc_loc  8
+    (226 any)  ; goto8  -117
+    (228 any)  ; inc_loc  6
+    (230 any)  ; goto16  -212
+    (233 any)  ; get_loc8  4
+    (235 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+
+(fn _JS_F6��]�U__root.12 
+  ; source ptr: 0x55865d9e9240, ln: 157
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  )  ; return
+  ; stack size: 8
+  (locs  ; var count: 3
+    any  ; bodies: normal
+    any  ; max: normal
+    any  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "NBodySystem"
+    (  5 any)  ; dup 
+    (  6 any)  ; get_var  "Array"
+    ( 11 any)  ; get_var  "Sun"
+    ( 16 any)  ; call0 
+    ( 17 any)  ; get_var  "Jupiter"
+    ( 22 any)  ; call0 
+    ( 23 any)  ; get_var  "Saturn"
+    ( 28 any)  ; call0 
+    ( 29 any)  ; get_var  "Uranus"
+    ( 34 any)  ; call0 
+    ( 35 any)  ; get_var  "Neptune"
+    ( 40 any)  ; call0 
+    ( 41 any)  ; call  5
+    ( 44 any)  ; call_constructor  1
+    ( 47 any)  ; put_loc0 
+    ( 48 any)  ; get_var  "n"
+    ( 53 any)  ; push_i8  100
+    ( 55 any)  ; mul 
+    ( 56 any)  ; put_loc1 
+    ( 57 any)  ; get_var  "ret"
+    ( 62 any)  ; get_loc0 
+    ( 63 any)  ; get_field2  "energy"
+    ( 68 any)  ; call_method  0
+    ( 71 any)  ; add 
+    ( 72 any)  ; dup 
+    ( 73 any)  ; put_var  "ret"
+    ( 78 any)  ; drop 
+    ( 79 any)  ; push_0 
+    ( 80 any)  ; put_loc2 
+    ( 81 any)  ; get_loc2 
+    ( 82 any)  ; get_loc1 
+    ( 83 any)  ; lt 
+    ( 84 any)  ; if_false8  17
+    ( 86 any)  ; get_loc0 
+    ( 87 any)  ; get_field2  "advance"
+    ( 92 any)  ; push_const8  0
+    ( 94 any)  ; call_method  1
+    ( 97 any)  ; drop 
+    ( 98 any)  ; inc_loc  2
+    (100 any)  ; goto8  -20
+    (102 any)  ; get_var  "ret"
+    (107 any)  ; get_loc0 
+    (108 any)  ; get_field2  "energy"
+    (113 any)  ; call_method  0
+    (116 any)  ; add 
+    (117 any)  ; dup 
+    (118 any)  ; put_var  "ret"
+    (123 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+

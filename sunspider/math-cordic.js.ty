@@ -1,0 +1,333 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 13
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "AG_CONST", 00000000
+    (  6 any)  ; check_define_var  "FIXED", 01000000
+    ( 12 any)  ; check_define_var  "FLOAT", 01000000
+    ( 18 any)  ; check_define_var  "DEG2RAD", 01000000
+    ( 24 any)  ; check_define_var  "Angles", 00000000
+    ( 30 any)  ; check_define_var  "Target", 00000000
+    ( 36 any)  ; check_define_var  "cordicsincos", 01000000
+    ( 42 any)  ; check_define_var  "total", 00000000
+    ( 48 any)  ; check_define_var  "cordic", 01000000
+    ( 54 any)  ; check_define_var  "expected", 00000000
+    ( 60 any)  ; define_var  "AG_CONST", 00000000
+    ( 66 any)  ; fclosure8  1
+    ( 68 any)  ; define_func  "FIXED", 00000000
+    ( 74 any)  ; fclosure8  2
+    ( 76 any)  ; define_func  "FLOAT", 00000000
+    ( 82 any)  ; fclosure8  3
+    ( 84 any)  ; define_func  "DEG2RAD", 00000000
+    ( 90 any)  ; define_var  "Angles", 00000000
+    ( 96 any)  ; define_var  "Target", 00000000
+    (102 any)  ; fclosure8  16
+    (104 any)  ; define_func  "cordicsincos", 00000000
+    (110 any)  ; define_var  "total", 00000000
+    (116 any)  ; fclosure8  17
+    (118 any)  ; define_func  "cordic", 00000000
+    (124 any)  ; define_var  "expected", 00000000
+    (130 any)  ; push_const8  0
+    (132 any)  ; put_var  "AG_CONST"
+    (137 any)  ; get_var  "FIXED"
+    (142 any)  ; push_i8  45
+    (144 any)  ; call1 
+    (145 any)  ; get_var  "FIXED"
+    (150 any)  ; push_const8  4
+    (152 any)  ; call1 
+    (153 any)  ; get_var  "FIXED"
+    (158 any)  ; push_const8  5
+    (160 any)  ; call1 
+    (161 any)  ; get_var  "FIXED"
+    (166 any)  ; push_const8  6
+    (168 any)  ; call1 
+    (169 any)  ; get_var  "FIXED"
+    (174 any)  ; push_const8  7
+    (176 any)  ; call1 
+    (177 any)  ; get_var  "FIXED"
+    (182 any)  ; push_const8  8
+    (184 any)  ; call1 
+    (185 any)  ; get_var  "FIXED"
+    (190 any)  ; push_const8  9
+    (192 any)  ; call1 
+    (193 any)  ; get_var  "FIXED"
+    (198 any)  ; push_const8  10
+    (200 any)  ; call1 
+    (201 any)  ; get_var  "FIXED"
+    (206 any)  ; push_const8  11
+    (208 any)  ; call1 
+    (209 any)  ; get_var  "FIXED"
+    (214 any)  ; push_const8  12
+    (216 any)  ; call1 
+    (217 any)  ; get_var  "FIXED"
+    (222 any)  ; push_const8  13
+    (224 any)  ; call1 
+    (225 any)  ; get_var  "FIXED"
+    (230 any)  ; push_const8  14
+    (232 any)  ; call1 
+    (233 any)  ; array_from  12
+    (236 any)  ; put_var  "Angles"
+    (241 any)  ; push_const8  15
+    (243 any)  ; put_var  "Target"
+    (248 any)  ; push_0 
+    (249 any)  ; put_var  "total"
+    (254 any)  ; get_var  "cordic"
+    (259 any)  ; push_i16  25000
+    (262 any)  ; call1 
+    (263 any)  ; put_loc0 
+    (264 any)  ; push_const8  18
+    (266 any)  ; put_var  "expected"
+    (271 any)  ; undefined 
+    (272 any)  ; put_loc0 
+    (273 any)  ; get_var  "total"
+    (278 any)  ; get_var  "expected"
+    (283 any)  ; neq 
+    (284 any)  ; if_false8  25
+    (286 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (291 any)  ; get_var  "expected"
+    (296 any)  ; add 
+    (297 any)  ; push_atom_value  ", but, got, "
+    (302 any)  ; add 
+    (303 any)  ; get_var  "total"
+    (308 any)  ; add 
+    (309 any)  ; throw 
+    (310 any)  ; get_loc0 
+    (311 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 19
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+    ;   7: 
+    ;   8: 
+    ;   9: 
+    ;  10: 
+    ;  11: 
+    ;  12: 
+    ;  13: 
+    ;  14: 
+    ;  15: 
+    ;  16: 
+    ;  17: 
+    ;  18: 
+)
+
+(fn _JS_F5FIXED__root.1 
+  ; source ptr: 0x55717ffa4100, ln: 30
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; X
+    )
+  number)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_i32  65536
+    (  6 any)  ; mul 
+    (  7 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F5FLOAT__root.2 
+  ; source ptr: 0x55717ff9e8e0, ln: 35
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; X
+    )
+  number)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_i32  65536
+    (  6 any)  ; div 
+    (  7 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7DEG2RAD__root.3 
+  ; source ptr: 0x55717ff9d910, ln: 40
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; X
+    )
+  number)  ; return
+  ; stack size: 2
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; push_const8  0
+    (  2 any)  ; get_arg0 
+    (  3 any)  ; mul 
+    (  4 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+
+(fn _JS_F12cordicsincos__root.16 
+  ; source ptr: 0x55717ffb05f0, ln: 54
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; Target
+    )
+  number)  ; return
+  ; stack size: 3
+  (locs  ; var count: 6
+    any  ; X: normal
+    any  ; Y: normal
+    any  ; TargetAngle: normal
+    any  ; CurrAngle: normal
+    any  ; Step: normal
+    any  ; NewX: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "FIXED"
+    (  5 any)  ; get_var  "AG_CONST"
+    ( 10 any)  ; call1 
+    ( 11 any)  ; put_loc0 
+    ( 12 any)  ; push_0 
+    ( 13 any)  ; put_loc1 
+    ( 14 any)  ; get_var  "FIXED"
+    ( 19 any)  ; get_arg0 
+    ( 20 any)  ; call1 
+    ( 21 any)  ; put_loc2 
+    ( 22 any)  ; push_0 
+    ( 23 any)  ; put_loc3 
+    ( 24 any)  ; push_0 
+    ( 25 any)  ; put_loc8  4
+    ( 27 any)  ; get_loc8  4
+    ( 29 any)  ; push_i8  12
+    ( 31 any)  ; lt 
+    ( 32 any)  ; if_false8  71
+    ( 34 any)  ; get_loc2 
+    ( 35 any)  ; get_loc3 
+    ( 36 any)  ; gt 
+    ( 37 any)  ; if_false8  32
+    ( 39 any)  ; get_loc0 
+    ( 40 any)  ; get_loc1 
+    ( 41 any)  ; get_loc8  4
+    ( 43 any)  ; sar 
+    ( 44 any)  ; sub 
+    ( 45 any)  ; put_loc8  5
+    ( 47 any)  ; get_loc0 
+    ( 48 any)  ; get_loc8  4
+    ( 50 any)  ; sar 
+    ( 51 any)  ; get_loc1 
+    ( 52 any)  ; add 
+    ( 53 any)  ; put_loc1 
+    ( 54 any)  ; get_loc8  5
+    ( 56 any)  ; put_loc0 
+    ( 57 any)  ; get_loc3 
+    ( 58 any)  ; get_var  "Angles"
+    ( 63 any)  ; get_loc8  4
+    ( 65 any)  ; get_array_el 
+    ( 66 any)  ; add 
+    ( 67 any)  ; put_loc3 
+    ( 68 any)  ; goto8  31
+    ( 70 any)  ; get_loc0 
+    ( 71 any)  ; get_loc1 
+    ( 72 any)  ; get_loc8  4
+    ( 74 any)  ; sar 
+    ( 75 any)  ; add 
+    ( 76 any)  ; put_loc8  5
+    ( 78 any)  ; get_loc0 
+    ( 79 any)  ; get_loc8  4
+    ( 81 any)  ; sar 
+    ( 82 any)  ; neg 
+    ( 83 any)  ; get_loc1 
+    ( 84 any)  ; add 
+    ( 85 any)  ; put_loc1 
+    ( 86 any)  ; get_loc8  5
+    ( 88 any)  ; put_loc0 
+    ( 89 any)  ; get_loc3 
+    ( 90 any)  ; get_var  "Angles"
+    ( 95 any)  ; get_loc8  4
+    ( 97 any)  ; get_array_el 
+    ( 98 any)  ; sub 
+    ( 99 any)  ; put_loc3 
+    (100 any)  ; inc_loc  4
+    (102 any)  ; goto8  -76
+    (104 any)  ; get_var  "FLOAT"
+    (109 any)  ; get_loc0 
+    (110 any)  ; call1 
+    (111 any)  ; get_var  "FLOAT"
+    (116 any)  ; get_loc1 
+    (117 any)  ; call1 
+    (118 any)  ; mul 
+    (119 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6cordic__root.17 
+  ; source ptr: 0x55717ff9ea10, ln: 88
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; runs
+    )
+  number)  ; return
+  ; stack size: 3
+  (locs  ; var count: 3
+    Date  ; start: normal
+    number  ; i: normal
+    Date  ; end: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Date"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; put_loc1 
+    ( 12 any)  ; get_loc1 
+    ( 13 any)  ; get_arg0 
+    ( 14 any)  ; lt 
+    ( 15 any)  ; if_false8  29
+    ( 17 any)  ; get_var  "total"
+    ( 22 any)  ; get_var  "cordicsincos"
+    ( 27 any)  ; get_var  "Target"
+    ( 32 any)  ; call1 
+    ( 33 any)  ; add 
+    ( 34 any)  ; dup 
+    ( 35 any)  ; put_var  "total"
+    ( 40 any)  ; drop 
+    ( 41 any)  ; inc_loc  1
+    ( 43 any)  ; goto8  -32
+    ( 45 any)  ; get_var  "Date"
+    ( 50 any)  ; dup 
+    ( 51 any)  ; call_constructor  0
+    ( 54 any)  ; set_loc2 
+    ( 55 any)  ; get_field2  "getTime"
+    ( 60 any)  ; call_method  0
+    ( 63 any)  ; get_loc0 
+    ( 64 any)  ; get_field2  "getTime"
+    ( 69 any)  ; call_method  0
+    ( 72 any)  ; sub 
+    ( 73 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

@@ -1,0 +1,233 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 5
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "loops", 00000000
+    (  6 any)  ; check_define_var  "nx", 00000000
+    ( 12 any)  ; check_define_var  "nz", 00000000
+    ( 18 any)  ; check_define_var  "morph", 01000000
+    ( 24 any)  ; check_define_var  "a", 00000000
+    ( 30 any)  ; check_define_var  "i", 00000000
+    ( 36 any)  ; check_define_var  "i", 00000000
+    ( 42 any)  ; check_define_var  "i", 00000000
+    ( 48 any)  ; check_define_var  "epsilon", 00000000
+    ( 54 any)  ; define_var  "loops", 00000000
+    ( 60 any)  ; define_var  "nx", 00000000
+    ( 66 any)  ; define_var  "nz", 00000000
+    ( 72 any)  ; fclosure8  0
+    ( 74 any)  ; define_func  "morph", 00000000
+    ( 80 any)  ; define_var  "a", 00000000
+    ( 86 any)  ; define_var  "i", 00000000
+    ( 92 any)  ; define_var  "i", 00000000
+    ( 98 any)  ; define_var  "i", 00000000
+    (104 any)  ; define_var  "epsilon", 00000000
+    (110 any)  ; push_i8  15
+    (112 any)  ; put_var  "loops"
+    (117 any)  ; push_i8  120
+    (119 any)  ; put_var  "nx"
+    (124 any)  ; push_i8  120
+    (126 any)  ; put_var  "nz"
+    (131 any)  ; get_var  "Array"
+    (136 any)  ; call0 
+    (137 any)  ; put_var  "a"
+    (142 any)  ; undefined 
+    (143 any)  ; put_loc0 
+    (144 any)  ; push_0 
+    (145 any)  ; put_var  "i"
+    (150 any)  ; get_var  "i"
+    (155 any)  ; get_var  "nx"
+    (160 any)  ; get_var  "nz"
+    (165 any)  ; mul 
+    (166 any)  ; push_3 
+    (167 any)  ; mul 
+    (168 any)  ; lt 
+    (169 any)  ; if_false8  31
+    (171 any)  ; get_var  "a"
+    (176 any)  ; get_var  "i"
+    (181 any)  ; to_propkey2 
+    (182 any)  ; push_0 
+    (183 any)  ; insert3 
+    (184 any)  ; put_array_el 
+    (185 any)  ; put_loc0 
+    (186 any)  ; get_var  "i"
+    (191 any)  ; inc 
+    (192 any)  ; dup 
+    (193 any)  ; put_var  "i"
+    (198 any)  ; drop 
+    (199 any)  ; goto8  -50
+    (201 any)  ; undefined 
+    (202 any)  ; put_loc0 
+    (203 any)  ; push_0 
+    (204 any)  ; put_var  "i"
+    (209 any)  ; get_var  "i"
+    (214 any)  ; get_var  "loops"
+    (219 any)  ; lt 
+    (220 any)  ; if_false8  39
+    (222 any)  ; get_var  "morph"
+    (227 any)  ; get_var  "a"
+    (232 any)  ; get_var  "i"
+    (237 any)  ; get_var  "loops"
+    (242 any)  ; div 
+    (243 any)  ; call2 
+    (244 any)  ; put_loc0 
+    (245 any)  ; get_var  "i"
+    (250 any)  ; inc 
+    (251 any)  ; dup 
+    (252 any)  ; put_var  "i"
+    (257 any)  ; drop 
+    (258 any)  ; goto8  -50
+    (260 any)  ; push_0 
+    (261 any)  ; dup 
+    (262 any)  ; put_var  "testOutput"
+    (267 any)  ; put_loc0 
+    (268 any)  ; undefined 
+    (269 any)  ; put_loc0 
+    (270 any)  ; push_0 
+    (271 any)  ; put_var  "i"
+    (276 any)  ; get_var  "i"
+    (281 any)  ; get_var  "nx"
+    (286 any)  ; lt 
+    (287 any)  ; if_false8  55
+    (289 any)  ; get_var  "testOutput"
+    (294 any)  ; get_var  "a"
+    (299 any)  ; push_3 
+    (300 any)  ; get_var  "i"
+    (305 any)  ; get_var  "nx"
+    (310 any)  ; mul 
+    (311 any)  ; get_var  "i"
+    (316 any)  ; add 
+    (317 any)  ; mul 
+    (318 any)  ; push_1 
+    (319 any)  ; add 
+    (320 any)  ; get_array_el 
+    (321 any)  ; add 
+    (322 any)  ; dup 
+    (323 any)  ; put_var  "testOutput"
+    (328 any)  ; put_loc0 
+    (329 any)  ; get_var  "i"
+    (334 any)  ; post_inc 
+    (335 any)  ; put_var  "i"
+    (340 any)  ; drop 
+    (341 any)  ; goto8  -66
+    (343 any)  ; null 
+    (344 any)  ; dup 
+    (345 any)  ; put_var  "a"
+    (350 any)  ; put_loc0 
+    (351 any)  ; push_const8  1
+    (353 any)  ; put_var  "epsilon"
+    (358 any)  ; undefined 
+    (359 any)  ; put_loc0 
+    (360 any)  ; get_var  "Math"
+    (365 any)  ; get_field2  "abs"
+    (370 any)  ; get_var  "testOutput"
+    (375 any)  ; call_method  1
+    (378 any)  ; get_var  "epsilon"
+    (383 any)  ; gte 
+    (384 any)  ; if_false8  25
+    (386 any)  ; push_atom_value  "Error:, bad, test, output:, expected, magnitude, below, "
+    (391 any)  ; get_var  "epsilon"
+    (396 any)  ; add 
+    (397 any)  ; push_atom_value  ", but, got, "
+    (402 any)  ; add 
+    (403 any)  ; get_var  "testOutput"
+    (408 any)  ; add 
+    (409 any)  ; throw 
+    (410 any)  ; get_loc0 
+    (411 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 2
+    ;   0: 
+    ;   1: 
+)
+
+(fn _JS_F5morph__root.0 
+  ; source ptr: 0x55906222d750, ln: 30
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; a
+      any  ; f
+    )
+  void)  ; return
+  ; stack size: 5
+  (locs  ; var count: 5
+    number  ; PI2nx: normal
+    (x: number) => number  ; sin: normal
+    number  ; f30: normal
+    number  ; i: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Math"
+    (  5 any)  ; get_field  "PI"
+    ( 10 any)  ; push_i8  8
+    ( 12 any)  ; mul 
+    ( 13 any)  ; get_var  "nx"
+    ( 18 any)  ; div 
+    ( 19 any)  ; put_loc0 
+    ( 20 any)  ; get_var  "Math"
+    ( 25 any)  ; get_field  "sin"
+    ( 30 any)  ; put_loc1 
+    ( 31 any)  ; push_i8  50
+    ( 33 any)  ; get_loc1 
+    ( 34 any)  ; get_arg1 
+    ( 35 any)  ; get_var  "Math"
+    ( 40 any)  ; get_field  "PI"
+    ( 45 any)  ; mul 
+    ( 46 any)  ; push_2 
+    ( 47 any)  ; mul 
+    ( 48 any)  ; call1 
+    ( 49 any)  ; mul 
+    ( 50 any)  ; neg 
+    ( 51 any)  ; put_loc2 
+    ( 52 any)  ; push_0 
+    ( 53 any)  ; put_loc3 
+    ( 54 any)  ; get_loc3 
+    ( 55 any)  ; get_var  "nz"
+    ( 60 any)  ; lt 
+    ( 61 any)  ; if_false8  50
+    ( 63 any)  ; push_0 
+    ( 64 any)  ; put_loc8  4
+    ( 66 any)  ; get_loc8  4
+    ( 68 any)  ; get_var  "nx"
+    ( 73 any)  ; lt 
+    ( 74 any)  ; if_false8  33
+    ( 76 any)  ; get_arg0 
+    ( 77 any)  ; push_3 
+    ( 78 any)  ; get_loc3 
+    ( 79 any)  ; get_var  "nx"
+    ( 84 any)  ; mul 
+    ( 85 any)  ; get_loc8  4
+    ( 87 any)  ; add 
+    ( 88 any)  ; mul 
+    ( 89 any)  ; push_1 
+    ( 90 any)  ; add 
+    ( 91 any)  ; to_propkey2 
+    ( 92 any)  ; get_loc1 
+    ( 93 any)  ; get_loc8  4
+    ( 95 any)  ; push_1 
+    ( 96 any)  ; sub 
+    ( 97 any)  ; get_loc0 
+    ( 98 any)  ; mul 
+    ( 99 any)  ; call1 
+    (100 any)  ; get_loc2 
+    (101 any)  ; neg 
+    (102 any)  ; mul 
+    (103 any)  ; put_array_el 
+    (104 any)  ; inc_loc  4
+    (106 any)  ; goto8  -41
+    (108 any)  ; inc_loc  3
+    (110 any)  ; goto8  -57
+    (112 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

@@ -1,0 +1,233 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 6
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "ack", 01000000
+    (  6 any)  ; check_define_var  "fib", 01000000
+    ( 12 any)  ; check_define_var  "tak", 01000000
+    ( 18 any)  ; check_define_var  "result", 00000000
+    ( 24 any)  ; check_define_var  "i", 00000000
+    ( 30 any)  ; check_define_var  "expected", 00000000
+    ( 36 any)  ; fclosure8  0
+    ( 38 any)  ; define_func  "ack", 00000000
+    ( 44 any)  ; fclosure8  1
+    ( 46 any)  ; define_func  "fib", 00000000
+    ( 52 any)  ; fclosure8  2
+    ( 54 any)  ; define_func  "tak", 00000000
+    ( 60 any)  ; define_var  "result", 00000000
+    ( 66 any)  ; define_var  "i", 00000000
+    ( 72 any)  ; define_var  "expected", 00000000
+    ( 78 any)  ; push_0 
+    ( 79 any)  ; put_var  "result"
+    ( 84 any)  ; undefined 
+    ( 85 any)  ; put_loc0 
+    ( 86 any)  ; push_3 
+    ( 87 any)  ; put_var  "i"
+    ( 92 any)  ; get_var  "i"
+    ( 97 any)  ; push_5 
+    ( 98 any)  ; lte 
+    ( 99 any)  ; if_false8  111
+    (101 any)  ; get_var  "result"
+    (106 any)  ; get_var  "ack"
+    (111 any)  ; push_3 
+    (112 any)  ; get_var  "i"
+    (117 any)  ; call2 
+    (118 any)  ; add 
+    (119 any)  ; dup 
+    (120 any)  ; put_var  "result"
+    (125 any)  ; put_loc0 
+    (126 any)  ; get_var  "result"
+    (131 any)  ; get_var  "fib"
+    (136 any)  ; push_i8  17
+    (138 any)  ; get_var  "i"
+    (143 any)  ; add 
+    (144 any)  ; call1 
+    (145 any)  ; add 
+    (146 any)  ; dup 
+    (147 any)  ; put_var  "result"
+    (152 any)  ; put_loc0 
+    (153 any)  ; get_var  "result"
+    (158 any)  ; get_var  "tak"
+    (163 any)  ; push_3 
+    (164 any)  ; get_var  "i"
+    (169 any)  ; mul 
+    (170 any)  ; push_3 
+    (171 any)  ; add 
+    (172 any)  ; push_2 
+    (173 any)  ; get_var  "i"
+    (178 any)  ; mul 
+    (179 any)  ; push_2 
+    (180 any)  ; add 
+    (181 any)  ; get_var  "i"
+    (186 any)  ; push_1 
+    (187 any)  ; add 
+    (188 any)  ; call3 
+    (189 any)  ; add 
+    (190 any)  ; dup 
+    (191 any)  ; put_var  "result"
+    (196 any)  ; put_loc0 
+    (197 any)  ; get_var  "i"
+    (202 any)  ; post_inc 
+    (203 any)  ; put_var  "i"
+    (208 any)  ; drop 
+    (209 any)  ; goto8  -118
+    (211 any)  ; push_i32  57775
+    (216 any)  ; put_var  "expected"
+    (221 any)  ; undefined 
+    (222 any)  ; put_loc0 
+    (223 any)  ; get_var  "result"
+    (228 any)  ; get_var  "expected"
+    (233 any)  ; neq 
+    (234 any)  ; if_false8  25
+    (236 any)  ; push_atom_value  "ERROR:, bad, result:, expected, "
+    (241 any)  ; get_var  "expected"
+    (246 any)  ; add 
+    (247 any)  ; push_atom_value  ", but, got, "
+    (252 any)  ; add 
+    (253 any)  ; get_var  "result"
+    (258 any)  ; add 
+    (259 any)  ; throw 
+    (260 any)  ; get_loc0 
+    (261 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 3
+    ;   0: 
+    ;   1: 
+    ;   2: 
+)
+
+(fn _JS_F3ack__root.0 
+  ; source ptr: 0x563ba8fdecf0, ln: 5
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; m
+      any  ; n
+    )
+  any)  ; return
+  ; stack size: 6
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_0 
+    (  2 any)  ; eq 
+    (  3 any)  ; if_false8  5
+    (  5 any)  ; get_arg1 
+    (  6 any)  ; push_1 
+    (  7 any)  ; add 
+    (  8 any)  ; return 
+    (  9 any)  ; get_arg1 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; eq 
+    ( 12 any)  ; if_false8  13
+    ( 14 any)  ; get_var  "ack"
+    ( 19 any)  ; get_arg0 
+    ( 20 any)  ; push_1 
+    ( 21 any)  ; sub 
+    ( 22 any)  ; push_1 
+    ( 23 any)  ; tail_call  2
+    ( 26 any)  ; get_var  "ack"
+    ( 31 any)  ; get_arg0 
+    ( 32 any)  ; push_1 
+    ( 33 any)  ; sub 
+    ( 34 any)  ; get_var  "ack"
+    ( 39 any)  ; get_arg0 
+    ( 40 any)  ; get_arg1 
+    ( 41 any)  ; push_1 
+    ( 42 any)  ; sub 
+    ( 43 any)  ; call2 
+    ( 44 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F3fib__root.1 
+  ; source ptr: 0x563ba9015ac0, ln: 11
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; n
+    )
+  any)  ; return
+  ; stack size: 4
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; push_2 
+    (  2 any)  ; lt 
+    (  3 any)  ; if_false8  3
+    (  5 any)  ; push_1 
+    (  6 any)  ; return 
+    (  7 any)  ; get_var  "fib"
+    ( 12 any)  ; get_arg0 
+    ( 13 any)  ; push_2 
+    ( 14 any)  ; sub 
+    ( 15 any)  ; call1 
+    ( 16 any)  ; get_var  "fib"
+    ( 21 any)  ; get_arg0 
+    ( 22 any)  ; push_1 
+    ( 23 any)  ; sub 
+    ( 24 any)  ; call1 
+    ( 25 any)  ; add 
+    ( 26 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F3tak__root.2 
+  ; source ptr: 0x563ba9004150, ln: 16
+  ; arg count: 3
+  (sig (args any  ; this
+      any  ; x
+      any  ; y
+      any  ; z
+    )
+  any)  ; return
+  ; stack size: 7
+  (locs  ; var count: 0
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg1 
+    (  1 any)  ; get_arg0 
+    (  2 any)  ; gte 
+    (  3 any)  ; if_false8  3
+    (  5 any)  ; get_arg2 
+    (  6 any)  ; return 
+    (  7 any)  ; get_var  "tak"
+    ( 12 any)  ; get_var  "tak"
+    ( 17 any)  ; get_arg0 
+    ( 18 any)  ; push_1 
+    ( 19 any)  ; sub 
+    ( 20 any)  ; get_arg1 
+    ( 21 any)  ; get_arg2 
+    ( 22 any)  ; call3 
+    ( 23 any)  ; get_var  "tak"
+    ( 28 any)  ; get_arg1 
+    ( 29 any)  ; push_1 
+    ( 30 any)  ; sub 
+    ( 31 any)  ; get_arg2 
+    ( 32 any)  ; get_arg0 
+    ( 33 any)  ; call3 
+    ( 34 any)  ; get_var  "tak"
+    ( 39 any)  ; get_arg2 
+    ( 40 any)  ; push_1 
+    ( 41 any)  ; sub 
+    ( 42 any)  ; get_arg0 
+    ( 43 any)  ; get_arg1 
+    ( 44 any)  ; call3 
+    ( 45 any)  ; tail_call  3
+  )
+  ; Constant pool
+  ; length: 0
+)
+

@@ -1,0 +1,2326 @@
+(fn _JS_F6<eval>__root 
+  ; source ptr: 0x0, ln: 1
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  any)  ; return
+  ; stack size: 3
+  (locs  ; var count: 1
+    any  ; <ret>: normal
+  )
+  (bytecodes 
+    (  0 any)  ; check_define_var  "Q", 00000000
+    (  6 any)  ; check_define_var  "MTrans", 00000000
+    ( 12 any)  ; check_define_var  "MQube", 00000000
+    ( 18 any)  ; check_define_var  "I", 00000000
+    ( 24 any)  ; check_define_var  "Origin", 00000000
+    ( 30 any)  ; check_define_var  "Testing", 00000000
+    ( 36 any)  ; check_define_var  "LoopTimer", 00000000
+    ( 42 any)  ; check_define_var  "validation", 00000000
+    ( 48 any)  ; check_define_var  "DisplArea", 00000000
+    ( 54 any)  ; check_define_var  "DrawLine", 01000000
+    ( 60 any)  ; check_define_var  "CalcCross", 01000000
+    ( 66 any)  ; check_define_var  "CalcNormal", 01000000
+    ( 72 any)  ; check_define_var  "CreateP", 01000000
+    ( 78 any)  ; check_define_var  "MMulti", 01000000
+    ( 84 any)  ; check_define_var  "VMulti", 01000000
+    ( 90 any)  ; check_define_var  "VMulti2", 01000000
+    ( 96 any)  ; check_define_var  "MAdd", 01000000
+    (102 any)  ; check_define_var  "Translate", 01000000
+    (108 any)  ; check_define_var  "RotateX", 01000000
+    (114 any)  ; check_define_var  "RotateY", 01000000
+    (120 any)  ; check_define_var  "RotateZ", 01000000
+    (126 any)  ; check_define_var  "DrawQube", 01000000
+    (132 any)  ; check_define_var  "Loop", 01000000
+    (138 any)  ; check_define_var  "Init", 01000000
+    (144 any)  ; check_define_var  "i", 00000000
+    (150 any)  ; define_var  "Q", 00000000
+    (156 any)  ; define_var  "MTrans", 00000000
+    (162 any)  ; define_var  "MQube", 00000000
+    (168 any)  ; define_var  "I", 00000000
+    (174 any)  ; define_var  "Origin", 00000000
+    (180 any)  ; define_var  "Testing", 00000000
+    (186 any)  ; define_var  "LoopTimer", 00000000
+    (192 any)  ; define_var  "validation", 00000000
+    (198 any)  ; define_var  "DisplArea", 00000000
+    (204 any)  ; fclosure8  4
+    (206 any)  ; define_func  "DrawLine", 00000000
+    (212 any)  ; fclosure8  5
+    (214 any)  ; define_func  "CalcCross", 00000000
+    (220 any)  ; fclosure8  6
+    (222 any)  ; define_func  "CalcNormal", 00000000
+    (228 any)  ; fclosure8  7
+    (230 any)  ; define_func  "CreateP", 00000000
+    (236 any)  ; fclosure8  8
+    (238 any)  ; define_func  "MMulti", 00000000
+    (244 any)  ; fclosure8  9
+    (246 any)  ; define_func  "VMulti", 00000000
+    (252 any)  ; fclosure8  10
+    (254 any)  ; define_func  "VMulti2", 00000000
+    (260 any)  ; fclosure8  11
+    (262 any)  ; define_func  "MAdd", 00000000
+    (268 any)  ; fclosure8  12
+    (270 any)  ; define_func  "Translate", 00000000
+    (276 any)  ; fclosure8  13
+    (278 any)  ; define_func  "RotateX", 00000000
+    (284 any)  ; fclosure8  14
+    (286 any)  ; define_func  "RotateY", 00000000
+    (292 any)  ; fclosure8  15
+    (294 any)  ; define_func  "RotateZ", 00000000
+    (300 any)  ; fclosure8  16
+    (302 any)  ; define_func  "DrawQube", 00000000
+    (308 any)  ; fclosure8  17
+    (310 any)  ; define_func  "Loop", 00000000
+    (316 any)  ; fclosure8  18
+    (318 any)  ; define_func  "Init", 00000000
+    (324 any)  ; define_var  "i", 00000000
+    (330 any)  ; get_var  "Array"
+    (335 any)  ; dup 
+    (336 any)  ; call_constructor  0
+    (339 any)  ; put_var  "Q"
+    (344 any)  ; get_var  "Array"
+    (349 any)  ; dup 
+    (350 any)  ; call_constructor  0
+    (353 any)  ; put_var  "MTrans"
+    (358 any)  ; get_var  "Array"
+    (363 any)  ; dup 
+    (364 any)  ; call_constructor  0
+    (367 any)  ; put_var  "MQube"
+    (372 any)  ; get_var  "Array"
+    (377 any)  ; dup 
+    (378 any)  ; call_constructor  0
+    (381 any)  ; put_var  "I"
+    (386 any)  ; get_var  "Object"
+    (391 any)  ; dup 
+    (392 any)  ; call_constructor  0
+    (395 any)  ; put_var  "Origin"
+    (400 any)  ; get_var  "Object"
+    (405 any)  ; dup 
+    (406 any)  ; call_constructor  0
+    (409 any)  ; put_var  "Testing"
+    (414 any)  ; object 
+    (415 any)  ; push_const8  0
+    (417 any)  ; define_field  "20"
+    (422 any)  ; push_const8  1
+    (424 any)  ; define_field  "40"
+    (429 any)  ; push_const8  2
+    (431 any)  ; define_field  "80"
+    (436 any)  ; push_const8  3
+    (438 any)  ; define_field  "160"
+    (443 any)  ; put_var  "validation"
+    (448 any)  ; get_var  "Object"
+    (453 any)  ; dup 
+    (454 any)  ; call_constructor  0
+    (457 any)  ; put_var  "DisplArea"
+    (462 any)  ; get_var  "DisplArea"
+    (467 any)  ; push_i16  300
+    (470 any)  ; insert2 
+    (471 any)  ; put_field  "Width"
+    (476 any)  ; put_loc0 
+    (477 any)  ; get_var  "DisplArea"
+    (482 any)  ; push_i16  300
+    (485 any)  ; insert2 
+    (486 any)  ; put_field  "Height"
+    (491 any)  ; put_loc0 
+    (492 any)  ; undefined 
+    (493 any)  ; put_loc0 
+    (494 any)  ; push_i8  20
+    (496 any)  ; put_var  "i"
+    (501 any)  ; get_var  "i"
+    (506 any)  ; push_i16  160
+    (509 any)  ; lte 
+    (510 any)  ; if_false8  29
+    (512 any)  ; get_var  "Init"
+    (517 any)  ; get_var  "i"
+    (522 any)  ; call1 
+    (523 any)  ; put_loc0 
+    (524 any)  ; get_var  "i"
+    (529 any)  ; push_2 
+    (530 any)  ; mul 
+    (531 any)  ; dup 
+    (532 any)  ; put_var  "i"
+    (537 any)  ; drop 
+    (538 any)  ; goto8  -38
+    (540 any)  ; null 
+    (541 any)  ; dup 
+    (542 any)  ; put_var  "Q"
+    (547 any)  ; put_loc0 
+    (548 any)  ; null 
+    (549 any)  ; dup 
+    (550 any)  ; put_var  "MTrans"
+    (555 any)  ; put_loc0 
+    (556 any)  ; null 
+    (557 any)  ; dup 
+    (558 any)  ; put_var  "MQube"
+    (563 any)  ; put_loc0 
+    (564 any)  ; null 
+    (565 any)  ; dup 
+    (566 any)  ; put_var  "I"
+    (571 any)  ; put_loc0 
+    (572 any)  ; null 
+    (573 any)  ; dup 
+    (574 any)  ; put_var  "Origin"
+    (579 any)  ; put_loc0 
+    (580 any)  ; null 
+    (581 any)  ; dup 
+    (582 any)  ; put_var  "Testing"
+    (587 any)  ; put_loc0 
+    (588 any)  ; null 
+    (589 any)  ; dup 
+    (590 any)  ; put_var  "LoopTime"
+    (595 any)  ; put_loc0 
+    (596 any)  ; null 
+    (597 any)  ; dup 
+    (598 any)  ; put_var  "DisplArea"
+    (603 any)  ; set_loc0 
+    (604 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 19
+    ;   0: 
+    ;   1: 
+    ;   2: 
+    ;   3: 
+    ;   4: 
+    ;   5: 
+    ;   6: 
+    ;   7: 
+    ;   8: 
+    ;   9: 
+    ;  10: 
+    ;  11: 
+    ;  12: 
+    ;  13: 
+    ;  14: 
+    ;  15: 
+    ;  16: 
+    ;  17: 
+    ;  18: 
+)
+
+(fn _JS_F8DrawLine__root.4 
+  ; source ptr: 0x55c1c45594e0, ln: 24
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; From
+      any  ; To
+    )
+  void)  ; return
+  ; stack size: 4
+  (locs  ; var count: 17
+    any  ; x1: normal
+    any  ; x2: normal
+    any  ; y1: normal
+    any  ; y2: normal
+    number  ; dx: normal
+    number  ; dy: normal
+    any  ; x: normal
+    any  ; y: normal
+    any  ; IncX1: normal
+    any  ; IncY1: normal
+    any  ; IncX2: normal
+    any  ; IncY2: normal
+    any  ; Den: normal
+    any  ; Num: normal
+    any  ; NumAdd: normal
+    any  ; NumPix: normal
+    any  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg0 
+    (  1 any)  ; get_field  "V"
+    (  6 any)  ; push_0 
+    (  7 any)  ; get_array_el 
+    (  8 any)  ; put_loc0 
+    (  9 any)  ; get_arg1 
+    ( 10 any)  ; get_field  "V"
+    ( 15 any)  ; push_0 
+    ( 16 any)  ; get_array_el 
+    ( 17 any)  ; put_loc1 
+    ( 18 any)  ; get_arg0 
+    ( 19 any)  ; get_field  "V"
+    ( 24 any)  ; push_1 
+    ( 25 any)  ; get_array_el 
+    ( 26 any)  ; put_loc2 
+    ( 27 any)  ; get_arg1 
+    ( 28 any)  ; get_field  "V"
+    ( 33 any)  ; push_1 
+    ( 34 any)  ; get_array_el 
+    ( 35 any)  ; put_loc3 
+    ( 36 any)  ; get_var  "Math"
+    ( 41 any)  ; get_field2  "abs"
+    ( 46 any)  ; get_loc1 
+    ( 47 any)  ; get_loc0 
+    ( 48 any)  ; sub 
+    ( 49 any)  ; call_method  1
+    ( 52 any)  ; put_loc8  4
+    ( 54 any)  ; get_var  "Math"
+    ( 59 any)  ; get_field2  "abs"
+    ( 64 any)  ; get_loc3 
+    ( 65 any)  ; get_loc2 
+    ( 66 any)  ; sub 
+    ( 67 any)  ; call_method  1
+    ( 70 any)  ; put_loc8  5
+    ( 72 any)  ; get_loc0 
+    ( 73 any)  ; put_loc8  6
+    ( 75 any)  ; get_loc2 
+    ( 76 any)  ; put_loc8  7
+    ( 78 any)  ; get_loc1 
+    ( 79 any)  ; get_loc0 
+    ( 80 any)  ; gte 
+    ( 81 any)  ; if_false8  9
+    ( 83 any)  ; push_1 
+    ( 84 any)  ; put_loc8  8
+    ( 86 any)  ; push_1 
+    ( 87 any)  ; put_loc8  10
+    ( 89 any)  ; goto8  7
+    ( 91 any)  ; push_minus1 
+    ( 92 any)  ; put_loc8  8
+    ( 94 any)  ; push_minus1 
+    ( 95 any)  ; put_loc8  10
+    ( 97 any)  ; get_loc3 
+    ( 98 any)  ; get_loc2 
+    ( 99 any)  ; gte 
+    (100 any)  ; if_false8  9
+    (102 any)  ; push_1 
+    (103 any)  ; put_loc8  9
+    (105 any)  ; push_1 
+    (106 any)  ; put_loc8  11
+    (108 any)  ; goto8  7
+    (110 any)  ; push_minus1 
+    (111 any)  ; put_loc8  9
+    (113 any)  ; push_minus1 
+    (114 any)  ; put_loc8  11
+    (116 any)  ; get_loc8  4
+    (118 any)  ; get_loc8  5
+    (120 any)  ; gte 
+    (121 any)  ; if_false8  27
+    (123 any)  ; push_0 
+    (124 any)  ; put_loc8  8
+    (126 any)  ; push_0 
+    (127 any)  ; put_loc8  11
+    (129 any)  ; get_loc8  4
+    (131 any)  ; put_loc8  12
+    (133 any)  ; get_loc8  4
+    (135 any)  ; push_2 
+    (136 any)  ; div 
+    (137 any)  ; put_loc8  13
+    (139 any)  ; get_loc8  5
+    (141 any)  ; put_loc8  14
+    (143 any)  ; get_loc8  4
+    (145 any)  ; put_loc8  15
+    (147 any)  ; goto8  25
+    (149 any)  ; push_0 
+    (150 any)  ; put_loc8  10
+    (152 any)  ; push_0 
+    (153 any)  ; put_loc8  9
+    (155 any)  ; get_loc8  5
+    (157 any)  ; put_loc8  12
+    (159 any)  ; get_loc8  5
+    (161 any)  ; push_2 
+    (162 any)  ; div 
+    (163 any)  ; put_loc8  13
+    (165 any)  ; get_loc8  4
+    (167 any)  ; put_loc8  14
+    (169 any)  ; get_loc8  5
+    (171 any)  ; put_loc8  15
+    (173 any)  ; get_var  "Math"
+    (178 any)  ; get_field2  "round"
+    (183 any)  ; get_var  "Q"
+    (188 any)  ; get_field  "LastPx"
+    (193 any)  ; get_loc8  15
+    (195 any)  ; add 
+    (196 any)  ; call_method  1
+    (199 any)  ; put_loc8  15
+    (201 any)  ; get_var  "Q"
+    (206 any)  ; get_field  "LastPx"
+    (211 any)  ; put_loc8  16
+    (213 any)  ; get_loc8  16
+    (215 any)  ; get_loc8  15
+    (217 any)  ; lt 
+    (218 any)  ; if_false8  39
+    (220 any)  ; get_loc8  14
+    (222 any)  ; add_loc  13
+    (224 any)  ; get_loc8  13
+    (226 any)  ; get_loc8  12
+    (228 any)  ; gte 
+    (229 any)  ; if_false8  16
+    (231 any)  ; get_loc8  13
+    (233 any)  ; get_loc8  12
+    (235 any)  ; sub 
+    (236 any)  ; put_loc8  13
+    (238 any)  ; get_loc8  8
+    (240 any)  ; add_loc  6
+    (242 any)  ; get_loc8  9
+    (244 any)  ; add_loc  7
+    (246 any)  ; get_loc8  10
+    (248 any)  ; add_loc  6
+    (250 any)  ; get_loc8  11
+    (252 any)  ; add_loc  7
+    (254 any)  ; inc_loc  16
+    (256 any)  ; goto8  -44
+    (258 any)  ; get_var  "Q"
+    (263 any)  ; get_loc8  15
+    (265 any)  ; put_field  "LastPx"
+    (270 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F9CalcCross__root.5 
+  ; source ptr: 0x55c1c455a9e0, ln: 77
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; V0
+      any  ; V1
+    )
+  any[])  ; return
+  ; stack size: 6
+  (locs  ; var count: 1
+    any[]  ; Cross: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; set_loc0 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; to_propkey2 
+    ( 12 any)  ; get_arg0 
+    ( 13 any)  ; push_1 
+    ( 14 any)  ; get_array_el 
+    ( 15 any)  ; get_arg1 
+    ( 16 any)  ; push_2 
+    ( 17 any)  ; get_array_el 
+    ( 18 any)  ; mul 
+    ( 19 any)  ; get_arg0 
+    ( 20 any)  ; push_2 
+    ( 21 any)  ; get_array_el 
+    ( 22 any)  ; get_arg1 
+    ( 23 any)  ; push_1 
+    ( 24 any)  ; get_array_el 
+    ( 25 any)  ; mul 
+    ( 26 any)  ; sub 
+    ( 27 any)  ; put_array_el 
+    ( 28 any)  ; get_loc0 
+    ( 29 any)  ; push_1 
+    ( 30 any)  ; to_propkey2 
+    ( 31 any)  ; get_arg0 
+    ( 32 any)  ; push_2 
+    ( 33 any)  ; get_array_el 
+    ( 34 any)  ; get_arg1 
+    ( 35 any)  ; push_0 
+    ( 36 any)  ; get_array_el 
+    ( 37 any)  ; mul 
+    ( 38 any)  ; get_arg0 
+    ( 39 any)  ; push_0 
+    ( 40 any)  ; get_array_el 
+    ( 41 any)  ; get_arg1 
+    ( 42 any)  ; push_2 
+    ( 43 any)  ; get_array_el 
+    ( 44 any)  ; mul 
+    ( 45 any)  ; sub 
+    ( 46 any)  ; put_array_el 
+    ( 47 any)  ; get_loc0 
+    ( 48 any)  ; push_2 
+    ( 49 any)  ; to_propkey2 
+    ( 50 any)  ; get_arg0 
+    ( 51 any)  ; push_0 
+    ( 52 any)  ; get_array_el 
+    ( 53 any)  ; get_arg1 
+    ( 54 any)  ; push_1 
+    ( 55 any)  ; get_array_el 
+    ( 56 any)  ; mul 
+    ( 57 any)  ; get_arg0 
+    ( 58 any)  ; push_1 
+    ( 59 any)  ; get_array_el 
+    ( 60 any)  ; get_arg1 
+    ( 61 any)  ; push_0 
+    ( 62 any)  ; get_array_el 
+    ( 63 any)  ; mul 
+    ( 64 any)  ; sub 
+    ( 65 any)  ; put_array_el 
+    ( 66 any)  ; get_loc0 
+    ( 67 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F10CalcNormal__root.6 
+  ; source ptr: 0x55c1c455b0e0, ln: 85
+  ; arg count: 3
+  (sig (args any  ; this
+      any  ; V0
+      any  ; V1
+      any  ; V2
+    )
+  any[])  ; return
+  ; stack size: 6
+  (locs  ; var count: 4
+    any[]  ; A: normal
+    any[]  ; B: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; Length: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; get_var  "Array"
+    ( 15 any)  ; dup 
+    ( 16 any)  ; call_constructor  0
+    ( 19 any)  ; put_loc1 
+    ( 20 any)  ; push_0 
+    ( 21 any)  ; put_loc2 
+    ( 22 any)  ; get_loc2 
+    ( 23 any)  ; push_3 
+    ( 24 any)  ; lt 
+    ( 25 any)  ; if_false8  27
+    ( 27 any)  ; get_loc0 
+    ( 28 any)  ; get_loc2 
+    ( 29 any)  ; to_propkey2 
+    ( 30 any)  ; get_arg0 
+    ( 31 any)  ; get_loc2 
+    ( 32 any)  ; get_array_el 
+    ( 33 any)  ; get_arg1 
+    ( 34 any)  ; get_loc2 
+    ( 35 any)  ; get_array_el 
+    ( 36 any)  ; sub 
+    ( 37 any)  ; put_array_el 
+    ( 38 any)  ; get_loc1 
+    ( 39 any)  ; get_loc2 
+    ( 40 any)  ; to_propkey2 
+    ( 41 any)  ; get_arg2 
+    ( 42 any)  ; get_loc2 
+    ( 43 any)  ; get_array_el 
+    ( 44 any)  ; get_arg1 
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; sub 
+    ( 48 any)  ; put_array_el 
+    ( 49 any)  ; inc_loc  2
+    ( 51 any)  ; goto8  -30
+    ( 53 any)  ; get_var  "CalcCross"
+    ( 58 any)  ; get_loc0 
+    ( 59 any)  ; get_loc1 
+    ( 60 any)  ; call2 
+    ( 61 any)  ; put_loc0 
+    ( 62 any)  ; get_var  "Math"
+    ( 67 any)  ; get_field2  "sqrt"
+    ( 72 any)  ; get_loc0 
+    ( 73 any)  ; push_0 
+    ( 74 any)  ; get_array_el 
+    ( 75 any)  ; get_loc0 
+    ( 76 any)  ; push_0 
+    ( 77 any)  ; get_array_el 
+    ( 78 any)  ; mul 
+    ( 79 any)  ; get_loc0 
+    ( 80 any)  ; push_1 
+    ( 81 any)  ; get_array_el 
+    ( 82 any)  ; get_loc0 
+    ( 83 any)  ; push_1 
+    ( 84 any)  ; get_array_el 
+    ( 85 any)  ; mul 
+    ( 86 any)  ; add 
+    ( 87 any)  ; get_loc0 
+    ( 88 any)  ; push_2 
+    ( 89 any)  ; get_array_el 
+    ( 90 any)  ; get_loc0 
+    ( 91 any)  ; push_2 
+    ( 92 any)  ; get_array_el 
+    ( 93 any)  ; mul 
+    ( 94 any)  ; add 
+    ( 95 any)  ; call_method  1
+    ( 98 any)  ; put_loc3 
+    ( 99 any)  ; push_0 
+    (100 any)  ; put_loc2 
+    (101 any)  ; get_loc2 
+    (102 any)  ; push_3 
+    (103 any)  ; lt 
+    (104 any)  ; if_false8  14
+    (106 any)  ; get_loc0 
+    (107 any)  ; get_loc2 
+    (108 any)  ; to_propkey2 
+    (109 any)  ; get_loc0 
+    (110 any)  ; get_loc2 
+    (111 any)  ; get_array_el 
+    (112 any)  ; get_loc3 
+    (113 any)  ; div 
+    (114 any)  ; put_array_el 
+    (115 any)  ; inc_loc  2
+    (117 any)  ; goto8  -17
+    (119 any)  ; get_loc0 
+    (120 any)  ; push_3 
+    (121 any)  ; push_1 
+    (122 any)  ; put_array_el 
+    (123 any)  ; get_loc0 
+    (124 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7CreateP__root.7 
+  ; source ptr: 0x55c1c4545d40, ln: 98
+  ; arg count: 3
+  (sig (args any  ; this
+      any  ; X
+      any  ; Y
+      any  ; Z
+    )
+  void)  ; return
+  ; stack size: 5
+  (locs  ; var count: 1
+  )
+  (bytecodes 
+    (  0 any)  ; push_this 
+    (  1 any)  ; put_loc0 
+    (  2 any)  ; get_loc0 
+    (  3 any)  ; get_arg0 
+    (  4 any)  ; get_arg1 
+    (  5 any)  ; get_arg2 
+    (  6 any)  ; push_1 
+    (  7 any)  ; array_from  4
+    ( 10 any)  ; put_field  "V"
+    ( 15 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6MMulti__root.8 
+  ; source ptr: 0x55c1c45539f0, ln: 103
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M1
+      any  ; M2
+    )
+  any[][])  ; return
+  ; stack size: 6
+  (locs  ; var count: 3
+    any[][]  ; M: normal
+    number  ; i: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; array_from  0
+    (  3 any)  ; array_from  0
+    (  6 any)  ; array_from  0
+    (  9 any)  ; array_from  0
+    ( 12 any)  ; array_from  4
+    ( 15 any)  ; put_loc0 
+    ( 16 any)  ; push_0 
+    ( 17 any)  ; put_loc1 
+    ( 18 any)  ; push_0 
+    ( 19 any)  ; put_loc2 
+    ( 20 any)  ; get_loc1 
+    ( 21 any)  ; push_4 
+    ( 22 any)  ; lt 
+    ( 23 any)  ; if_false8  69
+    ( 25 any)  ; push_0 
+    ( 26 any)  ; put_loc2 
+    ( 27 any)  ; get_loc2 
+    ( 28 any)  ; push_4 
+    ( 29 any)  ; lt 
+    ( 30 any)  ; if_false8  58
+    ( 32 any)  ; get_loc0 
+    ( 33 any)  ; get_loc1 
+    ( 34 any)  ; get_array_el 
+    ( 35 any)  ; get_loc2 
+    ( 36 any)  ; to_propkey2 
+    ( 37 any)  ; get_arg0 
+    ( 38 any)  ; get_loc1 
+    ( 39 any)  ; get_array_el 
+    ( 40 any)  ; push_0 
+    ( 41 any)  ; get_array_el 
+    ( 42 any)  ; get_arg1 
+    ( 43 any)  ; push_0 
+    ( 44 any)  ; get_array_el 
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; mul 
+    ( 48 any)  ; get_arg0 
+    ( 49 any)  ; get_loc1 
+    ( 50 any)  ; get_array_el 
+    ( 51 any)  ; push_1 
+    ( 52 any)  ; get_array_el 
+    ( 53 any)  ; get_arg1 
+    ( 54 any)  ; push_1 
+    ( 55 any)  ; get_array_el 
+    ( 56 any)  ; get_loc2 
+    ( 57 any)  ; get_array_el 
+    ( 58 any)  ; mul 
+    ( 59 any)  ; add 
+    ( 60 any)  ; get_arg0 
+    ( 61 any)  ; get_loc1 
+    ( 62 any)  ; get_array_el 
+    ( 63 any)  ; push_2 
+    ( 64 any)  ; get_array_el 
+    ( 65 any)  ; get_arg1 
+    ( 66 any)  ; push_2 
+    ( 67 any)  ; get_array_el 
+    ( 68 any)  ; get_loc2 
+    ( 69 any)  ; get_array_el 
+    ( 70 any)  ; mul 
+    ( 71 any)  ; add 
+    ( 72 any)  ; get_arg0 
+    ( 73 any)  ; get_loc1 
+    ( 74 any)  ; get_array_el 
+    ( 75 any)  ; push_3 
+    ( 76 any)  ; get_array_el 
+    ( 77 any)  ; get_arg1 
+    ( 78 any)  ; push_3 
+    ( 79 any)  ; get_array_el 
+    ( 80 any)  ; get_loc2 
+    ( 81 any)  ; get_array_el 
+    ( 82 any)  ; mul 
+    ( 83 any)  ; add 
+    ( 84 any)  ; put_array_el 
+    ( 85 any)  ; inc_loc  2
+    ( 87 any)  ; goto8  -61
+    ( 89 any)  ; inc_loc  1
+    ( 91 any)  ; goto8  -72
+    ( 93 any)  ; get_loc0 
+    ( 94 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F6VMulti__root.9 
+  ; source ptr: 0x55c1c455c750, ln: 115
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M
+      any  ; V
+    )
+  any[])  ; return
+  ; stack size: 6
+  (locs  ; var count: 2
+    any[]  ; Vect: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; put_loc1 
+    ( 12 any)  ; get_loc1 
+    ( 13 any)  ; push_4 
+    ( 14 any)  ; lt 
+    ( 15 any)  ; if_false8  48
+    ( 17 any)  ; get_loc0 
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; to_propkey2 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; get_loc1 
+    ( 22 any)  ; get_array_el 
+    ( 23 any)  ; push_0 
+    ( 24 any)  ; get_array_el 
+    ( 25 any)  ; get_arg1 
+    ( 26 any)  ; push_0 
+    ( 27 any)  ; get_array_el 
+    ( 28 any)  ; mul 
+    ( 29 any)  ; get_arg0 
+    ( 30 any)  ; get_loc1 
+    ( 31 any)  ; get_array_el 
+    ( 32 any)  ; push_1 
+    ( 33 any)  ; get_array_el 
+    ( 34 any)  ; get_arg1 
+    ( 35 any)  ; push_1 
+    ( 36 any)  ; get_array_el 
+    ( 37 any)  ; mul 
+    ( 38 any)  ; add 
+    ( 39 any)  ; get_arg0 
+    ( 40 any)  ; get_loc1 
+    ( 41 any)  ; get_array_el 
+    ( 42 any)  ; push_2 
+    ( 43 any)  ; get_array_el 
+    ( 44 any)  ; get_arg1 
+    ( 45 any)  ; push_2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; mul 
+    ( 48 any)  ; add 
+    ( 49 any)  ; get_arg0 
+    ( 50 any)  ; get_loc1 
+    ( 51 any)  ; get_array_el 
+    ( 52 any)  ; push_3 
+    ( 53 any)  ; get_array_el 
+    ( 54 any)  ; get_arg1 
+    ( 55 any)  ; push_3 
+    ( 56 any)  ; get_array_el 
+    ( 57 any)  ; mul 
+    ( 58 any)  ; add 
+    ( 59 any)  ; put_array_el 
+    ( 60 any)  ; inc_loc  1
+    ( 62 any)  ; goto8  -51
+    ( 64 any)  ; get_loc0 
+    ( 65 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7VMulti2__root.10 
+  ; source ptr: 0x55c1c45570a0, ln: 122
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M
+      any  ; V
+    )
+  any[])  ; return
+  ; stack size: 6
+  (locs  ; var count: 2
+    any[]  ; Vect: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; push_0 
+    ( 11 any)  ; put_loc1 
+    ( 12 any)  ; get_loc1 
+    ( 13 any)  ; push_3 
+    ( 14 any)  ; lt 
+    ( 15 any)  ; if_false8  38
+    ( 17 any)  ; get_loc0 
+    ( 18 any)  ; get_loc1 
+    ( 19 any)  ; to_propkey2 
+    ( 20 any)  ; get_arg0 
+    ( 21 any)  ; get_loc1 
+    ( 22 any)  ; get_array_el 
+    ( 23 any)  ; push_0 
+    ( 24 any)  ; get_array_el 
+    ( 25 any)  ; get_arg1 
+    ( 26 any)  ; push_0 
+    ( 27 any)  ; get_array_el 
+    ( 28 any)  ; mul 
+    ( 29 any)  ; get_arg0 
+    ( 30 any)  ; get_loc1 
+    ( 31 any)  ; get_array_el 
+    ( 32 any)  ; push_1 
+    ( 33 any)  ; get_array_el 
+    ( 34 any)  ; get_arg1 
+    ( 35 any)  ; push_1 
+    ( 36 any)  ; get_array_el 
+    ( 37 any)  ; mul 
+    ( 38 any)  ; add 
+    ( 39 any)  ; get_arg0 
+    ( 40 any)  ; get_loc1 
+    ( 41 any)  ; get_array_el 
+    ( 42 any)  ; push_2 
+    ( 43 any)  ; get_array_el 
+    ( 44 any)  ; get_arg1 
+    ( 45 any)  ; push_2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; mul 
+    ( 48 any)  ; add 
+    ( 49 any)  ; put_array_el 
+    ( 50 any)  ; inc_loc  1
+    ( 52 any)  ; goto8  -41
+    ( 54 any)  ; get_loc0 
+    ( 55 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F4MAdd__root.11 
+  ; source ptr: 0x55c1c455d490, ln: 130
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M1
+      any  ; M2
+    )
+  any[][])  ; return
+  ; stack size: 5
+  (locs  ; var count: 3
+    any[][]  ; M: normal
+    number  ; i: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; array_from  0
+    (  3 any)  ; array_from  0
+    (  6 any)  ; array_from  0
+    (  9 any)  ; array_from  0
+    ( 12 any)  ; array_from  4
+    ( 15 any)  ; put_loc0 
+    ( 16 any)  ; push_0 
+    ( 17 any)  ; put_loc1 
+    ( 18 any)  ; push_0 
+    ( 19 any)  ; put_loc2 
+    ( 20 any)  ; get_loc1 
+    ( 21 any)  ; push_4 
+    ( 22 any)  ; lt 
+    ( 23 any)  ; if_false8  33
+    ( 25 any)  ; push_0 
+    ( 26 any)  ; put_loc2 
+    ( 27 any)  ; get_loc2 
+    ( 28 any)  ; push_4 
+    ( 29 any)  ; lt 
+    ( 30 any)  ; if_false8  22
+    ( 32 any)  ; get_loc0 
+    ( 33 any)  ; get_loc1 
+    ( 34 any)  ; get_array_el 
+    ( 35 any)  ; get_loc2 
+    ( 36 any)  ; to_propkey2 
+    ( 37 any)  ; get_arg0 
+    ( 38 any)  ; get_loc1 
+    ( 39 any)  ; get_array_el 
+    ( 40 any)  ; get_loc2 
+    ( 41 any)  ; get_array_el 
+    ( 42 any)  ; get_arg1 
+    ( 43 any)  ; get_loc1 
+    ( 44 any)  ; get_array_el 
+    ( 45 any)  ; get_loc2 
+    ( 46 any)  ; get_array_el 
+    ( 47 any)  ; add 
+    ( 48 any)  ; put_array_el 
+    ( 49 any)  ; inc_loc  2
+    ( 51 any)  ; goto8  -25
+    ( 53 any)  ; inc_loc  1
+    ( 55 any)  ; goto8  -36
+    ( 57 any)  ; get_loc0 
+    ( 58 any)  ; return 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F9Translate__root.12 
+  ; source ptr: 0x55c1c4550330, ln: 141
+  ; arg count: 4
+  (sig (args any  ; this
+      any  ; M
+      any  ; Dx
+      any  ; Dy
+      any  ; Dz
+    )
+  any[][])  ; return
+  ; stack size: 7
+  (locs  ; var count: 1
+    any[][]  ; T: normal
+  )
+  (bytecodes 
+    (  0 any)  ; push_1 
+    (  1 any)  ; push_0 
+    (  2 any)  ; push_0 
+    (  3 any)  ; get_arg1 
+    (  4 any)  ; array_from  4
+    (  7 any)  ; push_0 
+    (  8 any)  ; push_1 
+    (  9 any)  ; push_0 
+    ( 10 any)  ; get_arg2 
+    ( 11 any)  ; array_from  4
+    ( 14 any)  ; push_0 
+    ( 15 any)  ; push_0 
+    ( 16 any)  ; push_1 
+    ( 17 any)  ; get_arg3 
+    ( 18 any)  ; array_from  4
+    ( 21 any)  ; push_0 
+    ( 22 any)  ; push_0 
+    ( 23 any)  ; push_0 
+    ( 24 any)  ; push_1 
+    ( 25 any)  ; array_from  4
+    ( 28 any)  ; array_from  4
+    ( 31 any)  ; put_loc0 
+    ( 32 any)  ; get_var  "MMulti"
+    ( 37 any)  ; get_loc0 
+    ( 38 any)  ; get_arg0 
+    ( 39 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7RotateX__root.13 
+  ; source ptr: 0x55c1c45482b0, ln: 151
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M
+      any  ; Phi
+    )
+  any[][])  ; return
+  ; stack size: 7
+  (locs  ; var count: 4
+    any  ; a: normal
+    number  ; Cos: normal
+    number  ; Sin: normal
+    number[][]  ; R: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg1 
+    (  1 any)  ; set_loc0 
+    (  2 any)  ; get_var  "Math"
+    (  7 any)  ; get_field  "PI"
+    ( 12 any)  ; push_i16  180
+    ( 15 any)  ; div 
+    ( 16 any)  ; mul 
+    ( 17 any)  ; put_loc0 
+    ( 18 any)  ; get_var  "Math"
+    ( 23 any)  ; get_field2  "cos"
+    ( 28 any)  ; get_loc0 
+    ( 29 any)  ; call_method  1
+    ( 32 any)  ; put_loc1 
+    ( 33 any)  ; get_var  "Math"
+    ( 38 any)  ; get_field2  "sin"
+    ( 43 any)  ; get_loc0 
+    ( 44 any)  ; call_method  1
+    ( 47 any)  ; put_loc2 
+    ( 48 any)  ; push_1 
+    ( 49 any)  ; push_0 
+    ( 50 any)  ; push_0 
+    ( 51 any)  ; push_0 
+    ( 52 any)  ; array_from  4
+    ( 55 any)  ; push_0 
+    ( 56 any)  ; get_loc1 
+    ( 57 any)  ; get_loc2 
+    ( 58 any)  ; neg 
+    ( 59 any)  ; push_0 
+    ( 60 any)  ; array_from  4
+    ( 63 any)  ; push_0 
+    ( 64 any)  ; get_loc2 
+    ( 65 any)  ; get_loc1 
+    ( 66 any)  ; push_0 
+    ( 67 any)  ; array_from  4
+    ( 70 any)  ; push_0 
+    ( 71 any)  ; push_0 
+    ( 72 any)  ; push_0 
+    ( 73 any)  ; push_1 
+    ( 74 any)  ; array_from  4
+    ( 77 any)  ; array_from  4
+    ( 80 any)  ; put_loc3 
+    ( 81 any)  ; get_var  "MMulti"
+    ( 86 any)  ; get_loc3 
+    ( 87 any)  ; get_arg0 
+    ( 88 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7RotateY__root.14 
+  ; source ptr: 0x55c1c4545f50, ln: 165
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M
+      any  ; Phi
+    )
+  any[][])  ; return
+  ; stack size: 7
+  (locs  ; var count: 4
+    any  ; a: normal
+    number  ; Cos: normal
+    number  ; Sin: normal
+    number[][]  ; R: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg1 
+    (  1 any)  ; set_loc0 
+    (  2 any)  ; get_var  "Math"
+    (  7 any)  ; get_field  "PI"
+    ( 12 any)  ; push_i16  180
+    ( 15 any)  ; div 
+    ( 16 any)  ; mul 
+    ( 17 any)  ; put_loc0 
+    ( 18 any)  ; get_var  "Math"
+    ( 23 any)  ; get_field2  "cos"
+    ( 28 any)  ; get_loc0 
+    ( 29 any)  ; call_method  1
+    ( 32 any)  ; put_loc1 
+    ( 33 any)  ; get_var  "Math"
+    ( 38 any)  ; get_field2  "sin"
+    ( 43 any)  ; get_loc0 
+    ( 44 any)  ; call_method  1
+    ( 47 any)  ; put_loc2 
+    ( 48 any)  ; get_loc1 
+    ( 49 any)  ; push_0 
+    ( 50 any)  ; get_loc2 
+    ( 51 any)  ; push_0 
+    ( 52 any)  ; array_from  4
+    ( 55 any)  ; push_0 
+    ( 56 any)  ; push_1 
+    ( 57 any)  ; push_0 
+    ( 58 any)  ; push_0 
+    ( 59 any)  ; array_from  4
+    ( 62 any)  ; get_loc2 
+    ( 63 any)  ; neg 
+    ( 64 any)  ; push_0 
+    ( 65 any)  ; get_loc1 
+    ( 66 any)  ; push_0 
+    ( 67 any)  ; array_from  4
+    ( 70 any)  ; push_0 
+    ( 71 any)  ; push_0 
+    ( 72 any)  ; push_0 
+    ( 73 any)  ; push_1 
+    ( 74 any)  ; array_from  4
+    ( 77 any)  ; array_from  4
+    ( 80 any)  ; put_loc3 
+    ( 81 any)  ; get_var  "MMulti"
+    ( 86 any)  ; get_loc3 
+    ( 87 any)  ; get_arg0 
+    ( 88 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F7RotateZ__root.15 
+  ; source ptr: 0x55c1c4545250, ln: 179
+  ; arg count: 2
+  (sig (args any  ; this
+      any  ; M
+      any  ; Phi
+    )
+  any[][])  ; return
+  ; stack size: 7
+  (locs  ; var count: 4
+    any  ; a: normal
+    number  ; Cos: normal
+    number  ; Sin: normal
+    number[][]  ; R: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_arg1 
+    (  1 any)  ; set_loc0 
+    (  2 any)  ; get_var  "Math"
+    (  7 any)  ; get_field  "PI"
+    ( 12 any)  ; push_i16  180
+    ( 15 any)  ; div 
+    ( 16 any)  ; mul 
+    ( 17 any)  ; put_loc0 
+    ( 18 any)  ; get_var  "Math"
+    ( 23 any)  ; get_field2  "cos"
+    ( 28 any)  ; get_loc0 
+    ( 29 any)  ; call_method  1
+    ( 32 any)  ; put_loc1 
+    ( 33 any)  ; get_var  "Math"
+    ( 38 any)  ; get_field2  "sin"
+    ( 43 any)  ; get_loc0 
+    ( 44 any)  ; call_method  1
+    ( 47 any)  ; put_loc2 
+    ( 48 any)  ; get_loc1 
+    ( 49 any)  ; get_loc2 
+    ( 50 any)  ; neg 
+    ( 51 any)  ; push_0 
+    ( 52 any)  ; push_0 
+    ( 53 any)  ; array_from  4
+    ( 56 any)  ; get_loc2 
+    ( 57 any)  ; get_loc1 
+    ( 58 any)  ; push_0 
+    ( 59 any)  ; push_0 
+    ( 60 any)  ; array_from  4
+    ( 63 any)  ; push_0 
+    ( 64 any)  ; push_0 
+    ( 65 any)  ; push_1 
+    ( 66 any)  ; push_0 
+    ( 67 any)  ; array_from  4
+    ( 70 any)  ; push_0 
+    ( 71 any)  ; push_0 
+    ( 72 any)  ; push_0 
+    ( 73 any)  ; push_1 
+    ( 74 any)  ; array_from  4
+    ( 77 any)  ; array_from  4
+    ( 80 any)  ; put_loc3 
+    ( 81 any)  ; get_var  "MMulti"
+    ( 86 any)  ; get_loc3 
+    ( 87 any)  ; get_arg0 
+    ( 88 any)  ; tail_call  2
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F8DrawQube__root.16 
+  ; source ptr: 0x55c1c45612d0, ln: 193
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  void)  ; return
+  ; stack size: 13
+  (locs  ; var count: 2
+    any[]  ; CurN: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Array"
+    (  5 any)  ; dup 
+    (  6 any)  ; call_constructor  0
+    (  9 any)  ; put_loc0 
+    ( 10 any)  ; push_5 
+    ( 11 any)  ; put_loc1 
+    ( 12 any)  ; get_var  "Q"
+    ( 17 any)  ; push_0 
+    ( 18 any)  ; put_field  "LastPx"
+    ( 23 any)  ; get_loc1 
+    ( 24 any)  ; push_minus1 
+    ( 25 any)  ; gt 
+    ( 26 any)  ; if_false8  32
+    ( 28 any)  ; get_loc0 
+    ( 29 any)  ; get_loc1 
+    ( 30 any)  ; to_propkey2 
+    ( 31 any)  ; get_var  "VMulti2"
+    ( 36 any)  ; get_var  "MQube"
+    ( 41 any)  ; get_var  "Q"
+    ( 46 any)  ; get_field  "Normal"
+    ( 51 any)  ; get_loc1 
+    ( 52 any)  ; get_array_el 
+    ( 53 any)  ; call2 
+    ( 54 any)  ; put_array_el 
+    ( 55 any)  ; dec_loc  1
+    ( 57 any)  ; goto8  -35
+    ( 59 any)  ; get_loc0 
+    ( 60 any)  ; push_0 
+    ( 61 any)  ; get_array_el 
+    ( 62 any)  ; push_2 
+    ( 63 any)  ; get_array_el 
+    ( 64 any)  ; push_0 
+    ( 65 any)  ; lt 
+    ( 66 any)  ; if_false  200
+    ( 71 any)  ; get_var  "Q"
+    ( 76 any)  ; get_field  "Line"
+    ( 81 any)  ; push_0 
+    ( 82 any)  ; get_array_el 
+    ( 83 any)  ; lnot 
+    ( 84 any)  ; if_false8  35
+    ( 86 any)  ; get_var  "DrawLine"
+    ( 91 any)  ; get_var  "Q"
+    ( 96 any)  ; push_0 
+    ( 97 any)  ; get_array_el 
+    ( 98 any)  ; get_var  "Q"
+    (103 any)  ; push_1 
+    (104 any)  ; get_array_el 
+    (105 any)  ; call2 
+    (106 any)  ; drop 
+    (107 any)  ; get_var  "Q"
+    (112 any)  ; get_field  "Line"
+    (117 any)  ; push_0 
+    (118 any)  ; push_true 
+    (119 any)  ; put_array_el 
+    (120 any)  ; get_var  "Q"
+    (125 any)  ; get_field  "Line"
+    (130 any)  ; push_1 
+    (131 any)  ; get_array_el 
+    (132 any)  ; lnot 
+    (133 any)  ; if_false8  35
+    (135 any)  ; get_var  "DrawLine"
+    (140 any)  ; get_var  "Q"
+    (145 any)  ; push_1 
+    (146 any)  ; get_array_el 
+    (147 any)  ; get_var  "Q"
+    (152 any)  ; push_2 
+    (153 any)  ; get_array_el 
+    (154 any)  ; call2 
+    (155 any)  ; drop 
+    (156 any)  ; get_var  "Q"
+    (161 any)  ; get_field  "Line"
+    (166 any)  ; push_1 
+    (167 any)  ; push_true 
+    (168 any)  ; put_array_el 
+    (169 any)  ; get_var  "Q"
+    (174 any)  ; get_field  "Line"
+    (179 any)  ; push_2 
+    (180 any)  ; get_array_el 
+    (181 any)  ; lnot 
+    (182 any)  ; if_false8  35
+    (184 any)  ; get_var  "DrawLine"
+    (189 any)  ; get_var  "Q"
+    (194 any)  ; push_2 
+    (195 any)  ; get_array_el 
+    (196 any)  ; get_var  "Q"
+    (201 any)  ; push_3 
+    (202 any)  ; get_array_el 
+    (203 any)  ; call2 
+    (204 any)  ; drop 
+    (205 any)  ; get_var  "Q"
+    (210 any)  ; get_field  "Line"
+    (215 any)  ; push_2 
+    (216 any)  ; push_true 
+    (217 any)  ; put_array_el 
+    (218 any)  ; get_var  "Q"
+    (223 any)  ; get_field  "Line"
+    (228 any)  ; push_3 
+    (229 any)  ; get_array_el 
+    (230 any)  ; lnot 
+    (231 any)  ; if_false8  35
+    (233 any)  ; get_var  "DrawLine"
+    (238 any)  ; get_var  "Q"
+    (243 any)  ; push_3 
+    (244 any)  ; get_array_el 
+    (245 any)  ; get_var  "Q"
+    (250 any)  ; push_0 
+    (251 any)  ; get_array_el 
+    (252 any)  ; call2 
+    (253 any)  ; drop 
+    (254 any)  ; get_var  "Q"
+    (259 any)  ; get_field  "Line"
+    (264 any)  ; push_3 
+    (265 any)  ; push_true 
+    (266 any)  ; put_array_el 
+    (267 any)  ; get_loc0 
+    (268 any)  ; push_1 
+    (269 any)  ; get_array_el 
+    (270 any)  ; push_2 
+    (271 any)  ; get_array_el 
+    (272 any)  ; push_0 
+    (273 any)  ; lt 
+    (274 any)  ; if_false  204
+    (279 any)  ; get_var  "Q"
+    (284 any)  ; get_field  "Line"
+    (289 any)  ; push_2 
+    (290 any)  ; get_array_el 
+    (291 any)  ; lnot 
+    (292 any)  ; if_false8  35
+    (294 any)  ; get_var  "DrawLine"
+    (299 any)  ; get_var  "Q"
+    (304 any)  ; push_3 
+    (305 any)  ; get_array_el 
+    (306 any)  ; get_var  "Q"
+    (311 any)  ; push_2 
+    (312 any)  ; get_array_el 
+    (313 any)  ; call2 
+    (314 any)  ; drop 
+    (315 any)  ; get_var  "Q"
+    (320 any)  ; get_field  "Line"
+    (325 any)  ; push_2 
+    (326 any)  ; push_true 
+    (327 any)  ; put_array_el 
+    (328 any)  ; get_var  "Q"
+    (333 any)  ; get_field  "Line"
+    (338 any)  ; push_i8  9
+    (340 any)  ; get_array_el 
+    (341 any)  ; lnot 
+    (342 any)  ; if_false8  36
+    (344 any)  ; get_var  "DrawLine"
+    (349 any)  ; get_var  "Q"
+    (354 any)  ; push_2 
+    (355 any)  ; get_array_el 
+    (356 any)  ; get_var  "Q"
+    (361 any)  ; push_6 
+    (362 any)  ; get_array_el 
+    (363 any)  ; call2 
+    (364 any)  ; drop 
+    (365 any)  ; get_var  "Q"
+    (370 any)  ; get_field  "Line"
+    (375 any)  ; push_i8  9
+    (377 any)  ; push_true 
+    (378 any)  ; put_array_el 
+    (379 any)  ; get_var  "Q"
+    (384 any)  ; get_field  "Line"
+    (389 any)  ; push_6 
+    (390 any)  ; get_array_el 
+    (391 any)  ; lnot 
+    (392 any)  ; if_false8  35
+    (394 any)  ; get_var  "DrawLine"
+    (399 any)  ; get_var  "Q"
+    (404 any)  ; push_6 
+    (405 any)  ; get_array_el 
+    (406 any)  ; get_var  "Q"
+    (411 any)  ; push_7 
+    (412 any)  ; get_array_el 
+    (413 any)  ; call2 
+    (414 any)  ; drop 
+    (415 any)  ; get_var  "Q"
+    (420 any)  ; get_field  "Line"
+    (425 any)  ; push_6 
+    (426 any)  ; push_true 
+    (427 any)  ; put_array_el 
+    (428 any)  ; get_var  "Q"
+    (433 any)  ; get_field  "Line"
+    (438 any)  ; push_i8  10
+    (440 any)  ; get_array_el 
+    (441 any)  ; lnot 
+    (442 any)  ; if_false8  36
+    (444 any)  ; get_var  "DrawLine"
+    (449 any)  ; get_var  "Q"
+    (454 any)  ; push_7 
+    (455 any)  ; get_array_el 
+    (456 any)  ; get_var  "Q"
+    (461 any)  ; push_3 
+    (462 any)  ; get_array_el 
+    (463 any)  ; call2 
+    (464 any)  ; drop 
+    (465 any)  ; get_var  "Q"
+    (470 any)  ; get_field  "Line"
+    (475 any)  ; push_i8  10
+    (477 any)  ; push_true 
+    (478 any)  ; put_array_el 
+    (479 any)  ; get_loc0 
+    (480 any)  ; push_2 
+    (481 any)  ; get_array_el 
+    (482 any)  ; push_2 
+    (483 any)  ; get_array_el 
+    (484 any)  ; push_0 
+    (485 any)  ; lt 
+    (486 any)  ; if_false  200
+    (491 any)  ; get_var  "Q"
+    (496 any)  ; get_field  "Line"
+    (501 any)  ; push_4 
+    (502 any)  ; get_array_el 
+    (503 any)  ; lnot 
+    (504 any)  ; if_false8  35
+    (506 any)  ; get_var  "DrawLine"
+    (511 any)  ; get_var  "Q"
+    (516 any)  ; push_4 
+    (517 any)  ; get_array_el 
+    (518 any)  ; get_var  "Q"
+    (523 any)  ; push_5 
+    (524 any)  ; get_array_el 
+    (525 any)  ; call2 
+    (526 any)  ; drop 
+    (527 any)  ; get_var  "Q"
+    (532 any)  ; get_field  "Line"
+    (537 any)  ; push_4 
+    (538 any)  ; push_true 
+    (539 any)  ; put_array_el 
+    (540 any)  ; get_var  "Q"
+    (545 any)  ; get_field  "Line"
+    (550 any)  ; push_5 
+    (551 any)  ; get_array_el 
+    (552 any)  ; lnot 
+    (553 any)  ; if_false8  35
+    (555 any)  ; get_var  "DrawLine"
+    (560 any)  ; get_var  "Q"
+    (565 any)  ; push_5 
+    (566 any)  ; get_array_el 
+    (567 any)  ; get_var  "Q"
+    (572 any)  ; push_6 
+    (573 any)  ; get_array_el 
+    (574 any)  ; call2 
+    (575 any)  ; drop 
+    (576 any)  ; get_var  "Q"
+    (581 any)  ; get_field  "Line"
+    (586 any)  ; push_5 
+    (587 any)  ; push_true 
+    (588 any)  ; put_array_el 
+    (589 any)  ; get_var  "Q"
+    (594 any)  ; get_field  "Line"
+    (599 any)  ; push_6 
+    (600 any)  ; get_array_el 
+    (601 any)  ; lnot 
+    (602 any)  ; if_false8  35
+    (604 any)  ; get_var  "DrawLine"
+    (609 any)  ; get_var  "Q"
+    (614 any)  ; push_6 
+    (615 any)  ; get_array_el 
+    (616 any)  ; get_var  "Q"
+    (621 any)  ; push_7 
+    (622 any)  ; get_array_el 
+    (623 any)  ; call2 
+    (624 any)  ; drop 
+    (625 any)  ; get_var  "Q"
+    (630 any)  ; get_field  "Line"
+    (635 any)  ; push_6 
+    (636 any)  ; push_true 
+    (637 any)  ; put_array_el 
+    (638 any)  ; get_var  "Q"
+    (643 any)  ; get_field  "Line"
+    (648 any)  ; push_7 
+    (649 any)  ; get_array_el 
+    (650 any)  ; lnot 
+    (651 any)  ; if_false8  35
+    (653 any)  ; get_var  "DrawLine"
+    (658 any)  ; get_var  "Q"
+    (663 any)  ; push_7 
+    (664 any)  ; get_array_el 
+    (665 any)  ; get_var  "Q"
+    (670 any)  ; push_4 
+    (671 any)  ; get_array_el 
+    (672 any)  ; call2 
+    (673 any)  ; drop 
+    (674 any)  ; get_var  "Q"
+    (679 any)  ; get_field  "Line"
+    (684 any)  ; push_7 
+    (685 any)  ; push_true 
+    (686 any)  ; put_array_el 
+    (687 any)  ; get_loc0 
+    (688 any)  ; push_3 
+    (689 any)  ; get_array_el 
+    (690 any)  ; push_2 
+    (691 any)  ; get_array_el 
+    (692 any)  ; push_0 
+    (693 any)  ; lt 
+    (694 any)  ; if_false  204
+    (699 any)  ; get_var  "Q"
+    (704 any)  ; get_field  "Line"
+    (709 any)  ; push_4 
+    (710 any)  ; get_array_el 
+    (711 any)  ; lnot 
+    (712 any)  ; if_false8  35
+    (714 any)  ; get_var  "DrawLine"
+    (719 any)  ; get_var  "Q"
+    (724 any)  ; push_4 
+    (725 any)  ; get_array_el 
+    (726 any)  ; get_var  "Q"
+    (731 any)  ; push_5 
+    (732 any)  ; get_array_el 
+    (733 any)  ; call2 
+    (734 any)  ; drop 
+    (735 any)  ; get_var  "Q"
+    (740 any)  ; get_field  "Line"
+    (745 any)  ; push_4 
+    (746 any)  ; push_true 
+    (747 any)  ; put_array_el 
+    (748 any)  ; get_var  "Q"
+    (753 any)  ; get_field  "Line"
+    (758 any)  ; push_i8  8
+    (760 any)  ; get_array_el 
+    (761 any)  ; lnot 
+    (762 any)  ; if_false8  36
+    (764 any)  ; get_var  "DrawLine"
+    (769 any)  ; get_var  "Q"
+    (774 any)  ; push_5 
+    (775 any)  ; get_array_el 
+    (776 any)  ; get_var  "Q"
+    (781 any)  ; push_1 
+    (782 any)  ; get_array_el 
+    (783 any)  ; call2 
+    (784 any)  ; drop 
+    (785 any)  ; get_var  "Q"
+    (790 any)  ; get_field  "Line"
+    (795 any)  ; push_i8  8
+    (797 any)  ; push_true 
+    (798 any)  ; put_array_el 
+    (799 any)  ; get_var  "Q"
+    (804 any)  ; get_field  "Line"
+    (809 any)  ; push_0 
+    (810 any)  ; get_array_el 
+    (811 any)  ; lnot 
+    (812 any)  ; if_false8  35
+    (814 any)  ; get_var  "DrawLine"
+    (819 any)  ; get_var  "Q"
+    (824 any)  ; push_1 
+    (825 any)  ; get_array_el 
+    (826 any)  ; get_var  "Q"
+    (831 any)  ; push_0 
+    (832 any)  ; get_array_el 
+    (833 any)  ; call2 
+    (834 any)  ; drop 
+    (835 any)  ; get_var  "Q"
+    (840 any)  ; get_field  "Line"
+    (845 any)  ; push_0 
+    (846 any)  ; push_true 
+    (847 any)  ; put_array_el 
+    (848 any)  ; get_var  "Q"
+    (853 any)  ; get_field  "Line"
+    (858 any)  ; push_i8  11
+    (860 any)  ; get_array_el 
+    (861 any)  ; lnot 
+    (862 any)  ; if_false8  36
+    (864 any)  ; get_var  "DrawLine"
+    (869 any)  ; get_var  "Q"
+    (874 any)  ; push_0 
+    (875 any)  ; get_array_el 
+    (876 any)  ; get_var  "Q"
+    (881 any)  ; push_4 
+    (882 any)  ; get_array_el 
+    (883 any)  ; call2 
+    (884 any)  ; drop 
+    (885 any)  ; get_var  "Q"
+    (890 any)  ; get_field  "Line"
+    (895 any)  ; push_i8  11
+    (897 any)  ; push_true 
+    (898 any)  ; put_array_el 
+    (899 any)  ; get_loc0 
+    (900 any)  ; push_4 
+    (901 any)  ; get_array_el 
+    (902 any)  ; push_2 
+    (903 any)  ; get_array_el 
+    (904 any)  ; push_0 
+    (905 any)  ; lt 
+    (906 any)  ; if_false  204
+    (911 any)  ; get_var  "Q"
+    (916 any)  ; get_field  "Line"
+    (921 any)  ; push_i8  11
+    (923 any)  ; get_array_el 
+    (924 any)  ; lnot 
+    (925 any)  ; if_false8  36
+    (927 any)  ; get_var  "DrawLine"
+    (932 any)  ; get_var  "Q"
+    (937 any)  ; push_4 
+    (938 any)  ; get_array_el 
+    (939 any)  ; get_var  "Q"
+    (944 any)  ; push_0 
+    (945 any)  ; get_array_el 
+    (946 any)  ; call2 
+    (947 any)  ; drop 
+    (948 any)  ; get_var  "Q"
+    (953 any)  ; get_field  "Line"
+    (958 any)  ; push_i8  11
+    (960 any)  ; push_true 
+    (961 any)  ; put_array_el 
+    (962 any)  ; get_var  "Q"
+    (967 any)  ; get_field  "Line"
+    (972 any)  ; push_3 
+    (973 any)  ; get_array_el 
+    (974 any)  ; lnot 
+    (975 any)  ; if_false8  35
+    (977 any)  ; get_var  "DrawLine"
+    (982 any)  ; get_var  "Q"
+    (987 any)  ; push_0 
+    (988 any)  ; get_array_el 
+    (989 any)  ; get_var  "Q"
+    (994 any)  ; push_3 
+    (995 any)  ; get_array_el 
+    (996 any)  ; call2 
+    (997 any)  ; drop 
+    (998 any)  ; get_var  "Q"
+    (1003 any)  ; get_field  "Line"
+    (1008 any)  ; push_3 
+    (1009 any)  ; push_true 
+    (1010 any)  ; put_array_el 
+    (1011 any)  ; get_var  "Q"
+    (1016 any)  ; get_field  "Line"
+    (1021 any)  ; push_i8  10
+    (1023 any)  ; get_array_el 
+    (1024 any)  ; lnot 
+    (1025 any)  ; if_false8  36
+    (1027 any)  ; get_var  "DrawLine"
+    (1032 any)  ; get_var  "Q"
+    (1037 any)  ; push_3 
+    (1038 any)  ; get_array_el 
+    (1039 any)  ; get_var  "Q"
+    (1044 any)  ; push_7 
+    (1045 any)  ; get_array_el 
+    (1046 any)  ; call2 
+    (1047 any)  ; drop 
+    (1048 any)  ; get_var  "Q"
+    (1053 any)  ; get_field  "Line"
+    (1058 any)  ; push_i8  10
+    (1060 any)  ; push_true 
+    (1061 any)  ; put_array_el 
+    (1062 any)  ; get_var  "Q"
+    (1067 any)  ; get_field  "Line"
+    (1072 any)  ; push_7 
+    (1073 any)  ; get_array_el 
+    (1074 any)  ; lnot 
+    (1075 any)  ; if_false8  35
+    (1077 any)  ; get_var  "DrawLine"
+    (1082 any)  ; get_var  "Q"
+    (1087 any)  ; push_7 
+    (1088 any)  ; get_array_el 
+    (1089 any)  ; get_var  "Q"
+    (1094 any)  ; push_4 
+    (1095 any)  ; get_array_el 
+    (1096 any)  ; call2 
+    (1097 any)  ; drop 
+    (1098 any)  ; get_var  "Q"
+    (1103 any)  ; get_field  "Line"
+    (1108 any)  ; push_7 
+    (1109 any)  ; push_true 
+    (1110 any)  ; put_array_el 
+    (1111 any)  ; get_loc0 
+    (1112 any)  ; push_5 
+    (1113 any)  ; get_array_el 
+    (1114 any)  ; push_2 
+    (1115 any)  ; get_array_el 
+    (1116 any)  ; push_0 
+    (1117 any)  ; lt 
+    (1118 any)  ; if_false  204
+    (1123 any)  ; get_var  "Q"
+    (1128 any)  ; get_field  "Line"
+    (1133 any)  ; push_i8  8
+    (1135 any)  ; get_array_el 
+    (1136 any)  ; lnot 
+    (1137 any)  ; if_false8  36
+    (1139 any)  ; get_var  "DrawLine"
+    (1144 any)  ; get_var  "Q"
+    (1149 any)  ; push_1 
+    (1150 any)  ; get_array_el 
+    (1151 any)  ; get_var  "Q"
+    (1156 any)  ; push_5 
+    (1157 any)  ; get_array_el 
+    (1158 any)  ; call2 
+    (1159 any)  ; drop 
+    (1160 any)  ; get_var  "Q"
+    (1165 any)  ; get_field  "Line"
+    (1170 any)  ; push_i8  8
+    (1172 any)  ; push_true 
+    (1173 any)  ; put_array_el 
+    (1174 any)  ; get_var  "Q"
+    (1179 any)  ; get_field  "Line"
+    (1184 any)  ; push_5 
+    (1185 any)  ; get_array_el 
+    (1186 any)  ; lnot 
+    (1187 any)  ; if_false8  35
+    (1189 any)  ; get_var  "DrawLine"
+    (1194 any)  ; get_var  "Q"
+    (1199 any)  ; push_5 
+    (1200 any)  ; get_array_el 
+    (1201 any)  ; get_var  "Q"
+    (1206 any)  ; push_6 
+    (1207 any)  ; get_array_el 
+    (1208 any)  ; call2 
+    (1209 any)  ; drop 
+    (1210 any)  ; get_var  "Q"
+    (1215 any)  ; get_field  "Line"
+    (1220 any)  ; push_5 
+    (1221 any)  ; push_true 
+    (1222 any)  ; put_array_el 
+    (1223 any)  ; get_var  "Q"
+    (1228 any)  ; get_field  "Line"
+    (1233 any)  ; push_i8  9
+    (1235 any)  ; get_array_el 
+    (1236 any)  ; lnot 
+    (1237 any)  ; if_false8  36
+    (1239 any)  ; get_var  "DrawLine"
+    (1244 any)  ; get_var  "Q"
+    (1249 any)  ; push_6 
+    (1250 any)  ; get_array_el 
+    (1251 any)  ; get_var  "Q"
+    (1256 any)  ; push_2 
+    (1257 any)  ; get_array_el 
+    (1258 any)  ; call2 
+    (1259 any)  ; drop 
+    (1260 any)  ; get_var  "Q"
+    (1265 any)  ; get_field  "Line"
+    (1270 any)  ; push_i8  9
+    (1272 any)  ; push_true 
+    (1273 any)  ; put_array_el 
+    (1274 any)  ; get_var  "Q"
+    (1279 any)  ; get_field  "Line"
+    (1284 any)  ; push_1 
+    (1285 any)  ; get_array_el 
+    (1286 any)  ; lnot 
+    (1287 any)  ; if_false8  35
+    (1289 any)  ; get_var  "DrawLine"
+    (1294 any)  ; get_var  "Q"
+    (1299 any)  ; push_2 
+    (1300 any)  ; get_array_el 
+    (1301 any)  ; get_var  "Q"
+    (1306 any)  ; push_1 
+    (1307 any)  ; get_array_el 
+    (1308 any)  ; call2 
+    (1309 any)  ; drop 
+    (1310 any)  ; get_var  "Q"
+    (1315 any)  ; get_field  "Line"
+    (1320 any)  ; push_1 
+    (1321 any)  ; push_true 
+    (1322 any)  ; put_array_el 
+    (1323 any)  ; get_var  "Q"
+    (1328 any)  ; push_false 
+    (1329 any)  ; push_false 
+    (1330 any)  ; push_false 
+    (1331 any)  ; push_false 
+    (1332 any)  ; push_false 
+    (1333 any)  ; push_false 
+    (1334 any)  ; push_false 
+    (1335 any)  ; push_false 
+    (1336 any)  ; push_false 
+    (1337 any)  ; push_false 
+    (1338 any)  ; push_false 
+    (1339 any)  ; push_false 
+    (1340 any)  ; array_from  12
+    (1343 any)  ; put_field  "Line"
+    (1348 any)  ; get_var  "Q"
+    (1353 any)  ; push_0 
+    (1354 any)  ; put_field  "LastPx"
+    (1359 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+
+(fn _JS_F4Loop__root.17 
+  ; source ptr: 0x55c1c45626f0, ln: 239
+  ; arg count: 0
+  (sig (args any  ; this
+    )
+  void)  ; return
+  ; stack size: 6
+  (locs  ; var count: 2
+    string  ; TestingStr: normal
+    number  ; i: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Testing"
+    (  5 any)  ; get_field  "LoopCount"
+    ( 10 any)  ; get_var  "Testing"
+    ( 15 any)  ; get_field  "LoopMax"
+    ( 20 any)  ; gt 
+    ( 21 any)  ; if_false8  2
+    ( 23 any)  ; return_undef 
+    ( 24 any)  ; get_var  "String"
+    ( 29 any)  ; get_var  "Testing"
+    ( 34 any)  ; get_field  "LoopCount"
+    ( 39 any)  ; call1 
+    ( 40 any)  ; put_loc0 
+    ( 41 any)  ; get_loc0 
+    ( 42 any)  ; get_length 
+    ( 43 any)  ; push_3 
+    ( 44 any)  ; lt 
+    ( 45 any)  ; if_false8  8
+    ( 47 any)  ; push_const8  0
+    ( 49 any)  ; get_loc0 
+    ( 50 any)  ; add 
+    ( 51 any)  ; put_loc0 
+    ( 52 any)  ; goto8  -12
+    ( 54 any)  ; get_var  "Translate"
+    ( 59 any)  ; get_var  "I"
+    ( 64 any)  ; get_var  "Q"
+    ( 69 any)  ; push_i8  8
+    ( 71 any)  ; get_array_el 
+    ( 72 any)  ; get_field  "V"
+    ( 77 any)  ; push_0 
+    ( 78 any)  ; get_array_el 
+    ( 79 any)  ; neg 
+    ( 80 any)  ; get_var  "Q"
+    ( 85 any)  ; push_i8  8
+    ( 87 any)  ; get_array_el 
+    ( 88 any)  ; get_field  "V"
+    ( 93 any)  ; push_1 
+    ( 94 any)  ; get_array_el 
+    ( 95 any)  ; neg 
+    ( 96 any)  ; get_var  "Q"
+    (101 any)  ; push_i8  8
+    (103 any)  ; get_array_el 
+    (104 any)  ; get_field  "V"
+    (109 any)  ; push_2 
+    (110 any)  ; get_array_el 
+    (111 any)  ; neg 
+    (112 any)  ; call  4
+    (115 any)  ; dup 
+    (116 any)  ; put_var  "MTrans"
+    (121 any)  ; drop 
+    (122 any)  ; get_var  "RotateX"
+    (127 any)  ; get_var  "MTrans"
+    (132 any)  ; push_1 
+    (133 any)  ; call2 
+    (134 any)  ; dup 
+    (135 any)  ; put_var  "MTrans"
+    (140 any)  ; drop 
+    (141 any)  ; get_var  "RotateY"
+    (146 any)  ; get_var  "MTrans"
+    (151 any)  ; push_3 
+    (152 any)  ; call2 
+    (153 any)  ; dup 
+    (154 any)  ; put_var  "MTrans"
+    (159 any)  ; drop 
+    (160 any)  ; get_var  "RotateZ"
+    (165 any)  ; get_var  "MTrans"
+    (170 any)  ; push_5 
+    (171 any)  ; call2 
+    (172 any)  ; dup 
+    (173 any)  ; put_var  "MTrans"
+    (178 any)  ; drop 
+    (179 any)  ; get_var  "Translate"
+    (184 any)  ; get_var  "MTrans"
+    (189 any)  ; get_var  "Q"
+    (194 any)  ; push_i8  8
+    (196 any)  ; get_array_el 
+    (197 any)  ; get_field  "V"
+    (202 any)  ; push_0 
+    (203 any)  ; get_array_el 
+    (204 any)  ; get_var  "Q"
+    (209 any)  ; push_i8  8
+    (211 any)  ; get_array_el 
+    (212 any)  ; get_field  "V"
+    (217 any)  ; push_1 
+    (218 any)  ; get_array_el 
+    (219 any)  ; get_var  "Q"
+    (224 any)  ; push_i8  8
+    (226 any)  ; get_array_el 
+    (227 any)  ; get_field  "V"
+    (232 any)  ; push_2 
+    (233 any)  ; get_array_el 
+    (234 any)  ; call  4
+    (237 any)  ; dup 
+    (238 any)  ; put_var  "MTrans"
+    (243 any)  ; drop 
+    (244 any)  ; get_var  "MMulti"
+    (249 any)  ; get_var  "MTrans"
+    (254 any)  ; get_var  "MQube"
+    (259 any)  ; call2 
+    (260 any)  ; dup 
+    (261 any)  ; put_var  "MQube"
+    (266 any)  ; drop 
+    (267 any)  ; push_i8  8
+    (269 any)  ; put_loc1 
+    (270 any)  ; get_loc1 
+    (271 any)  ; push_minus1 
+    (272 any)  ; gt 
+    (273 any)  ; if_false8  40
+    (275 any)  ; get_var  "Q"
+    (280 any)  ; get_loc1 
+    (281 any)  ; get_array_el 
+    (282 any)  ; get_var  "VMulti"
+    (287 any)  ; get_var  "MTrans"
+    (292 any)  ; get_var  "Q"
+    (297 any)  ; get_loc1 
+    (298 any)  ; get_array_el 
+    (299 any)  ; get_field  "V"
+    (304 any)  ; call2 
+    (305 any)  ; put_field  "V"
+    (310 any)  ; dec_loc  1
+    (312 any)  ; goto8  -43
+    (314 any)  ; get_var  "DrawQube"
+    (319 any)  ; call0 
+    (320 any)  ; drop 
+    (321 any)  ; get_var  "Testing"
+    (326 any)  ; get_field2  "LoopCount"
+    (331 any)  ; inc 
+    (332 any)  ; put_field  "LoopCount"
+    (337 any)  ; get_var  "Loop"
+    (342 any)  ; call0 
+    (343 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 1
+    ;   0: 
+)
+
+(fn _JS_F4Init__root.18 
+  ; source ptr: 0x55c1c45644a0, ln: 258
+  ; arg count: 1
+  (sig (args any  ; this
+      any  ; CubeSize
+    )
+  void)  ; return
+  ; stack size: 13
+  (locs  ; var count: 4
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; i: normal
+    number  ; sum: normal
+    any  ; vector: normal
+    number  ; j: normal
+  )
+  (bytecodes 
+    (  0 any)  ; get_var  "Origin"
+    (  5 any)  ; push_i16  150
+    (  8 any)  ; push_i16  150
+    ( 11 any)  ; push_i8  20
+    ( 13 any)  ; push_1 
+    ( 14 any)  ; array_from  4
+    ( 17 any)  ; put_field  "V"
+    ( 22 any)  ; get_var  "Testing"
+    ( 27 any)  ; push_0 
+    ( 28 any)  ; put_field  "LoopCount"
+    ( 33 any)  ; get_var  "Testing"
+    ( 38 any)  ; push_i8  50
+    ( 40 any)  ; put_field  "LoopMax"
+    ( 45 any)  ; get_var  "Testing"
+    ( 50 any)  ; push_0 
+    ( 51 any)  ; put_field  "TimeMax"
+    ( 56 any)  ; get_var  "Testing"
+    ( 61 any)  ; push_0 
+    ( 62 any)  ; put_field  "TimeAvg"
+    ( 67 any)  ; get_var  "Testing"
+    ( 72 any)  ; push_0 
+    ( 73 any)  ; put_field  "TimeMin"
+    ( 78 any)  ; get_var  "Testing"
+    ( 83 any)  ; push_0 
+    ( 84 any)  ; put_field  "TimeTemp"
+    ( 89 any)  ; get_var  "Testing"
+    ( 94 any)  ; push_0 
+    ( 95 any)  ; put_field  "TimeTotal"
+    (100 any)  ; get_var  "Testing"
+    (105 any)  ; push_false 
+    (106 any)  ; put_field  "Init"
+    (111 any)  ; push_1 
+    (112 any)  ; push_0 
+    (113 any)  ; push_0 
+    (114 any)  ; push_0 
+    (115 any)  ; array_from  4
+    (118 any)  ; push_0 
+    (119 any)  ; push_1 
+    (120 any)  ; push_0 
+    (121 any)  ; push_0 
+    (122 any)  ; array_from  4
+    (125 any)  ; push_0 
+    (126 any)  ; push_0 
+    (127 any)  ; push_1 
+    (128 any)  ; push_0 
+    (129 any)  ; array_from  4
+    (132 any)  ; push_0 
+    (133 any)  ; push_0 
+    (134 any)  ; push_0 
+    (135 any)  ; push_1 
+    (136 any)  ; array_from  4
+    (139 any)  ; array_from  4
+    (142 any)  ; dup 
+    (143 any)  ; put_var  "MTrans"
+    (148 any)  ; drop 
+    (149 any)  ; push_1 
+    (150 any)  ; push_0 
+    (151 any)  ; push_0 
+    (152 any)  ; push_0 
+    (153 any)  ; array_from  4
+    (156 any)  ; push_0 
+    (157 any)  ; push_1 
+    (158 any)  ; push_0 
+    (159 any)  ; push_0 
+    (160 any)  ; array_from  4
+    (163 any)  ; push_0 
+    (164 any)  ; push_0 
+    (165 any)  ; push_1 
+    (166 any)  ; push_0 
+    (167 any)  ; array_from  4
+    (170 any)  ; push_0 
+    (171 any)  ; push_0 
+    (172 any)  ; push_0 
+    (173 any)  ; push_1 
+    (174 any)  ; array_from  4
+    (177 any)  ; array_from  4
+    (180 any)  ; dup 
+    (181 any)  ; put_var  "MQube"
+    (186 any)  ; drop 
+    (187 any)  ; push_1 
+    (188 any)  ; push_0 
+    (189 any)  ; push_0 
+    (190 any)  ; push_0 
+    (191 any)  ; array_from  4
+    (194 any)  ; push_0 
+    (195 any)  ; push_1 
+    (196 any)  ; push_0 
+    (197 any)  ; push_0 
+    (198 any)  ; array_from  4
+    (201 any)  ; push_0 
+    (202 any)  ; push_0 
+    (203 any)  ; push_1 
+    (204 any)  ; push_0 
+    (205 any)  ; array_from  4
+    (208 any)  ; push_0 
+    (209 any)  ; push_0 
+    (210 any)  ; push_0 
+    (211 any)  ; push_1 
+    (212 any)  ; array_from  4
+    (215 any)  ; array_from  4
+    (218 any)  ; dup 
+    (219 any)  ; put_var  "I"
+    (224 any)  ; drop 
+    (225 any)  ; get_var  "Q"
+    (230 any)  ; push_0 
+    (231 any)  ; to_propkey2 
+    (232 any)  ; get_var  "CreateP"
+    (237 any)  ; dup 
+    (238 any)  ; get_arg0 
+    (239 any)  ; neg 
+    (240 any)  ; get_arg0 
+    (241 any)  ; neg 
+    (242 any)  ; get_arg0 
+    (243 any)  ; call_constructor  3
+    (246 any)  ; put_array_el 
+    (247 any)  ; get_var  "Q"
+    (252 any)  ; push_1 
+    (253 any)  ; to_propkey2 
+    (254 any)  ; get_var  "CreateP"
+    (259 any)  ; dup 
+    (260 any)  ; get_arg0 
+    (261 any)  ; neg 
+    (262 any)  ; get_arg0 
+    (263 any)  ; get_arg0 
+    (264 any)  ; call_constructor  3
+    (267 any)  ; put_array_el 
+    (268 any)  ; get_var  "Q"
+    (273 any)  ; push_2 
+    (274 any)  ; to_propkey2 
+    (275 any)  ; get_var  "CreateP"
+    (280 any)  ; dup 
+    (281 any)  ; get_arg0 
+    (282 any)  ; get_arg0 
+    (283 any)  ; get_arg0 
+    (284 any)  ; call_constructor  3
+    (287 any)  ; put_array_el 
+    (288 any)  ; get_var  "Q"
+    (293 any)  ; push_3 
+    (294 any)  ; to_propkey2 
+    (295 any)  ; get_var  "CreateP"
+    (300 any)  ; dup 
+    (301 any)  ; get_arg0 
+    (302 any)  ; get_arg0 
+    (303 any)  ; neg 
+    (304 any)  ; get_arg0 
+    (305 any)  ; call_constructor  3
+    (308 any)  ; put_array_el 
+    (309 any)  ; get_var  "Q"
+    (314 any)  ; push_4 
+    (315 any)  ; to_propkey2 
+    (316 any)  ; get_var  "CreateP"
+    (321 any)  ; dup 
+    (322 any)  ; get_arg0 
+    (323 any)  ; neg 
+    (324 any)  ; get_arg0 
+    (325 any)  ; neg 
+    (326 any)  ; get_arg0 
+    (327 any)  ; neg 
+    (328 any)  ; call_constructor  3
+    (331 any)  ; put_array_el 
+    (332 any)  ; get_var  "Q"
+    (337 any)  ; push_5 
+    (338 any)  ; to_propkey2 
+    (339 any)  ; get_var  "CreateP"
+    (344 any)  ; dup 
+    (345 any)  ; get_arg0 
+    (346 any)  ; neg 
+    (347 any)  ; get_arg0 
+    (348 any)  ; get_arg0 
+    (349 any)  ; neg 
+    (350 any)  ; call_constructor  3
+    (353 any)  ; put_array_el 
+    (354 any)  ; get_var  "Q"
+    (359 any)  ; push_6 
+    (360 any)  ; to_propkey2 
+    (361 any)  ; get_var  "CreateP"
+    (366 any)  ; dup 
+    (367 any)  ; get_arg0 
+    (368 any)  ; get_arg0 
+    (369 any)  ; get_arg0 
+    (370 any)  ; neg 
+    (371 any)  ; call_constructor  3
+    (374 any)  ; put_array_el 
+    (375 any)  ; get_var  "Q"
+    (380 any)  ; push_7 
+    (381 any)  ; to_propkey2 
+    (382 any)  ; get_var  "CreateP"
+    (387 any)  ; dup 
+    (388 any)  ; get_arg0 
+    (389 any)  ; get_arg0 
+    (390 any)  ; neg 
+    (391 any)  ; get_arg0 
+    (392 any)  ; neg 
+    (393 any)  ; call_constructor  3
+    (396 any)  ; put_array_el 
+    (397 any)  ; get_var  "Q"
+    (402 any)  ; push_i8  8
+    (404 any)  ; to_propkey2 
+    (405 any)  ; get_var  "CreateP"
+    (410 any)  ; dup 
+    (411 any)  ; push_0 
+    (412 any)  ; push_0 
+    (413 any)  ; push_0 
+    (414 any)  ; call_constructor  3
+    (417 any)  ; put_array_el 
+    (418 any)  ; get_var  "Q"
+    (423 any)  ; push_0 
+    (424 any)  ; push_1 
+    (425 any)  ; push_2 
+    (426 any)  ; array_from  3
+    (429 any)  ; push_3 
+    (430 any)  ; push_2 
+    (431 any)  ; push_6 
+    (432 any)  ; array_from  3
+    (435 any)  ; push_7 
+    (436 any)  ; push_6 
+    (437 any)  ; push_5 
+    (438 any)  ; array_from  3
+    (441 any)  ; push_4 
+    (442 any)  ; push_5 
+    (443 any)  ; push_1 
+    (444 any)  ; array_from  3
+    (447 any)  ; push_4 
+    (448 any)  ; push_0 
+    (449 any)  ; push_3 
+    (450 any)  ; array_from  3
+    (453 any)  ; push_1 
+    (454 any)  ; push_5 
+    (455 any)  ; push_6 
+    (456 any)  ; array_from  3
+    (459 any)  ; array_from  6
+    (462 any)  ; put_field  "Edge"
+    (467 any)  ; get_var  "Q"
+    (472 any)  ; get_var  "Array"
+    (477 any)  ; dup 
+    (478 any)  ; call_constructor  0
+    (481 any)  ; put_field  "Normal"
+    (486 any)  ; push_0 
+    (487 any)  ; put_loc0 
+    (488 any)  ; get_loc0 
+    (489 any)  ; get_var  "Q"
+    (494 any)  ; get_field  "Edge"
+    (499 any)  ; get_length 
+    (500 any)  ; lt 
+    (501 any)  ; if_false8  99
+    (503 any)  ; get_var  "Q"
+    (508 any)  ; get_field  "Normal"
+    (513 any)  ; get_loc0 
+    (514 any)  ; to_propkey2 
+    (515 any)  ; get_var  "CalcNormal"
+    (520 any)  ; get_var  "Q"
+    (525 any)  ; get_var  "Q"
+    (530 any)  ; get_field  "Edge"
+    (535 any)  ; get_loc0 
+    (536 any)  ; get_array_el 
+    (537 any)  ; push_0 
+    (538 any)  ; get_array_el 
+    (539 any)  ; get_array_el 
+    (540 any)  ; get_field  "V"
+    (545 any)  ; get_var  "Q"
+    (550 any)  ; get_var  "Q"
+    (555 any)  ; get_field  "Edge"
+    (560 any)  ; get_loc0 
+    (561 any)  ; get_array_el 
+    (562 any)  ; push_1 
+    (563 any)  ; get_array_el 
+    (564 any)  ; get_array_el 
+    (565 any)  ; get_field  "V"
+    (570 any)  ; get_var  "Q"
+    (575 any)  ; get_var  "Q"
+    (580 any)  ; get_field  "Edge"
+    (585 any)  ; get_loc0 
+    (586 any)  ; get_array_el 
+    (587 any)  ; push_2 
+    (588 any)  ; get_array_el 
+    (589 any)  ; get_array_el 
+    (590 any)  ; get_field  "V"
+    (595 any)  ; call3 
+    (596 any)  ; put_array_el 
+    (597 any)  ; inc_loc  0
+    (599 any)  ; goto8  -112
+    (601 any)  ; get_var  "Q"
+    (606 any)  ; push_false 
+    (607 any)  ; push_false 
+    (608 any)  ; push_false 
+    (609 any)  ; push_false 
+    (610 any)  ; push_false 
+    (611 any)  ; push_false 
+    (612 any)  ; push_false 
+    (613 any)  ; push_false 
+    (614 any)  ; push_false 
+    (615 any)  ; push_false 
+    (616 any)  ; push_false 
+    (617 any)  ; push_false 
+    (618 any)  ; array_from  12
+    (621 any)  ; put_field  "Line"
+    (626 any)  ; get_var  "Q"
+    (631 any)  ; push_i8  9
+    (633 any)  ; push_2 
+    (634 any)  ; mul 
+    (635 any)  ; get_arg0 
+    (636 any)  ; mul 
+    (637 any)  ; put_field  "NumPx"
+    (642 any)  ; push_0 
+    (643 any)  ; put_loc0 
+    (644 any)  ; get_loc0 
+    (645 any)  ; get_var  "Q"
+    (650 any)  ; get_field  "NumPx"
+    (655 any)  ; lt 
+    (656 any)  ; if_false8  15
+    (658 any)  ; get_var  "CreateP"
+    (663 any)  ; push_0 
+    (664 any)  ; push_0 
+    (665 any)  ; push_0 
+    (666 any)  ; call3 
+    (667 any)  ; drop 
+    (668 any)  ; inc_loc  0
+    (670 any)  ; goto8  -27
+    (672 any)  ; get_var  "Translate"
+    (677 any)  ; get_var  "MTrans"
+    (682 any)  ; get_var  "Origin"
+    (687 any)  ; get_field  "V"
+    (692 any)  ; push_0 
+    (693 any)  ; get_array_el 
+    (694 any)  ; get_var  "Origin"
+    (699 any)  ; get_field  "V"
+    (704 any)  ; push_1 
+    (705 any)  ; get_array_el 
+    (706 any)  ; get_var  "Origin"
+    (711 any)  ; get_field  "V"
+    (716 any)  ; push_2 
+    (717 any)  ; get_array_el 
+    (718 any)  ; call  4
+    (721 any)  ; dup 
+    (722 any)  ; put_var  "MTrans"
+    (727 any)  ; drop 
+    (728 any)  ; get_var  "MMulti"
+    (733 any)  ; get_var  "MTrans"
+    (738 any)  ; get_var  "MQube"
+    (743 any)  ; call2 
+    (744 any)  ; dup 
+    (745 any)  ; put_var  "MQube"
+    (750 any)  ; drop 
+    (751 any)  ; push_0 
+    (752 any)  ; put_loc0 
+    (753 any)  ; get_loc0 
+    (754 any)  ; push_i8  9
+    (756 any)  ; lt 
+    (757 any)  ; if_false8  40
+    (759 any)  ; get_var  "Q"
+    (764 any)  ; get_loc0 
+    (765 any)  ; get_array_el 
+    (766 any)  ; get_var  "VMulti"
+    (771 any)  ; get_var  "MTrans"
+    (776 any)  ; get_var  "Q"
+    (781 any)  ; get_loc0 
+    (782 any)  ; get_array_el 
+    (783 any)  ; get_field  "V"
+    (788 any)  ; call2 
+    (789 any)  ; put_field  "V"
+    (794 any)  ; inc_loc  0
+    (796 any)  ; goto8  -44
+    (798 any)  ; get_var  "DrawQube"
+    (803 any)  ; call0 
+    (804 any)  ; drop 
+    (805 any)  ; get_var  "Testing"
+    (810 any)  ; push_true 
+    (811 any)  ; put_field  "Init"
+    (816 any)  ; get_var  "Loop"
+    (821 any)  ; call0 
+    (822 any)  ; drop 
+    (823 any)  ; push_0 
+    (824 any)  ; put_loc1 
+    (825 any)  ; push_0 
+    (826 any)  ; put_loc0 
+    (827 any)  ; get_loc0 
+    (828 any)  ; get_var  "Q"
+    (833 any)  ; get_length 
+    (834 any)  ; lt 
+    (835 any)  ; if_false8  36
+    (837 any)  ; get_var  "Q"
+    (842 any)  ; get_loc0 
+    (843 any)  ; get_array_el 
+    (844 any)  ; get_field  "V"
+    (849 any)  ; put_loc2 
+    (850 any)  ; push_0 
+    (851 any)  ; put_loc3 
+    (852 any)  ; get_loc3 
+    (853 any)  ; get_loc2 
+    (854 any)  ; get_length 
+    (855 any)  ; lt 
+    (856 any)  ; if_false8  11
+    (858 any)  ; get_loc1 
+    (859 any)  ; get_loc2 
+    (860 any)  ; get_loc3 
+    (861 any)  ; get_array_el 
+    (862 any)  ; add 
+    (863 any)  ; put_loc1 
+    (864 any)  ; inc_loc  3
+    (866 any)  ; goto8  -15
+    (868 any)  ; inc_loc  0
+    (870 any)  ; goto8  -44
+    (872 any)  ; get_loc1 
+    (873 any)  ; get_var  "validation"
+    (878 any)  ; get_arg0 
+    (879 any)  ; get_array_el 
+    (880 any)  ; neq 
+    (881 any)  ; if_false8  31
+    (883 any)  ; push_atom_value  "Error:, bad, vector, sum, for, CubeSize, =, "
+    (888 any)  ; get_arg0 
+    (889 any)  ; add 
+    (890 any)  ; push_atom_value  ";, expected, "
+    (895 any)  ; add 
+    (896 any)  ; get_var  "validation"
+    (901 any)  ; get_arg0 
+    (902 any)  ; get_array_el 
+    (903 any)  ; add 
+    (904 any)  ; push_atom_value  ", but, got, "
+    (909 any)  ; add 
+    (910 any)  ; get_loc1 
+    (911 any)  ; add 
+    (912 any)  ; throw 
+    (913 any)  ; return_undef 
+  )
+  ; Constant pool
+  ; length: 0
+)
+

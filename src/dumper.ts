@@ -5,7 +5,7 @@ import { Matcher } from "./macher";
 
 
 //typefile dumper
-function printTypeFile(fileName: string): void {
+export function printTypeFile(fileName: string): void {
   let output: string = "";
   let matcher = new Matcher();
   matcher.init(fileName);
@@ -67,5 +67,3 @@ function printTypeFile(fileName: string): void {
   fs.writeFileSync(fileName + ".js.ty", output);
 
 }
-
-printTypeFile(process.argv[2]);

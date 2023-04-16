@@ -39,14 +39,10 @@ var Matcher = /** @class */ (function () {
     Matcher.prototype.match = function () {
         var cfns = this.checker.fns;
         var dfns = this.decoder.fns;
-        for (var _i = 0, dfns_1 = dfns; _i < dfns_1.length; _i++) {
-            var dfn = dfns_1[_i];
-            console.log(dfn.rootmap);
-        }
         console.log("----------------------CHECKER----------------------");
-        fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 4));
+        fs.writeFileSync("cfns.txt", JSON.stringify(cfns, null, 2));
         console.log("----------------------DECODER----------------------");
-        fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 4));
+        fs.writeFileSync("dfns.txt", JSON.stringify(dfns, null, 2));
         console.log("----------------------MATHCER----------------------");
         var i = 0;
         var rootmap = new Map();
@@ -89,8 +85,8 @@ var Matcher = /** @class */ (function () {
             this_1.funcTypes.push(fnType);
         };
         var this_1 = this;
-        for (var _a = 0, dfns_2 = dfns; _a < dfns_2.length; _a++) {
-            var dfn = dfns_2[_a];
+        for (var _i = 0, dfns_1 = dfns; _i < dfns_1.length; _i++) {
+            var dfn = dfns_1[_i];
             _loop_1(dfn);
         }
     };
